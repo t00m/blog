@@ -19,6 +19,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # or match KB4IT's .ruby-version if it exists
+          bundler-cache: true  # optional: caches gems for faster runs
+
+      - name: Install Asciidoctor
+        run: gem install asciidoctor
+        
       # Install Python
       - name: Set up Python
         uses: actions/setup-python@v5
