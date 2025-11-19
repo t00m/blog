@@ -36,17 +36,42 @@
             "compile": true,
             "content_hash": "a96e753c4875448b95ca862e9104a0d0",
             "metadata_hash": "d118bcdde4c22eab7176312805c6be6f"
+        },
+        "post2.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Tag": [
+                "action"
+            ],
+            "Title": [
+                "Testing KB4IT Theme blog with Github Actions"
+            ],
+            "Topic": [
+                "Github"
+            ],
+            "Updated": [
+                "2025-11-19 10:00:00"
+            ],
+            "compile": true,
+            "content_hash": "b2c2b1497ab38d26454bc61a5ad6ffef",
+            "metadata_hash": "d352b6e2030f30d366a943fb0e1bf8e4"
         }
     },
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
-                "post1.adoc"
+                "post1.adoc",
+                "post2.adoc"
             ]
         },
         "Category": {
             "Post": [
-                "post1.adoc"
+                "post1.adoc",
+                "post2.adoc"
             ]
         },
         "SystemPage": {
@@ -55,6 +80,9 @@
             ]
         },
         "Tag": {
+            "action": [
+                "post2.adoc"
+            ],
             "test": [
                 "post1.adoc"
             ]
@@ -65,9 +93,15 @@
             ],
             "Cloud administration": [
                 "post1.adoc"
+            ],
+            "Testing KB4IT Theme blog with Github Actions": [
+                "post2.adoc"
             ]
         },
         "Topic": {
+            "Github": [
+                "post2.adoc"
+            ],
             "Test": [
                 "post1.adoc"
             ]
@@ -78,6 +112,9 @@
             ],
             "2025-11-18 19:00:00": [
                 "post1.adoc"
+            ],
+            "2025-11-19 10:00:00": [
+                "post2.adoc"
             ]
         }
     }

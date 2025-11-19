@@ -1,0 +1,17 @@
+= Testing KB4IT Theme blog with Github Actions
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Github
+:Tag:           action
+:Updated:       2025-11-19 10:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+This is another post example for KB4IT TechBlog theme.
+
+== Notes
+
+Another Test
