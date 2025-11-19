@@ -1,0 +1,66 @@
+name: check-kb4it-version
+
+on:
+  push:
+    branches: [ main ]    # choose your branch
+      - 'source/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      # Install pipx
+      - name: Install pipx
+        run: pip install pipx --user
+
+      # Install requirements
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      # 3. Install kb4it
+      - name: Install KB4IT
+        run: pipx install . --force
+
+      # 4. Test KB4IT (display version)
+      - name: Run kb4it
+        run: kb4it -v
+
+      - name: Update blog
+        run: kb4it -L INFO build config/blog.json -f
+
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+
+      # OPTIONAL: deploy the generated website
+      #~ - name: Upload artifact
+        #~ uses: actions/upload-pages-artifact@v3
+        #~ with:
+          #~ path: ./site
