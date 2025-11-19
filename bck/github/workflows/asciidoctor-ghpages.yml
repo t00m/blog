@@ -1,31 +1,66 @@
-name: GitHub Pages Publish
+name: check-kb4it-version
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]    # choose your branch
+      - 'source/**'
+  workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+  
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
+      # Checkout repository
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-    # Includes the AsciiDoctor GitHub Pages Action to convert adoc files to html and publish to gh-pages branch
-    - name: asciidoctor-ghpages
-      uses: manoelcampos/asciidoctor-ghpages-action@v2
-      with:
-        pdf_build: true
-        # asciidoctor_params: --attribute=nofooter
-        # adoc_file_ext: .ascii # default is .adoc
-        # source_dir: docs/ # default is .
-        # slides_build: true
-        # pre_build:
-        # post_build:
+      # Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      # Install pipx
+      - name: Install pipx
+        run: pip install pipx --user
+
+      # Install requirements
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      # 3. Install kb4it
+      - name: Install KB4IT
+        run: pipx install . --force
+
+      # 4. Test KB4IT (display version)
+      - name: Run kb4it
+        run: kb4it -v
+
+      - name: Update blog
+        run: kb4it -L INFO build config/blog.json -f
+
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+
+      # OPTIONAL: deploy the generated website
+      #~ - name: Upload artifact
+        #~ uses: actions/upload-pages-artifact@v3
+        #~ with:
+          #~ path: ./site
