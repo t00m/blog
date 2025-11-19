@@ -29,12 +29,17 @@ jobs:
       - name: Install pipx
         run: pip install pipx --user
 
-      # Install requirements
-      - name: Install requirements
+      - name: Clone KB4IT repository
+        run: git clone https://github.com/t00m/KB4IT.git
+  
+      # Install KB4IT requirements
+      - name: Install KB4IT requirements
+        working-directory: ./KB4IT
         run: pip install -r requirements.txt
 
-      # 3. Install kb4it
+      # Install KB4IT
       - name: Install KB4IT
+        working-directory: ./KB4IT
         run: pipx install . --force
 
       # 4. Test KB4IT (display version)
