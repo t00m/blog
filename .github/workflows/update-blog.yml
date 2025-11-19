@@ -3,6 +3,7 @@ name: check-kb4it-version
 on:
   push:
     branches: [ main ]    # choose your branch
+    paths:
       - 'source/**'
   workflow_dispatch:
 
