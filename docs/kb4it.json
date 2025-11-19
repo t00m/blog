@@ -1,0 +1,84 @@
+{
+    "document": {
+        "about_app.adoc": {
+            "SystemPage": [
+                "Yes"
+            ],
+            "Title": [
+                "About this app"
+            ],
+            "Updated": [
+                "1978-09-28 23:00:00"
+            ],
+            "compile": true,
+            "content_hash": "5ab8aed57c7df4ad90c435a04a4d8c8f",
+            "metadata_hash": "408115b682c01237f6c804be747ec8a2"
+        },
+        "post1.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Tag": [
+                "test"
+            ],
+            "Title": [
+                "Cloud administration"
+            ],
+            "Topic": [
+                "Test"
+            ],
+            "Updated": [
+                "2025-11-18 19:00:00"
+            ],
+            "compile": true,
+            "content_hash": "985d97c10334a920bd6214e67218f557",
+            "metadata_hash": "d118bcdde4c22eab7176312805c6be6f"
+        }
+    },
+    "metadata": {
+        "Author": {
+            "Tom\u00e1s V\u00edrseda": [
+                "post1.adoc"
+            ]
+        },
+        "Category": {
+            "Post": [
+                "post1.adoc"
+            ]
+        },
+        "SystemPage": {
+            "Yes": [
+                "about_app.adoc"
+            ]
+        },
+        "Tag": {
+            "test": [
+                "post1.adoc"
+            ]
+        },
+        "Title": {
+            "About this app": [
+                "about_app.adoc"
+            ],
+            "Cloud administration": [
+                "post1.adoc"
+            ]
+        },
+        "Topic": {
+            "Test": [
+                "post1.adoc"
+            ]
+        },
+        "Updated": {
+            "1978-09-28 23:00:00": [
+                "about_app.adoc"
+            ],
+            "2025-11-18 19:00:00": [
+                "post1.adoc"
+            ]
+        }
+    }
+}

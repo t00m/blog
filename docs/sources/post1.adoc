@@ -1,0 +1,17 @@
+= Cloud administration
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Test
+:Tag:           test
+:Updated:       2025-11-18 19:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+This is a post example for KB4IT TechBlog theme.
+
+== Notes
+
+Test
