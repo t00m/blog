@@ -12,3 +12,6 @@
 
 This is a post example for KB4IT TechBlog theme.
 
+== Notes
+
+asdfka adsfa
