@@ -1,0 +1,17 @@
+= Test
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Development
+:Tag:           test
+:Updated:       2025-11-18 19:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+This is another post example for KB4IT TechBlog theme.
+
+== Notes
+
+Another Test
