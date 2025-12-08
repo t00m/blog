@@ -4,13 +4,15 @@
 :Category:      Post
 :Topic:         KB4IT, Mako
 :Tag:           index, page, template
-:Updated:       2025-12-08 22:30:00
+:Updated:       2025-12-08 23:00:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
 == Introduction
 
 Finally, the index page for the blog theme, is working.
+Posts' headers look nice.
+
 However, at this point, the whole code is... spaguetti code.
 `KB4IT` needs a big overhaul.
 
