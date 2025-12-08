@@ -1,5 +1,31 @@
 {
     "document": {
+        "20251208-2230.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Tag": [
+                "index",
+                "page",
+                "template"
+            ],
+            "Title": [
+                "Blog theme features a new index page"
+            ],
+            "Topic": [
+                "KB4IT",
+                "Mako"
+            ],
+            "Updated": [
+                "2025-12-08 22:30:00"
+            ],
+            "compile": true,
+            "content_hash": "18179a5957b04083e1d31b1bc8470109",
+            "metadata_hash": "e1e56d9ea28624b2d13af183f2e01ed0"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -13,65 +39,17 @@
             "compile": true,
             "content_hash": "5ab8aed57c7df4ad90c435a04a4d8c8f",
             "metadata_hash": "408115b682c01237f6c804be747ec8a2"
-        },
-        "post1.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Tag": [
-                "test"
-            ],
-            "Title": [
-                "Cloud administration"
-            ],
-            "Topic": [
-                "Test"
-            ],
-            "Updated": [
-                "2025-11-18 19:00:00"
-            ],
-            "compile": true,
-            "content_hash": "a96e753c4875448b95ca862e9104a0d0",
-            "metadata_hash": "d118bcdde4c22eab7176312805c6be6f"
-        },
-        "post2.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Tag": [
-                "test"
-            ],
-            "Title": [
-                "Test"
-            ],
-            "Topic": [
-                "Development"
-            ],
-            "Updated": [
-                "2025-11-18 19:00:00"
-            ],
-            "compile": true,
-            "content_hash": "e43a867539c3244b21fba26edaa98fca",
-            "metadata_hash": "cbab32e6fd8a2b7e09f1182b62991fba"
         }
     },
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
-                "post1.adoc",
-                "post2.adoc"
+                "20251208-2230.adoc"
             ]
         },
         "Category": {
             "Post": [
-                "post1.adoc",
-                "post2.adoc"
+                "20251208-2230.adoc"
             ]
         },
         "SystemPage": {
@@ -80,37 +58,38 @@
             ]
         },
         "Tag": {
-            "test": [
-                "post1.adoc",
-                "post2.adoc"
+            "index": [
+                "20251208-2230.adoc"
+            ],
+            "page": [
+                "20251208-2230.adoc"
+            ],
+            "template": [
+                "20251208-2230.adoc"
             ]
         },
         "Title": {
             "About this app": [
                 "about_app.adoc"
             ],
-            "Cloud administration": [
-                "post1.adoc"
-            ],
-            "Test": [
-                "post2.adoc"
+            "Blog theme features a new index page": [
+                "20251208-2230.adoc"
             ]
         },
         "Topic": {
-            "Development": [
-                "post2.adoc"
+            "KB4IT": [
+                "20251208-2230.adoc"
             ],
-            "Test": [
-                "post1.adoc"
+            "Mako": [
+                "20251208-2230.adoc"
             ]
         },
         "Updated": {
             "1978-09-28 23:00:00": [
                 "about_app.adoc"
             ],
-            "2025-11-18 19:00:00": [
-                "post1.adoc",
-                "post2.adoc"
+            "2025-12-08 22:30:00": [
+                "20251208-2230.adoc"
             ]
         }
     }

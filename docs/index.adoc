@@ -1,4 +1,4 @@
-= toomterias
+= Index
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -6,14 +6,24 @@
 <!-- Template HTML_BODY_INDEX.tpl :: START -->
 <!-- Blog Post :: START -->
 <article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
-    <h2 class="uk-card-title"><a href="post1.html">Cloud administration</a></h2>
+    <h2 class="uk-card-title"><a href="20251208-2230.html">Blog theme features a new index page</a></h2>
     <div class="post-meta uk-margin-small-bottom">
-        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Tuesday, November 18, 2025 at 19:00 about  
-                    <a href="Topic_Test.html">Test</a> 
+        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Monday, December 08, 2025 at 22:30 about  
+                    <a href="Topic_KB4IT.html">KB4IT</a>, 
+                    <a href="Topic_Mako.html">Mako</a> 
         </span>
     </div>
     <p class="uk-text-justify">
         
+
+
+<div uk-tooltip="title: Edit post">
+    <h3 class="uk-text-center">
+<span>Blog theme features a new index page</span>
+    <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251208-2230.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+</h3>
+</div>
+
 <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -26,7 +36,9 @@
 <h2 class="uk-card-title" id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>This is a post example for KB4IT TechBlog theme.</p>
+<p>Finally, the index page for the blog theme, is working.
+However, at this point, the whole code is&#8230;&#8203; spaguetti code.
+<code>KB4IT</code> needs a big overhaul.</p>
 </div>
 </div>
 </div>
@@ -35,7 +47,8 @@
 <h2 class="uk-card-title" id="_notes">Notes</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>Another Test</p>
+<p>Builder module works fine when the source files (.adoc files) are analyzed first.
+But other pages, like the index page, which are build at the end, do not follow the standard process.</p>
 </div>
 </div>
 </div>
@@ -46,61 +59,9 @@
             <div class="uk-grid-small uk-flex-middle" uk-grid>
 		<div class="uk-width-expand">
                 <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Tags</h3>
-		    <span class="tag"><a href="Tag_test.html">test</a></span>
-                </div>   
-            </div>
-        </div>
-    </div>
-</article>
-<!-- Template HTML_BODY_INDEX.tpl :: END -->
-++++
-
-
-++++
-<!-- Template HTML_BODY_INDEX.tpl :: START -->
-<!-- Blog Post :: START -->
-<article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
-    <h2 class="uk-card-title"><a href="post2.html">Test</a></h2>
-    <div class="post-meta uk-margin-small-bottom">
-        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Tuesday, November 18, 2025 at 19:00 about  
-                    <a href="Topic_Development.html">Development</a> 
-        </span>
-    </div>
-    <p class="uk-text-justify">
-        
-<div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>This is another post example for KB4IT TechBlog theme.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_notes">Notes</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>Another Test</p>
-</div>
-</div>
-</div>
-
-    </p>
-    <div class="">
-        <div class="uk-card-footer">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-		<div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Tags</h3>
-		    <span class="tag"><a href="Tag_test.html">test</a></span>
+		    <span class="tag"><a href="Tag_index.html">index</a></span>
+		    <span class="tag"><a href="Tag_page.html">page</a></span>
+		    <span class="tag"><a href="Tag_template.html">template</a></span>
                 </div>   
             </div>
         </div>
