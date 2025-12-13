@@ -27,74 +27,98 @@
 
 <div uk-tooltip="title: Edit post">
     <h2 class="uk-card-title uk-text-center">
-        <a class="uk-link-toggle" href="Author.html"><span class="uk-link-heading">Author</span></a>
-        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/Author.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+        <a class="uk-link-toggle" href="20251214-0030.html"><span class="uk-link-heading">Pixi: Managing Python Environments</span></a>
+        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251214-0030.adoc" target="_blank"><span uk-icon="pencil"></span></a>
     </h2>
 </div>
-<!-- KEY_PAGE.tpl -->
-<!-- Tabs header :: START-->
-<!--
-<div class="uk-flex uk-flex-center"><h1 class="uk-text-large">Author</h1></div>
--->
-<ul class="uk uk-flex-center" uk-tab>
-    <li><a class="" target="" href="#">Cloud</a></li>
-    <li><a class="" target="" href="#">Table</a></li>
-    <li><a class="" target="" href="#">Leader</a></li>
+<div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_notes">Notes</a></li>
 </ul>
-<!-- Tabs header :: END -->
-
-<!-- Tabs content :: START-->
-<ul class="uk-switcher uk-margin">
-    <!-- Cloud :: Start -->
-    <li>
-        <!-- WORDCLOUD.tpl :: START -->
-<div class="uk-flex-center" uk-grid="parallax: 150">
-    <!-- WORDCLOUD_ITEM.tpl :: START -->
-    <div class="uk-container-xsmall uk-card uk-card-small uk-padding-small uk-margin-small">
-        <a class="uk-link-heading" style="text-decoration: none;" href="Author_Tom%C3%A1s_V%C3%ADrseda.html" uk-tooltip="2 documents">
-            <span style="font-size:72pt;">Tom&#225;s V&#237;rseda</span>
-        </a>
-    </div>
-    <!-- WORDCLOUD_ITEM.tpl :: END -->
 </div>
-<!-- WORDCLOUD.tpl :: END -->
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-    </li>
-    <!-- Cloud :: End -->
-    <!-- Table :: Start -->
-    <li>
-        <table id="kb4it-datatable" class="uk-table uk-table-small uk-table-hover uk-table-striped" style="width:100%">
-            <thead>
-                <tr class="">
-                    <th class=""><span class="uk-text-bold uk-text-primary">Value</span></th>
-                    <th class="uk-width-small"><span class="uk-text-bold uk-text-primary">Documents</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                    <tr class="uk-width-small">
-                        <td class=""><a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></td>
-                        <td class="uk-width-small uk-text-right"><span class="uk-text-right">2</span></td>
-                    </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-    </li>
-    <!-- Table :: End -->
-    <!-- Leader :: Start -->
-    <li>
-        <!-- Leader row :: Start -->
-        <div class="uk-grid-small" uk-grid>
-            <div class="uk-width-expand uk-text-bold" uk-leader>
-                <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a>
-            </div>
-            <div>2</div>
-        </div>
-        <!-- Leader row :: End -->
-    </li>
-    <!-- Leader :: End-->
+<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p><a class="" target="" href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_notes">Notes</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>`pyproject.toml' adapted and it is on testing phase:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[project]
+authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
+dependencies = []
+name = "KB4IT"
+requires-python = "&gt;= 3.12"
+version = "0.7.20+build.18"
+license = "GPL-3.0-or-later"
+keywords = ["static-site-generator", "asciidoctor", "documentation"]
+classifiers = [
+ "Development Status :: 4 - Beta",
+ "Environment :: Console",
+ "Environment :: Web Environment",
+ "Intended Audience :: Developers",
+ "Intended Audience :: Information Technology",
+ "Intended Audience :: System Administrators",
+ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+ "Natural Language :: English",
+ "Operating System :: POSIX :: Linux",
+ "Programming Language :: Python :: 3",
+ "Topic :: Documentation",
+ "Topic :: Software Development :: Documentation",
+ "Topic :: Utilities",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+kb4it = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+mako = "&gt;=1.3.10,&lt;2"
+lxml = "&gt;=6.0.2,&lt;7"
+
+[tool.pixi.tasks]
+version = "kb4it --version"
+myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
+myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Useful commands:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pixi install</code>: Install an environment, both updating the <code>pixi.lock</code> file and installing the environment</p>
+</li>
+<li>
+<p><code>pixi list</code>: List the packages of the current workspace</p>
+</li>
+<li>
+<p><code>pixi run {task name}</code>: Runs task in the pixi environment</p>
+</li>
 </ul>
-<!-- Tabs content :: END-->
+</div>
+</div>
+</div>
 <!-- BODY :: END -->
                 </div>
                 <!-- Sidebar Column :: START-->

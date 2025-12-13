@@ -93,6 +93,135 @@ But other pages, like the index page, which are build at the end, do not follow 
     </div>
 </article>
 <!-- Template HTML_BODY_INDEX.tpl :: END -->
+<!-- Template HTML_BODY_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
+    <div class="post-meta uk-margin-small-bottom">
+        <span>Published by <a class="" target="" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a>  on Monday, December 08, 2025 at 23:00 about
+                    <a class="" target="" href="Topic_Python.html">Python</a>,
+                    <a class="" target="" href="Topic_KB4IT.html">KB4IT</a>,
+                    <a class="" target="" href="Topic_Pixi.html">Pixi</a>,
+                    <a class="" target="" href="Topic_Pypi.html">Pypi</a>,
+                    <a class="" target="" href="Topic_Package%20management.html">Package management</a>
+        </span>
+    </div>
+    <p class="uk-text-justify">
+
+
+
+
+</p>
+<div uk-tooltip="title: Edit post">
+    <h2 class="uk-card-title">
+        <a class="uk-link-toggle" href="20251214-0030.html"><span class="uk-link-heading">Pixi: Managing Python Environments</span></a>
+        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251214-0030.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+    </h2>
+</div>
+<div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_notes">Notes</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p><a class="" target="" href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_notes">Notes</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>`pyproject.toml' adapted and it is on testing phase:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[project]
+authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
+dependencies = []
+name = "KB4IT"
+requires-python = "&gt;= 3.12"
+version = "0.7.20+build.18"
+license = "GPL-3.0-or-later"
+keywords = ["static-site-generator", "asciidoctor", "documentation"]
+classifiers = [
+ "Development Status :: 4 - Beta",
+ "Environment :: Console",
+ "Environment :: Web Environment",
+ "Intended Audience :: Developers",
+ "Intended Audience :: Information Technology",
+ "Intended Audience :: System Administrators",
+ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+ "Natural Language :: English",
+ "Operating System :: POSIX :: Linux",
+ "Programming Language :: Python :: 3",
+ "Topic :: Documentation",
+ "Topic :: Software Development :: Documentation",
+ "Topic :: Utilities",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+kb4it = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+mako = "&gt;=1.3.10,&lt;2"
+lxml = "&gt;=6.0.2,&lt;7"
+
+[tool.pixi.tasks]
+version = "kb4it --version"
+myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
+myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Useful commands:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pixi install</code>: Install an environment, both updating the <code>pixi.lock</code> file and installing the environment</p>
+</li>
+<li>
+<p><code>pixi list</code>: List the packages of the current workspace</p>
+</li>
+<li>
+<p><code>pixi run {task name}</code>: Runs task in the pixi environment</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    
+    <div class="">
+        <div class="uk-card-footer">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+                <h3 class="uk-card-title">Tags</h3>
+            <span class="tag"><a class="" target="" href="Tag_project.html">project</a></span>
+            <span class="tag"><a class="" target="" href="Tag_build.html">build</a></span>
+            <span class="tag"><a class="" target="" href="Tag_dependency.html">dependency</a></span>
+            <span class="tag"><a class="" target="" href="Tag_environment.html">environment</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Template HTML_BODY_INDEX.tpl :: END -->
 <!-- BODY :: END -->
                 </div>
                 <!-- Sidebar Column :: START-->
@@ -106,16 +235,24 @@ But other pages, like the index page, which are build at the end, do not follow 
                           <div>
                                 <span class="tag"><a href="Topic_KB4IT.html">KB4IT</a></span>
                                 <span class="tag"><a href="Topic_Mako.html">Mako</a></span>
+                                <span class="tag"><a href="Topic_Package%20management.html">Package management</a></span>
+                                <span class="tag"><a href="Topic_Pixi.html">Pixi</a></span>
+                                <span class="tag"><a href="Topic_Pypi.html">Pypi</a></span>
+                                <span class="tag"><a href="Topic_Python.html">Python</a></span>
                         </div>
                       <h3 class="sidebar-title">Tags</h3>
                           <div>
+                                <span class="tag"><a href="Tag_build.html">build</a></span>
+                                <span class="tag"><a href="Tag_dependency.html">dependency</a></span>
+                                <span class="tag"><a href="Tag_environment.html">environment</a></span>
                                 <span class="tag"><a href="Tag_index.html">index</a></span>
                                 <span class="tag"><a href="Tag_page.html">page</a></span>
+                                <span class="tag"><a href="Tag_project.html">project</a></span>
                                 <span class="tag"><a href="Tag_template.html">template</a></span>
                         </div>
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon"> 
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Monday, December 08, 2025 at 22:12</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Saturday, December 13, 2025 at 23:39</span>
                       </div>
                     </div>
                   </div>

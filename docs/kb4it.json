@@ -26,6 +26,37 @@
             "content_hash": "78a0f417771e45d6b14a4ca1f50641d2",
             "metadata_hash": "fea2170f50f573a8c8c15d9a5a165e1e"
         },
+        "20251214-0030.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Bookmark",
+                "Post"
+            ],
+            "Tag": [
+                "build",
+                "dependency",
+                "environment",
+                "project"
+            ],
+            "Title": [
+                "Pixi: Managing Python Environments"
+            ],
+            "Topic": [
+                "KB4IT",
+                "Package management",
+                "Pixi",
+                "Pypi",
+                "Python"
+            ],
+            "Updated": [
+                "2025-12-08 23:00:00"
+            ],
+            "compile": true,
+            "content_hash": "2db08a2387810c09c75d2548bd228868",
+            "metadata_hash": "0729aca0d6aea90f7287a6e0bb0ef7ee"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -44,12 +75,17 @@
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251214-0030.adoc"
             ]
         },
         "Category": {
+            "Bookmark": [
+                "20251214-0030.adoc"
+            ],
             "Post": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251214-0030.adoc"
             ]
         },
         "SystemPage": {
@@ -58,11 +94,23 @@
             ]
         },
         "Tag": {
+            "build": [
+                "20251214-0030.adoc"
+            ],
+            "dependency": [
+                "20251214-0030.adoc"
+            ],
+            "environment": [
+                "20251214-0030.adoc"
+            ],
             "index": [
                 "20251208-2230.adoc"
             ],
             "page": [
                 "20251208-2230.adoc"
+            ],
+            "project": [
+                "20251214-0030.adoc"
             ],
             "template": [
                 "20251208-2230.adoc"
@@ -74,14 +122,30 @@
             ],
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
+            ],
+            "Pixi: Managing Python Environments": [
+                "20251214-0030.adoc"
             ]
         },
         "Topic": {
             "KB4IT": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251214-0030.adoc"
             ],
             "Mako": [
                 "20251208-2230.adoc"
+            ],
+            "Package management": [
+                "20251214-0030.adoc"
+            ],
+            "Pixi": [
+                "20251214-0030.adoc"
+            ],
+            "Pypi": [
+                "20251214-0030.adoc"
+            ],
+            "Python": [
+                "20251214-0030.adoc"
             ]
         },
         "Updated": {
@@ -89,7 +153,8 @@
                 "about_app.adoc"
             ],
             "2025-12-08 23:00:00": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251214-0030.adoc"
             ]
         }
     }
