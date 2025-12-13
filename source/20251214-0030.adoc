@@ -4,7 +4,7 @@
 :Category:      Post, Bookmark
 :Topic:         Python, KB4IT, Pixi, Pypi, Package management
 :Tag:           project, build, dependency, environment
-:Updated:       2025-12-08 23:00:00
+:Updated:       2025-12-14 00:30:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
