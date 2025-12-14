@@ -14,7 +14,7 @@ https://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package manage
 
 == Notes
 
-`pyproject.toml' adapted and it is on testing phase:
+`pyproject.toml` adapted and it is on testing phase:
 
 [source]
 ----
@@ -67,4 +67,4 @@ Useful commands:
 
 * `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment
 * `pixi list`: List the packages of the current workspace
-* `pixi run {task name}`: Runs task in the pixi environment
+* `pixi run {task name}`: Runs task name in the pixi environment

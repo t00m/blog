@@ -107,7 +107,7 @@
 <h2 class="uk-card-title" id="_notes">Notes</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>`pyproject.toml' adapted and it is on testing phase:</p>
+<p><code>pyproject.toml</code> adapted and it is on testing phase:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -168,7 +168,7 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
 <p><code>pixi list</code>: List the packages of the current workspace</p>
 </li>
 <li>
-<p><code>pixi run {task name}</code>: Runs task in the pixi environment</p>
+<p><code>pixi run {task name}</code>: Runs task name in the pixi environment</p>
 </li>
 </ul>
 </div>
