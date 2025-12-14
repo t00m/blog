@@ -57,6 +57,30 @@
             "content_hash": "b52cb20903705be40edeff12e4dfe6a7",
             "metadata_hash": "8d179ff1ea4e28fb6955c18c25a40abb"
         },
+        "FIXME.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Tag": [
+                "edit",
+                "url"
+            ],
+            "Title": [
+                "FIXME"
+            ],
+            "Topic": [
+                "Blog"
+            ],
+            "Updated": [
+                "2025-12-14 01:00:00"
+            ],
+            "compile": true,
+            "content_hash": "67628043e070574f511bbed72a4f738b",
+            "metadata_hash": "ee6828a51a4ad4232330185e15617645"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -76,7 +100,8 @@
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
                 "20251208-2230.adoc",
-                "20251214-0030.adoc"
+                "20251214-0030.adoc",
+                "FIXME.adoc"
             ]
         },
         "Category": {
@@ -85,7 +110,8 @@
             ],
             "Post": [
                 "20251208-2230.adoc",
-                "20251214-0030.adoc"
+                "20251214-0030.adoc",
+                "FIXME.adoc"
             ]
         },
         "SystemPage": {
@@ -99,6 +125,9 @@
             ],
             "dependency": [
                 "20251214-0030.adoc"
+            ],
+            "edit": [
+                "FIXME.adoc"
             ],
             "environment": [
                 "20251214-0030.adoc"
@@ -114,6 +143,9 @@
             ],
             "template": [
                 "20251208-2230.adoc"
+            ],
+            "url": [
+                "FIXME.adoc"
             ]
         },
         "Title": {
@@ -123,11 +155,17 @@
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
             ],
+            "FIXME": [
+                "FIXME.adoc"
+            ],
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
             ]
         },
         "Topic": {
+            "Blog": [
+                "FIXME.adoc"
+            ],
             "KB4IT": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc"
@@ -157,6 +195,9 @@
             ],
             "2025-12-14 00:30:00": [
                 "20251214-0030.adoc"
+            ],
+            "2025-12-14 01:00:00": [
+                "FIXME.adoc"
             ]
         }
     }

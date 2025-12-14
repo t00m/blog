@@ -1,0 +1,14 @@
+= FIXME
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Blog
+:Tag:           url, edit
+:Updated:       2025-12-14 01:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== To be fixed
+
+* Topics or tage name containting spaces do not get the proper link
+* System pages shouldn't have the edit button
