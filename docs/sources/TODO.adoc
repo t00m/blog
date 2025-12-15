@@ -13,3 +13,4 @@
 * Integrate KB4IT functionality (properties)
 * Allow Datatable searches
 * Allow Datable columns sorting
+* Use cards?

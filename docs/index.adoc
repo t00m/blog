@@ -31,6 +31,9 @@
 <li>
 <p>Allow Datable columns sorting</p>
 </li>
+<li>
+<p>Use cards?</p>
+</li>
 </ul>
 </div>
 </div>
@@ -85,6 +88,12 @@
 </li>
 <li>
 <p>System pages shouldn&#8217;t have the edit button</p>
+</li>
+<li>
+<p>No metadata in posts pages</p>
+</li>
+<li>
+<p>Pass post metadata to builder? How?</p>
 </li>
 </ul>
 </div>
