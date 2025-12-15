@@ -81,6 +81,29 @@
             "content_hash": "67628043e070574f511bbed72a4f738b",
             "metadata_hash": "ee6828a51a4ad4232330185e15617645"
         },
+        "TODO.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Tag": [
+                "feature"
+            ],
+            "Title": [
+                "TODO"
+            ],
+            "Topic": [
+                "Blog"
+            ],
+            "Updated": [
+                "2025-12-15 19:00:00"
+            ],
+            "compile": true,
+            "content_hash": "917b3d3a7410faaaa162ada464dc111c",
+            "metadata_hash": "7029de23479847e33f808617075bb132"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -101,7 +124,8 @@
             "Tom\u00e1s V\u00edrseda": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "FIXME.adoc"
+                "FIXME.adoc",
+                "TODO.adoc"
             ]
         },
         "Category": {
@@ -111,7 +135,8 @@
             "Post": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "FIXME.adoc"
+                "FIXME.adoc",
+                "TODO.adoc"
             ]
         },
         "SystemPage": {
@@ -131,6 +156,9 @@
             ],
             "environment": [
                 "20251214-0030.adoc"
+            ],
+            "feature": [
+                "TODO.adoc"
             ],
             "index": [
                 "20251208-2230.adoc"
@@ -160,11 +188,15 @@
             ],
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
+            ],
+            "TODO": [
+                "TODO.adoc"
             ]
         },
         "Topic": {
             "Blog": [
-                "FIXME.adoc"
+                "FIXME.adoc",
+                "TODO.adoc"
             ],
             "KB4IT": [
                 "20251208-2230.adoc",
@@ -198,6 +230,9 @@
             ],
             "2025-12-14 01:00:00": [
                 "FIXME.adoc"
+            ],
+            "2025-12-15 19:00:00": [
+                "TODO.adoc"
             ]
         }
     }

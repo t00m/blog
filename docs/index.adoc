@@ -6,22 +6,68 @@
 <!-- Template HTML_BODY_INDEX.tpl :: START -->
 <!-- Blog Post :: START -->
 <article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
-    <div class="post-meta uk-margin-small-bottom">
-        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Sunday, December 14, 2025 at 01:00 about
-                    <a href="Topic_Blog.html">Blog</a>
-        </span>
-    </div>
-    <p class="uk-text-justify">
-        
-
-
-
-<div uk-tooltip="title: Edit post">
-    <h2 class="uk-card-title uk-text-center">
-        <a class="uk-link-toggle" href="FIXME.html"><span class="uk-link-heading">FIXME</span></a>
-        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/FIXME.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+        <div class="uk-text-justify">
+            <h2 class="uk-card-title uk-text-center">
+        <a class="uk-link-toggle" href="TODO.html"><span class="uk-link-heading">TODO</span></a>
     </h2>
+<div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_things_to_do">Things to do</a></li>
+</ul>
 </div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_things_to_do">Things to do</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="ulist">
+<ul>
+<li>
+<p>Integrate KB4IT functionality (properties)</p>
+</li>
+<li>
+<p>Allow Datatable searches</p>
+</li>
+<li>
+<p>Allow Datable columns sorting</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+        </div>
+
+    <div class="uk-card-footer">
+        <div class="uk-grid-big uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <p class="uk-text-meta uk-margin-remove-top">
+                    <span class="">Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a> on
+                    <a href="events_20251215.html">15</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a><!-- at 19:0 -->
+                    </span>
+                    <br/>
+                    <span>
+                     Topics:
+                            <a href="Topic_Blog.html">Blog</a>
+                    </span>
+                    <br/>
+                    <span>Tags:
+                            <a href="Tag_feature.html">feature</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Template HTML_BODY_INDEX.tpl :: END -->
+++++
+++++
+<!-- Template HTML_BODY_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
+        <div class="uk-text-justify">
+            <h2 class="uk-card-title uk-text-center">
+        <a class="uk-link-toggle" href="FIXME.html"><span class="uk-link-heading">FIXME</span></a>
+    </h2>
 <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -44,48 +90,40 @@
 </div>
 </div>
 </div>
+        </div>
 
-    </p>
-    <div class="">
-        <div class="uk-card-footer">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-        <div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Tags</h3>
-            <span class="tag"><a href="Tag_url.html">url</a></span>
-            <span class="tag"><a href="Tag_edit.html">edit</a></span>
-                </div>
+    <div class="uk-card-footer">
+        <div class="uk-grid-big uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <p class="uk-text-meta uk-margin-remove-top">
+                    <span class="">Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a> on
+                    <a href="events_20251214.html">14</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a><!-- at 1:0 -->
+                    </span>
+                    <br/>
+                    <span>
+                     Topics:
+                            <a href="Topic_Blog.html">Blog</a>
+                    </span>
+                    <br/>
+                    <span>Tags:
+                            <a href="Tag_url.html">url</a>,
+                            <a href="Tag_edit.html">edit</a>
+                    </span>
+                </p>
             </div>
         </div>
     </div>
 </article>
 <!-- Template HTML_BODY_INDEX.tpl :: END -->
 ++++
-
-
 ++++
 <!-- Template HTML_BODY_INDEX.tpl :: START -->
 <!-- Blog Post :: START -->
 <article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
-    <div class="post-meta uk-margin-small-bottom">
-        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Sunday, December 14, 2025 at 00:30 about
-                    <a href="Topic_Python.html">Python</a>,
-                    <a href="Topic_KB4IT.html">KB4IT</a>,
-                    <a href="Topic_Pixi.html">Pixi</a>,
-                    <a href="Topic_Pypi.html">Pypi</a>,
-                    <a href="Topic_Package management.html">Package management</a>
-        </span>
-    </div>
-    <p class="uk-text-justify">
-        
-
-
-
-<div uk-tooltip="title: Edit post">
-    <h2 class="uk-card-title uk-text-center">
+        <div class="uk-text-justify">
+            <h2 class="uk-card-title uk-text-center">
         <a class="uk-link-toggle" href="20251214-0030.html"><span class="uk-link-heading">Pixi: Managing Python Environments</span></a>
-        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251214-0030.adoc" target="_blank"><span uk-icon="pencil"></span></a>
     </h2>
-</div>
 <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -174,47 +212,46 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
 </div>
 </div>
 </div>
+        </div>
 
-    </p>
-    <div class="">
-        <div class="uk-card-footer">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-        <div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Tags</h3>
-            <span class="tag"><a href="Tag_project.html">project</a></span>
-            <span class="tag"><a href="Tag_build.html">build</a></span>
-            <span class="tag"><a href="Tag_dependency.html">dependency</a></span>
-            <span class="tag"><a href="Tag_environment.html">environment</a></span>
-                </div>
+    <div class="uk-card-footer">
+        <div class="uk-grid-big uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <p class="uk-text-meta uk-margin-remove-top">
+                    <span class="">Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a> on
+                    <a href="events_20251214.html">14</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a><!-- at 0:30 -->
+                    </span>
+                    <br/>
+                    <span>
+                     Topics:
+                            <a href="Topic_Python.html">Python</a>,
+                            <a href="Topic_KB4IT.html">KB4IT</a>,
+                            <a href="Topic_Pixi.html">Pixi</a>,
+                            <a href="Topic_Pypi.html">Pypi</a>,
+                            <a href="Topic_Package management.html">Package management</a>
+                    </span>
+                    <br/>
+                    <span>Tags:
+                            <a href="Tag_project.html">project</a>,
+                            <a href="Tag_build.html">build</a>,
+                            <a href="Tag_dependency.html">dependency</a>,
+                            <a href="Tag_environment.html">environment</a>
+                    </span>
+                </p>
             </div>
         </div>
     </div>
 </article>
 <!-- Template HTML_BODY_INDEX.tpl :: END -->
 ++++
-
-
 ++++
 <!-- Template HTML_BODY_INDEX.tpl :: START -->
 <!-- Blog Post :: START -->
 <article class="post-card uk-card uk-card-default uk-card-body uk-margin-medium-bottom">
-    <div class="post-meta uk-margin-small-bottom">
-        <span>Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a>  on Monday, December 08, 2025 at 23:00 about
-                    <a href="Topic_KB4IT.html">KB4IT</a>,
-                    <a href="Topic_Mako.html">Mako</a>
-        </span>
-    </div>
-    <p class="uk-text-justify">
-        
-
-
-
-<div uk-tooltip="title: Edit post">
-    <h2 class="uk-card-title uk-text-center">
+        <div class="uk-text-justify">
+            <h2 class="uk-card-title uk-text-center">
         <a class="uk-link-toggle" href="20251208-2230.html"><span class="uk-link-heading">Blog theme features a new index page</span></a>
-        <a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251208-2230.adoc" target="_blank"><span uk-icon="pencil"></span></a>
     </h2>
-</div>
 <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -246,22 +283,31 @@ But other pages, like the index page, which are build at the end, do not follow 
 </div>
 </div>
 </div>
+        </div>
 
-    </p>
-    <div class="">
-        <div class="uk-card-footer">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-        <div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Tags</h3>
-            <span class="tag"><a href="Tag_index.html">index</a></span>
-            <span class="tag"><a href="Tag_page.html">page</a></span>
-            <span class="tag"><a href="Tag_template.html">template</a></span>
-                </div>
+    <div class="uk-card-footer">
+        <div class="uk-grid-big uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <p class="uk-text-meta uk-margin-remove-top">
+                    <span class="">Published by <a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a> on
+                    <a href="events_2025128.html">8</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a><!-- at 23:0 -->
+                    </span>
+                    <br/>
+                    <span>
+                     Topics:
+                            <a href="Topic_KB4IT.html">KB4IT</a>,
+                            <a href="Topic_Mako.html">Mako</a>
+                    </span>
+                    <br/>
+                    <span>Tags:
+                            <a href="Tag_index.html">index</a>,
+                            <a href="Tag_page.html">page</a>,
+                            <a href="Tag_template.html">template</a>
+                    </span>
+                </p>
             </div>
         </div>
     </div>
 </article>
 <!-- Template HTML_BODY_INDEX.tpl :: END -->
 ++++
-
-

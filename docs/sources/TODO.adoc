@@ -1,0 +1,15 @@
+= TODO
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Blog
+:Tag:           feature
+:Updated:       2025-12-15 19:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Things to do
+
+* Integrate KB4IT functionality (properties)
+* Allow Datatable searches
+* Allow Datable columns sorting
