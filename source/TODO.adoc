@@ -13,4 +13,5 @@
 * Integrate KB4IT functionality (properties)
 * Allow Datatable searches
 * Allow Datable columns sorting
-* Use cards?
+* +++<del>Use cards?</del>+++
+* Same style for index post and single post
