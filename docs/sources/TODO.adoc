@@ -4,7 +4,7 @@
 :Category:      Post
 :Topic:         Blog
 :Tag:           feature
-:Updated:       2025-12-20 10:00:00
+:Updated:       2025-12-20 15:00:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -16,3 +16,4 @@
 * +++<del>Use cards?</del>+++
 * +++<del>Same style for index post and single post</del>+++
 * Investigate how to use github issues to build a comment system
+* +++<del>Display properties in right menu</del>+++
