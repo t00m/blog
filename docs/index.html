@@ -271,95 +271,8 @@
 
         <!-- Body -->
         <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p><a class="" target="" href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_notes">Notes</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p><code>pyproject.toml</code> adapted and it is on testing phase:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>[project]
-authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
-dependencies = []
-name = "KB4IT"
-requires-python = "&gt;= 3.12"
-version = "0.7.20+build.18"
-license = "GPL-3.0-or-later"
-keywords = ["static-site-generator", "asciidoctor", "documentation"]
-classifiers = [
- "Development Status :: 4 - Beta",
- "Environment :: Console",
- "Environment :: Web Environment",
- "Intended Audience :: Developers",
- "Intended Audience :: Information Technology",
- "Intended Audience :: System Administrators",
- "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
- "Natural Language :: English",
- "Operating System :: POSIX :: Linux",
- "Programming Language :: Python :: 3",
- "Topic :: Documentation",
- "Topic :: Software Development :: Documentation",
- "Topic :: Utilities",
-]
-
-[build-system]
-build-backend = "hatchling.build"
-requires = ["hatchling"]
-
-[tool.pixi.workspace]
-channels = ["conda-forge"]
-platforms = ["linux-64"]
-
-[tool.pixi.pypi-dependencies]
-kb4it = { path = ".", editable = true }
-
-[tool.pixi.dependencies]
-mako = "&gt;=1.3.10,&lt;2"
-lxml = "&gt;=6.0.2,&lt;7"
-
-[tool.pixi.tasks]
-version = "kb4it --version"
-myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
-myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Useful commands:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>pixi install</code>: Install an environment, both updating the <code>pixi.lock</code> file and installing the environment</p>
-</li>
-<li>
-<p><code>pixi list</code>: List the packages of the current workspace</p>
-</li>
-<li>
-<p><code>pixi run {task name}</code>: Runs task name in the pixi environment</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-        </article>
+            <i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i d<i i<i v<i <i h<i e<i n<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i="&lt;i" "<i t<i o<i c<i l<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" t<i a<i b<i l<i e<i <i o<i f<i c<i n<i s<i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i u<i l<i c<i a<i s<i="&lt;i" "<i e<i t<i v<i 1<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i a<i <i c<i l<i s<i="&lt;i" "<i t<i r<i g<i e<i h<i f<i #<i _<i i<i n<i o<i d<i u<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" i<i n<i t<i r<i o<i d<i u<i c<i <<i <i a<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i <i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i a<i <i c<i l<i s<i="&lt;i" "<i t<i r<i g<i e<i h<i f<i #<i _<i n<i o<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" n<i o<i t<i e<i s<i <<i <i a<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i <i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i u<i l<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i="&lt;i" "<i k<i b<i -<i s<i e<i c<i t<i 1<i l<i a<i u<i m<i r<i g<i n<i o<i y<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i h<i 2<i c<i l<i a<i s<i="&lt;i" "<i u<i k<i -<i r<i d<i t<i i<i e<i _<i n<i o<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" i<i n<i t<i r<i o<i d<i u<i c<i <<i <i h<i 2<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i="&lt;i" "<i k<i b<i -<i s<i e<i c<i t<i o<i n<i y<i l<i a<i u<i r<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i p<i r<i g<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i a<i <i c<i l<i s<i="&lt;i" "<i t<i r<i g<i e<i h<i f<i p<i :<i i<i x<i .<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i i<i x<i <<i <i a<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i i<i s<i a<i f<i t<i ,<i m<i o<i d<i e<i r<i n<i p<i u<i c<i b<i l<i k<i g<i v<i .<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i="&lt;i" "<i k<i b<i -<i s<i e<i c<i t<i 1<i l<i a<i u<i m<i r<i g<i n<i o<i y<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i h<i 2<i c<i l<i a<i s<i="&lt;i" "<i u<i k<i -<i r<i d<i t<i i<i e<i _<i n<i o<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" n<i o<i t<i e<i s<i <<i <i h<i 2<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i="&lt;i" "<i k<i b<i -<i s<i e<i c<i t<i o<i n<i y<i l<i a<i u<i r<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i m<i o<i n<i t<i b<i k<i w<i r<i g<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i a<i b<i l<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i r<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i d<i c<i l<i a<i s<i="&lt;i" "<i i<i o<i n<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i i<i c<i l<i a<i s<i="&lt;i" "<i f<i o<i n<i -<i w<i r<i g<i t<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i <i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i d<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i d<i c<i l<i a<i s<i="&lt;i" "<i o<i n<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i p<i r<i g<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" c<i u<i r<i e<i n<i t<i <i o<i f<i i<i g<i d<i s<i w<i k<i y<i .<i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i p<i r<i g<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" i<i t<i <i d<i o<i e<i s<i n<i &<i #<i 8<i 2<i 1<i 7<i ;<i p<i r<i v<i h<i x<i c<i u<i a<i b<i l<i .<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i d<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i r<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i t<i a<i b<i l<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i p<i r<i g<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i y<i r<i o<i j<i e<i c<i t<i .<i m<i l<i <<i <i d<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i a<i d<i p<i t<i e<i n<i i<i s<i o<i g<i h<i :<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i t<i n<i g<i b<i o<i k<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i o<i n<i t<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i r<i e<i c<i l<i a<i s<i="&lt;i" "<i h<i i<i g<i t<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" [<i p<i r<i o<i j<i e<i c<i t<i ]<i <i a<i u<i h<i s<i="&lt;i" {<i n<i m<i "<i &#225;<i v<i &#237;<i d<i ,<i i<i l<i @<i g<i .<i }<i k<i b<i 4<i q<i -<i y<i &<i ;<i 3<i 1<i 2<i 0<i 7<i +<i 8<i w<i f<i :<i (<i )<i x<i 6<i _<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i <i p<i r<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i p<i r<i g<i h<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" u<i s<i e<i f<i l<i <i c<i o<i m<i a<i n<i d<i :<i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i c<i l<i a<i s<i="&lt;i" "<i u<i t<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i u<i l<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i i<i x<i <i n<i s<i t<i a<i l<i <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" :<i <i i<i n<i s<i t<i a<i l<i e<i v<i r<i o<i m<i ,<i b<i h<i u<i p<i d<i g<i <<i c<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i i<i x<i .<i l<i o<i c<i k<i <<i <i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i f<i i<i l<i e<i a<i n<i d<i s<i t<i g<i h<i v<i r<i o<i m<i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i i<i x<i <i l<i s<i t<i <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" :<i <i l<i i<i s<i t<i h<i e<i p<i a<i c<i k<i g<i o<i f<i u<i r<i n<i w<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i p<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <<i c<i o<i d<i e<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" p<i i<i x<i <i r<i u<i n<i {<i t<i a<i s<i k<i m<i e<i }<i <<i c<i o<i d<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" :<i <i r<i u<i n<i s<i t<i a<i k<i m<i e<i i<i h<i p<i x<i v<i o<i <<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i l<i i<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i u<i l<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <i <<i d<i i<i v<i><i uk-icon="bolt" class="uk-margin-right uk-icon-button" <!-- body :: end -->
+        </i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></i></article>
 
         <!-- Footer -->
         <footer class="uk-margin-small-top uk-text-muted">
@@ -370,105 +283,12 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
     </div>
 </div>
 <p></p>
-<!-- Template POST_ADOC_INDEX.tpl :: END -->
-<!-- Template POST_ADOC_INDEX.tpl :: START -->
-<!-- Blog Post :: START -->
-<div class="uk-card uk-card-small uk-card-body post-card">
-    <div class="uk-container uk-container-small">
-
-        <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
-            <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
-                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
-                        <a class="uk-link-toggle" href="20251208-2230.html">
-                            <span class="uk-link-heading">Blog theme features a new index page</span>
-                        </a>
-                    </h5>
-                    <div class="uk-width">
-                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
-                            <li>
-                                <span uk-icon="user"></span>
-                                <span class="uk-margin-small-left"><a class="" target="" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a class="" target="" href="events_2025128.html">8</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a class="" target="" href="Topic_KB4IT.html">KB4IT</a>,
-                                    <a class="" target="" href="Topic_Mako.html">Mako</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a class="" target="" href="Tag_index.html">index</a>,
-                                    <a class="" target="" href="Tag_page.html">page</a>,
-                                    <a class="" target="" href="Tag_template.html">template</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Tags and Topics -->
-                </div>
-            </div>
-            <hr>
-        </header>
-
-        <!-- Body -->
-        <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>Finally, the index page for the blog theme, is working.
-Posts' headers look nice.</p>
-</div>
-<div class="paragraph">
-<p>However, at this point, the whole code is&#8230;&#8203; spaguetti code.
-<code>KB4IT</code> needs a big overhaul.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_notes">Notes</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>Builder module works fine when the source files (.adoc files) are analyzed first.
-But other pages, like the index page, which are build at the end, do not follow the standard process.</p>
-</div>
-</div>
-</div>
-        </article>
-
-        <!-- Footer -->
-        <footer class="uk-margin-small-top uk-text-muted">
-            <hr>
-            <div class="uk-flex uk-flex-between uk-flex-middle">
-            </div>
-        </footer>
-    </div>
-</div>
-<p></p>
-<!-- Template POST_ADOC_INDEX.tpl :: END -->
-<!-- BODY :: END -->
+<!-- Template POST_HTML_SINGLE.tpl :: END -->
                 </div>
                 <!-- Sidebar Column :: START-->
                 <div class="uk-width-1-3@m" uk-height-viewport="expand: true">
                   <div class="uk-sticky" uk-sticky="offset: 40">
-                    <h2 class="uk-heading-line uk-text-center"><a class="uk-link-toggle" href="index.html"><span class="uk-link-heading">t00mter&#237;as</span></a></h2>
+                    <h2 class="uk-card-title"><a class="uk-link-toggle" href="index.html"><span class="uk-link-heading">t00mter&#237;as</span></a></h2>
                     <div class="sidebar">
                       <h5 class="sidebar-title">About</h5>
                       <p class="uk-text-small">My public notes</p>
@@ -480,45 +300,45 @@ But other pages, like the index page, which are build at the end, do not follow 
                                 <a class="uk-link-heading" href="all.html">Documents</a>
                             </div>
                             <div>
-                                <a href="all.html">4</a>
+                                <a class="" target="" href="all.html">4</a>
                             </div> <!-- Num of documents -->
                         </div>
                         <div class="uk-grid-small uk-text-meta" uk-grid>
                             <div class="uk-width-expand uk-text-bold" uk-leader>
                                 <a class="uk-link-heading" href="properties.html">Properties</a>
                             </div>
-                            <div><a href="properties.html">5</a></div> <!-- Num of properties or keys -->
+                            <div><a class="" target="" href="properties.html">5</a></div> <!-- Num of properties or keys -->
                         </div>
                         <!-- Property leader items -->
                         <div class="uk-grid-small uk-text-meta" uk-grid>
                             <div class="uk-width-1-6@m"></div>
                             <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Author.html">Author</a></div>
-                            <div><a href="Author.html">1</a></div>
+                            <div><a class="" target="" href="Author.html">1</a></div>
                         </div>
                         <div class="uk-grid-small uk-text-meta" uk-grid>
                             <div class="uk-width-1-6@m"></div>
                             <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Category.html">Category</a></div>
-                            <div><a href="Category.html">2</a></div>
+                            <div><a class="" target="" href="Category.html">2</a></div>
                         </div>
                         <div class="uk-grid-small uk-text-meta" uk-grid>
                             <div class="uk-width-1-6@m"></div>
                             <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Tag.html">Tag</a></div>
-                            <div><a href="Tag.html">10</a></div>
+                            <div><a class="" target="" href="Tag.html">10</a></div>
                         </div>
                         <div class="uk-grid-small uk-text-meta" uk-grid>
                             <div class="uk-width-1-6@m"></div>
                             <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Topic.html">Topic</a></div>
-                            <div><a href="Topic.html">7</a></div>
+                            <div><a class="" target="" href="Topic.html">7</a></div>
                         </div>
                         <!-- Property leader items -->
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Saturday, December 20, 2025 at 17:13</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Saturday, December 20, 2025 at 21:03</span>
                         <p>
                             <span class="uk-link">
-                                <a href="https://github.com/t00m/KB4IT" target="_blank">
-                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                <a class="" target="" href="https://github.com/t00m/KB4IT">
+                                    <img uk-img class="" src="resources/common/images/kb4it-badge-built-with.svg">
                                 </a>
                             </span>
                         </p>
@@ -531,7 +351,7 @@ But other pages, like the index page, which are build at the end, do not follow 
             <!-- Main Content Column :: END-->
         </div>
         <!-- GRID :: END -->
-    
+
     <!-- Blog container :: END -->
 </body>
 </html>
