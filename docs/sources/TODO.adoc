@@ -15,3 +15,4 @@
 * Allow Datable columns sorting
 * +++<del>Use cards?</del>+++
 * +++<del>Same style for index post and single post</del>+++
+* Investigate how to use github issues to build a comment system

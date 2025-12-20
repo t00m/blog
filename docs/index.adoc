@@ -77,6 +77,9 @@
 <li>
 <p><del>Same style for index post and single post</del></p>
 </li>
+<li>
+<p>Investigate how to use github issues to build a comment system</p>
+</li>
 </ul>
 </div>
 </div>
