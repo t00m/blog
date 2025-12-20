@@ -86,6 +86,9 @@
 <li>
 <p><del>Display link for editing a post</del></p>
 </li>
+<li>
+<p><del>Display entry for events</del></p>
+</li>
 </ul>
 </div>
 </div>
@@ -253,107 +256,21 @@
 
         <!-- Body -->
         <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p><a class="" target="" href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
+            <pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">h<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">T<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">b<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">f<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">C<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">u<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">1<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">g<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">h<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">f<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">#<pre class="CodeRay highlight uk-card-hover">_<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">u<pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">I<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">u<pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">g<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">h<pre class="CodeRay highlight uk-card-hover">r<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">f<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">#<pre class="CodeRay highlight uk-card-hover">_<pre class="CodeRay highlight uk-card-hover">n<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">N<pre class="CodeRay highlight uk-card-hover">o<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">u<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">/<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover">&gt;<pre class="CodeRay highlight uk-card-hover">
+<pre class="CodeRay highlight uk-card-hover">&lt;<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">v<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">i<pre class="CodeRay highlight uk-card-hover">d<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">k<pre class="CodeRay highlight uk-card-hover">b<pre class="CodeRay highlight uk-card-hover">-<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">e<pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">t<pre class="CodeRay highlight uk-card-hover">1<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover"> <pre class="CodeRay highlight uk-card-hover">c<pre class="CodeRay highlight uk-card-hover">l<pre class="CodeRay highlight uk-card-hover">a<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">s<pre class="CodeRay highlight uk-card-hover">=<pre class="CodeRay highlight uk-card-hover">"<pre class="CodeRay highlight uk-card-hover">u<pre class="CodeRay highlight uk-card-hover">k<pre class="CodeRay highlight uk-card-hover">-</pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></pre></article>
 </div>
 </div>
 </div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_notes">Notes</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="admonitionblock warning uk-padding-small uk-border-rounded uk-background-muted uk-margin-small
-">
-<table>
-<tr>
-<td class="icon">
-<i uk-icon="warning" class="uk-margin-right uk-icon-button" title="Warning"></i>
-</td>
-<td class="content">
-Current config code is not working yet. It doesn&#8217;t provide the executable.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p><code>pyproject.toml</code> adapted and it is on testing phase:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>[project]
-authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
-dependencies = []
-name = "KB4IT"
-requires-python = "&gt;= 3.12"
-version = "0.7.20+build.18"
-license = "GPL-3.0-or-later"
-keywords = ["static-site-generator", "asciidoctor", "documentation"]
-classifiers = [
- "Development Status :: 4 - Beta",
- "Environment :: Console",
- "Environment :: Web Environment",
- "Intended Audience :: Developers",
- "Intended Audience :: Information Technology",
- "Intended Audience :: System Administrators",
- "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
- "Natural Language :: English",
- "Operating System :: POSIX :: Linux",
- "Programming Language :: Python :: 3",
- "Topic :: Documentation",
- "Topic :: Software Development :: Documentation",
- "Topic :: Utilities",
-]
-
-[build-system]
-build-backend = "hatchling.build"
-requires = ["hatchling"]
-
-[tool.pixi.workspace]
-channels = ["conda-forge"]
-platforms = ["linux-64"]
-
-[tool.pixi.pypi-dependencies]
-kb4it = { path = ".", editable = true }
-
-[tool.pixi.dependencies]
-mako = "&gt;=1.3.10,&lt;2"
-lxml = "&gt;=6.0.2,&lt;7"
-
-[tool.pixi.tasks]
-version = "kb4it --version"
-myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
-myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>Useful commands:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>pixi install</code>: Install an environment, both updating the <code>pixi.lock</code> file and installing the environment</p>
-</li>
-<li>
-<p><code>pixi list</code>: List the packages of the current workspace</p>
-</li>
-<li>
-<p><code>pixi run {task name}</code>: Runs task name in the pixi environment</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
+</body>
+</html>
         </article>
 
         <!-- Footer -->
@@ -417,17 +334,16 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
 
         <!-- Body -->
         <article class="uk-article">
-            <div hidden>
+            toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_notes">Notes</a></li>
 </ul>
 </div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Finally, the index page for the blog theme, is working.
 Posts' headers look nice.</p>
@@ -438,16 +354,15 @@ Posts' headers look nice.</p>
 </div>
 </div>
 </div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_notes">Notes</h2>
-<div id="kb-section-body" class="uk-container">
+<div class="sect1">
+<h2 id="_notes">Notes</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Builder module works fine when the source files (.adoc files) are analyzed first.
 But other pages, like the index page, which are build at the end, do not follow the standard process.</p>
 </div>
 </div>
-</div>
+</div
         </article>
 
         <!-- Footer -->
