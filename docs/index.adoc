@@ -162,7 +162,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Topics or tage name containting spaces do not get the proper link</p>
+<p><del>Topics or tage name containting spaces do not get the proper link</del></p>
 </li>
 <li>
 <p>System pages shouldn&#8217;t have the edit button</p>
@@ -171,10 +171,16 @@
 <p>No metadata in posts pages</p>
 </li>
 <li>
-<p>Pass post metadata to builder? How?</p>
+<p><del>Pass post metadata to builder? How?</del>: build_page can receive a new theme var</p>
 </li>
 <li>
 <p>'About this app' adoc file missing for theme blog</p>
+</li>
+<li>
+<p><del>Integrate KB4IT functionality (properties)</del></p>
+</li>
+<li>
+<p><del>Display the right page title in browser</del></p>
 </li>
 </ul>
 </div>
@@ -226,7 +232,7 @@
                                     <a href="Topic_KB4IT.html">KB4IT</a>,
                                     <a href="Topic_Pixi.html">Pixi</a>,
                                     <a href="Topic_Pypi.html">Pypi</a>,
-                                    <a href="Topic_Package management.html">Package management</a>
+                                    <a href="Topic_Package_management.html">Package management</a>
                                 </span>
                             </li>
                             <li>
