@@ -231,10 +231,6 @@
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Topic_Python.html">Python</a>,
-                                    <a href="Topic_KB4IT.html">KB4IT</a>,
-                                    <a href="Topic_Pixi.html">Pixi</a>,
-                                    <a href="Topic_Pypi.html">Pypi</a>,
                                     <a href="Topic_Package_management.html">Package management</a>
                                 </span>
                             </li>

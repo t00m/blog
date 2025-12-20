@@ -34,6 +34,12 @@
                 "Bookmark",
                 "Post"
             ],
+            "Product": [
+                "KB4IT",
+                "Pixi",
+                "Pypi",
+                "Python"
+            ],
             "Tag": [
                 "build",
                 "dependency",
@@ -44,18 +50,14 @@
                 "Pixi: Managing Python Environments"
             ],
             "Topic": [
-                "KB4IT",
-                "Package management",
-                "Pixi",
-                "Pypi",
-                "Python"
+                "Package management"
             ],
             "Updated": [
                 "2025-12-14 00:30:00"
             ],
             "compile": true,
-            "content_hash": "94162a1b2a49d0e06d8e4bc5a81eb81a",
-            "metadata_hash": "8d179ff1ea4e28fb6955c18c25a40abb"
+            "content_hash": "b7bc569e3261b120e84eb8c41c57ab2d",
+            "metadata_hash": "3de116df0c0c9276ca2f0d46ecca779d"
         },
         "FIXME.adoc": {
             "Author": [
@@ -139,6 +141,20 @@
                 "TODO.adoc"
             ]
         },
+        "Product": {
+            "KB4IT": [
+                "20251214-0030.adoc"
+            ],
+            "Pixi": [
+                "20251214-0030.adoc"
+            ],
+            "Pypi": [
+                "20251214-0030.adoc"
+            ],
+            "Python": [
+                "20251214-0030.adoc"
+            ]
+        },
         "SystemPage": {
             "Yes": [
                 "about_app.adoc"
@@ -199,22 +215,12 @@
                 "TODO.adoc"
             ],
             "KB4IT": [
-                "20251208-2230.adoc",
-                "20251214-0030.adoc"
+                "20251208-2230.adoc"
             ],
             "Mako": [
                 "20251208-2230.adoc"
             ],
             "Package management": [
-                "20251214-0030.adoc"
-            ],
-            "Pixi": [
-                "20251214-0030.adoc"
-            ],
-            "Pypi": [
-                "20251214-0030.adoc"
-            ],
-            "Python": [
                 "20251214-0030.adoc"
             ]
         },
