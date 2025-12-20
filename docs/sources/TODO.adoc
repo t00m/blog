@@ -17,3 +17,4 @@
 * +++<del>Same style for index post and single post</del>+++
 * Investigate how to use github issues to build a comment system
 * +++<del>Display properties in right menu</del>+++
+* +++<del>Display link for editing a post</del>+++

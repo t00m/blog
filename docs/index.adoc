@@ -83,6 +83,9 @@
 <li>
 <p><del>Display properties in right menu</del></p>
 </li>
+<li>
+<p><del>Display link for editing a post</del></p>
+</li>
 </ul>
 </div>
 </div>
