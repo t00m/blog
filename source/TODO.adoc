@@ -10,8 +10,8 @@
 
 == Things to do
 
-* Integrate KB4IT functionality (properties)
+* +++<del>Integrate KB4IT functionality (properties)</del>+++
 * Allow Datatable searches
 * Allow Datable columns sorting
 * +++<del>Use cards?</del>+++
-* Same style for index post and single post
+* +++<del>Same style for index post and single post</del>+++
