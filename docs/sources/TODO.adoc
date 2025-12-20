@@ -4,14 +4,14 @@
 :Category:      Post
 :Topic:         Blog
 :Tag:           feature
-:Updated:       2025-12-15 19:00:00
+:Updated:       2025-12-20 10:00:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
 == Things to do
 
-* Integrate KB4IT functionality (properties)
+* +++<del>Integrate KB4IT functionality (properties)</del>+++
 * Allow Datatable searches
 * Allow Datable columns sorting
 * +++<del>Use cards?</del>+++
-* Same style for index post and single post
+* +++<del>Same style for index post and single post</del>+++
