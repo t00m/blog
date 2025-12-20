@@ -168,7 +168,7 @@
 <p><del>Topics or tage name containting spaces do not get the proper link</del></p>
 </li>
 <li>
-<p>System pages shouldn&#8217;t have the edit button</p>
+<p><del>System pages shouldn't have the edit button</del></p>
 </li>
 <li>
 <p>No metadata in posts pages</p>
@@ -396,8 +396,7 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Topic_KB4IT.html">KB4IT</a>,
-                                    <a href="Topic_Mako.html">Mako</a>
+                                    <a href="Topic_Development.html">Development</a>
                                 </span>
                             </li>
                             <li>

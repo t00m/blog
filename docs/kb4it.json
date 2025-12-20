@@ -7,6 +7,10 @@
             "Category": [
                 "Post"
             ],
+            "Product": [
+                "KB4IT",
+                "Mako"
+            ],
             "Tag": [
                 "index",
                 "page",
@@ -16,15 +20,14 @@
                 "Blog theme features a new index page"
             ],
             "Topic": [
-                "KB4IT",
-                "Mako"
+                "Development"
             ],
             "Updated": [
                 "2025-12-08 23:00:00"
             ],
             "compile": true,
-            "content_hash": "78a0f417771e45d6b14a4ca1f50641d2",
-            "metadata_hash": "fea2170f50f573a8c8c15d9a5a165e1e"
+            "content_hash": "5504b6071d14d121fd975ad6cfa8b1b3",
+            "metadata_hash": "e544bba6c454a40ee5291f80156e2d7f"
         },
         "20251214-0030.adoc": {
             "Author": [
@@ -66,6 +69,9 @@
             "Category": [
                 "Post"
             ],
+            "Product": [
+                "KB4IT"
+            ],
             "Tag": [
                 "edit",
                 "url"
@@ -80,8 +86,8 @@
                 "2025-12-14 01:00:00"
             ],
             "compile": true,
-            "content_hash": "4cc82b7afd8651dc84e8a28d906188d0",
-            "metadata_hash": "ee6828a51a4ad4232330185e15617645"
+            "content_hash": "fe5142a33c1b212c17128d99ae52e51e",
+            "metadata_hash": "d62353ae7b26a07261c78d70d463d945"
         },
         "TODO.adoc": {
             "Author": [
@@ -89,6 +95,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Product": [
+                "KB4IT"
             ],
             "Tag": [
                 "feature"
@@ -103,8 +112,8 @@
                 "2025-12-20 15:00:00"
             ],
             "compile": true,
-            "content_hash": "5cd04d27ec66e562e9956b59ca50356c",
-            "metadata_hash": "e1d07cdc30a2dcd5a7981abcbbfa1841"
+            "content_hash": "cb9b6f1789b524f6e30c092c739d1aa9",
+            "metadata_hash": "ca9a8989e2a4811058ff2895742e6072"
         },
         "about_app.adoc": {
             "SystemPage": [
@@ -143,7 +152,13 @@
         },
         "Product": {
             "KB4IT": [
-                "20251214-0030.adoc"
+                "20251208-2230.adoc",
+                "20251214-0030.adoc",
+                "FIXME.adoc",
+                "TODO.adoc"
+            ],
+            "Mako": [
+                "20251208-2230.adoc"
             ],
             "Pixi": [
                 "20251214-0030.adoc"
@@ -214,10 +229,7 @@
                 "FIXME.adoc",
                 "TODO.adoc"
             ],
-            "KB4IT": [
-                "20251208-2230.adoc"
-            ],
-            "Mako": [
+            "Development": [
                 "20251208-2230.adoc"
             ],
             "Package management": [
