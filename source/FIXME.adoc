@@ -14,3 +14,4 @@
 * System pages shouldn't have the edit button
 * No metadata in posts pages
 * Pass post metadata to builder? How?
+* 'About this app' adoc file missing for theme blog
