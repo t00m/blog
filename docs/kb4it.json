@@ -67,6 +67,7 @@
                 "Tom\u00e1s V\u00edrseda"
             ],
             "Category": [
+                "Bookmark",
                 "Post"
             ],
             "Product": [
@@ -93,8 +94,8 @@
                 "2025-12-27 00:30:00"
             ],
             "compile": true,
-            "content_hash": "8b76f7216cee8b205c7808495322a47c",
-            "metadata_hash": "a658fb965b74838a8b7e6dcb8d1ee699"
+            "content_hash": "60debf7b5ea4612bc2faf9d70647894d",
+            "metadata_hash": "a07e77d234efd84d3cab05bd462c178d"
         },
         "FIXME.adoc": {
             "Author": [
@@ -173,7 +174,8 @@
         },
         "Category": {
             "Bookmark": [
-                "20251214-0030.adoc"
+                "20251214-0030.adoc",
+                "20251226-PyGTK4.adoc"
             ],
             "Post": [
                 "20251208-2230.adoc",
