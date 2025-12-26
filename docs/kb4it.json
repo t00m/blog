@@ -62,6 +62,40 @@
             "content_hash": "4f79527f984d318987ed6769962fc179",
             "metadata_hash": "3de116df0c0c9276ca2f0d46ecca779d"
         },
+        "20251226-PyGTK4.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Product": [
+                "GNOME",
+                "GTK",
+                "Libadwaita",
+                "MiAZ",
+                "PyGObject",
+                "Python"
+            ],
+            "Tag": [
+                "documentation",
+                "programming",
+                "reference"
+            ],
+            "Title": [
+                "App development with GTK, Python and Libadwaita"
+            ],
+            "Topic": [
+                "Development",
+                "Documentation"
+            ],
+            "Updated": [
+                "2025-12-27 00:30:00"
+            ],
+            "compile": true,
+            "content_hash": "8b76f7216cee8b205c7808495322a47c",
+            "metadata_hash": "a658fb965b74838a8b7e6dcb8d1ee699"
+        },
         "FIXME.adoc": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
@@ -122,12 +156,9 @@
             "Title": [
                 "About this app"
             ],
-            "Updated": [
-                "1978-09-28 23:00:00"
-            ],
             "compile": true,
             "content_hash": "5ab8aed57c7df4ad90c435a04a4d8c8f",
-            "metadata_hash": "408115b682c01237f6c804be747ec8a2"
+            "metadata_hash": "fd2bae64edbd11615d8e2a126b5e3b4a"
         }
     },
     "metadata": {
@@ -135,6 +166,7 @@
             "Tom\u00e1s V\u00edrseda": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
+                "20251226-PyGTK4.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ]
@@ -146,28 +178,45 @@
             "Post": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
+                "20251226-PyGTK4.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ]
         },
         "Product": {
+            "GNOME": [
+                "20251226-PyGTK4.adoc"
+            ],
+            "GTK": [
+                "20251226-PyGTK4.adoc"
+            ],
             "KB4IT": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ],
+            "Libadwaita": [
+                "20251226-PyGTK4.adoc"
+            ],
             "Mako": [
                 "20251208-2230.adoc"
             ],
+            "MiAZ": [
+                "20251226-PyGTK4.adoc"
+            ],
             "Pixi": [
                 "20251214-0030.adoc"
+            ],
+            "PyGObject": [
+                "20251226-PyGTK4.adoc"
             ],
             "Pypi": [
                 "20251214-0030.adoc"
             ],
             "Python": [
-                "20251214-0030.adoc"
+                "20251214-0030.adoc",
+                "20251226-PyGTK4.adoc"
             ]
         },
         "SystemPage": {
@@ -181,6 +230,9 @@
             ],
             "dependency": [
                 "20251214-0030.adoc"
+            ],
+            "documentation": [
+                "20251226-PyGTK4.adoc"
             ],
             "edit": [
                 "FIXME.adoc"
@@ -197,8 +249,14 @@
             "page": [
                 "20251208-2230.adoc"
             ],
+            "programming": [
+                "20251226-PyGTK4.adoc"
+            ],
             "project": [
                 "20251214-0030.adoc"
+            ],
+            "reference": [
+                "20251226-PyGTK4.adoc"
             ],
             "template": [
                 "20251208-2230.adoc"
@@ -210,6 +268,9 @@
         "Title": {
             "About this app": [
                 "about_app.adoc"
+            ],
+            "App development with GTK, Python and Libadwaita": [
+                "20251226-PyGTK4.adoc"
             ],
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
@@ -230,16 +291,17 @@
                 "TODO.adoc"
             ],
             "Development": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251226-PyGTK4.adoc"
+            ],
+            "Documentation": [
+                "20251226-PyGTK4.adoc"
             ],
             "Package management": [
                 "20251214-0030.adoc"
             ]
         },
         "Updated": {
-            "1978-09-28 23:00:00": [
-                "about_app.adoc"
-            ],
             "2025-12-08 23:00:00": [
                 "20251208-2230.adoc"
             ],
@@ -251,6 +313,9 @@
             ],
             "2025-12-20 15:00:00": [
                 "TODO.adoc"
+            ],
+            "2025-12-27 00:30:00": [
+                "20251226-PyGTK4.adoc"
             ]
         }
     }

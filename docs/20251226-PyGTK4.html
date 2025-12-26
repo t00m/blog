@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.8.0">
-  <title>t00mter&#237;as - Blog theme features a new index page</title>
+  <title>t00mter&#237;as - App development with GTK, Python and Libadwaita</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="Asciidoctor 2.0.10">
@@ -32,9 +32,9 @@
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
-                        <a class="uk-link-toggle" href="20251208-2230.html">
-                            <span class="uk-link-heading">Blog theme features a new index page</span>
-                            </a><a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251208-2230.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+                        <a class="uk-link-toggle" href="20251226-PyGTK4.html">
+                            <span class="uk-link-heading">App development with GTK, Python and Libadwaita</span>
+                            </a><a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251226-PyGTK4.adoc" target="_blank"><span uk-icon="pencil"></span></a>
                         
                     </h5>
                     <div class="uk-width">
@@ -45,20 +45,21 @@
                             </li>
                             <li>
                                 <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_2025128.html">8</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                                <span class="uk-margin-small-left"><a href="events_20251227.html">27</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>
+                                    <a href="Topic_Development.html">Development</a>,
+                                    <a href="Topic_Documentation.html">Documentation</a>
                                 </span>
                             </li>
                             <li>
                                 <span uk-icon="tag"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Tag_index.html">index</a>,
-                                    <a href="Tag_page.html">page</a>,
-                                    <a href="Tag_template.html">template</a>
+                                    <a href="Tag_programming.html">programming</a>,
+                                    <a href="Tag_reference.html">reference</a>,
+                                    <a href="Tag_documentation.html">documentation</a>
                                 </span>
                             </li>
                         </ul>
@@ -76,7 +77,9 @@
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_notes">Notes</a></li>
+<li><a class="" target="" href="#_gtk">GTK</a></li>
+<li><a class="" target="" href="#_pygobject">PyGObject</a></li>
+<li><a class="" target="" href="#_libadwaita">Libadwaita</a></li>
 </ul>
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
@@ -84,22 +87,70 @@
 <h2 class="uk-card-title" id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>Finally, the index page for the blog theme, is working.
-Posts' headers look nice.</p>
-</div>
-<div class="paragraph">
-<p>However, at this point, the whole code is&#8230;&#8203; spaguetti code.
-<code>KB4IT</code> needs a big overhaul.</p>
+<p>Pointers to official documentation and other useful resources.</p>
 </div>
 </div>
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_notes">Notes</h2>
+<h2 class="uk-card-title" id="_gtk">GTK</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>Builder module works fine when the source files (.adoc files) are analyzed first.
-But other pages, like the index page, which are build at the end, do not follow the standard process.</p>
+<p>Complete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites.</p>
+</div>
+<div class="paragraph">
+<p>GTK is written using the C programming language, but its also available to various programming languages through language bindings</p>
+</div>
+<div class="paragraph">
+<p>Links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a class="" target="" href="https://www.gtk.org/docs/">GTK Documentation</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_pygobject">PyGObject</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>PyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.</p>
+</div>
+<div class="paragraph">
+<p>Links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a class="" target="" href="https://pygobject.gnome.org/index.html">PyGObject</a></p>
+</li>
+<li>
+<p><a class="" target="" href="https://api.pygobject.gnome.org/">GNOME Python API documentation</a>: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_libadwaita">Libadwaita</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Adwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones.</p>
+</div>
+<div class="paragraph">
+<p>Links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a class="" target="" href="https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/">Latest 1.x stable version</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
