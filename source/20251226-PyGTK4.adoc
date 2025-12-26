@@ -1,6 +1,6 @@
 = App development with GTK, Python and Libadwaita
 :Author:        Tomás Vírseda
-:Category:      Post
+:Category:      Post, Bookmark
 :Topic:         Development, Documentation
 :Product:       GTK, Python, Libadwaita, PyGObject, GNOME, MiAZ
 :Tag:           programming, reference, documentation
