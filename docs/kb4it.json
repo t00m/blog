@@ -26,7 +26,34 @@
                 "2025-12-08 23:00:00"
             ],
             "compile": true,
+            "content": "= Blog theme features a new index page\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development\n:Product:       KB4IT, Mako\n:Tag:           index, page, template\n:Updated:       2025-12-08 23:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nFinally, the index page for the blog theme, is working.\nPosts' headers look nice.\n\nHowever, at this point, the whole code is... spaguetti code.\n`KB4IT` needs a big overhaul.\n\n== Notes\n\nBuilder module works fine when the source files (.adoc files) are analyzed first. \nBut other pages, like the index page, which are build at the end, do not follow the standard process.\n",
             "content_hash": "5504b6071d14d121fd975ad6cfa8b1b3",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT",
+                    "Mako"
+                ],
+                "Tag": [
+                    "index",
+                    "page",
+                    "template"
+                ],
+                "Title": [
+                    "Blog theme features a new index page"
+                ],
+                "Topic": [
+                    "Development"
+                ],
+                "Updated": [
+                    "2025-12-08 23:00:00"
+                ]
+            },
             "metadata_hash": "e544bba6c454a40ee5291f80156e2d7f"
         },
         "20251214-0030.adoc": {
@@ -59,7 +86,38 @@
                 "2025-12-14 00:30:00"
             ],
             "compile": true,
+            "content": "= Pixi: Managing Python Environments\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post, Bookmark\n:Topic:         Package management\n:Product:       KB4IT, Python, Pixi, Pypi\n:Tag:           project, build, dependency, environment\n:Updated:       2025-12-14 00:30:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nhttps://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.\n\n== Notes\n\n`pyproject.toml` adapted and it is on testing phase:\n\n[source]\n----\n[project]\nauthors = [{name = \"Tom\u00e1s V\u00edrseda\", email = \"tomasvirseda@gmail.com\"}]\ndependencies = []\nname = \"KB4IT\"\nrequires-python = \">= 3.12\"\nversion = \"0.7.20+build.18\"\nlicense = \"GPL-3.0-or-later\"\nkeywords = [\"static-site-generator\", \"asciidoctor\", \"documentation\"]\nclassifiers = [\n \"Development Status :: 4 - Beta\",\n \"Environment :: Console\",\n \"Environment :: Web Environment\",\n \"Intended Audience :: Developers\",\n \"Intended Audience :: Information Technology\",\n \"Intended Audience :: System Administrators\",\n \"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)\",\n \"Natural Language :: English\",\n \"Operating System :: POSIX :: Linux\",\n \"Programming Language :: Python :: 3\",\n \"Topic :: Documentation\",\n \"Topic :: Software Development :: Documentation\",\n \"Topic :: Utilities\",\n]\n\n[build-system]\nbuild-backend = \"hatchling.build\"\nrequires = [\"hatchling\"]\n\n[tool.pixi.workspace]\nchannels = [\"conda-forge\"]\nplatforms = [\"linux-64\"]\n\n[tool.pixi.pypi-dependencies]\nkb4it = { path = \".\", editable = true }\n\n[tool.pixi.dependencies]\nmako = \">=1.3.10,<2\"\nlxml = \">=6.0.2,<7\"\n\n[tool.pixi.tasks]\nversion = \"kb4it --version\"\nmyblog_force = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f\"\nmyblog = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json\"\n----\n\nUseful commands:\n\n* `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment\n* `pixi list`: List the packages of the current workspace\n* `pixi run {task name}`: Runs task name in the pixi environment\n",
             "content_hash": "4f79527f984d318987ed6769962fc179",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post",
+                    "Bookmark"
+                ],
+                "Product": [
+                    "KB4IT",
+                    "Python",
+                    "Pixi",
+                    "Pypi"
+                ],
+                "Tag": [
+                    "project",
+                    "build",
+                    "dependency",
+                    "environment"
+                ],
+                "Title": [
+                    "Pixi: Managing Python Environments"
+                ],
+                "Topic": [
+                    "Package management"
+                ],
+                "Updated": [
+                    "2025-12-14 00:30:00"
+                ]
+            },
             "metadata_hash": "3de116df0c0c9276ca2f0d46ecca779d"
         },
         "20251226-PyGTK4.adoc": {
@@ -75,13 +133,14 @@
                 "GTK",
                 "Libadwaita",
                 "MiAZ",
-                "PyGObject",
+                "PyGObject"
+            ],
+            "Programming Language": [
                 "Python"
             ],
             "Tag": [
-                "documentation",
-                "programming",
-                "reference"
+                "api",
+                "documentation"
             ],
             "Title": [
                 "App development with GTK, Python and Libadwaita"
@@ -91,11 +150,45 @@
                 "Documentation"
             ],
             "Updated": [
-                "2025-12-27 00:30:00"
+                "2025-12-28 18:40:00"
             ],
             "compile": true,
-            "content_hash": "60debf7b5ea4612bc2faf9d70647894d",
-            "metadata_hash": "a07e77d234efd84d3cab05bd462c178d"
+            "content": "= App development with GTK, Python and Libadwaita\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post, Bookmark\n:Topic:                 Development, Documentation\n:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ\n:Tag:                   api, documentation\n:Programming Language:  Python\n:Updated:               2025-12-28 18:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nPointers to official documentation and other useful resources.\n\n== GTK\n\nComplete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. \n\nGTK is written using the C programming language, but its also available to various programming languages through language bindings\n\nLinks:\n\n* https://www.gtk.org/docs/[GTK Documentation]\n\n== PyGObject\n\nPyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.\n\nLinks:\n\n* https://pygobject.gnome.org/index.html[PyGObject]\n* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. \n\n== Libadwaita\n\nAdwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. \n\nLinks:\n\n* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]\n",
+            "content_hash": "9174610a74cffc5d9b671548a1162a67",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post",
+                    "Bookmark"
+                ],
+                "Product": [
+                    "GTK",
+                    "Libadwaita",
+                    "PyGObject",
+                    "GNOME",
+                    "MiAZ"
+                ],
+                "Programming Language": [
+                    "Python"
+                ],
+                "Tag": [
+                    "api",
+                    "documentation"
+                ],
+                "Title": [
+                    "App development with GTK, Python and Libadwaita"
+                ],
+                "Topic": [
+                    "Development",
+                    "Documentation"
+                ],
+                "Updated": [
+                    "2025-12-28 18:40:00"
+                ]
+            },
+            "metadata_hash": "54bee933077c31e015127499011f4a79"
         },
         "FIXME.adoc": {
             "Author": [
@@ -121,7 +214,32 @@
                 "2025-12-14 01:00:00"
             ],
             "compile": true,
+            "content": "= FIXME\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Product:       KB4IT\n:Tag:           url, edit\n:Updated:       2025-12-14 01:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== To be fixed\n\n* +++<del>Topics or tage name containting spaces do not get the proper link</del>+++\n* +++<del>System pages shouldn't have the edit button</del>+++\n* No metadata in posts pages\n* +++<del>Pass post metadata to builder? How?</del>+++: build_page can receive a new theme var\n* 'About this app' adoc file missing for theme blog\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Display the right page title in browser</del>+++\n",
             "content_hash": "fe5142a33c1b212c17128d99ae52e51e",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "Tag": [
+                    "url",
+                    "edit"
+                ],
+                "Title": [
+                    "FIXME"
+                ],
+                "Topic": [
+                    "Blog"
+                ],
+                "Updated": [
+                    "2025-12-14 01:00:00"
+                ]
+            },
             "metadata_hash": "d62353ae7b26a07261c78d70d463d945"
         },
         "TODO.adoc": {
@@ -147,7 +265,31 @@
                 "2025-12-20 15:00:00"
             ],
             "compile": true,
+            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* Allow Datatable searches\n* Allow Datable columns sorting\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n",
             "content_hash": "ebec6aa8a3d26c40e4c4961a032ff4ee",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "Tag": [
+                    "feature"
+                ],
+                "Title": [
+                    "TODO"
+                ],
+                "Topic": [
+                    "Blog"
+                ],
+                "Updated": [
+                    "2025-12-20 15:00:00"
+                ]
+            },
             "metadata_hash": "ca9a8989e2a4811058ff2895742e6072"
         },
         "about_app.adoc": {
@@ -158,7 +300,16 @@
                 "About this app"
             ],
             "compile": true,
+            "content": "= About this app\n\n:SystemPage: Yes\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Page not found\n\n=== Problem\n\nKB4IT didn't find any document named 'about_app.adoc' in your sources directory.\n\nAs a result, it created one. This one. The one you are reading now.\n\n=== Solution\n\nModify the contents of the filename _about_app.adoc_ in your sources directory with the desired content.\n",
             "content_hash": "5ab8aed57c7df4ad90c435a04a4d8c8f",
+            "keys": {
+                "SystemPage": [
+                    "Yes"
+                ],
+                "Title": [
+                    "About this app"
+                ]
+            },
             "metadata_hash": "fd2bae64edbd11615d8e2a126b5e3b4a"
         }
     },
@@ -217,7 +368,11 @@
                 "20251214-0030.adoc"
             ],
             "Python": [
-                "20251214-0030.adoc",
+                "20251214-0030.adoc"
+            ]
+        },
+        "Programming Language": {
+            "Python": [
                 "20251226-PyGTK4.adoc"
             ]
         },
@@ -227,6 +382,9 @@
             ]
         },
         "Tag": {
+            "api": [
+                "20251226-PyGTK4.adoc"
+            ],
             "build": [
                 "20251214-0030.adoc"
             ],
@@ -251,14 +409,8 @@
             "page": [
                 "20251208-2230.adoc"
             ],
-            "programming": [
-                "20251226-PyGTK4.adoc"
-            ],
             "project": [
                 "20251214-0030.adoc"
-            ],
-            "reference": [
-                "20251226-PyGTK4.adoc"
             ],
             "template": [
                 "20251208-2230.adoc"
@@ -316,7 +468,7 @@
             "2025-12-20 15:00:00": [
                 "TODO.adoc"
             ],
-            "2025-12-27 00:30:00": [
+            "2025-12-28 18:40:00": [
                 "20251226-PyGTK4.adoc"
             ]
         }

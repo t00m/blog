@@ -26,7 +26,7 @@
                             </li>
                             <li>
                                 <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_20251227.html">27</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                                <span class="uk-margin-small-left"><a href="events_20251228.html">28</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
                             <li>
                                 <span uk-icon="star"></span>
@@ -38,8 +38,7 @@
                             <li>
                                 <span uk-icon="tag"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Tag_programming.html">programming</a>,
-                                    <a href="Tag_reference.html">reference</a>,
+                                    <a href="Tag_api.html">api</a>,
                                     <a href="Tag_documentation.html">documentation</a>
                                 </span>
                             </li>
