@@ -51,13 +51,15 @@ jobs:
         working-directory: ./KB4IT
         run: pipx install . --force
 
-      # 4. Test KB4IT (display version)
-      - name: Run kb4it
+      # Test KB4IT (display version)
+      - name: Display current KB4IT version
         run: kb4it -v
 
+      # Update blog
       - name: Update blog
-        run: kb4it -L DEBUG build config/blog.json -f
+        run: kb4it -L DEBUG build config/blog.json
 
+      # Commit changes
       - name: Commit and push changes (if any)
         run: |
           git config --global user.name 'github-actions[bot]'
