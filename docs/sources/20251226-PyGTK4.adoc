@@ -4,7 +4,7 @@
 :Topic:                 Development, Documentation
 :Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ
 :Tag:                   api, documentation
-:Programming Language:  Python
+:Programming Language:  Python, C
 :Updated:               2025-12-28 18:40:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
