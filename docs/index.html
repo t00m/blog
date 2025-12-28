@@ -37,6 +37,109 @@
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
+                            <span class="uk-link-heading">KB4IT incremental compiling doesn't work (yet) in Github</span>
+                        </a>
+                    </h5>
+                    <div class="uk-width">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a class="" target="" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a class="" target="" href="events_20251228.html">28</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="star"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="Topic_Development.html">Development</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span uk-icon="tag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="Tag_incremental.html">incremental</a>,
+                                    <a class="" target="" href="Tag_compiling.html">compiling</a>,
+                                    <a class="" target="" href="Tag_vm.html">vm</a>,
+                                    <a class="" target="" href="Tag_workflow.html">workflow</a>,
+                                    <a class="" target="" href="Tag_cache.html">cache</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_github_actions">Github actions</a></li>
+<li><a class="" target="" href="#_solution">Solution</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
+</div>
+<div class="paragraph">
+<p>To my initial surprise, it didn&#8217;t work in Github.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_github_actions">Github actions</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>In Github, when a new update is detected in the source directory, the Github action in charge (<a class="" target="" href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
+</div>
+<div class="paragraph">
+<p>GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_solution">Solution</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>To be continued&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_ADOC_INDEX.tpl :: END -->
+<!-- Template POST_ADOC_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251226-PyGTK4.html">
                             <span class="uk-link-heading">App development with GTK, Python and Libadwaita</span>
                         </a>
@@ -605,109 +708,6 @@ But other pages, like the index page, which are build at the end, do not follow 
 </div>
 <p></p>
 <!-- Template POST_ADOC_INDEX.tpl :: END -->
-<!-- Template POST_ADOC_INDEX.tpl :: START -->
-<!-- Blog Post :: START -->
-<div class="uk-card uk-card-small uk-card-body post-card">
-    <div class="uk-container uk-container-small">
-
-        <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
-            <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
-                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
-                        <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
-                            <span class="uk-link-heading">KB4IT incremental compiling doesn't work (yet) in Github</span>
-                        </a>
-                    </h5>
-                    <div class="uk-width">
-                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
-                            <li>
-                                <span uk-icon="user"></span>
-                                <span class="uk-margin-small-left"><a class="" target="" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a class="" target="" href="events_2025128.html">8</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a class="" target="" href="Topic_Development.html">Development</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a class="" target="" href="Tag_incremental.html">incremental</a>,
-                                    <a class="" target="" href="Tag_compiling.html">compiling</a>,
-                                    <a class="" target="" href="Tag_vm.html">vm</a>,
-                                    <a class="" target="" href="Tag_workflow.html">workflow</a>,
-                                    <a class="" target="" href="Tag_cache.html">cache</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Tags and Topics -->
-                </div>
-            </div>
-            <hr>
-        </header>
-
-        <!-- Body -->
-        <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_github_actions">Github actions</a></li>
-<li><a class="" target="" href="#_solution">Solution</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
-</div>
-<div class="paragraph">
-<p>To my initial surprise, it didn&#8217;t work in Github.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_github_actions">Github actions</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>In Github, when a new update is detected in the source directory, the Github action in charge (<a class="" target="" href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
-</div>
-<div class="paragraph">
-<p>GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_solution">Solution</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>To be continued&#8230;&#8203;</p>
-</div>
-</div>
-</div>
-        </article>
-
-        <!-- Footer -->
-        <footer class="uk-margin-small-top uk-text-muted">
-            <hr>
-            <div class="uk-flex uk-flex-between uk-flex-middle">
-            </div>
-        </footer>
-    </div>
-</div>
-<p></p>
-<!-- Template POST_ADOC_INDEX.tpl :: END -->
 <!-- BODY :: END -->
                 </div>
                 <!-- Sidebar Column :: START-->
@@ -776,7 +776,7 @@ But other pages, like the index page, which are build at the end, do not follow 
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Sunday, December 28, 2025 at 20:41</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Sunday, December 28, 2025 at 22:35</span>
                         <p>
                             <span class="uk-link">
                                 <a href="https://github.com/t00m/KB4IT" target="_blank">

@@ -215,11 +215,11 @@
                 "Development"
             ],
             "Updated": [
-                "2025-12-08 21:40:00"
+                "2025-12-28 21:40:00"
             ],
             "compile": true,
-            "content": "= KB4IT incremental compiling doesn't work (yet) in Github\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2025-12-08 21:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nTo be continued...\n",
-            "content_hash": "8112553adbee5f13d49920c1fef6fd1a",
+            "content": "= KB4IT incremental compiling doesn't work (yet) in Github\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2025-12-28 21:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nTo be continued...\n",
+            "content_hash": "812a0be48a5e512293de11826de20c88",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -246,10 +246,10 @@
                     "Development"
                 ],
                 "Updated": [
-                    "2025-12-08 21:40:00"
+                    "2025-12-28 21:40:00"
                 ]
             },
-            "metadata_hash": "0d88d61b83c2b05cf2e5068f887ae4c6"
+            "metadata_hash": "015dba27f6258bc1326e2dd292dd2515"
         },
         "FIXME.adoc": {
             "Author": [
@@ -542,9 +542,6 @@
             ]
         },
         "Updated": {
-            "2025-12-08 21:40:00": [
-                "20251228-KB4IT-incremental-compiling.adoc"
-            ],
             "2025-12-08 23:00:00": [
                 "20251208-2230.adoc"
             ],
@@ -559,6 +556,9 @@
             ],
             "2025-12-28 18:40:00": [
                 "20251226-PyGTK4.adoc"
+            ],
+            "2025-12-28 21:40:00": [
+                "20251228-KB4IT-incremental-compiling.adoc"
             ]
         }
     }
