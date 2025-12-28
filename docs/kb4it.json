@@ -136,7 +136,6 @@
                 "PyGObject"
             ],
             "Programming Language": [
-                "C",
                 "Python"
             ],
             "Tag": [
@@ -154,8 +153,8 @@
                 "2025-12-28 18:40:00"
             ],
             "compile": true,
-            "content": "= App development with GTK, Python and Libadwaita\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post, Bookmark\n:Topic:                 Development, Documentation\n:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ\n:Tag:                   api, documentation\n:Programming Language:  Python, C\n:Updated:               2025-12-28 18:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nPointers to official documentation and other useful resources.\n\n== GTK\n\nComplete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. \n\nGTK is written using the C programming language, but its also available to various programming languages through language bindings\n\nLinks:\n\n* https://www.gtk.org/docs/[GTK Documentation]\n\n== PyGObject\n\nPyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.\n\nLinks:\n\n* https://pygobject.gnome.org/index.html[PyGObject]\n* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. \n\n== Libadwaita\n\nAdwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. \n\nLinks:\n\n* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]\n",
-            "content_hash": "262f7c3902454f2aa7cd2d3d1624d764",
+            "content": "= App development with GTK, Python and Libadwaita\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post, Bookmark\n:Topic:                 Development, Documentation\n:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ\n:Tag:                   api, documentation\n:Programming Language:  Python\n:Updated:               2025-12-28 18:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nPointers to official documentation and other useful resources.\n\n== GTK\n\nComplete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. \n\nGTK is written using the C programming language, but its also available to various programming languages through language bindings\n\nLinks:\n\n* https://www.gtk.org/docs/[GTK Documentation]\n\n== PyGObject\n\nPyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.\n\nLinks:\n\n* https://pygobject.gnome.org/index.html[PyGObject]\n* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. \n\n== Libadwaita\n\nAdwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. \n\nLinks:\n\n* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]\n",
+            "content_hash": "9174610a74cffc5d9b671548a1162a67",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -172,8 +171,7 @@
                     "MiAZ"
                 ],
                 "Programming Language": [
-                    "Python",
-                    "C"
+                    "Python"
                 ],
                 "Tag": [
                     "api",
@@ -190,7 +188,7 @@
                     "2025-12-28 18:40:00"
                 ]
             },
-            "metadata_hash": "b1c68b67502f24e2e11bd067cb8a15de"
+            "metadata_hash": "54bee933077c31e015127499011f4a79"
         },
         "FIXME.adoc": {
             "Author": [
@@ -374,9 +372,6 @@
             ]
         },
         "Programming Language": {
-            "C": [
-                "20251226-PyGTK4.adoc"
-            ],
             "Python": [
                 "20251226-PyGTK4.adoc"
             ]
