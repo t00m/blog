@@ -1,0 +1,26 @@
+= KB4IT incremental compiling doesn't work (yet) in Github
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Development
+:Product:       KB4IT, Github Actions
+:Tag:           incremental, compiling, vm, workflow, cache,
+:Updated:       2025-12-08 21:40:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
+
+To my initial surprise, it didn't work in Github.
+
+== Github actions
+
+In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. 
+
+GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
+
+== Solution
+
+To be continued...
