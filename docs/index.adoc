@@ -15,7 +15,7 @@
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251231-1400-log_module.html">
-                            <span class="uk-link-heading">Blog theme features a new index page</span>
+                            <span class="uk-link-heading">A nice log module for KB4IT</span>
                         </a>
                     </h5>
                     <div class="uk-width">
