@@ -10,7 +10,11 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Log module
+== Logic
+
+Why this module is important for KB4IT.
+
+== Code
 
 [source, python]
 ----
