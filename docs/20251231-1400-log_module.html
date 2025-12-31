@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.8.0">
+  <title>t00mter&#237;as - Blog theme features a new index page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 2.0.10">
+  <meta name="description" content="KB4IT document">
+  <meta name="author" content="KB4IT by t00m">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/themes/blog/css/blog.css">
+  <link rel="stylesheet" href="resources/themes/blog/framework/uikit/css/uikit.min.css">
+  <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
+  <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <!-- Blog container :: START -->
+    <div class="blog-container uk-container" uk-height-viewport="expand: true">
+        <!-- GRID :: START -->
+        <div class="uk-grid">
+            <!-- Main Content Column :: START-->
+            <div class="uk-width-2-3@m">
+
+<!-- Template POST_HTML_SINGLE.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20251231-1400-log_module.html">
+                            <span class="uk-link-heading">Blog theme features a new index page</span>
+                            </a><a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251231-1400-log_module.adoc" target="_blank"><span uk-icon="pencil"></span></a>
+                        
+                    </h5>
+                    <div class="uk-width">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a href="events_20251231.html">31</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="star"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Topic_Development.html">Development</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span uk-icon="tag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Tag_logging.html">logging</a>,
+                                    <a href="Tag_redirect.html">redirect</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <!-- BODY :: START -->
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_log_module">Log module</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_log_module">Log module</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""
+Log module.
+File: mod_log.py
+Author: Tom&#225;s V&#237;rseda
+License: GPL v3
+"""
+
+import logging
+from kb4it.core.env import ENV
+
+_PATTERN = (
+    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
+    "%(asctime)s.%(msecs)03d | %(message)s"
+)
+
+_DATEFMT = "%d/%m/%Y %H:%M:%S"
+
+
+def setup_logging(
+    level: str = "INFO",
+    logfile: str | None = None,
+):
+    """
+    Configure root logger once.
+    """
+
+    if level is not None:
+        level_dict = {
+            'DEBUG': logging.DEBUG,
+            'INFO': logging.INFO,
+            'WARNING': logging.WARNING,
+            'ERROR': logging.ERROR,
+            'CRITICAL': logging.CRITICAL
+        }
+        severity = level_dict.get(level, logging.DEBUG)
+    else:
+        severity = logging.INFO
+
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+    # ~ root.setLevel(getattr(logging, level.upper(), severity))
+
+    if root.handlers:
+        return  # Already configured
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Console handler
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+    console.setLevel(severity)
+    root.addHandler(console)
+
+    # File handler
+    logfile = logfile or ENV["FILE"]["LOG"]
+    file_handler = logging.FileHandler(logfile, mode="w")
+    file_handler.setFormatter(formatter)
+    root.addHandler(file_handler)
+
+
+def get_logger(name: str) -&gt; logging.Logger:
+    """
+    Return a named logger.
+    """
+    return logging.getLogger(name)
+
+
+def redirect_logs(logfile: str):
+    """
+    Redirect file logging to a new file at runtime.
+    """
+    root = logging.getLogger()
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Remove only existing FileHandlers
+    for handler in root.handlers[:]:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+            handler.close()
+            root.removeHandler(handler)
+
+    # Add new file handler
+    file_handler = logging.FileHandler(logfile, mode="a")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+    root.addHandler(file_handler)</code></pre>
+</div>
+</div>
+</div>
+</div>
+            <!-- BODY :: END -->
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_HTML_SINGLE.tpl :: END -->
+                </div>
+                <!-- Sidebar Column :: START-->
+                <div class="uk-width-1-3@m" uk-height-viewport="expand: true">
+                  <div class="uk-sticky" uk-sticky="offset: 40">
+                    <h2 class="uk-heading-line uk-text-center"><a class="uk-link-toggle" href="index.html"><span class="uk-link-heading">t00mter&#237;as</span></a></h2>
+                    <div class="sidebar">
+<!--
+                      <h5 class="sidebar-title">About</h5>
+                      <p class="uk-text-small">My public notes</p>
+
+-->
+
+                        <!-- INDEX_TAB_STATS.tpl :: START -->
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-expand uk-text-bold">
+                                <a class="uk-link-heading" href="events.html">Events</a>
+                            </div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-expand uk-text-bold" uk-leader>
+                                <a class="uk-link-heading" href="all.html">Documents</a>
+                            </div>
+                            <div>
+                                <a href="all.html">7</a>
+                            </div> <!-- Num of documents -->
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-expand uk-text-bold" uk-leader>
+                                <a class="uk-link-heading" href="properties.html">Properties</a>
+                            </div>
+                            <div><a href="properties.html">7</a></div> <!-- Num of properties or keys -->
+                        </div>
+                        <!-- Property leader items -->
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Author.html">Author</a></div>
+                            <div><a href="Author.html">1</a></div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Category.html">Category</a></div>
+                            <div><a href="Category.html">2</a></div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Product.html">Product</a></div>
+                            <div><a href="Product.html">11</a></div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Programming_Language.html">Programming Language</a></div>
+                            <div><a href="Programming_Language.html">1</a></div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Tag.html">Tag</a></div>
+                            <div><a href="Tag.html">19</a></div>
+                        </div>
+                        <div class="uk-grid-small uk-text-meta" uk-grid>
+                            <div class="uk-width-1-6@m"></div>
+                            <div class="uk-width-expand uk-text-bold" uk-leader><a class="uk-link-heading" href="Topic.html">Topic</a></div>
+                            <div><a href="Topic.html">4</a></div>
+                        </div>
+                        <!-- Property leader items -->
+
+                      <div class="uk-text-center uk-card uk-card-body uk-card-big">
+                        <hr class="uk-divider-icon">
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Wednesday, December 31, 2025 at 10:51</span>
+                        <p>
+                            <span class="uk-link">
+                                <a href="https://github.com/t00m/KB4IT" target="_blank">
+                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                </a>
+                            </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sidebar Column :: END-->
+            </div>
+            <!-- Main Content Column :: END-->
+        </div>
+        <!-- GRID :: END -->
+    
+    <!-- Blog container :: END -->
+</body>
+</html>

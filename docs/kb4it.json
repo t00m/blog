@@ -251,6 +251,64 @@
             },
             "metadata_hash": "015dba27f6258bc1326e2dd292dd2515"
         },
+        "20251231-1400-log_module.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Product": [
+                "KB4IT"
+            ],
+            "Programming Language": [
+                "Python"
+            ],
+            "Tag": [
+                "logging",
+                "redirect"
+            ],
+            "Title": [
+                "Blog theme features a new index page"
+            ],
+            "Topic": [
+                "Development"
+            ],
+            "Updated": [
+                "2025-12-31 14:00:00"
+            ],
+            "compile": true,
+            "content": "= Blog theme features a new index page\n\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post\n:Topic:                 Development\n:Product:               KB4IT\n:Tag:                   logging, redirect\n:Programming Language:  Python\n:Updated:       2025-12-31 14:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Log module\n\n[source, python]\n----\n#!/usr/bin/python\n# -*- coding: utf-8 -*-\n\n\"\"\"\nLog module.\nFile: mod_log.py\nAuthor: Tom\u00e1s V\u00edrseda\nLicense: GPL v3\n\"\"\"\n\nimport logging\nfrom kb4it.core.env import ENV\n\n_PATTERN = (\n    \"%(levelname)10s | %(lineno)4d | %(name)-20s | \"\n    \"%(asctime)s.%(msecs)03d | %(message)s\"\n)\n\n_DATEFMT = \"%d/%m/%Y %H:%M:%S\"\n\n\ndef setup_logging(\n    level: str = \"INFO\",\n    logfile: str | None = None,\n):\n    \"\"\"\n    Configure root logger once.\n    \"\"\"\n\n    if level is not None:\n        level_dict = {\n            'DEBUG': logging.DEBUG,\n            'INFO': logging.INFO,\n            'WARNING': logging.WARNING,\n            'ERROR': logging.ERROR,\n            'CRITICAL': logging.CRITICAL\n        }\n        severity = level_dict.get(level, logging.DEBUG)\n    else:\n        severity = logging.INFO\n\n    root = logging.getLogger()\n    root.setLevel(logging.DEBUG)\n    # ~ root.setLevel(getattr(logging, level.upper(), severity))\n\n    if root.handlers:\n        return  # Already configured\n\n    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)\n\n    # Console handler\n    console = logging.StreamHandler()\n    console.setFormatter(formatter)\n    console.setLevel(severity)\n    root.addHandler(console)\n\n    # File handler\n    logfile = logfile or ENV[\"FILE\"][\"LOG\"]\n    file_handler = logging.FileHandler(logfile, mode=\"w\")\n    file_handler.setFormatter(formatter)\n    root.addHandler(file_handler)\n\n\ndef get_logger(name: str) -> logging.Logger:\n    \"\"\"\n    Return a named logger.\n    \"\"\"\n    return logging.getLogger(name)\n\n\ndef redirect_logs(logfile: str):\n    \"\"\"\n    Redirect file logging to a new file at runtime.\n    \"\"\"\n    root = logging.getLogger()\n\n    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)\n\n    # Remove only existing FileHandlers\n    for handler in root.handlers[:]:\n        if isinstance(handler, logging.FileHandler):\n            handler.flush()\n            handler.close()\n            root.removeHandler(handler)\n\n    # Add new file handler\n    file_handler = logging.FileHandler(logfile, mode=\"a\")\n    file_handler.setFormatter(formatter)\n    file_handler.setLevel(logging.DEBUG)\n    root.addHandler(file_handler)\n----\n\n",
+            "content_hash": "6f65a8cb3a4c2cf4bab1f5af6e2a379b",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "Programming Language": [
+                    "Python"
+                ],
+                "Tag": [
+                    "logging",
+                    "redirect"
+                ],
+                "Title": [
+                    "Blog theme features a new index page"
+                ],
+                "Topic": [
+                    "Development"
+                ],
+                "Updated": [
+                    "2025-12-31 14:00:00"
+                ]
+            },
+            "metadata_hash": "5313fdb921f34667f0d06ff22685bd10"
+        },
         "FIXME.adoc": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
@@ -381,6 +439,7 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
+                "20251231-1400-log_module.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ]
@@ -395,6 +454,7 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
+                "20251231-1400-log_module.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ]
@@ -413,6 +473,7 @@
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
+                "20251231-1400-log_module.adoc",
                 "FIXME.adoc",
                 "TODO.adoc"
             ],
@@ -440,7 +501,8 @@
         },
         "Programming Language": {
             "Python": [
-                "20251226-PyGTK4.adoc"
+                "20251226-PyGTK4.adoc",
+                "20251231-1400-log_module.adoc"
             ]
         },
         "SystemPage": {
@@ -482,11 +544,17 @@
             "index": [
                 "20251208-2230.adoc"
             ],
+            "logging": [
+                "20251231-1400-log_module.adoc"
+            ],
             "page": [
                 "20251208-2230.adoc"
             ],
             "project": [
                 "20251214-0030.adoc"
+            ],
+            "redirect": [
+                "20251231-1400-log_module.adoc"
             ],
             "template": [
                 "20251208-2230.adoc"
@@ -509,7 +577,8 @@
                 "20251226-PyGTK4.adoc"
             ],
             "Blog theme features a new index page": [
-                "20251208-2230.adoc"
+                "20251208-2230.adoc",
+                "20251231-1400-log_module.adoc"
             ],
             "FIXME": [
                 "FIXME.adoc"
@@ -532,7 +601,8 @@
             "Development": [
                 "20251208-2230.adoc",
                 "20251226-PyGTK4.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "20251228-KB4IT-incremental-compiling.adoc",
+                "20251231-1400-log_module.adoc"
             ],
             "Documentation": [
                 "20251226-PyGTK4.adoc"
@@ -559,6 +629,9 @@
             ],
             "2025-12-28 21:40:00": [
                 "20251228-KB4IT-incremental-compiling.adoc"
+            ],
+            "2025-12-31 14:00:00": [
+                "20251231-1400-log_module.adoc"
             ]
         }
     }
