@@ -63,7 +63,17 @@
 <h2 class="uk-card-title" id="_logic">Logic</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>Why this module is important for KB4IT.</p>
+<p>Features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Log redirection</p>
+</li>
+<li>
+<p>Distinct levels for console and file handlers</p>
+</li>
+</ul>
 </div>
 </div>
 </div>

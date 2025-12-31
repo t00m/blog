@@ -12,7 +12,10 @@
 
 == Logic
 
-Why this module is important for KB4IT.
+Features:
+
+* Log redirection
+* Distinct levels for console and file handlers
 
 == Code
 
