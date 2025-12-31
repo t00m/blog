@@ -54,12 +54,22 @@
             <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a class="" target="" href="#_log_module">Log module</a></li>
+<li><a class="" target="" href="#_logic">Logic</a></li>
+<li><a class="" target="" href="#_code">Code</a></li>
 </ul>
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_log_module">Log module</h2>
+<h2 class="uk-card-title" id="_logic">Logic</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Why this module is important for KB4IT.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_code">Code</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="listingblock">
 <div class="content">
