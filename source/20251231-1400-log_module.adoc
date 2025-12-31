@@ -1,4 +1,4 @@
-= Blog theme features a new index page
+= A nice log module for KB4IT
 
 :Author:                Tomás Vírseda
 :Category:              Post
