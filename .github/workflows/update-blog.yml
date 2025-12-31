@@ -39,7 +39,7 @@ jobs:
         run: pip install pipx --user
 
       - name: Clone KB4IT repository
-        run: git clone -b 0.7.23 https://github.com/t00m/KB4IT.git
+        run: git clone -b 0.7.24 https://github.com/t00m/KB4IT.git
   
       # Install KB4IT requirements
       - name: Install KB4IT requirements
@@ -57,7 +57,7 @@ jobs:
 
       # Update blog
       - name: Update blog
-        run: kb4it -L DEBUG build config/blog.json
+        run: kb4it -L DEBUG build config/blog.json -f
 
       # Commit changes
       - name: Commit and push changes (if any)
@@ -67,6 +67,7 @@ jobs:
 
           # Stage all changes in docs/
           git add docs/
+          git add var/
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then
