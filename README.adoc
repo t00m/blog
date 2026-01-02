@@ -1,1 +1,3 @@
-= My public notes
+= t00mterías' blog
+
+My https://t00m.github.io/blog/[public notes] (and also a way to showcase KB4IT capabilities).
