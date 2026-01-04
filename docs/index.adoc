@@ -527,6 +527,9 @@ def redirect_logs(logfile: str):
 <li>
 <p><del>Display entry for events</del></p>
 </li>
+<li>
+<p><del>Display entry for bookmars</del></p>
+</li>
 </ul>
 </div>
 </div>

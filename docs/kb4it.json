@@ -384,8 +384,8 @@
                 "2025-12-20 15:00:00"
             ],
             "compile": true,
-            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* Allow Datatable searches\n* Allow Datable columns sorting\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n",
-            "content_hash": "ebec6aa8a3d26c40e4c4961a032ff4ee",
+            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* Allow Datatable searches\n* Allow Datable columns sorting\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n",
+            "content_hash": "8c2ec82f6c3701fae3c5c6eb53889916",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
