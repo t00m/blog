@@ -20,3 +20,4 @@
 * +++<del>Display properties in right menu</del>+++
 * +++<del>Display link for editing a post</del>+++
 * +++<del>Display entry for events</del>+++
+* +++<del>Display entry for bookmars</del>+++
