@@ -1,6 +1,7 @@
 {
     "datatable": [
         "Updated",
+        "Category",
         "Title",
         "Topic"
     ],
@@ -37,5 +38,6 @@
     "title": "t00mterías",
     "webserver": true
 }
+
 
 
