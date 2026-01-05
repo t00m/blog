@@ -15,7 +15,7 @@
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251231-1400-log_module.html">
-                            <span class="uk-link-heading">A nice log module for KB4IT</span>
+                            <span class="uk-link-heading">A log module for KB4IT</span>
                         </a>
                     </h5>
                     <div class="uk-width">
@@ -38,7 +38,8 @@
                                 <span uk-icon="tag"></span>
                                 <span class="uk-margin-small-left">
                                     <a href="Tag_logging.html">logging</a>,
-                                    <a href="Tag_redirect.html">redirect</a>
+                                    <a href="Tag_redirect.html">redirect</a>,
+                                    <a href="Tag_filehandler.html">filehandler</a>
                                 </span>
                             </li>
                         </ul>
@@ -54,17 +55,27 @@
             <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a class="" target="" href="#_logic">Logic</a></li>
+<li><a class="" target="" href="#_abstract">Abstract</a></li>
+<li><a class="" target="" href="#_features">Features</a></li>
 <li><a class="" target="" href="#_code">Code</a></li>
 </ul>
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_logic">Logic</h2>
+<h2 class="uk-card-title" id="_abstract">Abstract</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>Features:</p>
+<p>A very useful log module to allow redirecting logs to another file in runtime.</p>
 </div>
+<div class="paragraph">
+<p>KB4IT needs this feature to redirect logs to the right file when a new instance is executed.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_features">Features</h2>
+<div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
 <li>
@@ -88,13 +99,12 @@
 
 """
 Log module.
-File: mod_log.py
+File: log.py
 Author: Tom&#225;s V&#237;rseda
 License: GPL v3
 """
 
 import logging
-from kb4it.core.env import ENV
 
 _PATTERN = (
     "%(levelname)10s | %(lineno)4d | %(name)-20s | "
@@ -126,7 +136,6 @@ def setup_logging(
 
     root = logging.getLogger()
     root.setLevel(logging.DEBUG)
-    # ~ root.setLevel(getattr(logging, level.upper(), severity))
 
     if root.handlers:
         return  # Already configured
@@ -140,7 +149,6 @@ def setup_logging(
     root.addHandler(console)
 
     # File handler
-    logfile = logfile or ENV["FILE"]["LOG"]
     file_handler = logging.FileHandler(logfile, mode="w")
     file_handler.setFormatter(formatter)
     root.addHandler(file_handler)
@@ -155,7 +163,7 @@ def get_logger(name: str) -&gt; logging.Logger:
 
 def redirect_logs(logfile: str):
     """
-    Redirect file logging to a new file at runtime.
+    Redirect logging to a new file at runtime.
     """
     root = logging.getLogger()
 
