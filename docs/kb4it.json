@@ -335,8 +335,8 @@
                 "2025-12-14 01:00:00"
             ],
             "compile": true,
-            "content": "= FIXME\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Product:       KB4IT\n:Tag:           url, edit\n:Updated:       2025-12-14 01:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== To be fixed\n\n* +++<del>Topics or tage name containting spaces do not get the proper link</del>+++\n* +++<del>System pages shouldn't have the edit button</del>+++\n* No metadata in posts pages\n* +++<del>Pass post metadata to builder? How?</del>+++: build_page can receive a new theme var\n* 'About this app' adoc file missing for theme blog\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Display the right page title in browser</del>+++\n",
-            "content_hash": "fe5142a33c1b212c17128d99ae52e51e",
+            "content": "= FIXME\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Product:       KB4IT\n:Tag:           url, edit\n:Updated:       2025-12-14 01:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== To be fixed\n\n* +++<del>Topics or tage name containting spaces do not get the proper link</del>+++\n* +++<del>System pages shouldn't have the edit button</del>+++\n* +++<del>No metadata in posts pages</del>+++\n* +++<del>Pass post metadata to builder? How?</del>+++: build_page can receive a new theme var\n* 'About this app' adoc file missing for theme blog\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Display the right page title in browser</del>+++\n",
+            "content_hash": "c7a85aee5130922121fe2978d405d113",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -386,8 +386,8 @@
                 "2025-12-20 15:00:00"
             ],
             "compile": true,
-            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* Allow Datatable searches\n* Allow Datable columns sorting\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n",
-            "content_hash": "8c2ec82f6c3701fae3c5c6eb53889916",
+            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Allow Datatable searches</del>+++\n* +++<del>Allow Datable columns sorting</del>+++\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n",
+            "content_hash": "87d08a6e0faf967ffcc89b5c44516105",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"

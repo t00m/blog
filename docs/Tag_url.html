@@ -15,6 +15,28 @@
   <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
+  <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#kb4it-datatable').DataTable( {
+                dom: '<"kbfilter"flrtip>',
+                serverSide: false,
+                ordering: true,
+                searching: true,
+                //~ data:           data,
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: false,
+                scroller:       false,
+                stateSave: false,
+                paging:   false,
+                info:     true,
+                order: [[ 0, "desc" ]]
+            } );
+        } );
+  </script>
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -35,11 +57,14 @@
 -->
 <!-- <h2>Posts by Tag: url</h2> -->
 <div class="uk-container uk-overflow-auto">
-<table id="kb4it-datatable" class="uk-table uk-table-small uk-table-responsive uk-table-divider uk-table-hover uk-table-striped uk-text-small uk-height-1-1" style="width: 100%">
+<table id="kb4it-datatable" class="uk-table uk-table-small uk-table-responsive uk-table-divider uk-table-hover uk-table-striped uk-text-small" style="width: 100%">
     <thead class="">
         <tr class="">
             <th class="">
     <span class="uk-text-secondary">Updated</span>
+</th>
+<th class="">
+    <span class="uk-text-secondary">Category</span>
 </th>
 <th class="">
     <span class="uk-text-secondary">Title</span>
@@ -53,6 +78,7 @@
     <tbody class="">
             <tr>
 <td class=""><a class="uk-link-heading" href="events_20251214.html">2025-12-14 01:00</a></td>
+<td class=""><a class="uk-link-heading" href="Category_Post.html">Post</a></td>
 <td class="uk-text-small">
     <a class="uk-link-heading" href="FIXME.html"><span class="uk-text-small uk-text-primary uk-text-nowrap"><div uk-tooltip="FIXME">FIXME</div></span></a>
 </td>
@@ -96,7 +122,7 @@
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Monday, January 05, 2026 at 00:58</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Friday, January 09, 2026 at 18:51</span>
                         <p>
                             <span class="uk-link">
                                 <a href="https://github.com/t00m/KB4IT" target="_blank">
@@ -116,5 +142,26 @@
     
     <!-- Blog container :: END -->
 <script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
+
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
+
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
 </body>
 </html>

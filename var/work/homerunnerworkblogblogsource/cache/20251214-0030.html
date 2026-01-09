@@ -15,6 +15,28 @@
   <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
+  <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#kb4it-datatable').DataTable( {
+                dom: '<"kbfilter"flrtip>',
+                serverSide: false,
+                ordering: true,
+                searching: true,
+                //~ data:           data,
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: false,
+                scroller:       false,
+                stateSave: false,
+                paging:   false,
+                info:     true,
+                order: [[ 0, "desc" ]]
+            } );
+        } );
+  </script>
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -36,8 +58,7 @@
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251214-0030.html">
                             <span class="uk-link-heading">Pixi: Managing Python Environments</span>
-                            </a><a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/20251214-0030.adoc" target="_blank"><span uk-icon="pencil"></span></a>
-                        
+                        </a>
                     </h5>
                     <div class="uk-width">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
@@ -45,10 +66,13 @@
                                 <span uk-icon="user"></span>
                                 <span class="uk-margin-small-left"><a href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
                             </li>
-                            <li>
+                            <!-- Update :: START -->
+                            <li uk-tooltip="title: Document last update">
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20251214.html">14</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
+                            <!-- Update :: END -->
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -62,6 +86,255 @@
                                     <a href="Tag_build.html">build</a>,
                                     <a href="Tag_dependency.html">dependency</a>,
                                     <a href="Tag_environment.html">environment</a>
+                                </span>
+                            </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Bookmark.html">
+        <span class="uk-padding-small">Bookmark</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Python.html">
+        <span class="uk-padding-small">Python</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Pixi.html">
+        <span class="uk-padding-small">Pixi</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Pypi.html">
+        <span class="uk-padding-small">Pypi</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_project.html">
+        <span class="uk-padding-small">project</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_build.html">
+        <span class="uk-padding-small">build</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_dependency.html">
+        <span class="uk-padding-small">dependency</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_environment.html">
+        <span class="uk-padding-small">environment</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Package_management.html">
+        <span class="uk-padding-small">Package management</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-14_003000.html">
+        <span class="uk-padding-small">2025-12-14 00:30:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251214-0030.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Pixi: Managing Python Environments
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post, Bookmark
+:Topic:         Package management
+:Product:       KB4IT, Python, Pixi, Pypi
+:Tag:           project, build, dependency, environment
+:Updated:       2025-12-14 00:30:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+https://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.
+
+== Notes
+
+`pyproject.toml` adapted and it is on testing phase:
+
+[source]
+----
+[project]
+authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
+dependencies = []
+name = "KB4IT"
+requires-python = "&gt;= 3.12"
+version = "0.7.20+build.18"
+license = "GPL-3.0-or-later"
+keywords = ["static-site-generator", "asciidoctor", "documentation"]
+classifiers = [
+ "Development Status :: 4 - Beta",
+ "Environment :: Console",
+ "Environment :: Web Environment",
+ "Intended Audience :: Developers",
+ "Intended Audience :: Information Technology",
+ "Intended Audience :: System Administrators",
+ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+ "Natural Language :: English",
+ "Operating System :: POSIX :: Linux",
+ "Programming Language :: Python :: 3",
+ "Topic :: Documentation",
+ "Topic :: Software Development :: Documentation",
+ "Topic :: Utilities",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+kb4it = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+mako = "&gt;=1.3.10,&lt;2"
+lxml = "&gt;=6.0.2,&lt;7"
+
+[tool.pixi.tasks]
+version = "kb4it --version"
+myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
+myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"
+----
+
+Useful commands:
+
+* `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment
+* `pixi list`: List the packages of the current workspace
+* `pixi run {task name}`: Runs task name in the pixi environment
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                            <li uk-tooltip="title: Edit document">
+                                <span uk-icon="pencil"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" href="https://github.com/t00m/blog/edit/main/source/20251214-0030.adoc" target="_blank" uk-toggle>Edit</a>
                                 </span>
                             </li>
                         </ul>
@@ -206,7 +479,7 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Monday, January 05, 2026 at 00:58</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Friday, January 09, 2026 at 18:51</span>
                         <p>
                             <span class="uk-link">
                                 <a href="https://github.com/t00m/KB4IT" target="_blank">
@@ -226,5 +499,26 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
     
     <!-- Blog container :: END -->
 <script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
+
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
+
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
 </body>
 </html>

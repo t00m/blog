@@ -15,6 +15,28 @@
   <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
+  <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#kb4it-datatable').DataTable( {
+                dom: '<"kbfilter"flrtip>',
+                serverSide: false,
+                ordering: true,
+                searching: true,
+                //~ data:           data,
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: false,
+                scroller:       false,
+                stateSave: false,
+                paging:   false,
+                info:     true,
+                order: [[ 0, "desc" ]]
+            } );
+        } );
+  </script>
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -36,8 +58,7 @@
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="TODO.html">
                             <span class="uk-link-heading">TODO</span>
-                            </a><a class="uk-link-heading" href="https://github.com/t00m/blog/edit/main/source/TODO.adoc" target="_blank"><span uk-icon="pencil"></span></a>
-                        
+                        </a>
                     </h5>
                     <div class="uk-width">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
@@ -45,10 +66,13 @@
                                 <span uk-icon="user"></span>
                                 <span class="uk-margin-small-left"><a href="Author_Tom%C3%A1s_V%C3%ADrseda.html">Tom&#225;s V&#237;rseda</a></span>
                             </li>
-                            <li>
+                            <!-- Update :: START -->
+                            <li uk-tooltip="title: Document last update">
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20251220.html">20</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
+                            <!-- Update :: END -->
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -59,6 +83,172 @@
                                 <span uk-icon="tag"></span>
                                 <span class="uk-margin-small-left">
                                     <a href="Tag_feature.html">feature</a>
+                                </span>
+                            </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_feature.html">
+        <span class="uk-padding-small">feature</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Blog.html">
+        <span class="uk-padding-small">Blog</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-20_150000.html">
+        <span class="uk-padding-small">2025-12-20 15:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">TODO.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= TODO
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post
+:Topic:         Blog
+:Tag:           feature
+:Product:       KB4IT
+:Updated:       2025-12-20 15:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Things to do
+
+* +++&lt;del&gt;Integrate KB4IT functionality (properties)&lt;/del&gt;+++
+* +++&lt;del&gt;Allow Datatable searches&lt;/del&gt;+++
+* +++&lt;del&gt;Allow Datable columns sorting&lt;/del&gt;+++
+* +++&lt;del&gt;Use cards?&lt;/del&gt;+++
+* +++&lt;del&gt;Same style for index post and single post&lt;/del&gt;+++
+* Investigate how to use github issues to build a comment system
+* +++&lt;del&gt;Display properties in right menu&lt;/del&gt;+++
+* +++&lt;del&gt;Display link for editing a post&lt;/del&gt;+++
+* +++&lt;del&gt;Display entry for events&lt;/del&gt;+++
+* +++&lt;del&gt;Display entry for bookmars&lt;/del&gt;+++
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                            <li uk-tooltip="title: Edit document">
+                                <span uk-icon="pencil"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" href="https://github.com/t00m/blog/edit/main/source/TODO.adoc" target="_blank" uk-toggle>Edit</a>
                                 </span>
                             </li>
                         </ul>
@@ -88,10 +278,10 @@
 <p><del>Integrate KB4IT functionality (properties)</del></p>
 </li>
 <li>
-<p>Allow Datatable searches</p>
+<p><del>Allow Datatable searches</del></p>
 </li>
 <li>
-<p>Allow Datable columns sorting</p>
+<p><del>Allow Datable columns sorting</del></p>
 </li>
 <li>
 <p><del>Use cards?</del></p>
@@ -161,7 +351,7 @@
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Monday, January 05, 2026 at 00:58</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Friday, January 09, 2026 at 18:51</span>
                         <p>
                             <span class="uk-link">
                                 <a href="https://github.com/t00m/KB4IT" target="_blank">
@@ -181,5 +371,26 @@
     
     <!-- Blog container :: END -->
 <script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
+
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
+
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
 </body>
 </html>

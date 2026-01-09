@@ -15,6 +15,28 @@
   <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
+  <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#kb4it-datatable').DataTable( {
+                dom: '<"kbfilter"flrtip>',
+                serverSide: false,
+                ordering: true,
+                searching: true,
+                //~ data:           data,
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: false,
+                scroller:       false,
+                stateSave: false,
+                paging:   false,
+                info:     true,
+                order: [[ 0, "desc" ]]
+            } );
+        } );
+  </script>
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -53,6 +75,7 @@
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251231.html">31</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -67,6 +90,283 @@
                                     <a class="" target="" href="Tag_filehandler.html">filehandler</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Programming_Language.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Programming Language</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Programming_Language_Python.html">
+        <span class="uk-padding-small">Python</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_logging.html">
+        <span class="uk-padding-small">logging</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_redirect.html">
+        <span class="uk-padding-small">redirect</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_filehandler.html">
+        <span class="uk-padding-small">filehandler</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-31_140000.html">
+        <span class="uk-padding-small">2025-12-31 14:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251231-1400-log_module.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= A log module for KB4IT
+
+:Author:                Tom&#225;s V&#237;rseda
+:Category:              Post
+:Topic:                 Development
+:Product:               KB4IT
+:Tag:                   logging, redirect, filehandler
+:Programming Language:  Python
+:Updated:               2025-12-31 14:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Abstract
+
+A very useful log module to allow redirecting logs to another file in runtime.
+
+KB4IT needs this feature to redirect logs to the right file when a new instance is executed.
+
+== Features
+
+* Log redirection
+* Distinct levels for console and file handlers
+
+== Code
+
+[source, python]
+----
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""
+Log module.
+File: log.py
+Author: Tom&#225;s V&#237;rseda
+License: GPL v3
+"""
+
+import logging
+
+_PATTERN = (
+    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
+    "%(asctime)s.%(msecs)03d | %(message)s"
+)
+
+_DATEFMT = "%d/%m/%Y %H:%M:%S"
+
+
+def setup_logging(
+    level: str = "INFO",
+    logfile: str | None = None,
+):
+    """
+    Configure root logger once.
+    """
+
+    if level is not None:
+        level_dict = {
+            'DEBUG': logging.DEBUG,
+            'INFO': logging.INFO,
+            'WARNING': logging.WARNING,
+            'ERROR': logging.ERROR,
+            'CRITICAL': logging.CRITICAL
+        }
+        severity = level_dict.get(level, logging.DEBUG)
+    else:
+        severity = logging.INFO
+
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+
+    if root.handlers:
+        return  # Already configured
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Console handler
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+    console.setLevel(severity)
+    root.addHandler(console)
+
+    # File handler
+    file_handler = logging.FileHandler(logfile, mode="w")
+    file_handler.setFormatter(formatter)
+    root.addHandler(file_handler)
+
+
+def get_logger(name: str) -&gt; logging.Logger:
+    """
+    Return a named logger.
+    """
+    return logging.getLogger(name)
+
+
+def redirect_logs(logfile: str):
+    """
+    Redirect logging to a new file at runtime.
+    """
+    root = logging.getLogger()
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Remove only existing FileHandlers
+    for handler in root.handlers[:]:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+            handler.close()
+            root.removeHandler(handler)
+
+    # Add new file handler
+    file_handler = logging.FileHandler(logfile, mode="a")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+    root.addHandler(file_handler)
+----
+
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -246,6 +546,7 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251228.html">28</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -262,6 +563,194 @@ def redirect_logs(logfile: str):
                                     <a class="" target="" href="Tag_cache.html">cache</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Github_Actions.html">
+        <span class="uk-padding-small">Github Actions</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_incremental.html">
+        <span class="uk-padding-small">incremental</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_compiling.html">
+        <span class="uk-padding-small">compiling</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_vm.html">
+        <span class="uk-padding-small">vm</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_workflow.html">
+        <span class="uk-padding-small">workflow</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_cache.html">
+        <span class="uk-padding-small">cache</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-28_214000.html">
+        <span class="uk-padding-small">2025-12-28 21:40:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251228-KB4IT-incremental-compiling.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= KB4IT incremental compiling doesn't work (yet) in Github
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post
+:Topic:         Development
+:Product:       KB4IT, Github Actions
+:Tag:           incremental, compiling, vm, workflow, cache,
+:Updated:       2025-12-28 21:40:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
+
+To my initial surprise, it didn't work in Github.
+
+== Github actions
+
+In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed.
+
+GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
+
+== Solution
+
+To be continued...
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -349,6 +838,7 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251228.html">28</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -363,6 +853,233 @@ def redirect_logs(logfile: str):
                                     <a class="" target="" href="Tag_documentation.html">documentation</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Bookmark.html">
+        <span class="uk-padding-small">Bookmark</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_GTK.html">
+        <span class="uk-padding-small">GTK</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Libadwaita.html">
+        <span class="uk-padding-small">Libadwaita</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_PyGObject.html">
+        <span class="uk-padding-small">PyGObject</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_GNOME.html">
+        <span class="uk-padding-small">GNOME</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_MiAZ.html">
+        <span class="uk-padding-small">MiAZ</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Programming_Language.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Programming Language</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Programming_Language_Python.html">
+        <span class="uk-padding-small">Python</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_api.html">
+        <span class="uk-padding-small">api</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_documentation.html">
+        <span class="uk-padding-small">documentation</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Documentation.html">
+        <span class="uk-padding-small">Documentation</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-28_184000.html">
+        <span class="uk-padding-small">2025-12-28 18:40:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251226-PyGTK4.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= App development with GTK, Python and Libadwaita
+:Author:                Tom&#225;s V&#237;rseda
+:Category:              Post, Bookmark
+:Topic:                 Development, Documentation
+:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ
+:Tag:                   api, documentation
+:Programming Language:  Python
+:Updated:               2025-12-28 18:40:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+Pointers to official documentation and other useful resources.
+
+== GTK
+
+Complete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites.
+
+GTK is written using the C programming language, but its also available to various programming languages through language bindings
+
+Links:
+
+* https://www.gtk.org/docs/[GTK Documentation]
+
+== PyGObject
+
+PyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.
+
+Links:
+
+* https://pygobject.gnome.org/index.html[PyGObject]
+* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc.
+
+== Libadwaita
+
+Adwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones.
+
+Links:
+
+* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -490,6 +1207,7 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251220.html">20</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -502,6 +1220,166 @@ def redirect_logs(logfile: str):
                                     <a class="" target="" href="Tag_feature.html">feature</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_feature.html">
+        <span class="uk-padding-small">feature</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Blog.html">
+        <span class="uk-padding-small">Blog</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-20_150000.html">
+        <span class="uk-padding-small">2025-12-20 15:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">TODO.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= TODO
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post
+:Topic:         Blog
+:Tag:           feature
+:Product:       KB4IT
+:Updated:       2025-12-20 15:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Things to do
+
+* +++&lt;del&gt;Integrate KB4IT functionality (properties)&lt;/del&gt;+++
+* +++&lt;del&gt;Allow Datatable searches&lt;/del&gt;+++
+* +++&lt;del&gt;Allow Datable columns sorting&lt;/del&gt;+++
+* +++&lt;del&gt;Use cards?&lt;/del&gt;+++
+* +++&lt;del&gt;Same style for index post and single post&lt;/del&gt;+++
+* Investigate how to use github issues to build a comment system
+* +++&lt;del&gt;Display properties in right menu&lt;/del&gt;+++
+* +++&lt;del&gt;Display link for editing a post&lt;/del&gt;+++
+* +++&lt;del&gt;Display entry for events&lt;/del&gt;+++
+* +++&lt;del&gt;Display entry for bookmars&lt;/del&gt;+++
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -528,10 +1406,10 @@ def redirect_logs(logfile: str):
 <p><del>Integrate KB4IT functionality (properties)</del></p>
 </li>
 <li>
-<p>Allow Datatable searches</p>
+<p><del>Allow Datatable searches</del></p>
 </li>
 <li>
-<p>Allow Datable columns sorting</p>
+<p><del>Allow Datable columns sorting</del></p>
 </li>
 <li>
 <p><del>Use cards?</del></p>
@@ -594,6 +1472,7 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251214.html">14</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -607,6 +1486,168 @@ def redirect_logs(logfile: str):
                                     <a class="" target="" href="Tag_edit.html">edit</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_url.html">
+        <span class="uk-padding-small">url</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_edit.html">
+        <span class="uk-padding-small">edit</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Blog.html">
+        <span class="uk-padding-small">Blog</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-14_010000.html">
+        <span class="uk-padding-small">2025-12-14 01:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">FIXME.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= FIXME
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post
+:Topic:         Blog
+:Product:       KB4IT
+:Tag:           url, edit
+:Updated:       2025-12-14 01:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== To be fixed
+
+* +++&lt;del&gt;Topics or tage name containting spaces do not get the proper link&lt;/del&gt;+++
+* +++&lt;del&gt;System pages shouldn't have the edit button&lt;/del&gt;+++
+* +++&lt;del&gt;No metadata in posts pages&lt;/del&gt;+++
+* +++&lt;del&gt;Pass post metadata to builder? How?&lt;/del&gt;+++: build_page can receive a new theme var
+* 'About this app' adoc file missing for theme blog
+* +++&lt;del&gt;Integrate KB4IT functionality (properties)&lt;/del&gt;+++
+* +++&lt;del&gt;Display the right page title in browser&lt;/del&gt;+++
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -636,7 +1677,7 @@ def redirect_logs(logfile: str):
 <p><del>System pages shouldn't have the edit button</del></p>
 </li>
 <li>
-<p>No metadata in posts pages</p>
+<p><del>No metadata in posts pages</del></p>
 </li>
 <li>
 <p><del>Pass post metadata to builder? How?</del>: build_page can receive a new theme var</p>
@@ -690,6 +1731,7 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_20251214.html">14</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -705,6 +1747,249 @@ def redirect_logs(logfile: str):
                                     <a class="" target="" href="Tag_environment.html">environment</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Bookmark.html">
+        <span class="uk-padding-small">Bookmark</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Python.html">
+        <span class="uk-padding-small">Python</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Pixi.html">
+        <span class="uk-padding-small">Pixi</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Pypi.html">
+        <span class="uk-padding-small">Pypi</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_project.html">
+        <span class="uk-padding-small">project</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_build.html">
+        <span class="uk-padding-small">build</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_dependency.html">
+        <span class="uk-padding-small">dependency</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_environment.html">
+        <span class="uk-padding-small">environment</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Package_management.html">
+        <span class="uk-padding-small">Package management</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-14_003000.html">
+        <span class="uk-padding-small">2025-12-14 00:30:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251214-0030.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Pixi: Managing Python Environments
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post, Bookmark
+:Topic:         Package management
+:Product:       KB4IT, Python, Pixi, Pypi
+:Tag:           project, build, dependency, environment
+:Updated:       2025-12-14 00:30:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+https://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.
+
+== Notes
+
+`pyproject.toml` adapted and it is on testing phase:
+
+[source]
+----
+[project]
+authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
+dependencies = []
+name = "KB4IT"
+requires-python = "&gt;= 3.12"
+version = "0.7.20+build.18"
+license = "GPL-3.0-or-later"
+keywords = ["static-site-generator", "asciidoctor", "documentation"]
+classifiers = [
+ "Development Status :: 4 - Beta",
+ "Environment :: Console",
+ "Environment :: Web Environment",
+ "Intended Audience :: Developers",
+ "Intended Audience :: Information Technology",
+ "Intended Audience :: System Administrators",
+ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+ "Natural Language :: English",
+ "Operating System :: POSIX :: Linux",
+ "Programming Language :: Python :: 3",
+ "Topic :: Documentation",
+ "Topic :: Software Development :: Documentation",
+ "Topic :: Utilities",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+kb4it = { path = ".", editable = true }
+
+[tool.pixi.dependencies]
+mako = "&gt;=1.3.10,&lt;2"
+lxml = "&gt;=6.0.2,&lt;7"
+
+[tool.pixi.tasks]
+version = "kb4it --version"
+myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
+myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"
+----
+
+Useful commands:
+
+* `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment
+* `pixi list`: List the packages of the current workspace
+* `pixi run {task name}`: Runs task name in the pixi environment
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -839,6 +2124,7 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a class="" target="" href="events_2025128.html">8</a>/<a class="" target="" href="events_202512.html">12</a>/<a class="" target="" href="events_2025.html">2025</a></span>
                             </li>
+<!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
@@ -853,6 +2139,181 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
                                     <a class="" target="" href="Tag_template.html">template</a>
                                 </span>
                             </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;">
+<table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tom%C3%A1s_V%C3%ADrseda.html">
+        <span class="uk-padding-small">Tom&#225;s V&#237;rseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Mako.html">
+        <span class="uk-padding-small">Mako</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_index.html">
+        <span class="uk-padding-small">index</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_page.html">
+        <span class="uk-padding-small">page</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_template.html">
+        <span class="uk-padding-small">template</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-08_230000.html">
+        <span class="uk-padding-small">2025-12-08 23:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" target="" href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251208-2230.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Blog theme features a new index page
+
+:Author:        Tom&#225;s V&#237;rseda
+:Category:      Post
+:Topic:         Development
+:Product:       KB4IT, Mako
+:Tag:           index, page, template
+:Updated:       2025-12-08 23:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+Finally, the index page for the blog theme, is working.
+Posts' headers look nice.
+
+However, at this point, the whole code is... spaguetti code.
+`KB4IT` needs a big overhaul.
+
+== Notes
+
+Builder module works fine when the source files (.adoc files) are analyzed first.
+But other pages, like the index page, which are build at the end, do not follow the standard process.
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
                         </ul>
                     </div>
                     <!-- Tags and Topics -->
@@ -937,7 +2398,7 @@ But other pages, like the index page, which are build at the end, do not follow 
 
                       <div class="uk-text-center uk-card uk-card-body uk-card-big">
                         <hr class="uk-divider-icon">
-                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Monday, January 05, 2026 at 00:58</span>
+                        <span class="uk-text-small uk-text-muted">Blog updated on<br>Friday, January 09, 2026 at 18:51</span>
                         <p>
                             <span class="uk-link">
                                 <a href="https://github.com/t00m/KB4IT" target="_blank">
@@ -957,5 +2418,26 @@ But other pages, like the index page, which are build at the end, do not follow 
     
     <!-- Blog container :: END -->
 <script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
+
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
+
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
 </body>
 </html>

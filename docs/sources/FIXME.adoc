@@ -13,7 +13,7 @@
 
 * +++<del>Topics or tage name containting spaces do not get the proper link</del>+++
 * +++<del>System pages shouldn't have the edit button</del>+++
-* No metadata in posts pages
+* +++<del>No metadata in posts pages</del>+++
 * +++<del>Pass post metadata to builder? How?</del>+++: build_page can receive a new theme var
 * 'About this app' adoc file missing for theme blog
 * +++<del>Integrate KB4IT functionality (properties)</del>+++
