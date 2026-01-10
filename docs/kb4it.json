@@ -124,8 +124,10 @@
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
             ],
+            "Bookmark": [
+                "Yes"
+            ],
             "Category": [
-                "Bookmark",
                 "Post"
             ],
             "Product": [
@@ -153,15 +155,17 @@
                 "2025-12-28 18:40:00"
             ],
             "compile": true,
-            "content": "= App development with GTK, Python and Libadwaita\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post, Bookmark\n:Topic:                 Development, Documentation\n:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ\n:Tag:                   api, documentation\n:Programming Language:  Python\n:Updated:               2025-12-28 18:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nPointers to official documentation and other useful resources.\n\n== GTK\n\nComplete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. \n\nGTK is written using the C programming language, but its also available to various programming languages through language bindings\n\nLinks:\n\n* https://www.gtk.org/docs/[GTK Documentation]\n\n== PyGObject\n\nPyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.\n\nLinks:\n\n* https://pygobject.gnome.org/index.html[PyGObject]\n* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. \n\n== Libadwaita\n\nAdwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. \n\nLinks:\n\n* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]\n",
-            "content_hash": "9174610a74cffc5d9b671548a1162a67",
+            "content": "= App development with GTK, Python and Libadwaita\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post\n:Topic:                 Development, Documentation\n:Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ\n:Tag:                   api, documentation\n:Programming Language:  Python\n:Bookmark:              Yes\n:Updated:               2025-12-28 18:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nPointers to official documentation and other useful resources.\n\n== GTK\n\nComplete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. \n\nGTK is written using the C programming language, but its also available to various programming languages through language bindings\n\nLinks:\n\n* https://www.gtk.org/docs/[GTK Documentation]\n\n== PyGObject\n\nPyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.\n\nLinks:\n\n* https://pygobject.gnome.org/index.html[PyGObject]\n* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. \n\n== Libadwaita\n\nAdwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. \n\nLinks:\n\n* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/[Latest 1.x stable version]\n",
+            "content_hash": "3ee562c679dacc55b703353ed5685bd5",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
+                "Bookmark": [
+                    "Yes"
+                ],
                 "Category": [
-                    "Post",
-                    "Bookmark"
+                    "Post"
                 ],
                 "Product": [
                     "GTK",
@@ -188,7 +192,7 @@
                     "2025-12-28 18:40:00"
                 ]
             },
-            "metadata_hash": "54bee933077c31e015127499011f4a79"
+            "metadata_hash": "69c59149e352128a049ae388d7d76f0f"
         },
         "20251228-KB4IT-incremental-compiling.adoc": {
             "Author": [
@@ -446,10 +450,14 @@
                 "TODO.adoc"
             ]
         },
+        "Bookmark": {
+            "Yes": [
+                "20251226-PyGTK4.adoc"
+            ]
+        },
         "Category": {
             "Bookmark": [
-                "20251214-0030.adoc",
-                "20251226-PyGTK4.adoc"
+                "20251214-0030.adoc"
             ],
             "Post": [
                 "20251208-2230.adoc",

@@ -833,6 +833,19 @@ To be continued...
     </tr>
     <tr class="">
         <td class="">
+            <a class="uk-link-text" href="Bookmark.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Bookmark</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Bookmark_Yes.html">
+        <span class="uk-padding-small">Yes</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
             <a class="uk-link-text" href="Category.html">
                 <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
             </a>
@@ -840,11 +853,6 @@ To be continued...
         <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
     <a class="uk-link-heading" href="Category_Post.html">
         <span class="uk-padding-small">Post</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Category_Bookmark.html">
-        <span class="uk-padding-small">Bookmark</span>
     </a>
 </div>
 </div></td>
@@ -970,11 +978,12 @@ To be continued...
                                                 <div class="uk-text-lead">20251226-PyGTK4.adoc</div>
                                                 <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= App development with GTK, Python and Libadwaita
 :Author:                Tomás Vírseda
-:Category:              Post, Bookmark
+:Category:              Post
 :Topic:                 Development, Documentation
 :Product:               GTK, Libadwaita, PyGObject, GNOME, MiAZ
 :Tag:                   api, documentation
 :Programming Language:  Python
+:Bookmark:              Yes
 :Updated:               2025-12-28 18:40:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
