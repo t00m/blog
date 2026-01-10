@@ -1732,11 +1732,6 @@ Links:
         <span class="uk-padding-small">Post</span>
     </a>
 </div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Category_Bookmark.html">
-        <span class="uk-padding-small">Bookmark</span>
-    </a>
-</div>
 </div></td>
     </tr>
     <tr class="">
@@ -1848,7 +1843,7 @@ Links:
                                                 <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Pixi: Managing Python Environments
 
 :Author:        Tomás Vírseda
-:Category:      Post, Bookmark
+:Category:      Post
 :Topic:         Package management
 :Product:       KB4IT, Python, Pixi, Pypi
 :Tag:           project, build, dependency, environment

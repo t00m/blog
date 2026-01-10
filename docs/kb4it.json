@@ -61,7 +61,6 @@
                 "Tom\u00e1s V\u00edrseda"
             ],
             "Category": [
-                "Bookmark",
                 "Post"
             ],
             "Product": [
@@ -86,15 +85,14 @@
                 "2025-12-14 00:30:00"
             ],
             "compile": true,
-            "content": "= Pixi: Managing Python Environments\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post, Bookmark\n:Topic:         Package management\n:Product:       KB4IT, Python, Pixi, Pypi\n:Tag:           project, build, dependency, environment\n:Updated:       2025-12-14 00:30:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nhttps://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.\n\n== Notes\n\n`pyproject.toml` adapted and it is on testing phase:\n\n[source]\n----\n[project]\nauthors = [{name = \"Tom\u00e1s V\u00edrseda\", email = \"tomasvirseda@gmail.com\"}]\ndependencies = []\nname = \"KB4IT\"\nrequires-python = \">= 3.12\"\nversion = \"0.7.20+build.18\"\nlicense = \"GPL-3.0-or-later\"\nkeywords = [\"static-site-generator\", \"asciidoctor\", \"documentation\"]\nclassifiers = [\n \"Development Status :: 4 - Beta\",\n \"Environment :: Console\",\n \"Environment :: Web Environment\",\n \"Intended Audience :: Developers\",\n \"Intended Audience :: Information Technology\",\n \"Intended Audience :: System Administrators\",\n \"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)\",\n \"Natural Language :: English\",\n \"Operating System :: POSIX :: Linux\",\n \"Programming Language :: Python :: 3\",\n \"Topic :: Documentation\",\n \"Topic :: Software Development :: Documentation\",\n \"Topic :: Utilities\",\n]\n\n[build-system]\nbuild-backend = \"hatchling.build\"\nrequires = [\"hatchling\"]\n\n[tool.pixi.workspace]\nchannels = [\"conda-forge\"]\nplatforms = [\"linux-64\"]\n\n[tool.pixi.pypi-dependencies]\nkb4it = { path = \".\", editable = true }\n\n[tool.pixi.dependencies]\nmako = \">=1.3.10,<2\"\nlxml = \">=6.0.2,<7\"\n\n[tool.pixi.tasks]\nversion = \"kb4it --version\"\nmyblog_force = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f\"\nmyblog = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json\"\n----\n\nUseful commands:\n\n* `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment\n* `pixi list`: List the packages of the current workspace\n* `pixi run {task name}`: Runs task name in the pixi environment\n",
-            "content_hash": "4f79527f984d318987ed6769962fc179",
+            "content": "= Pixi: Managing Python Environments\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Package management\n:Product:       KB4IT, Python, Pixi, Pypi\n:Tag:           project, build, dependency, environment\n:Updated:       2025-12-14 00:30:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nhttps://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.\n\n== Notes\n\n`pyproject.toml` adapted and it is on testing phase:\n\n[source]\n----\n[project]\nauthors = [{name = \"Tom\u00e1s V\u00edrseda\", email = \"tomasvirseda@gmail.com\"}]\ndependencies = []\nname = \"KB4IT\"\nrequires-python = \">= 3.12\"\nversion = \"0.7.20+build.18\"\nlicense = \"GPL-3.0-or-later\"\nkeywords = [\"static-site-generator\", \"asciidoctor\", \"documentation\"]\nclassifiers = [\n \"Development Status :: 4 - Beta\",\n \"Environment :: Console\",\n \"Environment :: Web Environment\",\n \"Intended Audience :: Developers\",\n \"Intended Audience :: Information Technology\",\n \"Intended Audience :: System Administrators\",\n \"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)\",\n \"Natural Language :: English\",\n \"Operating System :: POSIX :: Linux\",\n \"Programming Language :: Python :: 3\",\n \"Topic :: Documentation\",\n \"Topic :: Software Development :: Documentation\",\n \"Topic :: Utilities\",\n]\n\n[build-system]\nbuild-backend = \"hatchling.build\"\nrequires = [\"hatchling\"]\n\n[tool.pixi.workspace]\nchannels = [\"conda-forge\"]\nplatforms = [\"linux-64\"]\n\n[tool.pixi.pypi-dependencies]\nkb4it = { path = \".\", editable = true }\n\n[tool.pixi.dependencies]\nmako = \">=1.3.10,<2\"\nlxml = \">=6.0.2,<7\"\n\n[tool.pixi.tasks]\nversion = \"kb4it --version\"\nmyblog_force = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f\"\nmyblog = \"kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json\"\n----\n\nUseful commands:\n\n* `pixi install`: Install an environment, both updating the `pixi.lock` file and installing the environment\n* `pixi list`: List the packages of the current workspace\n* `pixi run {task name}`: Runs task name in the pixi environment\n",
+            "content_hash": "7a8cd501f94919ee4e8645b882180269",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
-                    "Post",
-                    "Bookmark"
+                    "Post"
                 ],
                 "Product": [
                     "KB4IT",
@@ -118,7 +116,7 @@
                     "2025-12-14 00:30:00"
                 ]
             },
-            "metadata_hash": "3de116df0c0c9276ca2f0d46ecca779d"
+            "metadata_hash": "3eccf77fbb1cb5cb7dea626d9a09dfff"
         },
         "20251226-PyGTK4.adoc": {
             "Author": [
@@ -456,9 +454,6 @@
             ]
         },
         "Category": {
-            "Bookmark": [
-                "20251214-0030.adoc"
-            ],
             "Post": [
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
