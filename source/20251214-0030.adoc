@@ -1,7 +1,7 @@
 = Pixi: Managing Python Environments
 
 :Author:        Tomás Vírseda
-:Category:      Post, Bookmark
+:Category:      Post
 :Topic:         Package management
 :Product:       KB4IT, Python, Pixi, Pypi
 :Tag:           project, build, dependency, environment
