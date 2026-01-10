@@ -313,108 +313,6 @@
             },
             "metadata_hash": "43f3693143b5d1063f66c82cbc634a82"
         },
-        "FIXME.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Product": [
-                "KB4IT"
-            ],
-            "Tag": [
-                "edit",
-                "url"
-            ],
-            "Title": [
-                "FIXME"
-            ],
-            "Topic": [
-                "Blog"
-            ],
-            "Updated": [
-                "2025-12-14 01:00:00"
-            ],
-            "compile": true,
-            "content": "= FIXME\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Product:       KB4IT\n:Tag:           url, edit\n:Updated:       2025-12-14 01:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== To be fixed\n\n* +++<del>Topics or tage name containting spaces do not get the proper link</del>+++\n* +++<del>System pages shouldn't have the edit button</del>+++\n* +++<del>No metadata in posts pages</del>+++\n* +++<del>Pass post metadata to builder? How?</del>+++: build_page can receive a new theme var\n* 'About this app' adoc file missing for theme blog\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Display the right page title in browser</del>+++\n",
-            "content_hash": "c7a85aee5130922121fe2978d405d113",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Product": [
-                    "KB4IT"
-                ],
-                "Tag": [
-                    "url",
-                    "edit"
-                ],
-                "Title": [
-                    "FIXME"
-                ],
-                "Topic": [
-                    "Blog"
-                ],
-                "Updated": [
-                    "2025-12-14 01:00:00"
-                ]
-            },
-            "metadata_hash": "d62353ae7b26a07261c78d70d463d945"
-        },
-        "TODO.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Product": [
-                "KB4IT"
-            ],
-            "Tag": [
-                "feature"
-            ],
-            "Title": [
-                "TODO"
-            ],
-            "Topic": [
-                "Blog"
-            ],
-            "Updated": [
-                "2026-01-11 15:00:00"
-            ],
-            "compile": true,
-            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2026-01-11 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Allow Datatable searches</del>+++\n* +++<del>Allow Datable columns sorting</del>+++\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n* Limit number of post in index page\n",
-            "content_hash": "5471477802beab18522cacd027af53b4",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Product": [
-                    "KB4IT"
-                ],
-                "Tag": [
-                    "feature"
-                ],
-                "Title": [
-                    "TODO"
-                ],
-                "Topic": [
-                    "Blog"
-                ],
-                "Updated": [
-                    "2026-01-11 15:00:00"
-                ]
-            },
-            "metadata_hash": "db17deb1edbac388bb2861a0a3a787e2"
-        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -443,9 +341,7 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "FIXME.adoc",
-                "TODO.adoc"
+                "20251231-1400-log_module.adoc"
             ]
         },
         "Bookmark": {
@@ -459,9 +355,7 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "FIXME.adoc",
-                "TODO.adoc"
+                "20251231-1400-log_module.adoc"
             ]
         },
         "Product": {
@@ -478,9 +372,7 @@
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "FIXME.adoc",
-                "TODO.adoc"
+                "20251231-1400-log_module.adoc"
             ],
             "Libadwaita": [
                 "20251226-PyGTK4.adoc"
@@ -534,14 +426,8 @@
             "documentation": [
                 "20251226-PyGTK4.adoc"
             ],
-            "edit": [
-                "FIXME.adoc"
-            ],
             "environment": [
                 "20251214-0030.adoc"
-            ],
-            "feature": [
-                "TODO.adoc"
             ],
             "filehandler": [
                 "20251231-1400-log_module.adoc"
@@ -567,9 +453,6 @@
             "template": [
                 "20251208-2230.adoc"
             ],
-            "url": [
-                "FIXME.adoc"
-            ],
             "vm": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
@@ -590,24 +473,14 @@
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
             ],
-            "FIXME": [
-                "FIXME.adoc"
-            ],
             "KB4IT incremental compiling doesn't work (yet) in Github": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
-            ],
-            "TODO": [
-                "TODO.adoc"
             ]
         },
         "Topic": {
-            "Blog": [
-                "FIXME.adoc",
-                "TODO.adoc"
-            ],
             "Development": [
                 "20251208-2230.adoc",
                 "20251226-PyGTK4.adoc",
@@ -628,9 +501,6 @@
             "2025-12-14 00:30:00": [
                 "20251214-0030.adoc"
             ],
-            "2025-12-14 01:00:00": [
-                "FIXME.adoc"
-            ],
             "2025-12-28 18:40:00": [
                 "20251226-PyGTK4.adoc"
             ],
@@ -639,9 +509,6 @@
             ],
             "2025-12-31 14:00:00": [
                 "20251231-1400-log_module.adoc"
-            ],
-            "2026-01-11 15:00:00": [
-                "TODO.adoc"
             ]
         }
     }
