@@ -21,3 +21,4 @@
 * +++<del>Display link for editing a post</del>+++
 * +++<del>Display entry for events</del>+++
 * +++<del>Display entry for bookmars</del>+++
+* Limit number of post in index page
