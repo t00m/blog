@@ -385,11 +385,11 @@
                 "Blog"
             ],
             "Updated": [
-                "2025-12-20 15:00:00"
+                "2026-01-11 15:00:00"
             ],
             "compile": true,
-            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2025-12-20 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Allow Datatable searches</del>+++\n* +++<del>Allow Datable columns sorting</del>+++\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n",
-            "content_hash": "87d08a6e0faf967ffcc89b5c44516105",
+            "content": "= TODO\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Blog\n:Tag:           feature\n:Product:       KB4IT\n:Updated:       2026-01-11 15:00:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Things to do\n\n* +++<del>Integrate KB4IT functionality (properties)</del>+++\n* +++<del>Allow Datatable searches</del>+++\n* +++<del>Allow Datable columns sorting</del>+++\n* +++<del>Use cards?</del>+++\n* +++<del>Same style for index post and single post</del>+++\n* Investigate how to use github issues to build a comment system\n* +++<del>Display properties in right menu</del>+++\n* +++<del>Display link for editing a post</del>+++\n* +++<del>Display entry for events</del>+++\n* +++<del>Display entry for bookmars</del>+++\n* Limit number of post in index page\n",
+            "content_hash": "5471477802beab18522cacd027af53b4",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -410,10 +410,10 @@
                     "Blog"
                 ],
                 "Updated": [
-                    "2025-12-20 15:00:00"
+                    "2026-01-11 15:00:00"
                 ]
             },
-            "metadata_hash": "ca9a8989e2a4811058ff2895742e6072"
+            "metadata_hash": "db17deb1edbac388bb2861a0a3a787e2"
         },
         "about_app.adoc": {
             "SystemPage": [
@@ -631,9 +631,6 @@
             "2025-12-14 01:00:00": [
                 "FIXME.adoc"
             ],
-            "2025-12-20 15:00:00": [
-                "TODO.adoc"
-            ],
             "2025-12-28 18:40:00": [
                 "20251226-PyGTK4.adoc"
             ],
@@ -642,6 +639,9 @@
             ],
             "2025-12-31 14:00:00": [
                 "20251231-1400-log_module.adoc"
+            ],
+            "2026-01-11 15:00:00": [
+                "TODO.adoc"
             ]
         }
     }
