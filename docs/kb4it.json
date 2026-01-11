@@ -214,14 +214,15 @@
                 "KB4IT incremental compiling doesn't work (yet) in Github"
             ],
             "Topic": [
+                "Automation",
                 "Development"
             ],
             "Updated": [
                 "2025-12-28 21:40:00"
             ],
             "compile": true,
-            "content": "= KB4IT incremental compiling doesn't work (yet) in Github\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2025-12-28 21:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nTo be continued...\n",
-            "content_hash": "812a0be48a5e512293de11826de20c88",
+            "content": "= KB4IT incremental compiling doesn't work (yet) in Github\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development, Automation\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2025-12-28 21:40:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nTo be continued...\n",
+            "content_hash": "5f242b9d152c00001b017459ab82de0c",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -245,13 +246,14 @@
                     "KB4IT incremental compiling doesn't work (yet) in Github"
                 ],
                 "Topic": [
-                    "Development"
+                    "Development",
+                    "Automation"
                 ],
                 "Updated": [
                     "2025-12-28 21:40:00"
                 ]
             },
-            "metadata_hash": "015dba27f6258bc1326e2dd292dd2515"
+            "metadata_hash": "e3d5b44bbc2fedb5421d2067964b1d0c"
         },
         "20251231-1400-log_module.adoc": {
             "Author": [
@@ -481,6 +483,9 @@
             ]
         },
         "Topic": {
+            "Automation": [
+                "20251228-KB4IT-incremental-compiling.adoc"
+            ],
             "Development": [
                 "20251208-2230.adoc",
                 "20251226-PyGTK4.adoc",

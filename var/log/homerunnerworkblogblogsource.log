@@ -1,758 +1,770 @@
-     DEBUG |   68 | KB4IT                | 10/01/2026 23:53:03.619 | Temporary KB4IT Log file: /home/runner/.kb4it/var/log/kb4it.log.139873819836186500
-     DEBUG |   69 | KB4IT                | 10/01/2026 23:53:03.619 | KB4IT 0.7.25+build.1
-     DEBUG |   70 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[SYS] PYTHON[3.14.2 (main, Dec  8 2025, 02:53:13) [GCC 13.3.0]]
-     DEBUG |   71 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[SYS] PLATFORM[Ubuntu 24.04.3 LTS]
-     DEBUG |   99 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[CMDLINE] PARAM[log_level] VALUE[DEBUG]
-     DEBUG |   99 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[CMDLINE] PARAM[action] VALUE[build]
-     DEBUG |   99 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[CMDLINE] PARAM[config] VALUE[config/blog.json]
-     DEBUG |   99 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[CMDLINE] PARAM[force] VALUE[False]
-     DEBUG |   99 | KB4IT                | 10/01/2026 23:53:03.619 | CONF[CMDLINE] PARAM[workers] VALUE[2]
-     DEBUG |  152 | KB4IT                | 10/01/2026 23:53:03.620 | CONF[ENV] PID[2316] FILE[/home/runner/.kb4it/var/kb4it.pid]
-     DEBUG |   65 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] CONFIG_FILE[ VALUE[config/blog.json]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[datatable] VALUE[['Updated', 'Category', 'Title', 'Topic']]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[events] VALUE[['Post', 'Note', 'Bookmark']]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[force] VALUE[True]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git] VALUE[True]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git_branch] VALUE[main]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git_path] VALUE[source]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git_repo] VALUE[blog]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git_server] VALUE[https://github.com]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[git_user] VALUE[t00m]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[ignored_keys] VALUE[['Updated']]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[logo] VALUE[resources/themes/blog/images/logo.svg]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[logo_alt] VALUE[]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.620 | CONF[REPO] PARAM[menu] VALUE[['Author', 'Category']]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[sort] VALUE[Updated]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[source] VALUE[source]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[target] VALUE[docs]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[theme] VALUE[blog]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[timeline] VALUE[['Post', 'Note']]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[tagline] VALUE[My public notes]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[title] VALUE[t00mterías]
-     DEBUG |   67 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[webserver] VALUE[True]
-     DEBUG |   85 | Backend              | 10/01/2026 23:53:03.621 | CONF[REPO] PARAM[force] set to True
-     DEBUG |  135 | Backend              | 10/01/2026 23:53:03.621 | CONF[APP] LOG_FILE[/home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log]
-     DEBUG |  199 | Backend              | 10/01/2026 23:53:03.622 | [CONF] - Current kbdict entries: 2
-      INFO |   99 | Workflow             | 10/01/2026 23:53:03.622 | Building a website for repository 't00mterías'
-      INFO |  100 | Workflow             | 10/01/2026 23:53:03.622 | Using theme 'blog'
-      INFO |  101 | Workflow             | 10/01/2026 23:53:03.622 | Check environment
-     DEBUG |  289 | Backend              | 10/01/2026 23:53:03.622 | [CHECKS] - START
-     DEBUG |  290 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[CACHE] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/cache]
-     DEBUG |  291 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[WORKDIR] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/tmp]
-     DEBUG |  292 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[DISTRIBUTION] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/dist]
-     DEBUG |  293 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[TMPWWW] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/www]
-     DEBUG |  299 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[SOURCE] VALUE[/home/runner/work/blog/blog/source]
-     DEBUG |  304 | Backend              | 10/01/2026 23:53:03.622 | CONF[APP] DIR[TARGET] VALUE[/home/runner/work/blog/blog/docs]
-     DEBUG |  108 | Frontend             | 10/01/2026 23:53:03.623 | CONF[THEME] NAME[Blog] VERSION[0.1.0]
-     DEBUG |  335 | Backend              | 10/01/2026 23:53:03.631 | [CHECKS] - END
-      INFO |  103 | Workflow             | 10/01/2026 23:53:03.631 | Allow theme to generate sources
-      INFO |  106 | Workflow             | 10/01/2026 23:53:03.631 | Get source documents
-     DEBUG |  340 | Backend              | 10/01/2026 23:53:03.631 | [SOURCES] - START
-   WARNING |  352 | Backend              | 10/01/2026 23:53:03.632 |   - Added missing 'About App' to your sources
-     DEBUG |  361 | Backend              | 10/01/2026 23:53:03.632 | STATS - Found 6 asciidoctor documents in source directory
-     DEBUG |  362 | Backend              | 10/01/2026 23:53:03.632 | [SOURCES] - END
-      INFO |  108 | Workflow             | 10/01/2026 23:53:03.632 | Preprocessing
-     DEBUG |  532 | Backend              | 10/01/2026 23:53:03.632 | [PREPROCESSING] - START
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.632 | DOC[20251208-2230.adoc] Title[Blog theme features a new index page]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.632 | DOC[20251208-2230.adoc] has 7 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.632 | DOC[20251208-2230.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.632 | DOC[20251208-2230.adoc] HASH[5504b6071d14d121fd975ad6cfa8b1b3e544bba6c454a40ee5291f80156e2d7f]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Title] VALUE[Blog theme features a new index page] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Author] VALUE[Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Category] VALUE[Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Topic] VALUE[Development] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Product] VALUE[KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Product] VALUE[Mako] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[index] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[page] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.633 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[template] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.655 | DOC[20251208-2230.adoc] KEY[Updated] VALUE[2025-12-08 23:00:00] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.655 | DOC[20251208-2230.adoc] targets to RESOURCE[20251208-2230.html]
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.655 | DOC[20251214-0030.adoc] Title[Pixi: Managing Python Environments]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.655 | DOC[20251214-0030.adoc] has 7 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] HASH[7a8cd501f94919ee4e8645b8821802693eccf77fbb1cb5cb7dea626d9a09dfff]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Title] VALUE[Pixi: Managing Python Environments] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Author] VALUE[Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Category] VALUE[Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Topic] VALUE[Package management] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Product] VALUE[KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Python] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Pixi] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Pypi] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[project] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[build] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[dependency] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.656 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[environment] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.657 | DOC[20251214-0030.adoc] KEY[Updated] VALUE[2025-12-14 00:30:00] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.657 | DOC[20251214-0030.adoc] targets to RESOURCE[20251214-0030.html]
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] Title[App development with GTK, Python and Libadwaita]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] has 9 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] HASH[3ee562c679dacc55b703353ed5685bd569c59149e352128a049ae388d7d76f0f]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] KEY[Title] VALUE[App development with GTK, Python and Libadwaita] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.657 | DOC[20251226-PyGTK4.adoc] KEY[Author] VALUE[Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Category] VALUE[Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Topic] VALUE[Development] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Topic] VALUE[Documentation] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[GTK] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[Libadwaita] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[PyGObject] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[GNOME] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[MiAZ] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Tag] VALUE[api] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Tag] VALUE[documentation] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Programming Language] VALUE[Python] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.658 | DOC[20251226-PyGTK4.adoc] KEY[Bookmark] VALUE[Yes] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.659 | DOC[20251226-PyGTK4.adoc] KEY[Updated] VALUE[2025-12-28 18:40:00] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.659 | DOC[20251226-PyGTK4.adoc] targets to RESOURCE[20251226-PyGTK4.html]
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] Title[KB4IT incremental compiling doesn't work (yet) in Github]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] has 7 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] HASH[812a0be48a5e512293de11826de20c88015dba27f6258bc1326e2dd292dd2515]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Title] VALUE[KB4IT incremental compiling doesn't work (yet) in Github] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Author] VALUE[Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Category] VALUE[Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.659 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Topic] VALUE[Development] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Product] VALUE[KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Product] VALUE[Github Actions] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[incremental] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[compiling] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[vm] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[workflow] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[cache] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Updated] VALUE[2025-12-28 21:40:00] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.660 | DOC[20251228-KB4IT-incremental-compiling.adoc] targets to RESOURCE[20251228-KB4IT-incremental-compiling.html]
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] Title[A log module for KB4IT]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] has 8 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] HASH[5353d5efe26338299bf04e1fe482469a43f3693143b5d1063f66c82cbc634a82]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Title] VALUE[A log module for KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Author] VALUE[Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Category] VALUE[Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Topic] VALUE[Development] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Product] VALUE[KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[logging] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[redirect] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[filehandler] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.661 | DOC[20251231-1400-log_module.adoc] KEY[Programming Language] VALUE[Python] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.662 | DOC[20251231-1400-log_module.adoc] KEY[Updated] VALUE[2025-12-31 14:00:00] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.662 | DOC[20251231-1400-log_module.adoc] targets to RESOURCE[20251231-1400-log_module.html]
-     DEBUG |  403 | Backend              | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] Title[About this app]
-     DEBUG |  408 | Backend              | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] has 2 keys
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] added to database
-     DEBUG |  427 | Backend              | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] HASH[5ab8aed57c7df4ad90c435a04a4d8c8ffd2bae64edbd11615d8e2a126b5e3b4a]
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] KEY[Title] VALUE[About this app] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.662 | DOC[about_app.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.663 | DOC[about_app.adoc] targets to RESOURCE[about_app.html]
-     DEBUG |  548 | Backend              | 10/01/2026 23:53:03.663 | CONF[APP] PARAM[force] VALUE[True]: Keys hashes mismatch. Force compilation!
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[20251208-2230.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[20251214-0030.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[20251226-PyGTK4.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[20251228-KB4IT-incremental-compiling.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[20251231-1400-log_module.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  521 | Backend              | 10/01/2026 23:53:03.664 | DOC[about_app.adoc] COMPILE[True] REASON[Forced]
-     DEBUG |  562 | Backend              | 10/01/2026 23:53:03.665 | STATS - Documents analyzed: 6
-     DEBUG |  569 | Backend              | 10/01/2026 23:53:03.665 | STATS - Keep: 0 - Compile: 6
-     DEBUG |  577 | Backend              | 10/01/2026 23:53:03.665 | [PREPROCESSING] - END
-      INFO |  110 | Workflow             | 10/01/2026 23:53:03.665 | Backend processing
-     DEBUG |  673 | Backend              | 10/01/2026 23:53:03.665 | [PROCESSING] - START
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.665 | KEY[Author] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.665 | KEY[Author] VALUE[Tomás Vírseda] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.665 | KEY[Author] VALUE[Tomás Vírseda] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.665 | KEY[Author] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.665 | KEY[Bookmark] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.665 | KEY[Bookmark] VALUE[Yes] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.665 | KEY[Bookmark] VALUE[Yes] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.665 | KEY[Bookmark] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.665 | KEY[Category] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.665 | KEY[Category] VALUE[Post] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.665 | KEY[Category] VALUE[Post] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.665 | KEY[Category] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.665 | KEY[Product] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.665 | KEY[Product] VALUE[Github Actions] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.665 | KEY[Product] VALUE[Github Actions] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[GNOME] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[GNOME] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[GTK] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[GTK] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[KB4IT] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[KB4IT] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Libadwaita] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Libadwaita] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Mako] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Mako] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[MiAZ] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[MiAZ] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Pixi] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Pixi] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[PyGObject] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[PyGObject] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Pypi] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.666 | KEY[Product] VALUE[Pypi] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Product] VALUE[Python] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Product] VALUE[Python] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.667 | KEY[Product] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.667 | KEY[Programming Language] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Programming Language] VALUE[Python] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Programming Language] VALUE[Python] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.667 | KEY[Programming Language] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[api] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[api] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[build] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[build] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[cache] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[cache] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[compiling] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[compiling] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[dependency] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[dependency] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.667 | KEY[Tag] VALUE[documentation] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[documentation] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[environment] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[environment] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[filehandler] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[filehandler] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[incremental] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[incremental] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[index] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[index] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[logging] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[logging] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[page] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[page] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[project] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[project] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[redirect] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[redirect] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[template] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.668 | KEY[Tag] VALUE[template] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.669 | KEY[Tag] VALUE[vm] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.669 | KEY[Tag] VALUE[vm] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.669 | KEY[Tag] VALUE[workflow] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.669 | KEY[Tag] VALUE[workflow] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.669 | KEY[Tag] COMPILE[True]
-     DEBUG |  644 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Development] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Development] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Documentation] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Documentation] COMPILE[True]
-     DEBUG |  653 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Package management] CHANGE[True]
-     DEBUG |  658 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] VALUE[Package management] COMPILE[True]
-     DEBUG |  662 | Backend              | 10/01/2026 23:53:03.669 | KEY[Topic] COMPILE[True]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.676 | KEY[Author] VALUE[Tomás Vírseda]: search returned 5 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.676 | DOC[Author.adoc] targets to RESOURCE[Author.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.676 | DOC[Author.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.676 | DOC[Author.adoc] KEY[Title] VALUE[Author] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.676 | DOC[Author.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.676 | DOC[Author.adoc] targets to RESOURCE[Author.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.676 | KEY[Bookmark] VALUE[Yes]: search returned 1 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.676 | DOC[Bookmark.adoc] targets to RESOURCE[Bookmark.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.677 | DOC[Bookmark.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.677 | DOC[Bookmark.adoc] KEY[Title] VALUE[Bookmark] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.677 | DOC[Bookmark.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.677 | DOC[Bookmark.adoc] targets to RESOURCE[Bookmark.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.677 | KEY[Category] VALUE[Post]: search returned 5 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.677 | DOC[Category.adoc] targets to RESOURCE[Category.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.677 | DOC[Category.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.677 | DOC[Category.adoc] KEY[Title] VALUE[Category] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.677 | DOC[Category.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.677 | DOC[Category.adoc] targets to RESOURCE[Category.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Github Actions]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[GNOME]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[GTK]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[KB4IT]: search returned 4 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Libadwaita]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Mako]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[MiAZ]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Pixi]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[PyGObject]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Pypi]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.678 | KEY[Product] VALUE[Python]: search returned 1 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.679 | DOC[Product.adoc] targets to RESOURCE[Product.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.679 | DOC[Product.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.679 | DOC[Product.adoc] KEY[Title] VALUE[Product] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.679 | DOC[Product.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.679 | DOC[Product.adoc] targets to RESOURCE[Product.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.679 | KEY[Programming Language] VALUE[Python]: search returned 2 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.679 | DOC[Programming_Language.adoc] targets to RESOURCE[Programming_Language.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.679 | DOC[Programming_Language.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.679 | DOC[Programming_Language.adoc] KEY[Title] VALUE[Programming Language] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.679 | DOC[Programming_Language.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.679 | DOC[Programming_Language.adoc] targets to RESOURCE[Programming_Language.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[api]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[build]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[cache]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[compiling]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[dependency]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[documentation]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[environment]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[filehandler]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[incremental]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[index]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.680 | KEY[Tag] VALUE[logging]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[page]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[project]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[redirect]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[template]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[vm]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.681 | KEY[Tag] VALUE[workflow]: search returned 1 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.681 | DOC[Tag.adoc] targets to RESOURCE[Tag.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.681 | DOC[Tag.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.681 | DOC[Tag.adoc] KEY[Title] VALUE[Tag] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.681 | DOC[Tag.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.681 | DOC[Tag.adoc] targets to RESOURCE[Tag.html]
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.682 | KEY[Topic] VALUE[Development]: search returned 4 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.682 | KEY[Topic] VALUE[Documentation]: search returned 1 documents
-     DEBUG |  272 | Database             | 10/01/2026 23:53:03.682 | KEY[Topic] VALUE[Package management]: search returned 1 documents
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.682 | DOC[Topic.adoc] targets to RESOURCE[Topic.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.682 | DOC[Topic.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.682 | DOC[Topic.adoc] KEY[Title] VALUE[Topic] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.682 | DOC[Topic.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.682 | DOC[Topic.adoc] targets to RESOURCE[Topic.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.687 | DOC[Author_Tomás_Vírseda.adoc] targets to RESOURCE[Author_Tomás_Vírseda.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.687 | DOC[Author_Tomás_Vírseda.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.687 | DOC[Author_Tomás_Vírseda.adoc] KEY[Title] VALUE[Author: Tomás Vírseda] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.687 | DOC[Author_Tomás_Vírseda.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.687 | KEY[Author] VALUE[Tomás Vírseda] targets to RESOURCE[Author_Tomás_Vírseda]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.687 | DOC[Author_Tomás_Vírseda.adoc] targets to RESOURCE[Author_Tomás_Vírseda.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.688 | DOC[Bookmark_Yes.adoc] targets to RESOURCE[Bookmark_Yes.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.688 | DOC[Bookmark_Yes.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.688 | DOC[Bookmark_Yes.adoc] KEY[Title] VALUE[Bookmark: Yes] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.688 | DOC[Bookmark_Yes.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.688 | KEY[Bookmark] VALUE[Yes] targets to RESOURCE[Bookmark_Yes]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.688 | DOC[Bookmark_Yes.adoc] targets to RESOURCE[Bookmark_Yes.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.688 | DOC[Category_Post.adoc] targets to RESOURCE[Category_Post.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.689 | DOC[Category_Post.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.689 | DOC[Category_Post.adoc] KEY[Title] VALUE[Category: Post] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.689 | DOC[Category_Post.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.689 | KEY[Category] VALUE[Post] targets to RESOURCE[Category_Post]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.689 | DOC[Category_Post.adoc] targets to RESOURCE[Category_Post.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.689 | DOC[Product_Github_Actions.adoc] targets to RESOURCE[Product_Github_Actions.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.689 | DOC[Product_Github_Actions.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.689 | DOC[Product_Github_Actions.adoc] KEY[Title] VALUE[Product: Github Actions] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.689 | DOC[Product_Github_Actions.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.689 | KEY[Product] VALUE[Github Actions] targets to RESOURCE[Product_Github_Actions]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.689 | DOC[Product_Github_Actions.adoc] targets to RESOURCE[Product_Github_Actions.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.690 | DOC[Product_GNOME.adoc] targets to RESOURCE[Product_GNOME.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.690 | DOC[Product_GNOME.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.690 | DOC[Product_GNOME.adoc] KEY[Title] VALUE[Product: GNOME] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.690 | DOC[Product_GNOME.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.690 | KEY[Product] VALUE[GNOME] targets to RESOURCE[Product_GNOME]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.690 | DOC[Product_GNOME.adoc] targets to RESOURCE[Product_GNOME.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.690 | DOC[Product_GTK.adoc] targets to RESOURCE[Product_GTK.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.691 | DOC[Product_GTK.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.691 | DOC[Product_GTK.adoc] KEY[Title] VALUE[Product: GTK] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.691 | DOC[Product_GTK.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.691 | KEY[Product] VALUE[GTK] targets to RESOURCE[Product_GTK]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.691 | DOC[Product_GTK.adoc] targets to RESOURCE[Product_GTK.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.691 | DOC[Product_KB4IT.adoc] targets to RESOURCE[Product_KB4IT.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.691 | DOC[Product_KB4IT.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.691 | DOC[Product_KB4IT.adoc] KEY[Title] VALUE[Product: KB4IT] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.692 | DOC[Product_KB4IT.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.692 | KEY[Product] VALUE[KB4IT] targets to RESOURCE[Product_KB4IT]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.692 | DOC[Product_KB4IT.adoc] targets to RESOURCE[Product_KB4IT.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.692 | DOC[Product_Libadwaita.adoc] targets to RESOURCE[Product_Libadwaita.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.692 | DOC[Product_Libadwaita.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.692 | DOC[Product_Libadwaita.adoc] KEY[Title] VALUE[Product: Libadwaita] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.692 | DOC[Product_Libadwaita.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.692 | KEY[Product] VALUE[Libadwaita] targets to RESOURCE[Product_Libadwaita]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.692 | DOC[Product_Libadwaita.adoc] targets to RESOURCE[Product_Libadwaita.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.693 | DOC[Product_Mako.adoc] targets to RESOURCE[Product_Mako.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.693 | DOC[Product_Mako.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.693 | DOC[Product_Mako.adoc] KEY[Title] VALUE[Product: Mako] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.693 | DOC[Product_Mako.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.693 | KEY[Product] VALUE[Mako] targets to RESOURCE[Product_Mako]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.693 | DOC[Product_Mako.adoc] targets to RESOURCE[Product_Mako.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.693 | DOC[Product_MiAZ.adoc] targets to RESOURCE[Product_MiAZ.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_MiAZ.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_MiAZ.adoc] KEY[Title] VALUE[Product: MiAZ] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_MiAZ.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.694 | KEY[Product] VALUE[MiAZ] targets to RESOURCE[Product_MiAZ]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.694 | DOC[Product_MiAZ.adoc] targets to RESOURCE[Product_MiAZ.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.694 | DOC[Product_Pixi.adoc] targets to RESOURCE[Product_Pixi.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_Pixi.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_Pixi.adoc] KEY[Title] VALUE[Product: Pixi] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.694 | DOC[Product_Pixi.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.694 | KEY[Product] VALUE[Pixi] targets to RESOURCE[Product_Pixi]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.694 | DOC[Product_Pixi.adoc] targets to RESOURCE[Product_Pixi.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.695 | DOC[Product_PyGObject.adoc] targets to RESOURCE[Product_PyGObject.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.695 | DOC[Product_PyGObject.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.695 | DOC[Product_PyGObject.adoc] KEY[Title] VALUE[Product: PyGObject] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.695 | DOC[Product_PyGObject.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.695 | KEY[Product] VALUE[PyGObject] targets to RESOURCE[Product_PyGObject]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.695 | DOC[Product_PyGObject.adoc] targets to RESOURCE[Product_PyGObject.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.696 | DOC[Product_Pypi.adoc] targets to RESOURCE[Product_Pypi.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.696 | DOC[Product_Pypi.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.696 | DOC[Product_Pypi.adoc] KEY[Title] VALUE[Product: Pypi] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.696 | DOC[Product_Pypi.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.696 | KEY[Product] VALUE[Pypi] targets to RESOURCE[Product_Pypi]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.696 | DOC[Product_Pypi.adoc] targets to RESOURCE[Product_Pypi.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.696 | DOC[Product_Python.adoc] targets to RESOURCE[Product_Python.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.697 | DOC[Product_Python.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.697 | DOC[Product_Python.adoc] KEY[Title] VALUE[Product: Python] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.697 | DOC[Product_Python.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.697 | KEY[Product] VALUE[Python] targets to RESOURCE[Product_Python]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.697 | DOC[Product_Python.adoc] targets to RESOURCE[Product_Python.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.698 | DOC[Programming_Language_Python.adoc] targets to RESOURCE[Programming_Language_Python.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.698 | DOC[Programming_Language_Python.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.698 | DOC[Programming_Language_Python.adoc] KEY[Title] VALUE[Programming Language: Python] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.698 | DOC[Programming_Language_Python.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.698 | KEY[Programming Language] VALUE[Python] targets to RESOURCE[Programming_Language_Python]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.698 | DOC[Programming_Language_Python.adoc] targets to RESOURCE[Programming_Language_Python.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.699 | DOC[Tag_api.adoc] targets to RESOURCE[Tag_api.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.699 | DOC[Tag_api.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.699 | DOC[Tag_api.adoc] KEY[Title] VALUE[Tag: api] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.699 | DOC[Tag_api.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.699 | KEY[Tag] VALUE[api] targets to RESOURCE[Tag_api]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.699 | DOC[Tag_api.adoc] targets to RESOURCE[Tag_api.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.699 | DOC[Tag_build.adoc] targets to RESOURCE[Tag_build.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.699 | DOC[Tag_build.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.699 | DOC[Tag_build.adoc] KEY[Title] VALUE[Tag: build] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.700 | DOC[Tag_build.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.700 | KEY[Tag] VALUE[build] targets to RESOURCE[Tag_build]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.700 | DOC[Tag_build.adoc] targets to RESOURCE[Tag_build.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.700 | DOC[Tag_cache.adoc] targets to RESOURCE[Tag_cache.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.700 | DOC[Tag_cache.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.700 | DOC[Tag_cache.adoc] KEY[Title] VALUE[Tag: cache] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.700 | DOC[Tag_cache.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.700 | KEY[Tag] VALUE[cache] targets to RESOURCE[Tag_cache]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.700 | DOC[Tag_cache.adoc] targets to RESOURCE[Tag_cache.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.701 | DOC[Tag_compiling.adoc] targets to RESOURCE[Tag_compiling.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.701 | DOC[Tag_compiling.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.701 | DOC[Tag_compiling.adoc] KEY[Title] VALUE[Tag: compiling] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.701 | DOC[Tag_compiling.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.701 | KEY[Tag] VALUE[compiling] targets to RESOURCE[Tag_compiling]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.701 | DOC[Tag_compiling.adoc] targets to RESOURCE[Tag_compiling.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.701 | DOC[Tag_dependency.adoc] targets to RESOURCE[Tag_dependency.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_dependency.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_dependency.adoc] KEY[Title] VALUE[Tag: dependency] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_dependency.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.702 | KEY[Tag] VALUE[dependency] targets to RESOURCE[Tag_dependency]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.702 | DOC[Tag_dependency.adoc] targets to RESOURCE[Tag_dependency.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.702 | DOC[Tag_documentation.adoc] targets to RESOURCE[Tag_documentation.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_documentation.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_documentation.adoc] KEY[Title] VALUE[Tag: documentation] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.702 | DOC[Tag_documentation.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.703 | KEY[Tag] VALUE[documentation] targets to RESOURCE[Tag_documentation]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.703 | DOC[Tag_documentation.adoc] targets to RESOURCE[Tag_documentation.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.703 | DOC[Tag_environment.adoc] targets to RESOURCE[Tag_environment.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.703 | DOC[Tag_environment.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.703 | DOC[Tag_environment.adoc] KEY[Title] VALUE[Tag: environment] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.703 | DOC[Tag_environment.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.703 | KEY[Tag] VALUE[environment] targets to RESOURCE[Tag_environment]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.703 | DOC[Tag_environment.adoc] targets to RESOURCE[Tag_environment.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.704 | DOC[Tag_filehandler.adoc] targets to RESOURCE[Tag_filehandler.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.704 | DOC[Tag_filehandler.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.704 | DOC[Tag_filehandler.adoc] KEY[Title] VALUE[Tag: filehandler] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.704 | DOC[Tag_filehandler.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.704 | KEY[Tag] VALUE[filehandler] targets to RESOURCE[Tag_filehandler]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.704 | DOC[Tag_filehandler.adoc] targets to RESOURCE[Tag_filehandler.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.704 | DOC[Tag_incremental.adoc] targets to RESOURCE[Tag_incremental.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.704 | DOC[Tag_incremental.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.705 | DOC[Tag_incremental.adoc] KEY[Title] VALUE[Tag: incremental] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.705 | DOC[Tag_incremental.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.705 | KEY[Tag] VALUE[incremental] targets to RESOURCE[Tag_incremental]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.705 | DOC[Tag_incremental.adoc] targets to RESOURCE[Tag_incremental.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.705 | DOC[Tag_index.adoc] targets to RESOURCE[Tag_index.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.705 | DOC[Tag_index.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.705 | DOC[Tag_index.adoc] KEY[Title] VALUE[Tag: index] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.705 | DOC[Tag_index.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.705 | KEY[Tag] VALUE[index] targets to RESOURCE[Tag_index]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.705 | DOC[Tag_index.adoc] targets to RESOURCE[Tag_index.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.706 | DOC[Tag_logging.adoc] targets to RESOURCE[Tag_logging.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.706 | DOC[Tag_logging.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.706 | DOC[Tag_logging.adoc] KEY[Title] VALUE[Tag: logging] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.706 | DOC[Tag_logging.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.706 | KEY[Tag] VALUE[logging] targets to RESOURCE[Tag_logging]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.706 | DOC[Tag_logging.adoc] targets to RESOURCE[Tag_logging.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.706 | DOC[Tag_page.adoc] targets to RESOURCE[Tag_page.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_page.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_page.adoc] KEY[Title] VALUE[Tag: page] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_page.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.707 | KEY[Tag] VALUE[page] targets to RESOURCE[Tag_page]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.707 | DOC[Tag_page.adoc] targets to RESOURCE[Tag_page.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.707 | DOC[Tag_project.adoc] targets to RESOURCE[Tag_project.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_project.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_project.adoc] KEY[Title] VALUE[Tag: project] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.707 | DOC[Tag_project.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.707 | KEY[Tag] VALUE[project] targets to RESOURCE[Tag_project]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.708 | DOC[Tag_project.adoc] targets to RESOURCE[Tag_project.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.708 | DOC[Tag_redirect.adoc] targets to RESOURCE[Tag_redirect.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.708 | DOC[Tag_redirect.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.708 | DOC[Tag_redirect.adoc] KEY[Title] VALUE[Tag: redirect] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.708 | DOC[Tag_redirect.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.708 | KEY[Tag] VALUE[redirect] targets to RESOURCE[Tag_redirect]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.708 | DOC[Tag_redirect.adoc] targets to RESOURCE[Tag_redirect.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.709 | DOC[Tag_template.adoc] targets to RESOURCE[Tag_template.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.709 | DOC[Tag_template.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.709 | DOC[Tag_template.adoc] KEY[Title] VALUE[Tag: template] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.709 | DOC[Tag_template.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.709 | KEY[Tag] VALUE[template] targets to RESOURCE[Tag_template]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.709 | DOC[Tag_template.adoc] targets to RESOURCE[Tag_template.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.709 | DOC[Tag_vm.adoc] targets to RESOURCE[Tag_vm.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.709 | DOC[Tag_vm.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.709 | DOC[Tag_vm.adoc] KEY[Title] VALUE[Tag: vm] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.710 | DOC[Tag_vm.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.710 | KEY[Tag] VALUE[vm] targets to RESOURCE[Tag_vm]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.710 | DOC[Tag_vm.adoc] targets to RESOURCE[Tag_vm.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.710 | DOC[Tag_workflow.adoc] targets to RESOURCE[Tag_workflow.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.710 | DOC[Tag_workflow.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.710 | DOC[Tag_workflow.adoc] KEY[Title] VALUE[Tag: workflow] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.710 | DOC[Tag_workflow.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.711 | KEY[Tag] VALUE[workflow] targets to RESOURCE[Tag_workflow]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.711 | DOC[Tag_workflow.adoc] targets to RESOURCE[Tag_workflow.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.713 | DOC[Topic_Development.adoc] targets to RESOURCE[Topic_Development.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.713 | DOC[Topic_Development.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.713 | DOC[Topic_Development.adoc] KEY[Title] VALUE[Topic: Development] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.713 | DOC[Topic_Development.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.713 | KEY[Topic] VALUE[Development] targets to RESOURCE[Topic_Development]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.713 | DOC[Topic_Development.adoc] targets to RESOURCE[Topic_Development.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.713 | DOC[Topic_Documentation.adoc] targets to RESOURCE[Topic_Documentation.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Documentation.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Documentation.adoc] KEY[Title] VALUE[Topic: Documentation] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Documentation.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.714 | KEY[Topic] VALUE[Documentation] targets to RESOURCE[Topic_Documentation]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.714 | DOC[Topic_Documentation.adoc] targets to RESOURCE[Topic_Documentation.html]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.714 | DOC[Topic_Package_management.adoc] targets to RESOURCE[Topic_Package_management.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Package_management.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Package_management.adoc] KEY[Title] VALUE[Topic: Package management] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.714 | DOC[Topic_Package_management.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  772 | Theme                | 10/01/2026 23:53:03.715 | KEY[Topic] VALUE[Package management] targets to RESOURCE[Topic_Package_management]
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.715 | DOC[Topic_Package_management.adoc] targets to RESOURCE[Topic_Package_management.html]
-     DEBUG |  708 | Backend              | 10/01/2026 23:53:03.715 | STATS - 7 keys will be compiled
-     DEBUG |  709 | Backend              | 10/01/2026 23:53:03.715 | STATS - 35 key/value pairs will be compiled
-     DEBUG |  710 | Backend              | 10/01/2026 23:53:03.715 | STATS - Finish processing keys
-     DEBUG |  711 | Backend              | 10/01/2026 23:53:03.715 | STATS - Target docs: 48
-     DEBUG |  712 | Backend              | 10/01/2026 23:53:03.715 | [PROCESSINNG] - END
-      INFO |  112 | Workflow             | 10/01/2026 23:53:03.715 | Theme processing
-     DEBUG |  831 | Backend              | 10/01/2026 23:53:03.715 | [PROCESSING THEME] - START
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.718 | DOC[events_20251231.adoc] targets to RESOURCE[events_20251231.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.718 | DOC[events_20251231.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.718 | DOC[events_20251231.adoc] KEY[Title] VALUE[Events on Wednesday, December 31, 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.719 | DOC[events_20251231.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.719 | DOC[events_20251228.adoc] targets to RESOURCE[events_20251228.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.719 | DOC[events_20251228.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.720 | DOC[events_20251228.adoc] KEY[Title] VALUE[Events on Sunday, December 28, 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.720 | DOC[events_20251228.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.720 | DOC[events_20251214.adoc] targets to RESOURCE[events_20251214.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.721 | DOC[events_20251214.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.721 | DOC[events_20251214.adoc] KEY[Title] VALUE[Events on Sunday, December 14, 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.721 | DOC[events_20251214.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.721 | DOC[events_20251208.adoc] targets to RESOURCE[events_20251208.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.721 | DOC[events_20251208.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.722 | DOC[events_20251208.adoc] KEY[Title] VALUE[Events on Monday, December 08, 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.722 | DOC[events_20251208.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.723 | DOC[events_202512.adoc] targets to RESOURCE[events_202512.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.723 | DOC[events_202512.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.723 | DOC[events_202512.adoc] KEY[Title] VALUE[Events on December, 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.723 | DOC[events_202512.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.754 | DOC[events_2025.adoc] targets to RESOURCE[events_2025.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.754 | DOC[events_2025.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.754 | DOC[events_2025.adoc] KEY[Title] VALUE[Events on 2025] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.754 | DOC[events_2025.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.755 | DOC[events.adoc] targets to RESOURCE[events.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.755 | DOC[events.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.755 | DOC[events.adoc] KEY[Title] VALUE[Events] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.755 | DOC[events.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.759 | DOC[properties.adoc] targets to RESOURCE[properties.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.759 | DOC[properties.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.759 | DOC[properties.adoc] KEY[Title] VALUE[Properties] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.759 | DOC[properties.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.761 | DOC[stats.adoc] targets to RESOURCE[stats.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.761 | DOC[stats.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.761 | DOC[stats.adoc] KEY[Title] VALUE[Stats] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.761 | DOC[stats.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  782 | Theme                | 10/01/2026 23:53:03.762 | DOC['20251231-1400-log_module.adoc'] bookmarked?  [False]
-     DEBUG |  782 | Theme                | 10/01/2026 23:53:03.762 | DOC['20251228-KB4IT-incremental-compiling.adoc'] bookmarked?  [False]
-     DEBUG |  782 | Theme                | 10/01/2026 23:53:03.762 | DOC['20251226-PyGTK4.adoc'] bookmarked? Yes [True]
-     DEBUG |  782 | Theme                | 10/01/2026 23:53:03.762 | DOC['20251214-0030.adoc'] bookmarked?  [False]
-     DEBUG |  782 | Theme                | 10/01/2026 23:53:03.762 | DOC['20251208-2230.adoc'] bookmarked?  [False]
-     DEBUG |  786 | Theme                | 10/01/2026 23:53:03.762 |  - Found 1 bookmarks
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.762 | DOC[bookmarks.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.762 | DOC[bookmarks.adoc] KEY[Title] VALUE[Bookmarks] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.762 | DOC[bookmarks.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.762 | DOC[bookmarks.adoc] targets to RESOURCE[bookmarks.html]
-     DEBUG |  799 | Theme                | 10/01/2026 23:53:03.763 |  - Created page for bookmarks
-     DEBUG |  222 | Backend              | 10/01/2026 23:53:03.764 | DOC[all.adoc] targets to RESOURCE[all.html]
-     DEBUG |   70 | Database             | 10/01/2026 23:53:03.764 | DOC[all.adoc] added to database
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.764 | DOC[all.adoc] KEY[Title] VALUE[All documents] added
-     DEBUG |   81 | Database             | 10/01/2026 23:53:03.764 | DOC[all.adoc] KEY[SystemPage] VALUE[Yes] added
-     DEBUG |  833 | Backend              | 10/01/2026 23:53:03.764 | [PROCESSING THEME] - END
-      INFO |  114 | Workflow             | 10/01/2026 23:53:03.764 | Compilation
-     DEBUG |  726 | Backend              | 10/01/2026 23:53:03.764 | Global resources copied to /home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/tmp/resources
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[toc] VALUE[left]
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[toclevels] VALUE[2]
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[icons] VALUE[font]
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[linkcss] VALUE[None]
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[experimental] VALUE[None]
-     DEBUG |  730 | Backend              | 10/01/2026 23:53:03.764 | CONF[ASCIIDOC] PARAM[source-highlighter] VALUE[highlight.js]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.765 | DOC[20251208-2230.adoc] compiles in JOB[1]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.766 | DOC[20251214-0030.adoc] compiles in JOB[2]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.766 | DOC[20251226-PyGTK4.adoc] compiles in JOB[3]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.766 | DOC[20251228-KB4IT-incremental-compiling.adoc] compiles in JOB[4]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.766 | DOC[20251231-1400-log_module.adoc] compiles in JOB[5]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[about_app.adoc] compiles in JOB[6]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[all.adoc] compiles in JOB[7]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Author.adoc] compiles in JOB[8]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Author_Tomás_Vírseda.adoc] compiles in JOB[9]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Bookmark.adoc] compiles in JOB[10]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Bookmark_Yes.adoc] compiles in JOB[11]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[bookmarks.adoc] compiles in JOB[12]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Category.adoc] compiles in JOB[13]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[Category_Post.adoc] compiles in JOB[14]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events.adoc] compiles in JOB[15]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events_2025.adoc] compiles in JOB[16]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events_202512.adoc] compiles in JOB[17]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events_20251208.adoc] compiles in JOB[18]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events_20251214.adoc] compiles in JOB[19]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.767 | DOC[events_20251228.adoc] compiles in JOB[20]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[events_20251231.adoc] compiles in JOB[21]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product.adoc] compiles in JOB[22]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Github_Actions.adoc] compiles in JOB[23]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_GNOME.adoc] compiles in JOB[24]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_GTK.adoc] compiles in JOB[25]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_KB4IT.adoc] compiles in JOB[26]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Libadwaita.adoc] compiles in JOB[27]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Mako.adoc] compiles in JOB[28]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_MiAZ.adoc] compiles in JOB[29]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Pixi.adoc] compiles in JOB[30]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_PyGObject.adoc] compiles in JOB[31]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Pypi.adoc] compiles in JOB[32]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Product_Python.adoc] compiles in JOB[33]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Programming_Language.adoc] compiles in JOB[34]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[Programming_Language_Python.adoc] compiles in JOB[35]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.768 | DOC[properties.adoc] compiles in JOB[36]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[stats.adoc] compiles in JOB[37]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag.adoc] compiles in JOB[38]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_api.adoc] compiles in JOB[39]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_build.adoc] compiles in JOB[40]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_cache.adoc] compiles in JOB[41]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_compiling.adoc] compiles in JOB[42]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_dependency.adoc] compiles in JOB[43]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_documentation.adoc] compiles in JOB[44]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_environment.adoc] compiles in JOB[45]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_filehandler.adoc] compiles in JOB[46]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_incremental.adoc] compiles in JOB[47]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_index.adoc] compiles in JOB[48]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_logging.adoc] compiles in JOB[49]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_page.adoc] compiles in JOB[50]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_project.adoc] compiles in JOB[51]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.769 | DOC[Tag_redirect.adoc] compiles in JOB[52]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Tag_template.adoc] compiles in JOB[53]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Tag_vm.adoc] compiles in JOB[54]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Tag_workflow.adoc] compiles in JOB[55]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Topic.adoc] compiles in JOB[56]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Topic_Development.adoc] compiles in JOB[57]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Topic_Documentation.adoc] compiles in JOB[58]
-     DEBUG |  767 | Backend              | 10/01/2026 23:53:03.770 | DOC[Topic_Package_management.adoc] compiles in JOB[59]
-     DEBUG |  776 | Backend              | 10/01/2026 23:53:03.770 | [COMPILATION] - START
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.011 | DOC[20251208-2230.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.103 | DOC[20251214-0030.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.283 | DOC[20251226-PyGTK4.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.345 | DOC[20251228-KB4IT-incremental-compiling.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:04.345 | STATS - JOB[4/59] Compilation progress: 6% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.733 | DOC[20251231-1400-log_module.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:04.975 | DOC[about_app.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:05.439 | DOC[all.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:05.593 | DOC[Author.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:05.593 | STATS - JOB[8/59] Compilation progress: 13% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:05.825 | DOC[Author_Tomás_Vírseda.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:05.897 | DOC[Bookmark.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:06.032 | DOC[Bookmark_Yes.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:06.289 | DOC[bookmarks.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:06.290 | STATS - JOB[12/59] Compilation progress: 20% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:06.671 | DOC[Category.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:06.870 | DOC[Category_Post.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:07.129 | DOC[events.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:07.356 | DOC[events_2025.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:07.356 | STATS - JOB[16/59] Compilation progress: 27% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:07.721 | DOC[events_202512.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:08.467 | DOC[events_20251208.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:08.556 | DOC[events_20251214.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:09.269 | DOC[events_20251228.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:09.269 | STATS - JOB[20/59] Compilation progress: 33% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:09.428 | DOC[events_20251231.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:09.901 | DOC[Product.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:10.075 | DOC[Product_Github_Actions.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:10.455 | DOC[Product_GNOME.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:10.455 | STATS - JOB[24/59] Compilation progress: 40% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:10.512 | DOC[Product_GTK.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:11.209 | DOC[Product_KB4IT.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:11.365 | DOC[Product_Libadwaita.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:11.532 | DOC[Product_Mako.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:11.532 | STATS - JOB[28/59] Compilation progress: 47% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:12.153 | DOC[Product_MiAZ.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:12.167 | DOC[Product_Pixi.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:12.672 | DOC[Product_PyGObject.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:12.908 | DOC[Product_Pypi.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:12.908 | STATS - JOB[32/59] Compilation progress: 54% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:13.502 | DOC[Product_Python.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:13.670 | DOC[Programming_Language.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:13.882 | DOC[Programming_Language_Python.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:14.616 | DOC[properties.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:14.616 | STATS - JOB[36/59] Compilation progress: 61% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:14.622 | DOC[stats.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:15.040 | DOC[Tag.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:15.474 | DOC[Tag_api.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:15.983 | DOC[Tag_build.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:15.983 | STATS - JOB[40/59] Compilation progress: 67% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:16.211 | DOC[Tag_cache.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:16.366 | DOC[Tag_compiling.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:16.533 | DOC[Tag_dependency.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:17.312 | DOC[Tag_documentation.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:17.312 | STATS - JOB[44/59] Compilation progress: 74% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:17.327 | DOC[Tag_environment.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:17.715 | DOC[Tag_filehandler.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:17.721 | DOC[Tag_incremental.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:18.160 | DOC[Tag_index.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:18.160 | STATS - JOB[48/59] Compilation progress: 81% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:18.379 | DOC[Tag_logging.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:18.731 | DOC[Tag_page.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:19.088 | DOC[Tag_project.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:19.178 | DOC[Tag_redirect.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:19.178 | STATS - JOB[52/59] Compilation progress: 88% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:19.761 | DOC[Tag_template.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:19.898 | DOC[Tag_vm.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:20.306 | DOC[Tag_workflow.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:20.336 | DOC[Topic.adoc] compiled successfully
-     DEBUG |  785 | Backend              | 10/01/2026 23:53:20.336 | STATS - JOB[56/59] Compilation progress: 94% done
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:20.648 | DOC[Topic_Development.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:20.911 | DOC[Topic_Documentation.adoc] compiled successfully
-     DEBUG |  780 | Backend              | 10/01/2026 23:53:21.412 | DOC[Topic_Package_management.adoc] compiled successfully
-     DEBUG |  794 | Backend              | 10/01/2026 23:53:21.412 | STATS - JOB[59/59] Compilation progress: 100% done
-     DEBUG |  795 | Backend              | 10/01/2026 23:53:21.412 | STATS - Compilation time: 17 seconds
-     DEBUG |  796 | Backend              | 10/01/2026 23:53:21.412 | STATS - Compiled docs: 59
-     DEBUG |  797 | Backend              | 10/01/2026 23:53:21.412 | STATS - Avg. Speed: 3 docs/sec
-     DEBUG |  800 | Backend              | 10/01/2026 23:53:21.412 | [COMPILATION] - END
-      INFO |  116 | Workflow             | 10/01/2026 23:53:21.837 | Clean up target
-     DEBUG |  838 | Backend              | 10/01/2026 23:53:21.837 | [CLEANUP] - START
-     DEBUG |  843 | Backend              | 10/01/2026 23:53:21.839 | Distributed files deleted
-     DEBUG |  855 | Backend              | 10/01/2026 23:53:21.844 | Copy temporary files to distributed directory
-     DEBUG |  858 | Backend              | 10/01/2026 23:53:21.877 | Deleted target contents in: /home/runner/work/blog/blog/docs
-     DEBUG |  859 | Backend              | 10/01/2026 23:53:21.877 | [CLEANUP]
-      INFO |  118 | Workflow             | 10/01/2026 23:53:21.877 | Refresh target
-     DEBUG |  864 | Backend              | 10/01/2026 23:53:21.877 | [INSTALL] - START
-     DEBUG |  871 | Backend              | 10/01/2026 23:53:21.878 | STATS - Copied 6 asciidoctor sources to target path
-     DEBUG |  879 | Backend              | 10/01/2026 23:53:21.886 | STATS - Copied 59 html files from temporary path to cache path
-     DEBUG |  887 | Backend              | 10/01/2026 23:53:21.899 | STATS - Copied 118 html files from temporary target to cache path
-     DEBUG |  902 | Backend              | 10/01/2026 23:53:21.905 | STATS - Copied 59 cached documents successfully to target path
-     DEBUG |  914 | Backend              | 10/01/2026 23:53:22.010 | STATS - Copied global resources to target path
-     DEBUG |  929 | Backend              | 10/01/2026 23:53:22.019 | Copying HTML files back to cache...
-     DEBUG |  934 | Backend              | 10/01/2026 23:53:22.020 | Copied JSON database to target
-     DEBUG |  935 | Backend              | 10/01/2026 23:53:22.020 | [INSTALL] - END
-      INFO |  120 | Workflow             | 10/01/2026 23:53:22.020 | Theme post activities
-     DEBUG |  389 | Theme                | 10/01/2026 23:53:22.020 | [POSTPROCESSING THEME] - START
-     DEBUG |  198 | Theme                | 10/01/2026 23:53:22.026 | DOC[20251231-1400-log_module.adoc] add to index page
-     DEBUG |  198 | Theme                | 10/01/2026 23:53:22.027 | DOC[20251228-KB4IT-incremental-compiling.adoc] add to index page
-     DEBUG |  198 | Theme                | 10/01/2026 23:53:22.027 | DOC[20251226-PyGTK4.adoc] add to index page
-     DEBUG |  198 | Theme                | 10/01/2026 23:53:22.028 | DOC[20251214-0030.adoc] add to index page
-     DEBUG |  198 | Theme                | 10/01/2026 23:53:22.028 | DOC[20251208-2230.adoc] add to index page
-     DEBUG |  297 | Database             | 10/01/2026 23:53:22.174 | DOC[index.adoc] is not in the database
-     DEBUG |  392 | Theme                | 10/01/2026 23:53:22.178 | [POSTPROCESSING THEME] - END
-      INFO |  123 | Workflow             | 10/01/2026 23:53:22.178 | Repository website built
-      INFO |  124 | Workflow             | 10/01/2026 23:53:22.178 | URL: /home/runner/work/blog/blog/docs/index.html
-      INFO |  125 | Workflow             | 10/01/2026 23:53:22.178 | Full log: /home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log
-      INFO |  126 | Workflow             | 10/01/2026 23:53:22.178 | The End
-     DEBUG |  227 | KB4IT                | 10/01/2026 23:53:22.183 | KB4IT 0.7.25+build.1 finished at 2026-01-10T23:53:22.183348
+     DEBUG |   68 | KB4IT                | 11/01/2026 12:13:46.541 | Temporary KB4IT Log file: /home/runner/.kb4it/var/log/kb4it.log.139874264265405890
+     DEBUG |   69 | KB4IT                | 11/01/2026 12:13:46.541 | KB4IT 0.7.25+build.3
+     DEBUG |   70 | KB4IT                | 11/01/2026 12:13:46.541 | CONF[SYS] PYTHON[3.14.2 (main, Dec  8 2025, 02:53:13) [GCC 13.3.0]]
+     DEBUG |   71 | KB4IT                | 11/01/2026 12:13:46.541 | CONF[SYS] PLATFORM[Ubuntu 24.04.3 LTS]
+     DEBUG |   99 | KB4IT                | 11/01/2026 12:13:46.541 | CONF[CMDLINE] PARAM[log_level] VALUE[DEBUG]
+     DEBUG |   99 | KB4IT                | 11/01/2026 12:13:46.541 | CONF[CMDLINE] PARAM[action] VALUE[build]
+     DEBUG |   99 | KB4IT                | 11/01/2026 12:13:46.541 | CONF[CMDLINE] PARAM[config] VALUE[config/blog.json]
+     DEBUG |   99 | KB4IT                | 11/01/2026 12:13:46.542 | CONF[CMDLINE] PARAM[force] VALUE[False]
+     DEBUG |   99 | KB4IT                | 11/01/2026 12:13:46.542 | CONF[CMDLINE] PARAM[workers] VALUE[2]
+     DEBUG |  152 | KB4IT                | 11/01/2026 12:13:46.542 | CONF[ENV] PID[2345] FILE[/home/runner/.kb4it/var/kb4it.pid]
+     DEBUG |   65 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] CONFIG_FILE[ VALUE[config/blog.json]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[datatable] VALUE[['Updated', 'Category', 'Title', 'Topic']]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[events] VALUE[['Post', 'Note', 'Bookmark']]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[force] VALUE[True]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[git] VALUE[True]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[git_branch] VALUE[main]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[git_path] VALUE[source]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[git_repo] VALUE[blog]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.542 | CONF[REPO] PARAM[git_server] VALUE[https://github.com]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[git_user] VALUE[t00m]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[ignored_keys] VALUE[['Updated']]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[logo] VALUE[resources/themes/blog/images/logo.svg]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[logo_alt] VALUE[]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[menu] VALUE[['Author', 'Category']]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[sort] VALUE[Updated]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[source] VALUE[source]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[target] VALUE[docs]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[theme] VALUE[blog]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[timeline] VALUE[['Post', 'Note']]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[tagline] VALUE[My public notes]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[title] VALUE[t00mterías]
+     DEBUG |   67 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[webserver] VALUE[True]
+     DEBUG |   85 | Backend              | 11/01/2026 12:13:46.543 | CONF[REPO] PARAM[force] set to True
+     DEBUG |  135 | Backend              | 11/01/2026 12:13:46.544 | CONF[APP] LOG_FILE[/home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log]
+     DEBUG |  199 | Backend              | 11/01/2026 12:13:46.544 | [CONF] - Current kbdict entries: 2
+      INFO |   99 | Workflow             | 11/01/2026 12:13:46.545 | Building a website for repository 't00mterías'
+      INFO |  100 | Workflow             | 11/01/2026 12:13:46.545 | Using theme 'blog'
+      INFO |  101 | Workflow             | 11/01/2026 12:13:46.545 | Check environment
+     DEBUG |  289 | Backend              | 11/01/2026 12:13:46.545 | [CHECKS] - START
+     DEBUG |  290 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[CACHE] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/cache]
+     DEBUG |  291 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[WORKDIR] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/tmp]
+     DEBUG |  292 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[DISTRIBUTION] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/dist]
+     DEBUG |  293 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[TMPWWW] VALUE[/home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/www]
+     DEBUG |  299 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[SOURCE] VALUE[/home/runner/work/blog/blog/source]
+     DEBUG |  304 | Backend              | 11/01/2026 12:13:46.545 | CONF[APP] DIR[TARGET] VALUE[/home/runner/work/blog/blog/docs]
+     DEBUG |  108 | Frontend             | 11/01/2026 12:13:46.545 | CONF[THEME] NAME[Blog] VERSION[0.1.0]
+     DEBUG |  335 | Backend              | 11/01/2026 12:13:46.554 | [CHECKS] - END
+      INFO |  103 | Workflow             | 11/01/2026 12:13:46.554 | Allow theme to generate sources
+      INFO |  106 | Workflow             | 11/01/2026 12:13:46.554 | Get source documents
+     DEBUG |  340 | Backend              | 11/01/2026 12:13:46.554 | [SOURCES] - START
+   WARNING |  352 | Backend              | 11/01/2026 12:13:46.555 |   - Added missing 'About App' to your sources
+     DEBUG |  361 | Backend              | 11/01/2026 12:13:46.555 | STATS - Found 6 asciidoctor documents in source directory
+     DEBUG |  362 | Backend              | 11/01/2026 12:13:46.555 | [SOURCES] - END
+      INFO |  108 | Workflow             | 11/01/2026 12:13:46.555 | Preprocessing
+     DEBUG |  532 | Backend              | 11/01/2026 12:13:46.555 | [PREPROCESSING] - START
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.555 | DOC[20251208-2230.adoc] Title[Blog theme features a new index page]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.555 | DOC[20251208-2230.adoc] has 7 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.555 | DOC[20251208-2230.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] HASH[5504b6071d14d121fd975ad6cfa8b1b3e544bba6c454a40ee5291f80156e2d7f]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Title] VALUE[Blog theme features a new index page] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Author] VALUE[Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Category] VALUE[Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Topic] VALUE[Development] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Product] VALUE[KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Product] VALUE[Mako] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[index] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[page] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.556 | DOC[20251208-2230.adoc] KEY[Tag] VALUE[template] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.581 | DOC[20251208-2230.adoc] KEY[Updated] VALUE[2025-12-08 23:00:00] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.581 | DOC[20251208-2230.adoc] targets to RESOURCE[20251208-2230.html]
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] Title[Pixi: Managing Python Environments]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] has 7 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] HASH[7a8cd501f94919ee4e8645b8821802693eccf77fbb1cb5cb7dea626d9a09dfff]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] KEY[Title] VALUE[Pixi: Managing Python Environments] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] KEY[Author] VALUE[Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.581 | DOC[20251214-0030.adoc] KEY[Category] VALUE[Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Topic] VALUE[Package management] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Product] VALUE[KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Python] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Pixi] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Product] VALUE[Pypi] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[project] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[build] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[dependency] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Tag] VALUE[environment] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.582 | DOC[20251214-0030.adoc] KEY[Updated] VALUE[2025-12-14 00:30:00] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.583 | DOC[20251214-0030.adoc] targets to RESOURCE[20251214-0030.html]
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] Title[App development with GTK, Python and Libadwaita]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] has 9 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] HASH[3ee562c679dacc55b703353ed5685bd569c59149e352128a049ae388d7d76f0f]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Title] VALUE[App development with GTK, Python and Libadwaita] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Author] VALUE[Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Category] VALUE[Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Topic] VALUE[Development] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Topic] VALUE[Documentation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[GTK] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[Libadwaita] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[PyGObject] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[GNOME] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.583 | DOC[20251226-PyGTK4.adoc] KEY[Product] VALUE[MiAZ] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] KEY[Tag] VALUE[api] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] KEY[Tag] VALUE[documentation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] KEY[Programming Language] VALUE[Python] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] KEY[Bookmark] VALUE[Yes] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] KEY[Updated] VALUE[2025-12-28 18:40:00] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.584 | DOC[20251226-PyGTK4.adoc] targets to RESOURCE[20251226-PyGTK4.html]
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.584 | DOC[20251228-KB4IT-incremental-compiling.adoc] Title[KB4IT incremental compiling doesn't work (yet) in Github]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.584 | DOC[20251228-KB4IT-incremental-compiling.adoc] has 7 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] HASH[5f242b9d152c00001b017459ab82de0ce3d5b44bbc2fedb5421d2067964b1d0c]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Title] VALUE[KB4IT incremental compiling doesn't work (yet) in Github] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Author] VALUE[Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Category] VALUE[Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Topic] VALUE[Development] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Topic] VALUE[Automation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Product] VALUE[KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Product] VALUE[Github Actions] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[incremental] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[compiling] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[vm] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[workflow] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.585 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Tag] VALUE[cache] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251228-KB4IT-incremental-compiling.adoc] KEY[Updated] VALUE[2025-12-28 21:40:00] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.586 | DOC[20251228-KB4IT-incremental-compiling.adoc] targets to RESOURCE[20251228-KB4IT-incremental-compiling.html]
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] Title[A log module for KB4IT]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] has 8 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] HASH[5353d5efe26338299bf04e1fe482469a43f3693143b5d1063f66c82cbc634a82]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] KEY[Title] VALUE[A log module for KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] KEY[Author] VALUE[Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] KEY[Category] VALUE[Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] KEY[Topic] VALUE[Development] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.586 | DOC[20251231-1400-log_module.adoc] KEY[Product] VALUE[KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[logging] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[redirect] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] KEY[Tag] VALUE[filehandler] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] KEY[Programming Language] VALUE[Python] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] KEY[Updated] VALUE[2025-12-31 14:00:00] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.587 | DOC[20251231-1400-log_module.adoc] targets to RESOURCE[20251231-1400-log_module.html]
+     DEBUG |  403 | Backend              | 11/01/2026 12:13:46.587 | DOC[about_app.adoc] Title[About this app]
+     DEBUG |  408 | Backend              | 11/01/2026 12:13:46.587 | DOC[about_app.adoc] has 2 keys
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.587 | DOC[about_app.adoc] added to database
+     DEBUG |  427 | Backend              | 11/01/2026 12:13:46.588 | DOC[about_app.adoc] HASH[5ab8aed57c7df4ad90c435a04a4d8c8ffd2bae64edbd11615d8e2a126b5e3b4a]
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.588 | DOC[about_app.adoc] KEY[Title] VALUE[About this app] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.588 | DOC[about_app.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.588 | DOC[about_app.adoc] targets to RESOURCE[about_app.html]
+     DEBUG |  548 | Backend              | 11/01/2026 12:13:46.589 | CONF[APP] PARAM[force] VALUE[True]: Keys hashes mismatch. Force compilation!
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.589 | DOC[20251208-2230.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.589 | DOC[20251214-0030.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.589 | DOC[20251226-PyGTK4.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.589 | DOC[20251228-KB4IT-incremental-compiling.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.590 | DOC[20251231-1400-log_module.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  521 | Backend              | 11/01/2026 12:13:46.590 | DOC[about_app.adoc] COMPILE[True] REASON[Forced]
+     DEBUG |  562 | Backend              | 11/01/2026 12:13:46.590 | STATS - Documents analyzed: 6
+     DEBUG |  569 | Backend              | 11/01/2026 12:13:46.590 | STATS - Keep: 0 - Compile: 6
+     DEBUG |  577 | Backend              | 11/01/2026 12:13:46.590 | [PREPROCESSING] - END
+      INFO |  110 | Workflow             | 11/01/2026 12:13:46.590 | Backend processing
+     DEBUG |  673 | Backend              | 11/01/2026 12:13:46.590 | [PROCESSING] - START
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.591 | KEY[Author] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Author] VALUE[Tomás Vírseda] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.591 | KEY[Author] VALUE[Tomás Vírseda] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.591 | KEY[Author] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.591 | KEY[Bookmark] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Bookmark] VALUE[Yes] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.591 | KEY[Bookmark] VALUE[Yes] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.591 | KEY[Bookmark] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.591 | KEY[Category] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Category] VALUE[Post] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.591 | KEY[Category] VALUE[Post] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.591 | KEY[Category] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] VALUE[Github Actions] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] VALUE[Github Actions] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] VALUE[GNOME] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] VALUE[GNOME] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.591 | KEY[Product] VALUE[GTK] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[GTK] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[KB4IT] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[KB4IT] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Libadwaita] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Libadwaita] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Mako] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Mako] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[MiAZ] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[MiAZ] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Pixi] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Pixi] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[PyGObject] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[PyGObject] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Pypi] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Pypi] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Python] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] VALUE[Python] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.592 | KEY[Product] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.592 | KEY[Programming Language] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.592 | KEY[Programming Language] VALUE[Python] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.592 | KEY[Programming Language] VALUE[Python] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.593 | KEY[Programming Language] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[api] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[api] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[build] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[build] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[cache] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[cache] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[compiling] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[compiling] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[dependency] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[dependency] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[documentation] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[documentation] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[environment] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[environment] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[filehandler] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[filehandler] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[incremental] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[incremental] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[index] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[index] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[logging] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[logging] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[page] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.593 | KEY[Tag] VALUE[page] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[project] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[project] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[redirect] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[redirect] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[template] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[template] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[vm] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[vm] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[workflow] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] VALUE[workflow] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.594 | KEY[Tag] COMPILE[True]
+     DEBUG |  644 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Automation] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Automation] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Development] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Development] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Documentation] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Documentation] COMPILE[True]
+     DEBUG |  653 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Package management] CHANGE[True]
+     DEBUG |  658 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] VALUE[Package management] COMPILE[True]
+     DEBUG |  662 | Backend              | 11/01/2026 12:13:46.594 | KEY[Topic] COMPILE[True]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.604 | KEY[Author] VALUE[Tomás Vírseda]: search returned 5 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.604 | DOC[Author.adoc] targets to RESOURCE[Author.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.604 | DOC[Author.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.604 | DOC[Author.adoc] KEY[Title] VALUE[Author] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.604 | DOC[Author.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.604 | DOC[Author.adoc] targets to RESOURCE[Author.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.605 | KEY[Bookmark] VALUE[Yes]: search returned 1 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.605 | DOC[Bookmark.adoc] targets to RESOURCE[Bookmark.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.605 | DOC[Bookmark.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.605 | DOC[Bookmark.adoc] KEY[Title] VALUE[Bookmark] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.605 | DOC[Bookmark.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.605 | DOC[Bookmark.adoc] targets to RESOURCE[Bookmark.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.605 | KEY[Category] VALUE[Post]: search returned 5 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.605 | DOC[Category.adoc] targets to RESOURCE[Category.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.605 | DOC[Category.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.606 | DOC[Category.adoc] KEY[Title] VALUE[Category] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.606 | DOC[Category.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.606 | DOC[Category.adoc] targets to RESOURCE[Category.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[Github Actions]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[GNOME]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[GTK]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[KB4IT]: search returned 4 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[Libadwaita]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[Mako]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[MiAZ]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[Pixi]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.606 | KEY[Product] VALUE[PyGObject]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.607 | KEY[Product] VALUE[Pypi]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.607 | KEY[Product] VALUE[Python]: search returned 1 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.607 | DOC[Product.adoc] targets to RESOURCE[Product.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.607 | DOC[Product.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.607 | DOC[Product.adoc] KEY[Title] VALUE[Product] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.607 | DOC[Product.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.607 | DOC[Product.adoc] targets to RESOURCE[Product.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.607 | KEY[Programming Language] VALUE[Python]: search returned 2 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.607 | DOC[Programming_Language.adoc] targets to RESOURCE[Programming_Language.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.607 | DOC[Programming_Language.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.608 | DOC[Programming_Language.adoc] KEY[Title] VALUE[Programming Language] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.608 | DOC[Programming_Language.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.608 | DOC[Programming_Language.adoc] targets to RESOURCE[Programming_Language.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[api]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[build]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[cache]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[compiling]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[dependency]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[documentation]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[environment]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.608 | KEY[Tag] VALUE[filehandler]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[incremental]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[index]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[logging]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[page]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[project]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[redirect]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[template]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[vm]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.609 | KEY[Tag] VALUE[workflow]: search returned 1 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.609 | DOC[Tag.adoc] targets to RESOURCE[Tag.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.609 | DOC[Tag.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.609 | DOC[Tag.adoc] KEY[Title] VALUE[Tag] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.609 | DOC[Tag.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.610 | DOC[Tag.adoc] targets to RESOURCE[Tag.html]
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.610 | KEY[Topic] VALUE[Automation]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.610 | KEY[Topic] VALUE[Development]: search returned 4 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.610 | KEY[Topic] VALUE[Documentation]: search returned 1 documents
+     DEBUG |  272 | Database             | 11/01/2026 12:13:46.610 | KEY[Topic] VALUE[Package management]: search returned 1 documents
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.610 | DOC[Topic.adoc] targets to RESOURCE[Topic.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.610 | DOC[Topic.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.610 | DOC[Topic.adoc] KEY[Title] VALUE[Topic] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.610 | DOC[Topic.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.610 | DOC[Topic.adoc] targets to RESOURCE[Topic.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.617 | DOC[Author_Tomás_Vírseda.adoc] targets to RESOURCE[Author_Tomás_Vírseda.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.617 | DOC[Author_Tomás_Vírseda.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.617 | DOC[Author_Tomás_Vírseda.adoc] KEY[Title] VALUE[Author: Tomás Vírseda] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.617 | DOC[Author_Tomás_Vírseda.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.617 | KEY[Author] VALUE[Tomás Vírseda] targets to RESOURCE[Author_Tomás_Vírseda]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.617 | DOC[Author_Tomás_Vírseda.adoc] targets to RESOURCE[Author_Tomás_Vírseda.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.617 | DOC[Bookmark_Yes.adoc] targets to RESOURCE[Bookmark_Yes.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.617 | DOC[Bookmark_Yes.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.618 | DOC[Bookmark_Yes.adoc] KEY[Title] VALUE[Bookmark: Yes] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.618 | DOC[Bookmark_Yes.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.618 | KEY[Bookmark] VALUE[Yes] targets to RESOURCE[Bookmark_Yes]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.618 | DOC[Bookmark_Yes.adoc] targets to RESOURCE[Bookmark_Yes.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.618 | DOC[Category_Post.adoc] targets to RESOURCE[Category_Post.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.618 | DOC[Category_Post.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.618 | DOC[Category_Post.adoc] KEY[Title] VALUE[Category: Post] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.619 | DOC[Category_Post.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.619 | KEY[Category] VALUE[Post] targets to RESOURCE[Category_Post]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.619 | DOC[Category_Post.adoc] targets to RESOURCE[Category_Post.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.619 | DOC[Product_Github_Actions.adoc] targets to RESOURCE[Product_Github_Actions.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.619 | DOC[Product_Github_Actions.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.619 | DOC[Product_Github_Actions.adoc] KEY[Title] VALUE[Product: Github Actions] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.619 | DOC[Product_Github_Actions.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.619 | KEY[Product] VALUE[Github Actions] targets to RESOURCE[Product_Github_Actions]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.619 | DOC[Product_Github_Actions.adoc] targets to RESOURCE[Product_Github_Actions.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.620 | DOC[Product_GNOME.adoc] targets to RESOURCE[Product_GNOME.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.620 | DOC[Product_GNOME.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.620 | DOC[Product_GNOME.adoc] KEY[Title] VALUE[Product: GNOME] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.620 | DOC[Product_GNOME.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.620 | KEY[Product] VALUE[GNOME] targets to RESOURCE[Product_GNOME]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.620 | DOC[Product_GNOME.adoc] targets to RESOURCE[Product_GNOME.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.620 | DOC[Product_GTK.adoc] targets to RESOURCE[Product_GTK.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.620 | DOC[Product_GTK.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.620 | DOC[Product_GTK.adoc] KEY[Title] VALUE[Product: GTK] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.621 | DOC[Product_GTK.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.621 | KEY[Product] VALUE[GTK] targets to RESOURCE[Product_GTK]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.621 | DOC[Product_GTK.adoc] targets to RESOURCE[Product_GTK.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.621 | DOC[Product_KB4IT.adoc] targets to RESOURCE[Product_KB4IT.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.621 | DOC[Product_KB4IT.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.621 | DOC[Product_KB4IT.adoc] KEY[Title] VALUE[Product: KB4IT] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.621 | DOC[Product_KB4IT.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.621 | KEY[Product] VALUE[KB4IT] targets to RESOURCE[Product_KB4IT]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.621 | DOC[Product_KB4IT.adoc] targets to RESOURCE[Product_KB4IT.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.622 | DOC[Product_Libadwaita.adoc] targets to RESOURCE[Product_Libadwaita.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.622 | DOC[Product_Libadwaita.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.622 | DOC[Product_Libadwaita.adoc] KEY[Title] VALUE[Product: Libadwaita] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.622 | DOC[Product_Libadwaita.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.622 | KEY[Product] VALUE[Libadwaita] targets to RESOURCE[Product_Libadwaita]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.622 | DOC[Product_Libadwaita.adoc] targets to RESOURCE[Product_Libadwaita.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.623 | DOC[Product_Mako.adoc] targets to RESOURCE[Product_Mako.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_Mako.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_Mako.adoc] KEY[Title] VALUE[Product: Mako] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_Mako.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.623 | KEY[Product] VALUE[Mako] targets to RESOURCE[Product_Mako]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.623 | DOC[Product_Mako.adoc] targets to RESOURCE[Product_Mako.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.623 | DOC[Product_MiAZ.adoc] targets to RESOURCE[Product_MiAZ.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_MiAZ.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_MiAZ.adoc] KEY[Title] VALUE[Product: MiAZ] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.623 | DOC[Product_MiAZ.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.623 | KEY[Product] VALUE[MiAZ] targets to RESOURCE[Product_MiAZ]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.624 | DOC[Product_MiAZ.adoc] targets to RESOURCE[Product_MiAZ.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.624 | DOC[Product_Pixi.adoc] targets to RESOURCE[Product_Pixi.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.624 | DOC[Product_Pixi.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.624 | DOC[Product_Pixi.adoc] KEY[Title] VALUE[Product: Pixi] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.624 | DOC[Product_Pixi.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.624 | KEY[Product] VALUE[Pixi] targets to RESOURCE[Product_Pixi]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.624 | DOC[Product_Pixi.adoc] targets to RESOURCE[Product_Pixi.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.625 | DOC[Product_PyGObject.adoc] targets to RESOURCE[Product_PyGObject.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_PyGObject.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_PyGObject.adoc] KEY[Title] VALUE[Product: PyGObject] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_PyGObject.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.625 | KEY[Product] VALUE[PyGObject] targets to RESOURCE[Product_PyGObject]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.625 | DOC[Product_PyGObject.adoc] targets to RESOURCE[Product_PyGObject.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.625 | DOC[Product_Pypi.adoc] targets to RESOURCE[Product_Pypi.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_Pypi.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_Pypi.adoc] KEY[Title] VALUE[Product: Pypi] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.625 | DOC[Product_Pypi.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.625 | KEY[Product] VALUE[Pypi] targets to RESOURCE[Product_Pypi]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.626 | DOC[Product_Pypi.adoc] targets to RESOURCE[Product_Pypi.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.626 | DOC[Product_Python.adoc] targets to RESOURCE[Product_Python.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.626 | DOC[Product_Python.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.626 | DOC[Product_Python.adoc] KEY[Title] VALUE[Product: Python] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.626 | DOC[Product_Python.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.626 | KEY[Product] VALUE[Python] targets to RESOURCE[Product_Python]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.626 | DOC[Product_Python.adoc] targets to RESOURCE[Product_Python.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.627 | DOC[Programming_Language_Python.adoc] targets to RESOURCE[Programming_Language_Python.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.627 | DOC[Programming_Language_Python.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.627 | DOC[Programming_Language_Python.adoc] KEY[Title] VALUE[Programming Language: Python] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.627 | DOC[Programming_Language_Python.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.627 | KEY[Programming Language] VALUE[Python] targets to RESOURCE[Programming_Language_Python]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.627 | DOC[Programming_Language_Python.adoc] targets to RESOURCE[Programming_Language_Python.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.627 | DOC[Tag_api.adoc] targets to RESOURCE[Tag_api.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.627 | DOC[Tag_api.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.627 | DOC[Tag_api.adoc] KEY[Title] VALUE[Tag: api] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.627 | DOC[Tag_api.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.627 | KEY[Tag] VALUE[api] targets to RESOURCE[Tag_api]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.628 | DOC[Tag_api.adoc] targets to RESOURCE[Tag_api.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.628 | DOC[Tag_build.adoc] targets to RESOURCE[Tag_build.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.628 | DOC[Tag_build.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.628 | DOC[Tag_build.adoc] KEY[Title] VALUE[Tag: build] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.628 | DOC[Tag_build.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.628 | KEY[Tag] VALUE[build] targets to RESOURCE[Tag_build]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.628 | DOC[Tag_build.adoc] targets to RESOURCE[Tag_build.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.629 | DOC[Tag_cache.adoc] targets to RESOURCE[Tag_cache.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_cache.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_cache.adoc] KEY[Title] VALUE[Tag: cache] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_cache.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.629 | KEY[Tag] VALUE[cache] targets to RESOURCE[Tag_cache]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.629 | DOC[Tag_cache.adoc] targets to RESOURCE[Tag_cache.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.629 | DOC[Tag_compiling.adoc] targets to RESOURCE[Tag_compiling.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_compiling.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_compiling.adoc] KEY[Title] VALUE[Tag: compiling] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.629 | DOC[Tag_compiling.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.629 | KEY[Tag] VALUE[compiling] targets to RESOURCE[Tag_compiling]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.629 | DOC[Tag_compiling.adoc] targets to RESOURCE[Tag_compiling.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.630 | DOC[Tag_dependency.adoc] targets to RESOURCE[Tag_dependency.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.630 | DOC[Tag_dependency.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.630 | DOC[Tag_dependency.adoc] KEY[Title] VALUE[Tag: dependency] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.630 | DOC[Tag_dependency.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.630 | KEY[Tag] VALUE[dependency] targets to RESOURCE[Tag_dependency]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.630 | DOC[Tag_dependency.adoc] targets to RESOURCE[Tag_dependency.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.631 | DOC[Tag_documentation.adoc] targets to RESOURCE[Tag_documentation.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.631 | DOC[Tag_documentation.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.631 | DOC[Tag_documentation.adoc] KEY[Title] VALUE[Tag: documentation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.631 | DOC[Tag_documentation.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.631 | KEY[Tag] VALUE[documentation] targets to RESOURCE[Tag_documentation]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.631 | DOC[Tag_documentation.adoc] targets to RESOURCE[Tag_documentation.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.631 | DOC[Tag_environment.adoc] targets to RESOURCE[Tag_environment.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.631 | DOC[Tag_environment.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.631 | DOC[Tag_environment.adoc] KEY[Title] VALUE[Tag: environment] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.632 | DOC[Tag_environment.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.632 | KEY[Tag] VALUE[environment] targets to RESOURCE[Tag_environment]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.632 | DOC[Tag_environment.adoc] targets to RESOURCE[Tag_environment.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.632 | DOC[Tag_filehandler.adoc] targets to RESOURCE[Tag_filehandler.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.632 | DOC[Tag_filehandler.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.632 | DOC[Tag_filehandler.adoc] KEY[Title] VALUE[Tag: filehandler] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.632 | DOC[Tag_filehandler.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.632 | KEY[Tag] VALUE[filehandler] targets to RESOURCE[Tag_filehandler]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.632 | DOC[Tag_filehandler.adoc] targets to RESOURCE[Tag_filehandler.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.633 | DOC[Tag_incremental.adoc] targets to RESOURCE[Tag_incremental.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_incremental.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_incremental.adoc] KEY[Title] VALUE[Tag: incremental] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_incremental.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.633 | KEY[Tag] VALUE[incremental] targets to RESOURCE[Tag_incremental]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.633 | DOC[Tag_incremental.adoc] targets to RESOURCE[Tag_incremental.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.633 | DOC[Tag_index.adoc] targets to RESOURCE[Tag_index.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_index.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_index.adoc] KEY[Title] VALUE[Tag: index] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.633 | DOC[Tag_index.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.634 | KEY[Tag] VALUE[index] targets to RESOURCE[Tag_index]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.634 | DOC[Tag_index.adoc] targets to RESOURCE[Tag_index.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.634 | DOC[Tag_logging.adoc] targets to RESOURCE[Tag_logging.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.634 | DOC[Tag_logging.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.634 | DOC[Tag_logging.adoc] KEY[Title] VALUE[Tag: logging] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.634 | DOC[Tag_logging.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.634 | KEY[Tag] VALUE[logging] targets to RESOURCE[Tag_logging]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.634 | DOC[Tag_logging.adoc] targets to RESOURCE[Tag_logging.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.635 | DOC[Tag_page.adoc] targets to RESOURCE[Tag_page.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_page.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_page.adoc] KEY[Title] VALUE[Tag: page] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_page.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.635 | KEY[Tag] VALUE[page] targets to RESOURCE[Tag_page]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.635 | DOC[Tag_page.adoc] targets to RESOURCE[Tag_page.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.635 | DOC[Tag_project.adoc] targets to RESOURCE[Tag_project.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_project.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_project.adoc] KEY[Title] VALUE[Tag: project] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.635 | DOC[Tag_project.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.635 | KEY[Tag] VALUE[project] targets to RESOURCE[Tag_project]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.635 | DOC[Tag_project.adoc] targets to RESOURCE[Tag_project.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.636 | DOC[Tag_redirect.adoc] targets to RESOURCE[Tag_redirect.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.636 | DOC[Tag_redirect.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.636 | DOC[Tag_redirect.adoc] KEY[Title] VALUE[Tag: redirect] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.636 | DOC[Tag_redirect.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.636 | KEY[Tag] VALUE[redirect] targets to RESOURCE[Tag_redirect]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.636 | DOC[Tag_redirect.adoc] targets to RESOURCE[Tag_redirect.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.636 | DOC[Tag_template.adoc] targets to RESOURCE[Tag_template.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_template.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_template.adoc] KEY[Title] VALUE[Tag: template] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_template.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.637 | KEY[Tag] VALUE[template] targets to RESOURCE[Tag_template]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.637 | DOC[Tag_template.adoc] targets to RESOURCE[Tag_template.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.637 | DOC[Tag_vm.adoc] targets to RESOURCE[Tag_vm.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_vm.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_vm.adoc] KEY[Title] VALUE[Tag: vm] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.637 | DOC[Tag_vm.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.637 | KEY[Tag] VALUE[vm] targets to RESOURCE[Tag_vm]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.637 | DOC[Tag_vm.adoc] targets to RESOURCE[Tag_vm.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.638 | DOC[Tag_workflow.adoc] targets to RESOURCE[Tag_workflow.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.638 | DOC[Tag_workflow.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.638 | DOC[Tag_workflow.adoc] KEY[Title] VALUE[Tag: workflow] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.638 | DOC[Tag_workflow.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.638 | KEY[Tag] VALUE[workflow] targets to RESOURCE[Tag_workflow]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.638 | DOC[Tag_workflow.adoc] targets to RESOURCE[Tag_workflow.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.640 | DOC[Topic_Automation.adoc] targets to RESOURCE[Topic_Automation.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.640 | DOC[Topic_Automation.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.640 | DOC[Topic_Automation.adoc] KEY[Title] VALUE[Topic: Automation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.640 | DOC[Topic_Automation.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.640 | KEY[Topic] VALUE[Automation] targets to RESOURCE[Topic_Automation]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.640 | DOC[Topic_Automation.adoc] targets to RESOURCE[Topic_Automation.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.641 | DOC[Topic_Development.adoc] targets to RESOURCE[Topic_Development.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.641 | DOC[Topic_Development.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.641 | DOC[Topic_Development.adoc] KEY[Title] VALUE[Topic: Development] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.641 | DOC[Topic_Development.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.641 | KEY[Topic] VALUE[Development] targets to RESOURCE[Topic_Development]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.641 | DOC[Topic_Development.adoc] targets to RESOURCE[Topic_Development.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.642 | DOC[Topic_Documentation.adoc] targets to RESOURCE[Topic_Documentation.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Documentation.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Documentation.adoc] KEY[Title] VALUE[Topic: Documentation] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Documentation.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.642 | KEY[Topic] VALUE[Documentation] targets to RESOURCE[Topic_Documentation]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.642 | DOC[Topic_Documentation.adoc] targets to RESOURCE[Topic_Documentation.html]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.642 | DOC[Topic_Package_management.adoc] targets to RESOURCE[Topic_Package_management.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Package_management.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Package_management.adoc] KEY[Title] VALUE[Topic: Package management] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.642 | DOC[Topic_Package_management.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  776 | Theme                | 11/01/2026 12:13:46.642 | KEY[Topic] VALUE[Package management] targets to RESOURCE[Topic_Package_management]
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.642 | DOC[Topic_Package_management.adoc] targets to RESOURCE[Topic_Package_management.html]
+     DEBUG |  708 | Backend              | 11/01/2026 12:13:46.642 | STATS - 7 keys will be compiled
+     DEBUG |  709 | Backend              | 11/01/2026 12:13:46.643 | STATS - 36 key/value pairs will be compiled
+     DEBUG |  710 | Backend              | 11/01/2026 12:13:46.643 | STATS - Finish processing keys
+     DEBUG |  711 | Backend              | 11/01/2026 12:13:46.643 | STATS - Target docs: 49
+     DEBUG |  712 | Backend              | 11/01/2026 12:13:46.643 | [PROCESSINNG] - END
+      INFO |  112 | Workflow             | 11/01/2026 12:13:46.643 | Theme processing
+     DEBUG |  831 | Backend              | 11/01/2026 12:13:46.643 | [PROCESSING THEME] - START
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.646 | DOC[events_20251231.adoc] targets to RESOURCE[events_20251231.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.646 | DOC[events_20251231.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.646 | DOC[events_20251231.adoc] KEY[Title] VALUE[Events on Wednesday, December 31, 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.646 | DOC[events_20251231.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.647 | DOC[events_20251228.adoc] targets to RESOURCE[events_20251228.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.647 | DOC[events_20251228.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.647 | DOC[events_20251228.adoc] KEY[Title] VALUE[Events on Sunday, December 28, 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.647 | DOC[events_20251228.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.648 | DOC[events_20251214.adoc] targets to RESOURCE[events_20251214.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.648 | DOC[events_20251214.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.648 | DOC[events_20251214.adoc] KEY[Title] VALUE[Events on Sunday, December 14, 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.648 | DOC[events_20251214.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.649 | DOC[events_20251208.adoc] targets to RESOURCE[events_20251208.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.649 | DOC[events_20251208.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.649 | DOC[events_20251208.adoc] KEY[Title] VALUE[Events on Monday, December 08, 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.649 | DOC[events_20251208.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.650 | DOC[events_202512.adoc] targets to RESOURCE[events_202512.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.650 | DOC[events_202512.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.650 | DOC[events_202512.adoc] KEY[Title] VALUE[Events on December, 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.650 | DOC[events_202512.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.674 | DOC[events_2025.adoc] targets to RESOURCE[events_2025.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.674 | DOC[events_2025.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.674 | DOC[events_2025.adoc] KEY[Title] VALUE[Events on 2025] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.674 | DOC[events_2025.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.675 | DOC[events.adoc] targets to RESOURCE[events.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.675 | DOC[events.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.675 | DOC[events.adoc] KEY[Title] VALUE[Events] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.675 | DOC[events.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.679 | DOC[properties.adoc] targets to RESOURCE[properties.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.679 | DOC[properties.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.679 | DOC[properties.adoc] KEY[Title] VALUE[Properties] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.679 | DOC[properties.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.681 | DOC[stats.adoc] targets to RESOURCE[stats.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.681 | DOC[stats.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.681 | DOC[stats.adoc] KEY[Title] VALUE[Stats] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.681 | DOC[stats.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  786 | Theme                | 11/01/2026 12:13:46.682 | DOC['20251231-1400-log_module.adoc'] bookmarked?  [False]
+     DEBUG |  786 | Theme                | 11/01/2026 12:13:46.682 | DOC['20251228-KB4IT-incremental-compiling.adoc'] bookmarked?  [False]
+     DEBUG |  786 | Theme                | 11/01/2026 12:13:46.682 | DOC['20251226-PyGTK4.adoc'] bookmarked? Yes [True]
+     DEBUG |  786 | Theme                | 11/01/2026 12:13:46.682 | DOC['20251214-0030.adoc'] bookmarked?  [False]
+     DEBUG |  786 | Theme                | 11/01/2026 12:13:46.682 | DOC['20251208-2230.adoc'] bookmarked?  [False]
+     DEBUG |  790 | Theme                | 11/01/2026 12:13:46.682 |  - Found 1 bookmarks
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.682 | DOC[bookmarks.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.682 | DOC[bookmarks.adoc] KEY[Title] VALUE[Bookmarks] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.682 | DOC[bookmarks.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.683 | DOC[bookmarks.adoc] targets to RESOURCE[bookmarks.html]
+     DEBUG |  803 | Theme                | 11/01/2026 12:13:46.683 |  - Created page for bookmarks
+     DEBUG |  222 | Backend              | 11/01/2026 12:13:46.684 | DOC[all.adoc] targets to RESOURCE[all.html]
+     DEBUG |   70 | Database             | 11/01/2026 12:13:46.684 | DOC[all.adoc] added to database
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.684 | DOC[all.adoc] KEY[Title] VALUE[All documents] added
+     DEBUG |   81 | Database             | 11/01/2026 12:13:46.684 | DOC[all.adoc] KEY[SystemPage] VALUE[Yes] added
+     DEBUG |  833 | Backend              | 11/01/2026 12:13:46.684 | [PROCESSING THEME] - END
+      INFO |  114 | Workflow             | 11/01/2026 12:13:46.684 | Compilation
+     DEBUG |  726 | Backend              | 11/01/2026 12:13:46.684 | Global resources copied to /home/runner/work/blog/blog/var/work/homerunnerworkblogblogsource/tmp/resources
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[toc] VALUE[left]
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[toclevels] VALUE[2]
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[icons] VALUE[font]
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[linkcss] VALUE[None]
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[experimental] VALUE[None]
+     DEBUG |  730 | Backend              | 11/01/2026 12:13:46.684 | CONF[ASCIIDOC] PARAM[source-highlighter] VALUE[highlight.js]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.685 | DOC[20251208-2230.adoc] compiles in JOB[1]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.685 | DOC[20251214-0030.adoc] compiles in JOB[2]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[20251226-PyGTK4.adoc] compiles in JOB[3]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[20251228-KB4IT-incremental-compiling.adoc] compiles in JOB[4]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[20251231-1400-log_module.adoc] compiles in JOB[5]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[about_app.adoc] compiles in JOB[6]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[all.adoc] compiles in JOB[7]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[Author.adoc] compiles in JOB[8]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[Author_Tomás_Vírseda.adoc] compiles in JOB[9]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.686 | DOC[Bookmark.adoc] compiles in JOB[10]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Bookmark_Yes.adoc] compiles in JOB[11]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[bookmarks.adoc] compiles in JOB[12]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Category.adoc] compiles in JOB[13]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Category_Post.adoc] compiles in JOB[14]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events.adoc] compiles in JOB[15]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_2025.adoc] compiles in JOB[16]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_202512.adoc] compiles in JOB[17]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_20251208.adoc] compiles in JOB[18]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_20251214.adoc] compiles in JOB[19]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_20251228.adoc] compiles in JOB[20]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[events_20251231.adoc] compiles in JOB[21]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Product.adoc] compiles in JOB[22]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Product_Github_Actions.adoc] compiles in JOB[23]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.687 | DOC[Product_GNOME.adoc] compiles in JOB[24]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_GTK.adoc] compiles in JOB[25]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_KB4IT.adoc] compiles in JOB[26]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_Libadwaita.adoc] compiles in JOB[27]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_Mako.adoc] compiles in JOB[28]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_MiAZ.adoc] compiles in JOB[29]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_Pixi.adoc] compiles in JOB[30]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_PyGObject.adoc] compiles in JOB[31]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_Pypi.adoc] compiles in JOB[32]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Product_Python.adoc] compiles in JOB[33]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Programming_Language.adoc] compiles in JOB[34]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Programming_Language_Python.adoc] compiles in JOB[35]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[properties.adoc] compiles in JOB[36]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[stats.adoc] compiles in JOB[37]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Tag.adoc] compiles in JOB[38]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.688 | DOC[Tag_api.adoc] compiles in JOB[39]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_build.adoc] compiles in JOB[40]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_cache.adoc] compiles in JOB[41]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_compiling.adoc] compiles in JOB[42]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_dependency.adoc] compiles in JOB[43]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_documentation.adoc] compiles in JOB[44]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_environment.adoc] compiles in JOB[45]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_filehandler.adoc] compiles in JOB[46]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.689 | DOC[Tag_incremental.adoc] compiles in JOB[47]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_index.adoc] compiles in JOB[48]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_logging.adoc] compiles in JOB[49]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_page.adoc] compiles in JOB[50]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_project.adoc] compiles in JOB[51]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_redirect.adoc] compiles in JOB[52]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_template.adoc] compiles in JOB[53]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_vm.adoc] compiles in JOB[54]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Tag_workflow.adoc] compiles in JOB[55]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Topic.adoc] compiles in JOB[56]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Topic_Automation.adoc] compiles in JOB[57]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.690 | DOC[Topic_Development.adoc] compiles in JOB[58]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.691 | DOC[Topic_Documentation.adoc] compiles in JOB[59]
+     DEBUG |  767 | Backend              | 11/01/2026 12:13:46.692 | DOC[Topic_Package_management.adoc] compiles in JOB[60]
+     DEBUG |  776 | Backend              | 11/01/2026 12:13:46.692 | [COMPILATION] - START
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:46.952 | DOC[20251208-2230.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:46.964 | DOC[20251214-0030.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:47.904 | DOC[20251226-PyGTK4.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:48.047 | DOC[20251228-KB4IT-incremental-compiling.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:48.047 | STATS - JOB[4/60] Compilation progress: 6% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:48.102 | DOC[20251231-1400-log_module.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:48.740 | DOC[about_app.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:49.084 | DOC[all.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:49.304 | DOC[Author.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:49.304 | STATS - JOB[8/60] Compilation progress: 13% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:49.748 | DOC[Author_Tomás_Vírseda.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:50.104 | DOC[Bookmark.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:50.176 | DOC[Bookmark_Yes.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:50.951 | DOC[bookmarks.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:50.951 | STATS - JOB[12/60] Compilation progress: 20% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:51.321 | DOC[Category.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:51.480 | DOC[Category_Post.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:51.633 | DOC[events.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:52.069 | DOC[events_2025.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:52.069 | STATS - JOB[16/60] Compilation progress: 26% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:52.488 | DOC[events_202512.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:52.653 | DOC[events_20251208.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:52.912 | DOC[events_20251214.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:53.263 | DOC[events_20251228.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:53.263 | STATS - JOB[20/60] Compilation progress: 33% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:53.747 | DOC[events_20251231.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:53.809 | DOC[Product.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:54.426 | DOC[Product_Github_Actions.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:54.438 | DOC[Product_GNOME.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:54.438 | STATS - JOB[24/60] Compilation progress: 40% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:54.931 | DOC[Product_GTK.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:55.011 | DOC[Product_KB4IT.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:55.176 | DOC[Product_Libadwaita.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:55.959 | DOC[Product_Mako.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:55.959 | STATS - JOB[28/60] Compilation progress: 46% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:56.288 | DOC[Product_MiAZ.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:56.566 | DOC[Product_Pixi.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:56.572 | DOC[Product_PyGObject.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:56.821 | DOC[Product_Pypi.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:56.821 | STATS - JOB[32/60] Compilation progress: 53% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:57.221 | DOC[Product_Python.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:57.950 | DOC[Programming_Language.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:58.345 | DOC[Programming_Language_Python.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:58.815 | DOC[properties.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:58.816 | STATS - JOB[36/60] Compilation progress: 60% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:59.167 | DOC[stats.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:59.273 | DOC[Tag.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:59.331 | DOC[Tag_api.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:59.866 | DOC[Tag_build.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:13:59.866 | STATS - JOB[40/60] Compilation progress: 66% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:13:59.988 | DOC[Tag_cache.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:00.120 | DOC[Tag_compiling.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:00.538 | DOC[Tag_dependency.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:00.732 | DOC[Tag_documentation.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:14:00.732 | STATS - JOB[44/60] Compilation progress: 73% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:01.385 | DOC[Tag_environment.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:01.513 | DOC[Tag_filehandler.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:01.685 | DOC[Tag_incremental.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:01.998 | DOC[Tag_index.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:14:01.998 | STATS - JOB[48/60] Compilation progress: 80% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:02.025 | DOC[Tag_logging.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:02.184 | DOC[Tag_page.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:02.249 | DOC[Tag_project.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:02.871 | DOC[Tag_redirect.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:14:02.871 | STATS - JOB[52/60] Compilation progress: 86% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:03.361 | DOC[Tag_template.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:03.800 | DOC[Tag_vm.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:03.886 | DOC[Tag_workflow.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:04.139 | DOC[Topic.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:14:04.139 | STATS - JOB[56/60] Compilation progress: 93% done
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:04.968 | DOC[Topic_Automation.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:05.249 | DOC[Topic_Development.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:05.612 | DOC[Topic_Documentation.adoc] compiled successfully
+     DEBUG |  780 | Backend              | 11/01/2026 12:14:05.682 | DOC[Topic_Package_management.adoc] compiled successfully
+     DEBUG |  785 | Backend              | 11/01/2026 12:14:05.682 | STATS - JOB[60/60] Compilation progress: 100% done
+     DEBUG |  794 | Backend              | 11/01/2026 12:14:05.683 | STATS - JOB[60/60] Compilation progress: 100% done
+     DEBUG |  795 | Backend              | 11/01/2026 12:14:05.683 | STATS - Compilation time: 18 seconds
+     DEBUG |  796 | Backend              | 11/01/2026 12:14:05.683 | STATS - Compiled docs: 60
+     DEBUG |  797 | Backend              | 11/01/2026 12:14:05.683 | STATS - Avg. Speed: 3 docs/sec
+     DEBUG |  800 | Backend              | 11/01/2026 12:14:05.683 | [COMPILATION] - END
+      INFO |  116 | Workflow             | 11/01/2026 12:14:06.488 | Clean up target
+     DEBUG |  838 | Backend              | 11/01/2026 12:14:06.488 | [CLEANUP] - START
+     DEBUG |  843 | Backend              | 11/01/2026 12:14:06.489 | Distributed files deleted
+     DEBUG |  855 | Backend              | 11/01/2026 12:14:06.496 | Copy temporary files to distributed directory
+     DEBUG |  858 | Backend              | 11/01/2026 12:14:06.528 | Deleted target contents in: /home/runner/work/blog/blog/docs
+     DEBUG |  859 | Backend              | 11/01/2026 12:14:06.529 | [CLEANUP]
+      INFO |  118 | Workflow             | 11/01/2026 12:14:06.529 | Refresh target
+     DEBUG |  864 | Backend              | 11/01/2026 12:14:06.529 | [INSTALL] - START
+     DEBUG |  871 | Backend              | 11/01/2026 12:14:06.530 | STATS - Copied 6 asciidoctor sources to target path
+     DEBUG |  879 | Backend              | 11/01/2026 12:14:06.537 | STATS - Copied 60 html files from temporary path to cache path
+     DEBUG |  887 | Backend              | 11/01/2026 12:14:06.554 | STATS - Copied 120 html files from temporary target to cache path
+     DEBUG |  902 | Backend              | 11/01/2026 12:14:06.560 | STATS - Copied 60 cached documents successfully to target path
+     DEBUG |  914 | Backend              | 11/01/2026 12:14:06.667 | STATS - Copied global resources to target path
+     DEBUG |  929 | Backend              | 11/01/2026 12:14:06.676 | Copying HTML files back to cache...
+     DEBUG |  934 | Backend              | 11/01/2026 12:14:06.677 | Copied JSON database to target
+     DEBUG |  935 | Backend              | 11/01/2026 12:14:06.677 | [INSTALL] - END
+      INFO |  120 | Workflow             | 11/01/2026 12:14:06.677 | Theme post activities
+     DEBUG |  393 | Theme                | 11/01/2026 12:14:06.677 | [POSTPROCESSING THEME] - START
+     DEBUG |  202 | Theme                | 11/01/2026 12:14:06.684 | DOC[20251231-1400-log_module.adoc] add to index page
+     DEBUG |  202 | Theme                | 11/01/2026 12:14:06.684 | DOC[20251228-KB4IT-incremental-compiling.adoc] add to index page
+     DEBUG |  202 | Theme                | 11/01/2026 12:14:06.685 | DOC[20251226-PyGTK4.adoc] add to index page
+     DEBUG |  202 | Theme                | 11/01/2026 12:14:06.685 | DOC[20251214-0030.adoc] add to index page
+     DEBUG |  297 | Database             | 11/01/2026 12:14:06.838 | DOC[index.adoc] is not in the database
+     DEBUG |  396 | Theme                | 11/01/2026 12:14:06.842 | [POSTPROCESSING THEME] - END
+      INFO |  123 | Workflow             | 11/01/2026 12:14:06.842 | Repository website built
+      INFO |  124 | Workflow             | 11/01/2026 12:14:06.842 | URL: /home/runner/work/blog/blog/docs/index.html
+      INFO |  125 | Workflow             | 11/01/2026 12:14:06.842 | Full log: /home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log
+      INFO |  126 | Workflow             | 11/01/2026 12:14:06.842 | The End
+     DEBUG |  227 | KB4IT                | 11/01/2026 12:14:06.847 | KB4IT 0.7.25+build.3 finished at 2026-01-11T12:14:06.847505
