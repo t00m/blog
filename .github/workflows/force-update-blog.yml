@@ -1,0 +1,84 @@
+name: check-kb4it-version
+
+on:
+  push:
+    branches: [ main ]    # choose your branch
+    paths:
+      - 'config/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # or match KB4IT's .ruby-version if it exists
+          bundler-cache: true  # optional: caches gems for faster runs
+
+      - name: Install Asciidoctor
+        run: gem install asciidoctor
+        
+      # Install Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      # Install pipx
+      - name: Install pipx
+        run: pip install pipx --user
+
+      - name: Clone KB4IT repository
+        run: git clone -b 0.7.25 https://github.com/t00m/KB4IT.git
+  
+      # Install KB4IT requirements
+      - name: Install KB4IT requirements
+        working-directory: ./KB4IT
+        run: pip install -r requirements.txt
+
+      # Install KB4IT
+      - name: Install KB4IT
+        working-directory: ./KB4IT
+        run: pipx install . --force
+
+      # Test KB4IT (display version)
+      - name: Display current KB4IT version
+        run: kb4it -v
+
+      # Update blog
+      - name: Update blog
+        run: kb4it -L INFO build config/blog.json -f
+
+      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+
+      # OPTIONAL: deploy the generated website
+      #~ - name: Upload artifact
+        #~ uses: actions/upload-pages-artifact@v3
+        #~ with:
+          #~ path: ./site
