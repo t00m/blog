@@ -69,7 +69,7 @@
                             <!-- Update :: START -->
                             <li uk-tooltip="title: Document last update">
                                 <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_20251228.html">28</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                                <span class="uk-margin-small-left"><a href="events_2026111.html">11</a>/<a href="events_20261.html">1</a>/<a href="events_2026.html">2026</a></span>
                             </li>
                             <!-- Update :: END -->
 <!--
@@ -220,8 +220,8 @@
         </td>
         <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
 <div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Updated_2025-12-28_214000.html">
-        <span class="uk-padding-small">2025-12-28 21:40:00</span>
+    <a class="uk-link-heading" href="Updated_2026-01-11_133000.html">
+        <span class="uk-padding-small">2026-01-11 13:30:00</span>
     </a>
 </div>
 </div></td>
@@ -257,7 +257,7 @@
 :Topic:         Development, Automation
 :Product:       KB4IT, Github Actions
 :Tag:           incremental, compiling, vm, workflow, cache,
-:Updated:       2025-12-28 21:40:00
+:Updated:       2026-01-11 13:30:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -275,7 +275,29 @@ GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, s
 
 == Solution
 
-To be continued...
+Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. 
+Then, once kb4it finishes the compilation, all changes are pushed automatically.
+
+[source, yaml]
+----
+      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+----
 </textarea></div>
                                             </div>
                                         </div>
@@ -337,7 +359,29 @@ To be continued...
 <h2 class="uk-card-title" id="_solution">Solution</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
-<p>To be continued&#8230;&#8203;</p>
+<p>Now, instead using <code>.kb4it</code> directory under <code>$USER</code> directory, it uses the own Github repository.
+Then, once kb4it finishes the compilation, all changes are pushed automatically.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi</code></pre>
+</div>
 </div>
 </div>
 </div>

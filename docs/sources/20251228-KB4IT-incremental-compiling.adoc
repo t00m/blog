@@ -5,7 +5,7 @@
 :Topic:         Development, Automation
 :Product:       KB4IT, Github Actions
 :Tag:           incremental, compiling, vm, workflow, cache,
-:Updated:       2025-12-28 21:40:00
+:Updated:       2026-01-11 13:30:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -23,4 +23,26 @@ GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, s
 
 == Solution
 
-To be continued...
+Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. 
+Then, once kb4it finishes the compilation, all changes are pushed automatically.
+
+[source, yaml]
+----
+      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+----

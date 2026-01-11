@@ -14,6 +14,344 @@
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
+                            <span class="uk-link-heading">KB4IT incremental compiling doesn't work (yet) in Github</span>
+                        </a>
+                    </h5>
+                    <div class="uk-width">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a href="events_2026111.html">11</a>/<a href="events_20261.html">1</a>/<a href="events_2026.html">2026</a></span>
+                            </li>
+<!--
+                            <li>
+                                <span uk-icon="star"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Topic_Development.html">Development</a>,
+                                    <a href="Topic_Automation.html">Automation</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span uk-icon="tag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Tag_incremental.html">incremental</a>,
+                                    <a href="Tag_compiling.html">compiling</a>,
+                                    <a href="Tag_vm.html">vm</a>,
+                                    <a href="Tag_workflow.html">workflow</a>,
+                                    <a href="Tag_cache.html">cache</a>
+                                </span>
+                            </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
+        <span class="uk-padding-small">Tomás Vírseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Github_Actions.html">
+        <span class="uk-padding-small">Github Actions</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_incremental.html">
+        <span class="uk-padding-small">incremental</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_compiling.html">
+        <span class="uk-padding-small">compiling</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_vm.html">
+        <span class="uk-padding-small">vm</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_workflow.html">
+        <span class="uk-padding-small">workflow</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_cache.html">
+        <span class="uk-padding-small">cache</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Automation.html">
+        <span class="uk-padding-small">Automation</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2026-01-11_133000.html">
+        <span class="uk-padding-small">2026-01-11 13:30:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251228-KB4IT-incremental-compiling.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= KB4IT incremental compiling doesn't work (yet) in Github
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Development, Automation
+:Product:       KB4IT, Github Actions
+:Tag:           incremental, compiling, vm, workflow, cache,
+:Updated:       2026-01-11 13:30:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
+
+To my initial surprise, it didn't work in Github.
+
+== Github actions
+
+In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. 
+
+GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
+
+== Solution
+
+Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. 
+Then, once kb4it finishes the compilation, all changes are pushed automatically.
+
+[source, yaml]
+----
+      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi  
+----
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_github_actions">Github actions</a></li>
+<li><a class="" target="" href="#_solution">Solution</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
+</div>
+<div class="paragraph">
+<p>To my initial surprise, it didn&#8217;t work in Github.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_github_actions">Github actions</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>In Github, when a new update is detected in the source directory, the Github action in charge (<a class="" target="" href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
+</div>
+<div class="paragraph">
+<p>GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_solution">Solution</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Now, instead using <code>.kb4it</code> directory under <code>$USER</code> directory, it uses the own Github repository.
+Then, once kb4it finishes the compilation, all changes are pushed automatically.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
+            git push
+          fi</code></pre>
+</div>
+</div>
+</div>
+</div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_ADOC_INDEX.tpl :: END -->
+++++
+
+++++
+<!-- Template POST_ADOC_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251231-1400-log_module.html">
                             <span class="uk-link-heading">A log module for KB4IT</span>
                         </a>
@@ -322,139 +660,7 @@ def redirect_logs(logfile: str):
 
         <!-- Body -->
         <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_abstract">Abstract</a></li>
-<li><a class="" target="" href="#_features">Features</a></li>
-<li><a class="" target="" href="#_code">Code</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_abstract">Abstract</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>A very useful log module to allow redirecting logs to another file in runtime.</p>
-</div>
-<div class="paragraph">
-<p>KB4IT needs this feature to redirect logs to the right file when a new instance is executed.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_features">Features</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="ulist">
-<ul>
-<li>
-<p>Log redirection</p>
-</li>
-<li>
-<p>Distinct levels for console and file handlers</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_code">Code</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-Log module.
-File: log.py
-Author: Tom&#225;s V&#237;rseda
-License: GPL v3
-"""
-
-import logging
-
-_PATTERN = (
-    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
-    "%(asctime)s.%(msecs)03d | %(message)s"
-)
-
-_DATEFMT = "%d/%m/%Y %H:%M:%S"
-
-
-def setup_logging(
-    level: str = "INFO",
-    logfile: str | None = None,
-):
-    """
-    Configure root logger once.
-    """
-
-    if level is not None:
-        level_dict = {
-            'DEBUG': logging.DEBUG,
-            'INFO': logging.INFO,
-            'WARNING': logging.WARNING,
-            'ERROR': logging.ERROR,
-            'CRITICAL': logging.CRITICAL
-        }
-        severity = level_dict.get(level, logging.DEBUG)
-    else:
-        severity = logging.INFO
-
-    root = logging.getLogger()
-    root.setLevel(logging.DEBUG)
-
-    if root.handlers:
-        return  # Already configured
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Console handler
-    console = logging.StreamHandler()
-    console.setFormatter(formatter)
-    console.setLevel(severity)
-    root.addHandler(console)
-
-    # File handler
-    file_handler = logging.FileHandler(logfile, mode="w")
-    file_handler.setFormatter(formatter)
-    root.addHandler(file_handler)
-
-
-def get_logger(name: str) -&gt; logging.Logger:
-    """
-    Return a named logger.
-    """
-    return logging.getLogger(name)
-
-
-def redirect_logs(logfile: str):
-    """
-    Redirect logging to a new file at runtime.
-    """
-    root = logging.getLogger()
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Remove only existing FileHandlers
-    for handler in root.handlers[:]:
-        if isinstance(handler, logging.FileHandler):
-            handler.flush()
-            handler.close()
-            root.removeHandler(handler)
-
-    # Add new file handler
-    file_handler = logging.FileHandler(logfile, mode="a")
-    file_handler.setFormatter(formatter)
-    file_handler.setLevel(logging.DEBUG)
-    root.addHandler(file_handler)</code></pre>
-</div>
-</div>
-</div>
-</div>
+            <img uk-img class="" src <<img d<img i<img v<img <img h<img e<img n<img><img uk-img class="" src <img <<img d<img i<img v<img "<img t<img o<img c<img l<img e<img><img uk-img class="" src t<img a<img b<img l<img e<img <img o<img f<img c<img n<img s<img <<img d<img i<img v<img><img uk-img class="" src <img <<img u<img l<img c<img a<img s<img "<img e<img t<img v<img 1<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img b<img><img uk-img class="" src a<img b<img s<img t<img r<img c<img <<img <img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img u<img><img uk-img class="" src f<img e<img a<img t<img u<img r<img s<img <<img <img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img o<img d<img><img uk-img class="" src c<img o<img d<img e<img <<img <img a<img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img b<img><img uk-img class="" src a<img b<img s<img t<img r<img c<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img p<img r<img g<img h<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src a<img <img v<img e<img r<img y<img u<img s<img f<img l<img o<img g<img m<img d<img t<img w<img i<img c<img n<img h<img .<img <<img p<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img p<img r<img g<img h<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src k<img b<img 4<img i<img t<img <img n<img e<img d<img s<img h<img f<img a<img u<img r<img o<img c<img l<img g<img w<img x<img .<img <<img p<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img f<img><img uk-img class="" src f<img e<img a<img t<img u<img r<img s<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img u<img t<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src l<img o<img g<img <img r<img e<img d<img i<img c<img t<img n<img <<img p<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src d<img i<img s<img t<img n<img c<img <img l<img e<img v<img f<img o<img r<img a<img h<img <<img p<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img o<img><img uk-img class="" src c<img o<img d<img e<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img t<img n<img g<img b<img o<img k<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img o<img n<img t<img e<img><img uk-img class="" src <img <<img p<img r<img e<img c<img l<img a<img s<img "<img h<img i<img g<img t<img j<img><img uk-img class="" src <<img c<img o<img d<img e<img <img l<img a<img s<img "<img n<img g<img u<img -<img p<img y<img t<img h<img j<img><img uk-img class="" src #<img !<img <img u<img s<img r<img b<img i<img n<img p<img y<img t<img h<img o<img -<img *<img c<img d<img g<img :<img f<img 8<img "<img l<img m<img e<img .<img a<img &#225;<img v<img &#237;<img 3<img _<img (<img %<img )<img 1<img 0<img |<img 4<img 2<img ,<img {<img '<img w<img }<img &<img ;<img x<img [<img ]<img <<img><img uk-img class="" src <<img <img p<img r<img e<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <!-- body :: end -->
         </article>
 
         <!-- Footer -->
@@ -466,289 +672,101 @@ def redirect_logs(logfile: str):
     </div>
 </div>
 <p></p>
-<!-- Template POST_ADOC_INDEX.tpl :: END -->
-++++
-
-++++
-<!-- Template POST_ADOC_INDEX.tpl :: START -->
-<!-- Blog Post :: START -->
-<div class="uk-card uk-card-small uk-card-body post-card">
-    <div class="uk-container uk-container-small">
-
-        <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
-            <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
-                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
-                        <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
-                            <span class="uk-link-heading">KB4IT incremental compiling doesn't work (yet) in Github</span>
-                        </a>
-                    </h5>
-                    <div class="uk-width">
-                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
-                            <li>
-                                <span uk-icon="user"></span>
-                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_20251228.html">28</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
-                            </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>,
-                                    <a href="Topic_Automation.html">Automation</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_incremental.html">incremental</a>,
-                                    <a href="Tag_compiling.html">compiling</a>,
-                                    <a href="Tag_vm.html">vm</a>,
-                                    <a href="Tag_workflow.html">workflow</a>,
-                                    <a href="Tag_cache.html">cache</a>
-                                </span>
-                            </li>
--->
-                            <!-- Metadata Button :: START -->
-                            <li uk-tooltip="title: Document properties">
-                                <span uk-icon="hashtag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
-                                </span>
-                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
-                                    <div class="uk-modal-dialog uk-height-viewport">
-                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
-                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
-                                            <div class="uk-padding-large uk-background-muted">
-                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
-                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
-<thead class="">
-    <tr class="">
-        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
-        <th class=""><span class="uk-text-bold">Values</span></th>
-    </tr>
-</thead>
-<tbody class="">
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Author.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
-        <span class="uk-padding-small">Tomás Vírseda</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Category.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Category_Post.html">
-        <span class="uk-padding-small">Post</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Product.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Product_KB4IT.html">
-        <span class="uk-padding-small">KB4IT</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Product_Github_Actions.html">
-        <span class="uk-padding-small">Github Actions</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Tag.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_incremental.html">
-        <span class="uk-padding-small">incremental</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_compiling.html">
-        <span class="uk-padding-small">compiling</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_vm.html">
-        <span class="uk-padding-small">vm</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_workflow.html">
-        <span class="uk-padding-small">workflow</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_cache.html">
-        <span class="uk-padding-small">cache</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Topic.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Topic_Development.html">
-        <span class="uk-padding-small">Development</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Topic_Automation.html">
-        <span class="uk-padding-small">Automation</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Updated.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Updated_2025-12-28_214000.html">
-        <span class="uk-padding-small">2025-12-28 21:40:00</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-</tbody>
-<tfoot>
-</tfoot>
-</table>
-</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- Metadata Button :: END -->
-                            <!-- View Asciidoc Source Button :: START -->
-                            <li uk-tooltip="title: Document source">
-                                <span uk-icon="code"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="#modal-full-source" uk-toggle>Source</a>
-                                </span>
-                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
-                                    <div class="uk-modal-dialog uk-height-viewport">
-                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
-                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
-                                            <div class="uk-padding-large uk-background-muted">
-                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
-                                                <div class="uk-text-lead">20251228-KB4IT-incremental-compiling.adoc</div>
-                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= KB4IT incremental compiling doesn't work (yet) in Github
-
-:Author:        Tomás Vírseda
-:Category:      Post
-:Topic:         Development, Automation
-:Product:       KB4IT, Github Actions
-:Tag:           incremental, compiling, vm, workflow, cache,
-:Updated:       2025-12-28 21:40:00
-
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
-
-== Introduction
-
-These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
-
-To my initial surprise, it didn't work in Github.
-
-== Github actions
-
-In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. 
-
-GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
-
-== Solution
-
-To be continued...
-</textarea></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- View Source Button :: END -->
-                        </ul>
-                    </div>
-                    <!-- Tags and Topics -->
+<!-- Template POST_HTML_SINGLE.tpl :: END -->
                 </div>
+                <!-- Sidebar Column :: START-->
+                <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
+                  <div class="uk-sticky" uk-sticky="offset: 40">
+                    <h2 class="uk-heading-line uk-text-center uk-margin-remove">
+                        <a class="uk-link-toggle" href="index.html">
+                        <span class="uk-link-heading">t00mter&#237;as</span>
+                        </a>
+                    </h2>
+                    <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
+            <blockquote>
+            <p class="uk-text-center">My public notes</p>
+            </blockquote>
             </div>
-            <hr>
-        </header>
 
-        <!-- Body -->
-        <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
-<li><a class="" target="" href="#_github_actions">Github actions</a></li>
-<li><a class="" target="" href="#_solution">Solution</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+        <div class="uk-card uk-card-body uk-card-small uk-flex uk-flex-top uk-flex-left">
+        <ul class="uk-list uk-text-left uk-margin-left">
+                <li>
+                    <span uk-icon="icon: plus" uk-tooltip="Create new post"></span>
+                    <a class="uk-link-heading" href="https://github.com/t00m/blog/new/main/source" target="_blank">
+                        <span class="uk-link-toogle uk-margin-left">Create new post</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: list" uk-tooltip="All posts"></span>
+                    <a class="uk-link-heading" href="all.html">
+                        <span class="uk-link-toogle uk-margin-left">All documents</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: star" uk-tooltip="Bookmarks"></span>
+                    <a class="uk-link-heading" href="bookmarks.html">
+                        <span class="uk-link-toogle uk-margin-left">Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: calendar" uk-tooltip="Posts by date"></span>
+                    <a class="uk-link-heading" href="events.html">
+                        <span class="uk-link-toogle uk-margin-left">Posts by date</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: world" uk-tooltip="Browse by metadata"></span>
+                    <a class="uk-link-heading" href="properties.html">
+                        <span class="uk-link-toogle uk-margin-left">Browse by metadata</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
 
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
-</div>
-<div class="paragraph">
-<p>To my initial surprise, it didn&#8217;t work in Github.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+                      <div class="uk-text-center uk-card uk-card-body uk-card-big">
+                        <hr class="uk-divider-icon">
+                        <p>
+                            <span class="uk-link">
+                                <a href="https://github.com/t00m/KB4IT" target="_blank">
+                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                </a>
+                            </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sidebar Column :: END-->
+            </div>
+            <!-- Main Content Column :: END-->
+        
+        <!-- GRID :: END -->
+    
+    <!-- Blog container :: END -->
+<script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
 
-<h2 class="uk-card-title" id="_github_actions">Github actions</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>In Github, when a new update is detected in the source directory, the Github action in charge (<a class="" target="" href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
-</div>
-<div class="paragraph">
-<p>GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
 
-<h2 class="uk-card-title" id="_solution">Solution</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>To be continued&#8230;&#8203;</p>
-</div>
-</div>
-</div>
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
+</body>
+</html>
         </article>
 
         <!-- Footer -->
@@ -1503,6 +1521,269 @@ myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"</code></p
 <p><code>pixi run {task name}</code>: Runs task name in the pixi environment</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_ADOC_INDEX.tpl :: END -->
+++++
+
+++++
+<!-- Template POST_ADOC_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20251208-2230.html">
+                            <span class="uk-link-heading">Blog theme features a new index page</span>
+                        </a>
+                    </h5>
+                    <div class="uk-width">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a href="events_2025128.html">8</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                            </li>
+<!--
+                            <li>
+                                <span uk-icon="star"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Topic_Development.html">Development</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span uk-icon="tag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Tag_index.html">index</a>,
+                                    <a href="Tag_page.html">page</a>,
+                                    <a href="Tag_template.html">template</a>
+                                </span>
+                            </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
+        <span class="uk-padding-small">Tomás Vírseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_Mako.html">
+        <span class="uk-padding-small">Mako</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_index.html">
+        <span class="uk-padding-small">index</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_page.html">
+        <span class="uk-padding-small">page</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_template.html">
+        <span class="uk-padding-small">template</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2025-12-08_230000.html">
+        <span class="uk-padding-small">2025-12-08 23:00:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251208-2230.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Blog theme features a new index page
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Development
+:Product:       KB4IT, Mako
+:Tag:           index, page, template
+:Updated:       2025-12-08 23:00:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+Finally, the index page for the blog theme, is working.
+Posts' headers look nice.
+
+However, at this point, the whole code is... spaguetti code.
+`KB4IT` needs a big overhaul.
+
+== Notes
+
+Builder module works fine when the source files (.adoc files) are analyzed first. 
+But other pages, like the index page, which are build at the end, do not follow the standard process.
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_notes">Notes</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Finally, the index page for the blog theme, is working.
+Posts' headers look nice.</p>
+</div>
+<div class="paragraph">
+<p>However, at this point, the whole code is&#8230;&#8203; spaguetti code.
+<code>KB4IT</code> needs a big overhaul.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_notes">Notes</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Builder module works fine when the source files (.adoc files) are analyzed first.
+But other pages, like the index page, which are build at the end, do not follow the standard process.</p>
 </div>
 </div>
 </div>
