@@ -1,0 +1,27 @@
+= Useful links for Python developers
+:Author:                Tomás Vírseda
+:Category:              Post
+:Topic:                 Development, Documentation
+:Product:               Python
+:Tag:                   awesome, framework, library, resource, algorithm
+:Programming Language:  Python
+:Bookmark:              Yes
+:Updated:               2026-01-11 20:50:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Introduction
+
+List of python resources for developers
+
+== Awesome Python
+
+* https://github.com/vinta/awesome-python[Awesome Python]: An opinionated list of awesome Python frameworks, libraries, software and resources.
+
+== Unsorted topics
+              
+* https://zetcode.com/python/[ZetCode Python tutorials]
+
+== Data Structures and Algorithms
+                              
+* https://github.com/Gaurav14cs17/DSA[Gaurav14cs17 / DSA]: A well-organized repository covering core Data Structures and Algorithms, from fundamentals to advanced topics.

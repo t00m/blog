@@ -336,6 +336,78 @@
                 ]
             },
             "metadata_hash": "fd2bae64edbd11615d8e2a126b5e3b4a"
+        },
+        "python3-dev.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Bookmark": [
+                "Yes"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Product": [
+                "Python"
+            ],
+            "Programming Language": [
+                "Python"
+            ],
+            "Tag": [
+                "algorithm",
+                "awesome",
+                "framework",
+                "library",
+                "resource"
+            ],
+            "Title": [
+                "Useful links for Python developers"
+            ],
+            "Topic": [
+                "Development",
+                "Documentation"
+            ],
+            "Updated": [
+                "2026-01-11 20:50:00"
+            ],
+            "compile": true,
+            "content": "= Useful links for Python developers\n:Author:                Tom\u00e1s V\u00edrseda\n:Category:              Post\n:Topic:                 Development, Documentation\n:Product:               Python\n:Tag:                   awesome, framework, library, resource, algorithm\n:Programming Language:  Python\n:Bookmark:              Yes\n:Updated:               2026-01-11 20:50:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nList of python resources for developers\n\n== Awesome Python\n\n* https://github.com/vinta/awesome-python[Awesome Python]: An opinionated list of awesome Python frameworks, libraries, software and resources.\n\n== Unsorted topics\n              \n* https://zetcode.com/python/[ZetCode Python tutorials]\n\n== Data Structures and Algorithms\n                              \n* https://github.com/Gaurav14cs17/DSA[Gaurav14cs17 / DSA]: A well-organized repository covering core Data Structures and Algorithms, from fundamentals to advanced topics.\n",
+            "content_hash": "48601c738b210966f597787e79d7ba74",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Bookmark": [
+                    "Yes"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "Python"
+                ],
+                "Programming Language": [
+                    "Python"
+                ],
+                "Tag": [
+                    "awesome",
+                    "framework",
+                    "library",
+                    "resource",
+                    "algorithm"
+                ],
+                "Title": [
+                    "Useful links for Python developers"
+                ],
+                "Topic": [
+                    "Development",
+                    "Documentation"
+                ],
+                "Updated": [
+                    "2026-01-11 20:50:00"
+                ]
+            },
+            "metadata_hash": "fb435db5ed9ec04b3ce8ae41169c8c8d"
         }
     },
     "metadata": {
@@ -345,12 +417,14 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc"
+                "20251231-1400-log_module.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Bookmark": {
             "Yes": [
-                "20251226-PyGTK4.adoc"
+                "20251226-PyGTK4.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Category": {
@@ -359,7 +433,8 @@
                 "20251214-0030.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc"
+                "20251231-1400-log_module.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Product": {
@@ -397,13 +472,15 @@
                 "20251214-0030.adoc"
             ],
             "Python": [
-                "20251214-0030.adoc"
+                "20251214-0030.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Programming Language": {
             "Python": [
                 "20251226-PyGTK4.adoc",
-                "20251231-1400-log_module.adoc"
+                "20251231-1400-log_module.adoc",
+                "python3-dev.adoc"
             ]
         },
         "SystemPage": {
@@ -412,8 +489,14 @@
             ]
         },
         "Tag": {
+            "algorithm": [
+                "python3-dev.adoc"
+            ],
             "api": [
                 "20251226-PyGTK4.adoc"
+            ],
+            "awesome": [
+                "python3-dev.adoc"
             ],
             "build": [
                 "20251214-0030.adoc"
@@ -436,11 +519,17 @@
             "filehandler": [
                 "20251231-1400-log_module.adoc"
             ],
+            "framework": [
+                "python3-dev.adoc"
+            ],
             "incremental": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "index": [
                 "20251208-2230.adoc"
+            ],
+            "library": [
+                "python3-dev.adoc"
             ],
             "logging": [
                 "20251231-1400-log_module.adoc"
@@ -453,6 +542,9 @@
             ],
             "redirect": [
                 "20251231-1400-log_module.adoc"
+            ],
+            "resource": [
+                "python3-dev.adoc"
             ],
             "template": [
                 "20251208-2230.adoc"
@@ -482,6 +574,9 @@
             ],
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
+            ],
+            "Useful links for Python developers": [
+                "python3-dev.adoc"
             ]
         },
         "Topic": {
@@ -492,10 +587,12 @@
                 "20251208-2230.adoc",
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc"
+                "20251231-1400-log_module.adoc",
+                "python3-dev.adoc"
             ],
             "Documentation": [
-                "20251226-PyGTK4.adoc"
+                "20251226-PyGTK4.adoc",
+                "python3-dev.adoc"
             ],
             "Package management": [
                 "20251214-0030.adoc"
@@ -519,6 +616,9 @@
             ],
             "2026-01-11 13:35:00": [
                 "20251231-1400-log_module.adoc"
+            ],
+            "2026-01-11 20:50:00": [
+                "python3-dev.adoc"
             ]
         }
     }
