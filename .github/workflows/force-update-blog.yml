@@ -1,4 +1,4 @@
-name: check-kb4it-version
+name: force-kb4it-compilation
 
 on:
   push:
