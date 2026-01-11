@@ -272,6 +272,29 @@ KB4IT needs this feature to redirect logs to the right file when a new instance 
 
 * Log redirection: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
 * Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
++
+[source]
+----
+Run kb4it -L INFO build config/blog.json -w 8
+
+      INFO |   99 | Workflow             | 11/01/2026 12:38:45.751 | Building a website for repository 't00mter&#237;as'
+      INFO |  100 | Workflow             | 11/01/2026 12:38:45.751 | Using theme 'blog'
+      INFO |  101 | Workflow             | 11/01/2026 12:38:45.751 | Check environment
+      INFO |  103 | Workflow             | 11/01/2026 12:38:45.760 | Allow theme to generate sources
+      INFO |  106 | Workflow             | 11/01/2026 12:38:45.760 | Get source documents
+   WARNING |  352 | Backend              | 11/01/2026 12:38:45.760 |   - Added missing 'About App' to your sources
+      INFO |  108 | Workflow             | 11/01/2026 12:38:45.761 | Preprocessing
+      INFO |  110 | Workflow             | 11/01/2026 12:38:45.844 | Backend processing
+      INFO |  112 | Workflow             | 11/01/2026 12:38:45.877 | Theme processing
+      INFO |  114 | Workflow             | 11/01/2026 12:38:45.927 | Compilation
+      INFO |  116 | Workflow             | 11/01/2026 12:38:52.129 | Clean up target
+      INFO |  118 | Workflow             | 11/01/2026 12:38:52.161 | Refresh target
+      INFO |  120 | Workflow             | 11/01/2026 12:38:52.306 | Theme post activities
+      INFO |  123 | Workflow             | 11/01/2026 12:38:52.467 | Repository website built
+      INFO |  124 | Workflow             | 11/01/2026 12:38:52.467 | URL: /home/runner/work/blog/blog/docs/index.html
+      INFO |  125 | Workflow             | 11/01/2026 12:38:52.467 | Full log: /home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log
+      INFO |  126 | Workflow             | 11/01/2026 12:38:52.467 | The End
+----
 
 == Code
 
