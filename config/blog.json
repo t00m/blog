@@ -10,7 +10,7 @@
         "Note",
         "Bookmark"
     ],
-    "force": true,
+    "force": false,
     "git": true,
     "git_branch": "main",
     "git_path": "source",
@@ -20,6 +20,7 @@
     "ignored_keys": [
         "Updated"
     ],
+    "index_posts": 5,
     "logo": "resources/themes/blog/images/logo.svg",
     "logo_alt": "",
     "menu": [
@@ -38,6 +39,7 @@
     "title": "t00mterías",
     "webserver": true
 }
+
 
 
 
