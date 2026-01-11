@@ -2,11 +2,11 @@
 
 :Author:                Tomás Vírseda
 :Category:              Post
-:Topic:                 Development
+:Topic:                 Development, Troubleshooting
 :Product:               KB4IT
 :Tag:                   logging, redirect, filehandler
 :Programming Language:  Python
-:Updated:               2025-12-31 14:00:00
+:Updated:               2026-01-11 13:35:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -18,8 +18,8 @@ KB4IT needs this feature to redirect logs to the right file when a new instance 
 
 == Features
 
-* Log redirection
-* Distinct levels for console and file handlers
+* Log redirection: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
+* Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
 
 == Code
 
