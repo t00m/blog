@@ -57,7 +57,7 @@ jobs:
 
       # Update blog
       - name: Update blog
-        run: kb4it -L DEBUG build config/blog.json
+        run: kb4it -L DEBUG build config/blog.json -w 8
 
       # Commit changes
       - name: Commit and push changes (if any)
