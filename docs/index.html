@@ -270,8 +270,8 @@ KB4IT needs this feature to redirect logs to the right file when a new instance 
 
 == Features
 
-* Log redirection: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
-* Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
+* *Log redirection*: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
+* *Distinct levels for console and file handlers*: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
 +
 [source]
 ----
@@ -433,10 +433,10 @@ def redirect_logs(logfile: str):
 <div class="ulist">
 <ul>
 <li>
-<p>Log redirection: when KB4IT is executed, it doesn&#8217;t know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.</p>
+<p><strong>Log redirection</strong>: when KB4IT is executed, it doesn&#8217;t know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.</p>
 </li>
 <li>
-<p>Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.</p>
+<p><strong>Distinct levels for console and file handlers</strong>: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">Run kb4it -L INFO build config/blog.json -w 8
