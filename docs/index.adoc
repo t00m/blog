@@ -15,7 +15,7 @@
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
-                            <span class="uk-link-heading">KB4IT incremental compiling doesn't work (yet) in Github</span>
+                            <span class="uk-link-heading">KB4IT incremental compiling in Github (experimental)</span>
                         </a>
                     </h5>
                     <div class="uk-width">
@@ -199,7 +199,7 @@
                                             <div class="uk-padding-large uk-background-muted">
                                                 <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
                                                 <div class="uk-text-lead">20251228-KB4IT-incremental-compiling.adoc</div>
-                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= KB4IT incremental compiling doesn't work (yet) in Github
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= KB4IT incremental compiling in Github (experimental)
 
 :Author:        Tomás Vírseda
 :Category:      Post
@@ -660,113 +660,139 @@ def redirect_logs(logfile: str):
 
         <!-- Body -->
         <article class="uk-article">
-            <img uk-img class="" src <<img d<img i<img v<img <img h<img e<img n<img><img uk-img class="" src <img <<img d<img i<img v<img "<img t<img o<img c<img l<img e<img><img uk-img class="" src t<img a<img b<img l<img e<img <img o<img f<img c<img n<img s<img <<img d<img i<img v<img><img uk-img class="" src <img <<img u<img l<img c<img a<img s<img "<img e<img t<img v<img 1<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img b<img><img uk-img class="" src a<img b<img s<img t<img r<img c<img <<img <img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img u<img><img uk-img class="" src f<img e<img a<img t<img u<img r<img s<img <<img <img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <<img a<img <img c<img l<img s<img "<img t<img r<img g<img e<img h<img f<img #<img _<img o<img d<img><img uk-img class="" src c<img o<img d<img e<img <<img <img a<img><img uk-img class="" src <<img <img l<img i<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img b<img><img uk-img class="" src a<img b<img s<img t<img r<img c<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img p<img r<img g<img h<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src a<img <img v<img e<img r<img y<img u<img s<img f<img l<img o<img g<img m<img d<img t<img w<img i<img c<img n<img h<img .<img <<img p<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img p<img r<img g<img h<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src k<img b<img 4<img i<img t<img <img n<img e<img d<img s<img h<img f<img a<img u<img r<img o<img c<img l<img g<img w<img x<img .<img <<img p<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img f<img><img uk-img class="" src f<img e<img a<img t<img u<img r<img s<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img u<img t<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src l<img o<img g<img <img r<img e<img d<img i<img c<img t<img n<img <<img p<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img p<img><img uk-img class="" src d<img i<img s<img t<img n<img c<img <img l<img e<img v<img f<img o<img r<img a<img h<img <<img p<img><img uk-img class="" src <img <<img l<img i<img><img uk-img class="" src <img <<img u<img l<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img 1<img l<img a<img u<img m<img r<img g<img n<img o<img y<img h<img><img uk-img class="" src <img <<img h<img 2<img c<img l<img a<img s<img "<img u<img k<img -<img r<img d<img t<img i<img e<img _<img o<img><img uk-img class="" src c<img o<img d<img e<img <<img <img h<img 2<img><img uk-img class="" src <img <<img d<img i<img v<img "<img k<img b<img -<img s<img e<img c<img t<img o<img n<img y<img l<img a<img u<img r<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img t<img n<img g<img b<img o<img k<img><img uk-img class="" src <img <<img d<img i<img v<img c<img l<img a<img s<img "<img o<img n<img t<img e<img><img uk-img class="" src <img <<img p<img r<img e<img c<img l<img a<img s<img "<img h<img i<img g<img t<img j<img><img uk-img class="" src <<img c<img o<img d<img e<img <img l<img a<img s<img "<img n<img g<img u<img -<img p<img y<img t<img h<img j<img><img uk-img class="" src #<img !<img <img u<img s<img r<img b<img i<img n<img p<img y<img t<img h<img o<img -<img *<img c<img d<img g<img :<img f<img 8<img "<img l<img m<img e<img .<img a<img &#225;<img v<img &#237;<img 3<img _<img (<img %<img )<img 1<img 0<img |<img 4<img 2<img ,<img {<img '<img w<img }<img &<img ;<img x<img [<img ]<img <<img><img uk-img class="" src <<img <img p<img r<img e<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <img <<img d<img i<img v<img><img uk-img class="" src <!-- body :: end -->
-        </article>
-
-        <!-- Footer -->
-        <footer class="uk-margin-small-top uk-text-muted">
-            <hr>
-            <div class="uk-flex uk-flex-between uk-flex-middle">
-            </div>
-        </footer>
-    </div>
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_abstract">Abstract</a></li>
+<li><a class="" target="" href="#_features">Features</a></li>
+<li><a class="" target="" href="#_code">Code</a></li>
+</ul>
 </div>
-<p></p>
-<!-- Template POST_HTML_SINGLE.tpl :: END -->
-                </div>
-                <!-- Sidebar Column :: START-->
-                <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
-                  <div class="uk-sticky" uk-sticky="offset: 40">
-                    <h2 class="uk-heading-line uk-text-center uk-margin-remove">
-                        <a class="uk-link-toggle" href="index.html">
-                        <span class="uk-link-heading">t00mter&#237;as</span>
-                        </a>
-                    </h2>
-                    <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
-            <blockquote>
-            <p class="uk-text-center">My public notes</p>
-            </blockquote>
-            </div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-        <div class="uk-card uk-card-body uk-card-small uk-flex uk-flex-top uk-flex-left">
-        <ul class="uk-list uk-text-left uk-margin-left">
-                <li>
-                    <span uk-icon="icon: plus" uk-tooltip="Create new post"></span>
-                    <a class="uk-link-heading" href="https://github.com/t00m/blog/new/main/source" target="_blank">
-                        <span class="uk-link-toogle uk-margin-left">Create new post</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: list" uk-tooltip="All posts"></span>
-                    <a class="uk-link-heading" href="all.html">
-                        <span class="uk-link-toogle uk-margin-left">All documents</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: star" uk-tooltip="Bookmarks"></span>
-                    <a class="uk-link-heading" href="bookmarks.html">
-                        <span class="uk-link-toogle uk-margin-left">Bookmarks</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: calendar" uk-tooltip="Posts by date"></span>
-                    <a class="uk-link-heading" href="events.html">
-                        <span class="uk-link-toogle uk-margin-left">Posts by date</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: world" uk-tooltip="Browse by metadata"></span>
-                    <a class="uk-link-heading" href="properties.html">
-                        <span class="uk-link-toogle uk-margin-left">Browse by metadata</span>
-                    </a>
-                </li>
-        </ul>
-    </div>
+<h2 class="uk-card-title" id="_abstract">Abstract</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>A very useful log module to allow redirecting logs to another file in runtime.</p>
+</div>
+<div class="paragraph">
+<p>KB4IT needs this feature to redirect logs to the right file when a new instance is executed.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-                      <div class="uk-text-center uk-card uk-card-body uk-card-big">
-                        <hr class="uk-divider-icon">
-                        <p>
-                            <span class="uk-link">
-                                <a href="https://github.com/t00m/KB4IT" target="_blank">
-                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
-                                </a>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Sidebar Column :: END-->
-            </div>
-            <!-- Main Content Column :: END-->
-        
-        <!-- GRID :: END -->
-    
-    <!-- Blog container :: END -->
-<script>hljs.highlightAll();</script>
-<script>
-<!-- Necessary javascript for filtering results -->
-<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
-var input = document.getElementById('text_filter');
-var filter = document.getElementById('filter');
+<h2 class="uk-card-title" id="_features">Features</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="ulist">
+<ul>
+<li>
+<p>Log redirection</p>
+</li>
+<li>
+<p>Distinct levels for console and file handlers</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-input.addEventListener( 'keyup', function(event)
-{
-    if ( input.value == "" )
-    {
-        filter.setAttribute( 'uk-filter-control', '' );
-    }
+<h2 class="uk-card-title" id="_code">Code</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
-    else
-    {
-        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
-    }
+"""
+Log module.
+File: log.py
+Author: Tom&#225;s V&#237;rseda
+License: GPL v3
+"""
 
-    filter.click();
-});
-</script>
-</body>
-</html>
+import logging
+
+_PATTERN = (
+    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
+    "%(asctime)s.%(msecs)03d | %(message)s"
+)
+
+_DATEFMT = "%d/%m/%Y %H:%M:%S"
+
+
+def setup_logging(
+    level: str = "INFO",
+    logfile: str | None = None,
+):
+    """
+    Configure root logger once.
+    """
+
+    if level is not None:
+        level_dict = {
+            'DEBUG': logging.DEBUG,
+            'INFO': logging.INFO,
+            'WARNING': logging.WARNING,
+            'ERROR': logging.ERROR,
+            'CRITICAL': logging.CRITICAL
+        }
+        severity = level_dict.get(level, logging.DEBUG)
+    else:
+        severity = logging.INFO
+
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+
+    if root.handlers:
+        return  # Already configured
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Console handler
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+    console.setLevel(severity)
+    root.addHandler(console)
+
+    # File handler
+    file_handler = logging.FileHandler(logfile, mode="w")
+    file_handler.setFormatter(formatter)
+    root.addHandler(file_handler)
+
+
+def get_logger(name: str) -&gt; logging.Logger:
+    """
+    Return a named logger.
+    """
+    return logging.getLogger(name)
+
+
+def redirect_logs(logfile: str):
+    """
+    Redirect logging to a new file at runtime.
+    """
+    root = logging.getLogger()
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Remove only existing FileHandlers
+    for handler in root.handlers[:]:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+            handler.close()
+            root.removeHandler(handler)
+
+    # Add new file handler
+    file_handler = logging.FileHandler(logfile, mode="a")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+    root.addHandler(file_handler)</code></pre>
+</div>
+</div>
+</div>
+</div>
         </article>
 
         <!-- Footer -->

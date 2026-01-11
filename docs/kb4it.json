@@ -211,7 +211,7 @@
                 "workflow"
             ],
             "Title": [
-                "KB4IT incremental compiling doesn't work (yet) in Github"
+                "KB4IT incremental compiling in Github (experimental)"
             ],
             "Topic": [
                 "Automation",
@@ -221,8 +221,8 @@
                 "2026-01-11 13:30:00"
             ],
             "compile": true,
-            "content": "= KB4IT incremental compiling doesn't work (yet) in Github\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development, Automation\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2026-01-11 13:30:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nNow, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. \nThen, once kb4it finishes the compilation, all changes are pushed automatically.\n\n[source, yaml]\n----\n      # Commit changes\n      - name: Commit and push changes (if any)\n        run: |\n          git config --global user.name 'github-actions[bot]'\n          git config --global user.email 'github-actions[bot]@users.noreply.github.com'\n\n          # Stage all changes in docs/\n          git add docs/\n          git add var/\n\n          # Check if there are changes to commit\n          if git diff --staged --quiet; then\n            echo \"No changes to commit.\"\n          else\n            git commit -m \"Auto-update target/ after KB4IT build [$(date -u)]\"\n            git push\n          fi  \n----\n",
-            "content_hash": "6026b262482a194a067a4b3c222b0004",
+            "content": "= KB4IT incremental compiling in Github (experimental)\n\n:Author:        Tom\u00e1s V\u00edrseda\n:Category:      Post\n:Topic:         Development, Automation\n:Product:       KB4IT, Github Actions\n:Tag:           incremental, compiling, vm, workflow, cache,\n:Updated:       2026-01-11 13:30:00\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Introduction\n\nThese days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).\n\nTo my initial surprise, it didn't work in Github.\n\n== Github actions\n\nIn Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. \n\nGitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.\n\n== Solution\n\nNow, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. \nThen, once kb4it finishes the compilation, all changes are pushed automatically.\n\n[source, yaml]\n----\n      # Commit changes\n      - name: Commit and push changes (if any)\n        run: |\n          git config --global user.name 'github-actions[bot]'\n          git config --global user.email 'github-actions[bot]@users.noreply.github.com'\n\n          # Stage all changes in docs/\n          git add docs/\n          git add var/\n\n          # Check if there are changes to commit\n          if git diff --staged --quiet; then\n            echo \"No changes to commit.\"\n          else\n            git commit -m \"Auto-update target/ after KB4IT build [$(date -u)]\"\n            git push\n          fi  \n----\n",
+            "content_hash": "8c0c4cc5180ca7d8fbad479d18f46cca",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -243,7 +243,7 @@
                     ""
                 ],
                 "Title": [
-                    "KB4IT incremental compiling doesn't work (yet) in Github"
+                    "KB4IT incremental compiling in Github (experimental)"
                 ],
                 "Topic": [
                     "Development",
@@ -253,7 +253,7 @@
                     "2026-01-11 13:30:00"
                 ]
             },
-            "metadata_hash": "c32c1cec943fb5ddf96ca907536faf7d"
+            "metadata_hash": "d024c0a2f289055f1bd7c07f362d31d5"
         },
         "20251231-1400-log_module.adoc": {
             "Author": [
@@ -475,7 +475,7 @@
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
             ],
-            "KB4IT incremental compiling doesn't work (yet) in Github": [
+            "KB4IT incremental compiling in Github (experimental)": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "Pixi: Managing Python Environments": [

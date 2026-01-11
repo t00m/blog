@@ -1,4 +1,4 @@
-= KB4IT incremental compiling doesn't work (yet) in Github
+= KB4IT incremental compiling in Github (experimental)
 
 :Author:        Tomás Vírseda
 :Category:      Post
