@@ -14,6 +14,478 @@
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
                 <div class="uk-width">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20251231-1400-log_module.html">
+                            <span class="uk-link-heading">A log module for KB4IT</span>
+                        </a>
+                    </h5>
+                    <div class="uk-width">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
+                            </li>
+                            <li>
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a href="events_2026111.html">11</a>/<a href="events_20261.html">1</a>/<a href="events_2026.html">2026</a></span>
+                            </li>
+<!--
+                            <li>
+                                <span uk-icon="star"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Topic_Development.html">Development</a>,
+                                    <a href="Topic_Troubleshooting.html">Troubleshooting</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span uk-icon="tag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="Tag_logging.html">logging</a>,
+                                    <a href="Tag_redirect.html">redirect</a>,
+                                    <a href="Tag_filehandler.html">filehandler</a>
+                                </span>
+                            </li>
+-->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
+        <span class="uk-padding-small">Tomás Vírseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Programming_Language.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Programming Language</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Programming_Language_Python.html">
+        <span class="uk-padding-small">Python</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_logging.html">
+        <span class="uk-padding-small">logging</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_redirect.html">
+        <span class="uk-padding-small">redirect</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_filehandler.html">
+        <span class="uk-padding-small">filehandler</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Troubleshooting.html">
+        <span class="uk-padding-small">Troubleshooting</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Updated.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Updated_2026-01-11_133500.html">
+        <span class="uk-padding-small">2026-01-11 13:35:00</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20251231-1400-log_module.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= A log module for KB4IT
+
+:Author:                Tomás Vírseda
+:Category:              Post
+:Topic:                 Development, Troubleshooting
+:Product:               KB4IT
+:Tag:                   logging, redirect, filehandler
+:Programming Language:  Python
+:Updated:               2026-01-11 13:35:00
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Abstract
+
+A very useful log module to allow redirecting logs to another file in runtime.
+
+KB4IT needs this feature to redirect logs to the right file when a new instance is executed.
+
+== Features
+
+* Log redirection: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
+* Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
+
+== Code
+
+[source, python]
+----
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""
+Log module.
+File: log.py
+Author: Tomás Vírseda
+License: GPL v3
+"""
+
+import logging
+
+_PATTERN = (
+    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
+    "%(asctime)s.%(msecs)03d | %(message)s"
+)
+
+_DATEFMT = "%d/%m/%Y %H:%M:%S"
+
+
+def setup_logging(
+    level: str = "INFO",
+    logfile: str | None = None,
+):
+    """
+    Configure root logger once.
+    """
+
+    if level is not None:
+        level_dict = {
+            'DEBUG': logging.DEBUG,
+            'INFO': logging.INFO,
+            'WARNING': logging.WARNING,
+            'ERROR': logging.ERROR,
+            'CRITICAL': logging.CRITICAL
+        }
+        severity = level_dict.get(level, logging.DEBUG)
+    else:
+        severity = logging.INFO
+
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+
+    if root.handlers:
+        return  # Already configured
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Console handler
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+    console.setLevel(severity)
+    root.addHandler(console)
+
+    # File handler
+    file_handler = logging.FileHandler(logfile, mode="w")
+    file_handler.setFormatter(formatter)
+    root.addHandler(file_handler)
+
+
+def get_logger(name: str) -> logging.Logger:
+    """
+    Return a named logger.
+    """
+    return logging.getLogger(name)
+
+
+def redirect_logs(logfile: str):
+    """
+    Redirect logging to a new file at runtime.
+    """
+    root = logging.getLogger()
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Remove only existing FileHandlers
+    for handler in root.handlers[:]:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+            handler.close()
+            root.removeHandler(handler)
+
+    # Add new file handler
+    file_handler = logging.FileHandler(logfile, mode="a")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+    root.addHandler(file_handler)
+----
+
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_abstract">Abstract</a></li>
+<li><a class="" target="" href="#_features">Features</a></li>
+<li><a class="" target="" href="#_code">Code</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_abstract">Abstract</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>A very useful log module to allow redirecting logs to another file in runtime.</p>
+</div>
+<div class="paragraph">
+<p>KB4IT needs this feature to redirect logs to the right file when a new instance is executed.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_features">Features</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="ulist">
+<ul>
+<li>
+<p>Log redirection: when KB4IT is executed, it doesn&#8217;t know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.</p>
+</li>
+<li>
+<p>Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_code">Code</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""
+Log module.
+File: log.py
+Author: Tom&#225;s V&#237;rseda
+License: GPL v3
+"""
+
+import logging
+
+_PATTERN = (
+    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
+    "%(asctime)s.%(msecs)03d | %(message)s"
+)
+
+_DATEFMT = "%d/%m/%Y %H:%M:%S"
+
+
+def setup_logging(
+    level: str = "INFO",
+    logfile: str | None = None,
+):
+    """
+    Configure root logger once.
+    """
+
+    if level is not None:
+        level_dict = {
+            'DEBUG': logging.DEBUG,
+            'INFO': logging.INFO,
+            'WARNING': logging.WARNING,
+            'ERROR': logging.ERROR,
+            'CRITICAL': logging.CRITICAL
+        }
+        severity = level_dict.get(level, logging.DEBUG)
+    else:
+        severity = logging.INFO
+
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+
+    if root.handlers:
+        return  # Already configured
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Console handler
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+    console.setLevel(severity)
+    root.addHandler(console)
+
+    # File handler
+    file_handler = logging.FileHandler(logfile, mode="w")
+    file_handler.setFormatter(formatter)
+    root.addHandler(file_handler)
+
+
+def get_logger(name: str) -&gt; logging.Logger:
+    """
+    Return a named logger.
+    """
+    return logging.getLogger(name)
+
+
+def redirect_logs(logfile: str):
+    """
+    Redirect logging to a new file at runtime.
+    """
+    root = logging.getLogger()
+
+    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
+
+    # Remove only existing FileHandlers
+    for handler in root.handlers[:]:
+        if isinstance(handler, logging.FileHandler):
+            handler.flush()
+            handler.close()
+            root.removeHandler(handler)
+
+    # Add new file handler
+    file_handler = logging.FileHandler(logfile, mode="a")
+    file_handler.setFormatter(formatter)
+    file_handler.setLevel(logging.DEBUG)
+    root.addHandler(file_handler)</code></pre>
+</div>
+</div>
+</div>
+</div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_ADOC_INDEX.tpl :: END -->
+++++
+
+++++
+<!-- Template POST_ADOC_INDEX.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
                             <span class="uk-link-heading">KB4IT incremental compiling in Github (experimental)</span>
                         </a>
@@ -323,472 +795,6 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
             git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
             git push
           fi</code></pre>
-</div>
-</div>
-</div>
-</div>
-        </article>
-
-        <!-- Footer -->
-        <footer class="uk-margin-small-top uk-text-muted">
-            <hr>
-            <div class="uk-flex uk-flex-between uk-flex-middle">
-            </div>
-        </footer>
-    </div>
-</div>
-<p></p>
-<!-- Template POST_ADOC_INDEX.tpl :: END -->
-++++
-
-++++
-<!-- Template POST_ADOC_INDEX.tpl :: START -->
-<!-- Blog Post :: START -->
-<div class="uk-card uk-card-small uk-card-body post-card">
-    <div class="uk-container uk-container-small">
-
-        <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
-            <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
-                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
-                        <a class="uk-link-toggle" href="20251231-1400-log_module.html">
-                            <span class="uk-link-heading">A log module for KB4IT</span>
-                        </a>
-                    </h5>
-                    <div class="uk-width">
-                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
-                            <li>
-                                <span uk-icon="user"></span>
-                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
-                            </li>
-                            <li>
-                                <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_20251231.html">31</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
-                            </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_logging.html">logging</a>,
-                                    <a href="Tag_redirect.html">redirect</a>,
-                                    <a href="Tag_filehandler.html">filehandler</a>
-                                </span>
-                            </li>
--->
-                            <!-- Metadata Button :: START -->
-                            <li uk-tooltip="title: Document properties">
-                                <span uk-icon="hashtag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
-                                </span>
-                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
-                                    <div class="uk-modal-dialog uk-height-viewport">
-                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
-                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
-                                            <div class="uk-padding-large uk-background-muted">
-                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
-                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
-<thead class="">
-    <tr class="">
-        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
-        <th class=""><span class="uk-text-bold">Values</span></th>
-    </tr>
-</thead>
-<tbody class="">
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Author.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
-        <span class="uk-padding-small">Tomás Vírseda</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Category.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Category_Post.html">
-        <span class="uk-padding-small">Post</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Product.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Product_KB4IT.html">
-        <span class="uk-padding-small">KB4IT</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Programming_Language.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Programming Language</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Programming_Language_Python.html">
-        <span class="uk-padding-small">Python</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Tag.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_logging.html">
-        <span class="uk-padding-small">logging</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_redirect.html">
-        <span class="uk-padding-small">redirect</span>
-    </a>
-</div>
-<div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Tag_filehandler.html">
-        <span class="uk-padding-small">filehandler</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Topic.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Topic_Development.html">
-        <span class="uk-padding-small">Development</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-    <tr class="">
-        <td class="">
-            <a class="uk-link-text" href="Updated.html">
-                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Updated</div>
-            </a>
-        </td>
-        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Updated_2025-12-31_140000.html">
-        <span class="uk-padding-small">2025-12-31 14:00:00</span>
-    </a>
-</div>
-</div></td>
-    </tr>
-</tbody>
-<tfoot>
-</tfoot>
-</table>
-</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- Metadata Button :: END -->
-                            <!-- View Asciidoc Source Button :: START -->
-                            <li uk-tooltip="title: Document source">
-                                <span uk-icon="code"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="#modal-full-source" uk-toggle>Source</a>
-                                </span>
-                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
-                                    <div class="uk-modal-dialog uk-height-viewport">
-                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
-                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
-                                            <div class="uk-padding-large uk-background-muted">
-                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
-                                                <div class="uk-text-lead">20251231-1400-log_module.adoc</div>
-                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= A log module for KB4IT
-
-:Author:                Tomás Vírseda
-:Category:              Post
-:Topic:                 Development
-:Product:               KB4IT
-:Tag:                   logging, redirect, filehandler
-:Programming Language:  Python
-:Updated:               2025-12-31 14:00:00
-
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
-
-== Abstract
-
-A very useful log module to allow redirecting logs to another file in runtime.
-
-KB4IT needs this feature to redirect logs to the right file when a new instance is executed.
-
-== Features
-
-* Log redirection
-* Distinct levels for console and file handlers
-
-== Code
-
-[source, python]
-----
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-Log module.
-File: log.py
-Author: Tomás Vírseda
-License: GPL v3
-"""
-
-import logging
-
-_PATTERN = (
-    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
-    "%(asctime)s.%(msecs)03d | %(message)s"
-)
-
-_DATEFMT = "%d/%m/%Y %H:%M:%S"
-
-
-def setup_logging(
-    level: str = "INFO",
-    logfile: str | None = None,
-):
-    """
-    Configure root logger once.
-    """
-
-    if level is not None:
-        level_dict = {
-            'DEBUG': logging.DEBUG,
-            'INFO': logging.INFO,
-            'WARNING': logging.WARNING,
-            'ERROR': logging.ERROR,
-            'CRITICAL': logging.CRITICAL
-        }
-        severity = level_dict.get(level, logging.DEBUG)
-    else:
-        severity = logging.INFO
-
-    root = logging.getLogger()
-    root.setLevel(logging.DEBUG)
-
-    if root.handlers:
-        return  # Already configured
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Console handler
-    console = logging.StreamHandler()
-    console.setFormatter(formatter)
-    console.setLevel(severity)
-    root.addHandler(console)
-
-    # File handler
-    file_handler = logging.FileHandler(logfile, mode="w")
-    file_handler.setFormatter(formatter)
-    root.addHandler(file_handler)
-
-
-def get_logger(name: str) -> logging.Logger:
-    """
-    Return a named logger.
-    """
-    return logging.getLogger(name)
-
-
-def redirect_logs(logfile: str):
-    """
-    Redirect logging to a new file at runtime.
-    """
-    root = logging.getLogger()
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Remove only existing FileHandlers
-    for handler in root.handlers[:]:
-        if isinstance(handler, logging.FileHandler):
-            handler.flush()
-            handler.close()
-            root.removeHandler(handler)
-
-    # Add new file handler
-    file_handler = logging.FileHandler(logfile, mode="a")
-    file_handler.setFormatter(formatter)
-    file_handler.setLevel(logging.DEBUG)
-    root.addHandler(file_handler)
-----
-
-</textarea></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- View Source Button :: END -->
-                        </ul>
-                    </div>
-                    <!-- Tags and Topics -->
-                </div>
-            </div>
-            <hr>
-        </header>
-
-        <!-- Body -->
-        <article class="uk-article">
-            <div hidden>
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a class="" target="" href="#_abstract">Abstract</a></li>
-<li><a class="" target="" href="#_features">Features</a></li>
-<li><a class="" target="" href="#_code">Code</a></li>
-</ul>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_abstract">Abstract</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="paragraph">
-<p>A very useful log module to allow redirecting logs to another file in runtime.</p>
-</div>
-<div class="paragraph">
-<p>KB4IT needs this feature to redirect logs to the right file when a new instance is executed.</p>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_features">Features</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="ulist">
-<ul>
-<li>
-<p>Log redirection</p>
-</li>
-<li>
-<p>Distinct levels for console and file handlers</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
-
-<h2 class="uk-card-title" id="_code">Code</h2>
-<div id="kb-section-body" class="uk-container">
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-Log module.
-File: log.py
-Author: Tom&#225;s V&#237;rseda
-License: GPL v3
-"""
-
-import logging
-
-_PATTERN = (
-    "%(levelname)10s | %(lineno)4d | %(name)-20s | "
-    "%(asctime)s.%(msecs)03d | %(message)s"
-)
-
-_DATEFMT = "%d/%m/%Y %H:%M:%S"
-
-
-def setup_logging(
-    level: str = "INFO",
-    logfile: str | None = None,
-):
-    """
-    Configure root logger once.
-    """
-
-    if level is not None:
-        level_dict = {
-            'DEBUG': logging.DEBUG,
-            'INFO': logging.INFO,
-            'WARNING': logging.WARNING,
-            'ERROR': logging.ERROR,
-            'CRITICAL': logging.CRITICAL
-        }
-        severity = level_dict.get(level, logging.DEBUG)
-    else:
-        severity = logging.INFO
-
-    root = logging.getLogger()
-    root.setLevel(logging.DEBUG)
-
-    if root.handlers:
-        return  # Already configured
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Console handler
-    console = logging.StreamHandler()
-    console.setFormatter(formatter)
-    console.setLevel(severity)
-    root.addHandler(console)
-
-    # File handler
-    file_handler = logging.FileHandler(logfile, mode="w")
-    file_handler.setFormatter(formatter)
-    root.addHandler(file_handler)
-
-
-def get_logger(name: str) -&gt; logging.Logger:
-    """
-    Return a named logger.
-    """
-    return logging.getLogger(name)
-
-
-def redirect_logs(logfile: str):
-    """
-    Redirect logging to a new file at runtime.
-    """
-    root = logging.getLogger()
-
-    formatter = logging.Formatter(_PATTERN, datefmt=_DATEFMT)
-
-    # Remove only existing FileHandlers
-    for handler in root.handlers[:]:
-        if isinstance(handler, logging.FileHandler):
-            handler.flush()
-            handler.close()
-            root.removeHandler(handler)
-
-    # Add new file handler
-    file_handler = logging.FileHandler(logfile, mode="a")
-    file_handler.setFormatter(formatter)
-    file_handler.setLevel(logging.DEBUG)
-    root.addHandler(file_handler)</code></pre>
 </div>
 </div>
 </div>

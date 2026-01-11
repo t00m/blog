@@ -69,14 +69,15 @@
                             <!-- Update :: START -->
                             <li uk-tooltip="title: Document last update">
                                 <span uk-icon="calendar"></span>
-                                <span class="uk-margin-small-left"><a href="events_20251231.html">31</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
+                                <span class="uk-margin-small-left"><a href="events_2026111.html">11</a>/<a href="events_20261.html">1</a>/<a href="events_2026.html">2026</a></span>
                             </li>
                             <!-- Update :: END -->
 <!--
                             <li>
                                 <span uk-icon="star"></span>
                                 <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>
+                                    <a href="Topic_Development.html">Development</a>,
+                                    <a href="Topic_Troubleshooting.html">Troubleshooting</a>
                                 </span>
                             </li>
                             <li>
@@ -201,6 +202,11 @@
         <span class="uk-padding-small">Development</span>
     </a>
 </div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Troubleshooting.html">
+        <span class="uk-padding-small">Troubleshooting</span>
+    </a>
+</div>
 </div></td>
     </tr>
     <tr class="">
@@ -211,8 +217,8 @@
         </td>
         <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta">
 <div class="uk-link-toggle uk-text-muted">
-    <a class="uk-link-heading" href="Updated_2025-12-31_140000.html">
-        <span class="uk-padding-small">2025-12-31 14:00:00</span>
+    <a class="uk-link-heading" href="Updated_2026-01-11_133500.html">
+        <span class="uk-padding-small">2026-01-11 13:35:00</span>
     </a>
 </div>
 </div></td>
@@ -245,11 +251,11 @@
 
 :Author:                Tom&#225;s V&#237;rseda
 :Category:              Post
-:Topic:                 Development
+:Topic:                 Development, Troubleshooting
 :Product:               KB4IT
 :Tag:                   logging, redirect, filehandler
 :Programming Language:  Python
-:Updated:               2025-12-31 14:00:00
+:Updated:               2026-01-11 13:35:00
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
@@ -261,8 +267,8 @@ KB4IT needs this feature to redirect logs to the right file when a new instance 
 
 == Features
 
-* Log redirection
-* Distinct levels for console and file handlers
+* Log redirection: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
+* Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
 
 == Code
 
@@ -408,10 +414,10 @@ def redirect_logs(logfile: str):
 <div class="ulist">
 <ul>
 <li>
-<p>Log redirection</p>
+<p>Log redirection: when KB4IT is executed, it doesn&#8217;t know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.</p>
 </li>
 <li>
-<p>Distinct levels for console and file handlers</p>
+<p>Distinct levels for console and file handlers: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.</p>
 </li>
 </ul>
 </div>
