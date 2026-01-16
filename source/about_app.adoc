@@ -1,0 +1,18 @@
+= About
+
+:SystemPage: Yes
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== This blog
+
+This is my public knowledge base where I document technical solutions, code snippets, and resources I find useful. 
+Think of it as my digital notebook rather than polished articles—a collection of practical notes about Python development, automation workflows, and software tooling.
+
+Most posts revolve around KB4IT, a static site generator I am developing and use to build this very site. And MiAZ, my other pet project for organizing documents.
+
+== Me
+
+I love to develop for fun with a focus on free software and the GNOME ecosystem. 
+I enjoy developing with GTK4, Libadwaita, and PyGObject for desktop application development.
+
