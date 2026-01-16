@@ -236,6 +236,11 @@
 
 List of python resources for developers
 
+== Main courses
+
+* https://www.python.org/[Python]: Python is a programming language that lets you work quickly and integrate systems more effectively.
+* https://pypi.org/[Pypi]: Find, install and publish Python packages with the Python Package Index.
+
 == Awesome Python
 
 * https://github.com/vinta/awesome-python[Awesome Python]: An opinionated list of awesome Python frameworks, libraries, software and resources.
@@ -268,6 +273,7 @@ List of python resources for developers
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_main_courses">Main courses</a></li>
 <li><a class="" target="" href="#_awesome_python">Awesome Python</a></li>
 <li><a class="" target="" href="#_unsorted_topics">Unsorted topics</a></li>
 <li><a class="" target="" href="#_data_structures_and_algorithms">Data Structures and Algorithms</a></li>
@@ -279,6 +285,22 @@ List of python resources for developers
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>List of python resources for developers</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title" id="_main_courses">Main courses</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="ulist">
+<ul>
+<li>
+<p><a class="" target="" href="https://www.python.org/">Python</a>: Python is a programming language that lets you work quickly and integrate systems more effectively.</p>
+</li>
+<li>
+<p><a class="" target="" href="https://pypi.org/">Pypi</a>: Find, install and publish Python packages with the Python Package Index.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>

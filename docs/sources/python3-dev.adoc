@@ -14,6 +14,11 @@
 
 List of python resources for developers
 
+== Main courses
+
+* https://www.python.org/[Python]: Python is a programming language that lets you work quickly and integrate systems more effectively.
+* https://pypi.org/[Pypi]: Find, install and publish Python packages with the Python Package Index.
+
 == Awesome Python
 
 * https://github.com/vinta/awesome-python[Awesome Python]: An opinionated list of awesome Python frameworks, libraries, software and resources.
