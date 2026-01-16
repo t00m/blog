@@ -1,4 +1,4 @@
-name: force-kb4it-compilation
+name: update-blog-force-compilation
 
 on:
   push:
