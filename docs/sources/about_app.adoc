@@ -1,17 +1,18 @@
-= About this app
+= About
 
 :SystemPage: Yes
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Page not found
+== This blog
 
-=== Problem
+This is my public knowledge base where I document technical solutions, code snippets, and resources I find useful. 
+Think of it as my digital notebook rather than polished articles—a collection of practical notes about Python development, automation workflows, and software tooling.
 
-KB4IT didn't find any document named 'about_app.adoc' in your sources directory.
+Most posts revolve around KB4IT, a static site generator I am developing and use to build this very site. And MiAZ, my other pet project for organizing documents.
 
-As a result, it created one. This one. The one you are reading now.
+== Me
 
-=== Solution
+I love to develop for fun with a focus on free software and the GNOME ecosystem. 
+I enjoy developing with GTK4, Libadwaita, and PyGObject for desktop application development.
 
-Modify the contents of the filename _about_app.adoc_ in your sources directory with the desired content.

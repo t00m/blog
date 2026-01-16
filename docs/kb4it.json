@@ -322,20 +322,20 @@
                 "Yes"
             ],
             "Title": [
-                "About this app"
+                "About"
             ],
             "compile": true,
-            "content": "= About this app\n\n:SystemPage: Yes\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== Page not found\n\n=== Problem\n\nKB4IT didn't find any document named 'about_app.adoc' in your sources directory.\n\nAs a result, it created one. This one. The one you are reading now.\n\n=== Solution\n\nModify the contents of the filename _about_app.adoc_ in your sources directory with the desired content.\n",
-            "content_hash": "5ab8aed57c7df4ad90c435a04a4d8c8f",
+            "content": "= About\n\n:SystemPage: Yes\n\n// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE\n\n== This blog\n\nThis is my public knowledge base where I document technical solutions, code snippets, and resources I find useful. \nThink of it as my digital notebook rather than polished articles\u2014a collection of practical notes about Python development, automation workflows, and software tooling.\n\nMost posts revolve around KB4IT, a static site generator I am developing and use to build this very site. And MiAZ, my other pet project for organizing documents.\n\n== Me\n\nI love to develop for fun with a focus on free software and the GNOME ecosystem. \nI enjoy developing with GTK4, Libadwaita, and PyGObject for desktop application development.\n\n",
+            "content_hash": "724ca35425c35c0bab87e7771082d60c",
             "keys": {
                 "SystemPage": [
                     "Yes"
                 ],
                 "Title": [
-                    "About this app"
+                    "About"
                 ]
             },
-            "metadata_hash": "fd2bae64edbd11615d8e2a126b5e3b4a"
+            "metadata_hash": "8905f10dc192afeb122dc8980cc14d2c"
         },
         "python3-dev.adoc": {
             "Author": [
@@ -560,7 +560,7 @@
             "A log module for KB4IT": [
                 "20251231-1400-log_module.adoc"
             ],
-            "About this app": [
+            "About": [
                 "about_app.adoc"
             ],
             "App development with GTK, Python and Libadwaita": [
