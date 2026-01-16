@@ -1,4 +1,4 @@
-name: check-kb4it-version
+name: update-blog-incremental-compilation
 
 on:
   push:
