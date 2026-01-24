@@ -10,15 +10,15 @@
     <div class="uk-container uk-container-small">
 
         <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
+                <div class="uk-width uk-margin-top">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="python3-dev.html">
                             <span class="uk-link-heading">Useful links for Python developers</span>
                         </a>
                     </h5>
-                    <div class="uk-width">
+                    <div class="uk-width uk-margin-top">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
                             <li>
                                 <span uk-icon="user"></span>
@@ -28,25 +28,6 @@
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20260111.html">11</a>/<a href="events_202601.html">01</a>/<a href="events_2026.html">2026</a></span>
                             </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>,
-                                    <a href="Topic_Documentation.html">Documentation</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_awesome.html">awesome</a>,
-                                    <a href="Tag_framework.html">framework</a>,
-                                    <a href="Tag_library.html">library</a>,
-                                    <a href="Tag_resource.html">resource</a>,
-                                    <a href="Tag_algorithm.html">algorithm</a>
-                                </span>
-                            </li>
--->
                             <!-- Metadata Button :: START -->
                             <li uk-tooltip="title: Document properties">
                                 <span uk-icon="hashtag"></span>
@@ -281,7 +262,8 @@ List of python resources for developers
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<h2 class="uk-card-title"
+id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>List of python resources for developers</p>
@@ -290,7 +272,8 @@ List of python resources for developers
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_main_courses">Main courses</h2>
+<h2 class="uk-card-title"
+id="_main_courses">Main courses</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
@@ -306,7 +289,8 @@ List of python resources for developers
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_awesome_python">Awesome Python</h2>
+<h2 class="uk-card-title"
+id="_awesome_python">Awesome Python</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
@@ -319,7 +303,8 @@ List of python resources for developers
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_unsorted_topics">Unsorted topics</h2>
+<h2 class="uk-card-title"
+id="_unsorted_topics">Unsorted topics</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
@@ -332,7 +317,8 @@ List of python resources for developers
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_data_structures_and_algorithms">Data Structures and Algorithms</h2>
+<h2 class="uk-card-title"
+id="_data_structures_and_algorithms">Data Structures and Algorithms</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
@@ -364,15 +350,15 @@ List of python resources for developers
     <div class="uk-container uk-container-small">
 
         <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
+                <div class="uk-width uk-margin-top">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251231-1400-log_module.html">
                             <span class="uk-link-heading">A log module for KB4IT</span>
                         </a>
                     </h5>
-                    <div class="uk-width">
+                    <div class="uk-width uk-margin-top">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
                             <li>
                                 <span uk-icon="user"></span>
@@ -382,23 +368,6 @@ List of python resources for developers
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20260111.html">11</a>/<a href="events_202601.html">01</a>/<a href="events_2026.html">2026</a></span>
                             </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>,
-                                    <a href="Topic_Troubleshooting.html">Troubleshooting</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_logging.html">logging</a>,
-                                    <a href="Tag_redirect.html">redirect</a>,
-                                    <a href="Tag_filehandler.html">filehandler</a>
-                                </span>
-                            </li>
--->
                             <!-- Metadata Button :: START -->
                             <li uk-tooltip="title: Document properties">
                                 <span uk-icon="hashtag"></span>
@@ -715,7 +684,8 @@ def redirect_logs(logfile: str):
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_abstract">Abstract</h2>
+<h2 class="uk-card-title"
+id="_abstract">Abstract</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>A very useful log module to allow redirecting logs to another file in runtime.</p>
@@ -727,7 +697,8 @@ def redirect_logs(logfile: str):
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_features">Features</h2>
+<h2 class="uk-card-title"
+id="_features">Features</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="ulist">
 <ul>
@@ -740,7 +711,7 @@ def redirect_logs(logfile: str):
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">Run kb4it -L INFO build config/blog.json -w 8
 
-      INFO |   99 | Workflow             | 11/01/2026 12:38:45.751 | Building a website for repository 't00mter&#237;as'
+      INFO |   99 | Workflow             | 11/01/2026 12:38:45.751 | Building a website for repository 't00mterías'
       INFO |  100 | Workflow             | 11/01/2026 12:38:45.751 | Using theme 'blog'
       INFO |  101 | Workflow             | 11/01/2026 12:38:45.751 | Check environment
       INFO |  103 | Workflow             | 11/01/2026 12:38:45.760 | Allow theme to generate sources
@@ -766,7 +737,8 @@ def redirect_logs(logfile: str):
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_code">Code</h2>
+<h2 class="uk-card-title"
+id="_code">Code</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="listingblock">
 <div class="content">
@@ -776,7 +748,7 @@ def redirect_logs(logfile: str):
 """
 Log module.
 File: log.py
-Author: Tom&#225;s V&#237;rseda
+Author: Tomás Vírseda
 License: GPL v3
 """
 
@@ -882,15 +854,15 @@ def redirect_logs(logfile: str):
     <div class="uk-container uk-container-small">
 
         <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
+                <div class="uk-width uk-margin-top">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251228-KB4IT-incremental-compiling.html">
                             <span class="uk-link-heading">KB4IT incremental compiling in Github (experimental)</span>
                         </a>
                     </h5>
-                    <div class="uk-width">
+                    <div class="uk-width uk-margin-top">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
                             <li>
                                 <span uk-icon="user"></span>
@@ -900,25 +872,6 @@ def redirect_logs(logfile: str):
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20260111.html">11</a>/<a href="events_202601.html">01</a>/<a href="events_2026.html">2026</a></span>
                             </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>,
-                                    <a href="Topic_Automation.html">Automation</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_incremental.html">incremental</a>,
-                                    <a href="Tag_compiling.html">compiling</a>,
-                                    <a href="Tag_vm.html">vm</a>,
-                                    <a href="Tag_workflow.html">workflow</a>,
-                                    <a href="Tag_cache.html">cache</a>
-                                </span>
-                            </li>
--->
                             <!-- Metadata Button :: START -->
                             <li uk-tooltip="title: Document properties">
                                 <span uk-icon="hashtag"></span>
@@ -1146,7 +1099,8 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<h2 class="uk-card-title"
+id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
@@ -1158,7 +1112,8 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_github_actions">Github actions</h2>
+<h2 class="uk-card-title"
+id="_github_actions">Github actions</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>In Github, when a new update is detected in the source directory, the Github action in charge (<a class="" target="" href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
@@ -1170,7 +1125,8 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_solution">Solution</h2>
+<h2 class="uk-card-title"
+id="_solution">Solution</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>Now, instead using <code>.kb4it</code> directory under <code>$USER</code> directory, it uses the own Github repository.
@@ -1220,15 +1176,15 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
     <div class="uk-container uk-container-small">
 
         <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
+                <div class="uk-width uk-margin-top">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251226-PyGTK4.html">
                             <span class="uk-link-heading">App development with GTK, Python and Libadwaita</span>
                         </a>
                     </h5>
-                    <div class="uk-width">
+                    <div class="uk-width uk-margin-top">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
                             <li>
                                 <span uk-icon="user"></span>
@@ -1238,22 +1194,6 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20251228.html">28</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Development.html">Development</a>,
-                                    <a href="Topic_Documentation.html">Documentation</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_api.html">api</a>,
-                                    <a href="Tag_documentation.html">documentation</a>
-                                </span>
-                            </li>
--->
                             <!-- Metadata Button :: START -->
                             <li uk-tooltip="title: Document properties">
                                 <span uk-icon="hashtag"></span>
@@ -1502,7 +1442,8 @@ Links:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<h2 class="uk-card-title"
+id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>Pointers to official documentation and other useful resources.</p>
@@ -1511,7 +1452,8 @@ Links:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_gtk">GTK</h2>
+<h2 class="uk-card-title"
+id="_gtk">GTK</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>Complete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites.</p>
@@ -1533,7 +1475,8 @@ Links:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_pygobject">PyGObject</h2>
+<h2 class="uk-card-title"
+id="_pygobject">PyGObject</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>PyGObject is a Python package which provides bindings for GObject based libraries such as GTK, GStreamer, WebKitGTK, GLib, GIO and many more.</p>
@@ -1555,7 +1498,8 @@ Links:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_libadwaita">Libadwaita</h2>
+<h2 class="uk-card-title"
+id="_libadwaita">Libadwaita</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>Adwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones.</p>
@@ -1593,15 +1537,15 @@ Links:
     <div class="uk-container uk-container-small">
 
         <!-- Header -->
-        <header class="uk-margin-small-bottom uk-background-muted">
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-                <div class="uk-width">
+                <div class="uk-width uk-margin-top">
                     <h5 class="uk-card-title uk-margin-remove uk-text-center">
                         <a class="uk-link-toggle" href="20251214-0030.html">
                             <span class="uk-link-heading">Pixi: Managing Python Environments</span>
                         </a>
                     </h5>
-                    <div class="uk-width">
+                    <div class="uk-width uk-margin-top">
                         <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
                             <li>
                                 <span uk-icon="user"></span>
@@ -1611,23 +1555,6 @@ Links:
                                 <span uk-icon="calendar"></span>
                                 <span class="uk-margin-small-left"><a href="events_20251214.html">14</a>/<a href="events_202512.html">12</a>/<a href="events_2025.html">2025</a></span>
                             </li>
-<!--
-                            <li>
-                                <span uk-icon="star"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Topic_Package_management.html">Package management</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span uk-icon="tag"></span>
-                                <span class="uk-margin-small-left">
-                                    <a href="Tag_project.html">project</a>,
-                                    <a href="Tag_build.html">build</a>,
-                                    <a href="Tag_dependency.html">dependency</a>,
-                                    <a href="Tag_environment.html">environment</a>
-                                </span>
-                            </li>
--->
                             <!-- Metadata Button :: START -->
                             <li uk-tooltip="title: Document properties">
                                 <span uk-icon="hashtag"></span>
@@ -1877,7 +1804,8 @@ Useful commands:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_introduction">Introduction</h2>
+<h2 class="uk-card-title"
+id="_introduction">Introduction</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p><a class="" target="" href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
@@ -1886,7 +1814,8 @@ Useful commands:
 </div>
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
-<h2 class="uk-card-title" id="_notes">Notes</h2>
+<h2 class="uk-card-title"
+id="_notes">Notes</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p><code>pyproject.toml</code> adapted and it is on testing phase:</p>
@@ -1894,7 +1823,7 @@ Useful commands:
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-none hljs">[project]
-authors = [{name = "Tom&#225;s V&#237;rseda", email = "tomasvirseda@gmail.com"}]
+authors = [{name = "Tomás Vírseda", email = "tomasvirseda@gmail.com"}]
 dependencies = []
 name = "KB4IT"
 requires-python = "&gt;= 3.12"
