@@ -10,7 +10,7 @@
         "Note",
         "Bookmark"
     ],
-    "force": false,
+    "force": true,
     "git": true,
     "git_branch": "main",
     "git_path": "source",
