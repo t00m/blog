@@ -317,56 +317,6 @@
             },
             "metadata_hash": "e256be37b8a34175c78ad95d50fa55b9"
         },
-        "20260123-strict.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Product": [
-                "KB4IT"
-            ],
-            "Tag": [
-                "strict"
-            ],
-            "Title": [
-                "Blog theme features strict mode"
-            ],
-            "Topic": [
-                "Development"
-            ],
-            "Updated": [
-                "2026-01-24 12:00:00"
-            ],
-            "compile": true,
-            "content": "/home/runner/work/blog/blog/source/20260123-strict.adoc",
-            "content_hash": "c560759630ddc561bc8914bb4913703e",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Product": [
-                    "KB4IT"
-                ],
-                "Tag": [
-                    "strict"
-                ],
-                "Title": [
-                    "Blog theme features strict mode"
-                ],
-                "Topic": [
-                    "Development"
-                ],
-                "Updated": [
-                    "2026-01-24 12:00:00"
-                ]
-            },
-            "metadata_hash": "744b106d494d9470b7896c2e3eae73cf"
-        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -468,7 +418,6 @@
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "20260123-strict.adoc",
                 "python3-dev.adoc"
             ]
         },
@@ -485,7 +434,6 @@
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "20260123-strict.adoc",
                 "python3-dev.adoc"
             ]
         },
@@ -503,8 +451,7 @@
                 "20251208-2230.adoc",
                 "20251214-0030.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "20260123-strict.adoc"
+                "20251231-1400-log_module.adoc"
             ],
             "Libadwaita": [
                 "20251226-PyGTK4.adoc"
@@ -599,9 +546,6 @@
             "resource": [
                 "python3-dev.adoc"
             ],
-            "strict": [
-                "20260123-strict.adoc"
-            ],
             "template": [
                 "20251208-2230.adoc"
             ],
@@ -625,9 +569,6 @@
             "Blog theme features a new index page": [
                 "20251208-2230.adoc"
             ],
-            "Blog theme features strict mode": [
-                "20260123-strict.adoc"
-            ],
             "KB4IT incremental compiling in Github (experimental)": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
@@ -647,7 +588,6 @@
                 "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "20260123-strict.adoc",
                 "python3-dev.adoc"
             ],
             "Documentation": [
@@ -679,9 +619,6 @@
             ],
             "2026-01-11 20:50:00": [
                 "python3-dev.adoc"
-            ],
-            "2026-01-24 12:00:00": [
-                "20260123-strict.adoc"
             ]
         }
     }
