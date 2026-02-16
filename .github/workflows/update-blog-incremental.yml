@@ -39,7 +39,7 @@ jobs:
         run: pip install pipx --user
 
       - name: Clone KB4IT repository
-        run: git clone -b 0.7.26 https://github.com/t00m/KB4IT.git
+        run: git clone -b 0.7.27 https://github.com/t00m/KB4IT.git
   
       # Install KB4IT requirements
       - name: Install KB4IT requirements
