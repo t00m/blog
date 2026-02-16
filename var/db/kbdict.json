@@ -336,10 +336,10 @@
                 "Refactoring"
             ],
             "Updated": [
-                "2026-02-16 17:00:00"
+                "2026-02-16 17:30:00"
             ],
             "content": "/home/runner/work/blog/blog/source/20260216-EAT.adoc",
-            "content_hash": "c508a8e41694a9a10d2226c04f324333",
+            "content_hash": "be714c27baab0606f637bb897557ef8d",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -364,10 +364,10 @@
                     "Refactoring"
                 ],
                 "Updated": [
-                    "2026-02-16 17:00:00"
+                    "2026-02-16 17:30:00"
                 ]
             },
-            "metadata_hash": "f07848d1b8b74fc6333497ebe3420fb4"
+            "metadata_hash": "690ffc11834edd38e9a611fc6b55905e"
         },
         "about_app.adoc": {
             "SystemPage": [
@@ -387,6 +387,25 @@
                 ]
             },
             "metadata_hash": "8905f10dc192afeb122dc8980cc14d2c"
+        },
+        "about_kb4it.adoc": {
+            "SystemPage": [
+                "Yes"
+            ],
+            "Title": [
+                "About KB4IT"
+            ],
+            "content": "/home/runner/work/blog/blog/source/about_kb4it.adoc",
+            "content_hash": "e598619126a0e27fc9eb206558940cf9",
+            "keys": {
+                "SystemPage": [
+                    "Yes"
+                ],
+                "Title": [
+                    "About KB4IT"
+                ]
+            },
+            "metadata_hash": "d0f6f3e5297dba0614dd462a53336c1d"
         },
         "python3-dev.adoc": {
             "Author": [
@@ -538,6 +557,7 @@
         },
         "SystemPage": {
             "Yes": [
+                "about_kb4it.adoc",
                 "about_app.adoc"
             ]
         },
@@ -626,6 +646,9 @@
             "About": [
                 "about_app.adoc"
             ],
+            "About KB4IT": [
+                "about_kb4it.adoc"
+            ],
             "App development with GTK, Python and Libadwaita": [
                 "20251226-PyGTK4.adoc"
             ],
@@ -690,7 +713,7 @@
             "2026-01-11 20:50:00": [
                 "python3-dev.adoc"
             ],
-            "2026-02-16 17:00:00": [
+            "2026-02-16 17:30:00": [
                 "20260216-EAT.adoc"
             ]
         }
