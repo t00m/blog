@@ -25,7 +25,6 @@
             "Updated": [
                 "2025-12-08 23:00:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/20251208-2230.adoc",
             "content_hash": "3624011713ef0987e49bd6437ca1f364",
             "keys": {
@@ -84,7 +83,6 @@
             "Updated": [
                 "2025-12-14 00:30:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/20251214-0030.adoc",
             "content_hash": "830bf3c66d4ec8f72cfeb0564fbe94fd",
             "keys": {
@@ -152,7 +150,6 @@
             "Updated": [
                 "2025-12-28 18:40:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/20251226-PyGTK4.adoc",
             "content_hash": "0750f689fc11bd808c26aa71ecc5970a",
             "keys": {
@@ -220,7 +217,6 @@
             "Updated": [
                 "2026-01-11 13:30:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc",
             "content_hash": "40edb87cf6fb36021fe972c4bebd21e2",
             "keys": {
@@ -283,7 +279,6 @@
             "Updated": [
                 "2026-01-11 13:35:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/20251231-1400-log_module.adoc",
             "content_hash": "edd27fd90ffc9e3137528e409dc4765b",
             "keys": {
@@ -317,6 +312,63 @@
             },
             "metadata_hash": "e256be37b8a34175c78ad95d50fa55b9"
         },
+        "20260216-EAT.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Product": [
+                "KB4IT"
+            ],
+            "Tag": [
+                "analysis",
+                "extraction",
+                "transformation",
+                "workflow"
+            ],
+            "Title": [
+                "KB4IT: Worflow amended: Now it EATs"
+            ],
+            "Topic": [
+                "Development",
+                "Refactoring"
+            ],
+            "Updated": [
+                "2026-02-16 17:00:00"
+            ],
+            "content": "/home/runner/work/blog/blog/source/20260216-EAT.adoc",
+            "content_hash": "c508a8e41694a9a10d2226c04f324333",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "Tag": [
+                    "workflow",
+                    "extraction",
+                    "analysis",
+                    "transformation"
+                ],
+                "Title": [
+                    "KB4IT: Worflow amended: Now it EATs"
+                ],
+                "Topic": [
+                    "Development",
+                    "Refactoring"
+                ],
+                "Updated": [
+                    "2026-02-16 17:00:00"
+                ]
+            },
+            "metadata_hash": "f07848d1b8b74fc6333497ebe3420fb4"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -324,7 +376,6 @@
             "Title": [
                 "About"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/about_app.adoc",
             "content_hash": "db2c9cbd892b3a4a729dab8792e5e193",
             "keys": {
@@ -370,7 +421,6 @@
             "Updated": [
                 "2026-01-11 20:50:00"
             ],
-            "compile": true,
             "content": "/home/runner/work/blog/blog/source/python3-dev.adoc",
             "content_hash": "460b02bec39bafec8d0ceff13a394399",
             "keys": {
@@ -413,11 +463,12 @@
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
-                "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
+                "20251208-2230.adoc",
+                "20251226-PyGTK4.adoc",
+                "20260216-EAT.adoc",
                 "python3-dev.adoc"
             ]
         },
@@ -429,11 +480,12 @@
         },
         "Category": {
             "Post": [
-                "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
+                "20251208-2230.adoc",
+                "20251226-PyGTK4.adoc",
+                "20260216-EAT.adoc",
                 "python3-dev.adoc"
             ]
         },
@@ -448,10 +500,11 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "KB4IT": [
-                "20251208-2230.adoc",
                 "20251214-0030.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc"
+                "20251231-1400-log_module.adoc",
+                "20251208-2230.adoc",
+                "20260216-EAT.adoc"
             ],
             "Libadwaita": [
                 "20251226-PyGTK4.adoc"
@@ -478,8 +531,8 @@
         },
         "Programming Language": {
             "Python": [
-                "20251226-PyGTK4.adoc",
                 "20251231-1400-log_module.adoc",
+                "20251226-PyGTK4.adoc",
                 "python3-dev.adoc"
             ]
         },
@@ -491,6 +544,9 @@
         "Tag": {
             "algorithm": [
                 "python3-dev.adoc"
+            ],
+            "analysis": [
+                "20260216-EAT.adoc"
             ],
             "api": [
                 "20251226-PyGTK4.adoc"
@@ -515,6 +571,9 @@
             ],
             "environment": [
                 "20251214-0030.adoc"
+            ],
+            "extraction": [
+                "20260216-EAT.adoc"
             ],
             "filehandler": [
                 "20251231-1400-log_module.adoc"
@@ -549,11 +608,15 @@
             "template": [
                 "20251208-2230.adoc"
             ],
+            "transformation": [
+                "20260216-EAT.adoc"
+            ],
             "vm": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "workflow": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "20251228-KB4IT-incremental-compiling.adoc",
+                "20260216-EAT.adoc"
             ]
         },
         "Title": {
@@ -572,6 +635,9 @@
             "KB4IT incremental compiling in Github (experimental)": [
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
+            "KB4IT: Worflow amended: Now it EATs": [
+                "20260216-EAT.adoc"
+            ],
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
             ],
@@ -584,10 +650,11 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "Development": [
-                "20251208-2230.adoc",
-                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
+                "20251208-2230.adoc",
+                "20251226-PyGTK4.adoc",
+                "20260216-EAT.adoc",
                 "python3-dev.adoc"
             ],
             "Documentation": [
@@ -596,6 +663,9 @@
             ],
             "Package management": [
                 "20251214-0030.adoc"
+            ],
+            "Refactoring": [
+                "20260216-EAT.adoc"
             ],
             "Troubleshooting": [
                 "20251231-1400-log_module.adoc"
@@ -619,6 +689,9 @@
             ],
             "2026-01-11 20:50:00": [
                 "python3-dev.adoc"
+            ],
+            "2026-02-16 17:00:00": [
+                "20260216-EAT.adoc"
             ]
         }
     }
