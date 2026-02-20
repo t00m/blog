@@ -10,7 +10,7 @@
 
 It is based on https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc] sources and it uses https://asciidoctor.org[Asciidoctor] for processing them.
 
-This website was built using KB4IT 0.7.27+build.11
+This website was built using KB4IT 0.7.27+build.56
 
 For more information, visit my Git https://github.com/t00m/KB4IT[repository].
 
