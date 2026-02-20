@@ -10,7 +10,7 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Introduction
+== Excerpt
 
 List of python resources for developers
 
