@@ -10,7 +10,7 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Abstract
+== Excerpt
 
 A very useful log module to allow redirecting logs to another file in runtime.
 
@@ -24,7 +24,7 @@ KB4IT needs this feature to redirect logs to the right file when a new instance 
 [source]
 ----
 Run kb4it -L INFO build config/blog.json -w 8
-  
+
       INFO |   99 | Workflow             | 11/01/2026 12:38:45.751 | Building a website for repository 't00mterías'
       INFO |  100 | Workflow             | 11/01/2026 12:38:45.751 | Using theme 'blog'
       INFO |  101 | Workflow             | 11/01/2026 12:38:45.751 | Check environment

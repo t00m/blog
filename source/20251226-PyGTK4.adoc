@@ -10,13 +10,13 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Introduction
+== Excerpt
 
 Pointers to official documentation and other useful resources.
 
 == GTK
 
-Complete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites. 
+Complete set of UI elements, GTK is suitable for projects ranging from small one-off tools to complete application suites.
 
 GTK is written using the C programming language, but its also available to various programming languages through language bindings
 
@@ -31,11 +31,11 @@ PyGObject is a Python package which provides bindings for GObject based librarie
 Links:
 
 * https://pygobject.gnome.org/index.html[PyGObject]
-* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc. 
+* https://api.pygobject.gnome.org/[GNOME Python API documentation]: This site contains documentation for the latest release of the GNOME libraries: GTK 4, LibAdwaita, etc.
 
 == Libadwaita
 
-Adwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones. 
+Adwaita offers application developers many widgets and objects to build GNOME applications scaling from desktop workstations to mobile phones.
 
 Links:
 

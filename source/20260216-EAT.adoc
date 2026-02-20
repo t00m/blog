@@ -9,6 +9,10 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
+== Excerpt
+
+Over the past few weeks, I refactored a spaghetti backend module into four services: Backend, Processor (using EAT approach), Compiler, and Deployer.
+
 == Refatoring: Extraction, Analysis and Transformation
 
 During the last weeks, I've spent quite sometime refactoring backend module's spaguetti code.
