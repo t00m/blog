@@ -369,6 +369,67 @@
             },
             "metadata_hash": "690ffc11834edd38e9a611fc6b55905e"
         },
+        "20260221_0100.adoc": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Product": [
+                "KB4IT"
+            ],
+            "Status": [
+                "Published"
+            ],
+            "Tag": [
+                "blog",
+                "excerpt",
+                "index",
+                "theme"
+            ],
+            "Title": [
+                "Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing"
+            ],
+            "Topic": [
+                "Development"
+            ],
+            "Updated": [
+                "2026-02-21 01:00:00"
+            ],
+            "content": "/home/runner/work/blog/blog/source/20260221_0100.adoc",
+            "content_hash": "1930790cdd9959a3821e6894519268e5",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "Status": [
+                    "Published"
+                ],
+                "Tag": [
+                    "theme",
+                    "blog",
+                    "index",
+                    "excerpt"
+                ],
+                "Title": [
+                    "Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing"
+                ],
+                "Topic": [
+                    "Development"
+                ],
+                "Updated": [
+                    "2026-02-21 01:00:00"
+                ]
+            },
+            "metadata_hash": "665d75038b1f7082780936b580031bf8"
+        },
         "about_app.adoc": {
             "SystemPage": [
                 "Yes"
@@ -484,6 +545,7 @@
             "Tom\u00e1s V\u00edrseda": [
                 "20251214-0030.adoc",
                 "20260216-EAT.adoc",
+                "20260221_0100.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
                 "python3-dev.adoc",
@@ -501,6 +563,7 @@
             "Post": [
                 "20251214-0030.adoc",
                 "20260216-EAT.adoc",
+                "20260221_0100.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
                 "python3-dev.adoc",
@@ -521,6 +584,7 @@
             "KB4IT": [
                 "20251214-0030.adoc",
                 "20260216-EAT.adoc",
+                "20260221_0100.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
                 "20251208-2230.adoc"
@@ -555,6 +619,11 @@
                 "20251226-PyGTK4.adoc"
             ]
         },
+        "Status": {
+            "Published": [
+                "20260221_0100.adoc"
+            ]
+        },
         "SystemPage": {
             "Yes": [
                 "about_app.adoc",
@@ -574,6 +643,9 @@
             "awesome": [
                 "python3-dev.adoc"
             ],
+            "blog": [
+                "20260221_0100.adoc"
+            ],
             "build": [
                 "20251214-0030.adoc"
             ],
@@ -592,6 +664,9 @@
             "environment": [
                 "20251214-0030.adoc"
             ],
+            "excerpt": [
+                "20260221_0100.adoc"
+            ],
             "extraction": [
                 "20260216-EAT.adoc"
             ],
@@ -605,6 +680,7 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "index": [
+                "20260221_0100.adoc",
                 "20251208-2230.adoc"
             ],
             "library": [
@@ -627,6 +703,9 @@
             ],
             "template": [
                 "20251208-2230.adoc"
+            ],
+            "theme": [
+                "20260221_0100.adoc"
             ],
             "transformation": [
                 "20260216-EAT.adoc"
@@ -664,6 +743,9 @@
             "Pixi: Managing Python Environments": [
                 "20251214-0030.adoc"
             ],
+            "Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing": [
+                "20260221_0100.adoc"
+            ],
             "Useful links for Python developers": [
                 "python3-dev.adoc"
             ]
@@ -674,6 +756,7 @@
             ],
             "Development": [
                 "20260216-EAT.adoc",
+                "20260221_0100.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
                 "python3-dev.adoc",
@@ -715,6 +798,9 @@
             ],
             "2026-02-16 17:30:00": [
                 "20260216-EAT.adoc"
+            ],
+            "2026-02-21 01:00:00": [
+                "20260221_0100.adoc"
             ]
         }
     }

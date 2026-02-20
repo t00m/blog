@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>t00mterías - Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="KB4IT / Asciidoctor 2">
+  <meta name="description" content="KB4IT document">
+  <meta name="author" content="KB4IT by t00m">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/themes/blog/framework/Highlight/styles/github-dark.css">
+  <link rel="stylesheet" href="resources/themes/blog/css/blog.css">
+  <link rel="stylesheet" href="resources/themes/blog/framework/uikit/css/uikit.min.css">
+  <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
+  <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
+  <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
+  <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#kb4it-datatable').DataTable( {
+                dom: '<"kbfilter"flrtip>',
+                serverSide: false,
+                ordering: true,
+                searching: true,
+                //~ data:           data,
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: false,
+                scroller:       false,
+                stateSave: false,
+                paging:   false,
+                info:     true,
+                order: [[ 0, "desc" ]]
+            } );
+        } );
+  </script>
+</head>
+<body>
+    <!-- Blog container :: START -->
+    <div class="blog-container uk-container" uk-height-viewport="expand: true">
+        <!-- GRID :: START -->
+        <div class="uk-grid">
+            <!-- Main Content Column :: START-->
+            <div class="uk-width-3-4@m">
+
+<!-- Template POST_HTML_SINGLE.tpl :: START -->
+<!-- Blog Post :: START -->
+<div class="uk-card uk-card-small uk-card-body post-card">
+    <div class="uk-container uk-container-small">
+        <!-- Header -->
+        <header class="uk-margin-small-bottom uk-background-muted uk-card-hover">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                <div class="uk-width uk-margin-top">
+                    <h5 class="uk-card-title uk-margin-remove uk-text-center">
+                        <a class="uk-link-toggle" href="20260221_0100.html">
+                            <span class="uk-link-heading">Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing</span>
+                        </a>
+                    </h5>
+                    <div class="uk-width uk-margin-top">
+                        <ul class="uk-subnav uk-subnav-divider uk-margin-small-top uk-flex-center uk-text-meta">
+                            <li>
+                                <span uk-icon="user"></span>
+                                <span class="uk-margin-small-left"><a href="Author_Tomás_Vírseda.html">Tomás Vírseda</a></span>
+                            </li>
+                            <!-- Update :: START -->
+                            <li uk-tooltip="title: Document last update">
+                                <span uk-icon="calendar"></span>
+                                <span class="uk-margin-small-left"><a href="events_20260221.html">21</a>/<a href="events_202602.html">02</a>/<a href="events_2026.html">2026</a></span>
+                            </li>
+                            <!-- Update :: END -->
+                            <!-- Metadata Button :: START -->
+                            <li uk-tooltip="title: Document properties">
+                                <span uk-icon="hashtag"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-metadata" uk-toggle>Metadata</a>
+                                </span>
+                                <div id="modal-metadata" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-primary">Metadata</div>
+                                                <div class="" style="border: 1px solid transparent;"><table id="kb4it-table-metadata" class="uk-table uk-table-divider uk-table-striped uk-table-hover uk-table-small uk-card uk-card-small uk-card-hover">
+<thead class="">
+    <tr class="">
+        <th class="uk-width-small"><span class="uk-text-bold">Property</span></th>
+        <th class=""><span class="uk-text-bold">Values</span></th>
+    </tr>
+</thead>
+<tbody class="">
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Author.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Author</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Author_Tomás_Vírseda.html">
+        <span class="uk-padding-small">Tomás Vírseda</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Category.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Category</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Category_Post.html">
+        <span class="uk-padding-small">Post</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Product.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Product</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Product_KB4IT.html">
+        <span class="uk-padding-small">KB4IT</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Status.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Status</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Status_Published.html">
+        <span class="uk-padding-small">Published</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Tag.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Tag</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_theme.html">
+        <span class="uk-padding-small">theme</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_blog.html">
+        <span class="uk-padding-small">blog</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_index.html">
+        <span class="uk-padding-small">index</span>
+    </a>
+</div>
+<div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Tag_excerpt.html">
+        <span class="uk-padding-small">excerpt</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+    <tr class="">
+        <td class="">
+            <a class="uk-link-text" href="Topic.html">
+                <div class="uk-text-bolder uk-text-secondary uk-text-bold uk-text-meta">Topic</div>
+            </a>
+        </td>
+        <td class=""><div class="uk-flex uk-flex-row uk-flex-wrap uk-text-meta"><div class="uk-link-toggle uk-text-muted">
+    <a class="uk-link-heading" href="Topic_Development.html">
+        <span class="uk-padding-small">Development</span>
+    </a>
+</div>
+</div></td>
+    </tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Metadata Button :: END -->
+                            <!-- View Asciidoc Source Button :: START -->
+                            <li uk-tooltip="title: Document source">
+                                <span uk-icon="code"></span>
+                                <span class="uk-margin-small-left">
+                                    <a href="#modal-full-source" uk-toggle>Source</a>
+                                </span>
+                                <div id="modal-full-source" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog uk-height-viewport">
+                                        <button class="uk-modal-close-full uk-close-large uk-background-muted" type="button" uk-close></button>
+                                        <div class="uk-grid-collapse uk-child-width-expand@s uk-flex-middle" uk-grid>
+                                            <div class="uk-padding-large uk-background-muted">
+                                                <div class="uk-text-lead uk-text-center uk-text-danger">Source</div>
+                                                <div class="uk-text-lead">20260221_0100.adoc</div>
+                                                <div class=""><textarea id="source-code" class="uk-width-1-1 uk-height-viewport">= Smart Index Generation: A New Approach for Blog Excerpt-Based Indexing
+
+:Author:        Tomás Vírseda
+:Category:      Post
+:Topic:         Development
+:Product:       KB4IT
+:Tag:           theme, blog, index, excerpt
+:Updated:       2026-02-21 01:00:00
+:Status:        Published
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+== Excerpt
+
+The KB4IT blog theme now features a smarter approach to generating index pages that leverages post excerpts instead of full HTML body content. This refactoring simplifies the index generation workflow by extracting semantically meaningful sections directly from AsciiDoc source files, resulting in more consistent, cleaner, and faster index page generation. The new method eliminates the need to parse complex HTML structures and provides authors with explicit control over how their posts appear in the index.
+
+Building a blog engine requires careful decisions about what readers see when browsing post listings. Extracting full HTML bodies and searching for markers is fragile; small changes to the HTML structure break the system. By shifting to an excerpt-based model backed by AsciiDoc section extraction, we gain reliability, performance, and author control in a single refactoring.
+
+== Disclaimer
+
+CAUTION: This post was generated by an IA... but the code is mine, mostly :)
+
+== The Problem with the Old Approach
+
+Previously, KB4IT generated index pages by extracting the body content from already-compiled HTML files:
+
+* The workflow had to read from generated HTML after compilation
+* Index generation was tightly coupled to the HTML structure with fragile marker-based extraction (`<!-- BODY :: START -->` and `<!-- BODY :: END -->`)
+* Any changes to the HTML generation template could break index generation
+* The process was inefficient: compile to HTML, then parse HTML back to extract content
+* Authors had no explicit way to control what appears in the index
+
+This approach worked but was brittle and inefficient. The tight coupling between HTML generation and index generation meant that small template changes could unexpectedly break the index.
+
+== The New Excerpt-Based Solution
+
+The refactored approach introduces a cleaner separation of concerns:
+
+=== New `extract_sections_from_adoc()` Function
+
+A utility function now parses AsciiDoc files directly to extract section information:
+
+[source,python]
+----
+def extract_sections_from_adoc(file_path):
+    """
+    Extract sections from an AsciiDoc file.
+    
+    Returns a dictionary mapping section names to their start and end line numbers.
+    """
+    sections = {}
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    
+    current_section = None
+    start = None
+    
+    for i, line in enumerate(lines, 1):
+        line = line.rstrip('\n')
+        
+        # Check for section headers (== prefix, but not ===)
+        if line.startswith('== ') and not line.startswith('==='):
+            if current_section:
+                sections[current_section] = {
+                    'start': start,
+                    'end': i - 1
+                }
+            current_section = line[3:].strip()
+            start = i
+    
+    if current_section:
+        sections[current_section] = {
+            'start': start,
+            'end': len(lines)
+        }
+    
+    return sections
+----
+
+This lightweight parser operates directly on source files, avoiding HTML entirely.
+
+=== Updated Index Generation Workflow
+
+The `build_page_index()` method in the theme now:
+
+1. Extracts section metadata from each post's AsciiDoc file
+2. Checks for an `== Excerpt` section
+3. If found, extracts lines between the excerpt section markers
+4. Wraps lines in `<p>` tags for clean HTML rendering
+5. Falls back to a "Excerpt missing" placeholder if not found
+
+[source,python]
+----
+sections = extract_sections_from_adoc(adoc_filepath)
+excerpt = 'Excerpt' in sections.keys()
+if excerpt:
+    s = sections['Excerpt']['start']
+    e = sections['Excerpt']['end']
+    lines = open(adoc_filepath).readlines()
+    text = '\n'.join(lines[s+1:e])
+    var['post']['Excerpt'] = "\n".join([f"<p>{line}</p>" if line.strip() else line 
+                                         for line in text.strip().splitlines()])
+else:
+    var['post']['Excerpt'] = "<p>Excerpt missing</p>"
+----
+
+=== Example: Post with Explicit Excerpt
+
+Posts are updated to include an `== Excerpt` section as the first meaningful section:
+
+[source,asciidoc]
+----
+= Algorithm Complexity Fundamentals
+
+:Author:        Tomás Vírseda
+:Category:      Post
+// ... other metadata
+
+== Excerpt
+
+Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.
+
+Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"
+
+== Big-O Notation
+
+// ... rest of the post
+----
+
+The index page automatically extracts and displays this excerpt without any manual configuration per post.
+
+== Workflow Improvements
+
+The refactoring also reorders the build pipeline:
+
+[source]
+----
+Previous Order:
+  1. Compilation
+  2. Deploy
+  3. Theme post activities (including index generation)
+
+New Order:
+  1. Compilation
+  2. Theme post activities (including index generation)
+  3. Deploy
+----
+
+This ensures that the index page is generated *before* deployment, making the workflow more logical and predictable.
+
+== Benefits
+
+*Simplicity*:: No more HTML parsing or marker searching. The system works directly with AsciiDoc source.
+
+*Author Control*:: Writers explicitly define what appears in the index by creating an `== Excerpt` section.
+
+*Performance*:: Direct source parsing is faster than compiling HTML and then parsing it back.
+
+*Maintainability*:: Changes to HTML templates no longer risk breaking index generation.
+
+*Consistency*:: All posts follow the same pattern, making the blog feel cohesive.
+
+*Robustness*:: The system gracefully handles missing excerpts with a clear fallback message.
+
+== Example Posts
+
+The demo repository was updated with new posts demonstrating the new approach:
+
+* **Distributed Systems and the CAP Theorem** — Excerpt highlighting consistency-availability tradeoffs
+* **Cryptography Fundamentals for Software Engineers** — Excerpt on the core concepts engineers need
+* **Introduction to Quantum Computing** — Excerpt introducing qubits and superposition
+* **Modern Compiler Design Patterns** — Excerpt on modular compiler architectures
+* **Zero-Knowledge Proofs in Cryptography** — Excerpt on privacy-preserving verification
+
+All posts follow the new excerpt pattern, and the index page automatically renders them beautifully.
+
+== Summary
+
+The KB4IT theme's new index generation approach demonstrates a principle that applies far beyond blog engines: work with data as close to its source as possible. By shifting from HTML-based extraction to AsciiDoc section parsing, the system becomes simpler, faster, and more maintainable.
+
+For users building blogs with KB4IT, the change is transparent — just add an `== Excerpt` section to your posts, and the index page will automatically display them. For maintainers, the shift simplifies the codebase and makes future changes safer.
+
+This refactoring is part of KB4IT 0.7.27, currently building toward the next release.
+</textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- View Source Button :: END -->
+                            <li uk-tooltip="title: Edit document">
+                                <span uk-icon="pencil"></span>
+                                <span class="uk-margin-small-left">
+                                    <a class="" href="https://github.com/t00m/blog/edit/main/source/20260221_0100.adoc" target="_blank" uk-toggle>Edit</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Tags and Topics -->
+                </div>
+            </div>
+            <hr>
+        </header>
+
+        <!-- Body -->
+        <article class="uk-article">
+            <!-- BODY :: START -->
+            <div hidden>
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a class="" target="" href="#_excerpt">Excerpt</a></li>
+<li><a class="" target="" href="#_disclaimer">Disclaimer</a></li>
+<li><a class="" target="" href="#_the_problem_with_the_old_approach">The Problem with the Old Approach</a></li>
+<li><a class="" target="" href="#_the_new_excerpt_based_solution">The New Excerpt-Based Solution</a>
+<ul class="sectlevel2">
+<li><a class="" target="" href="#_new_extract_sections_from_adoc_function">New <code>extract_sections_from_adoc()</code> Function</a></li>
+<li><a class="" target="" href="#_updated_index_generation_workflow">Updated Index Generation Workflow</a></li>
+<li><a class="" target="" href="#_example_post_with_explicit_excerpt">Example: Post with Explicit Excerpt</a></li>
+</ul>
+</li>
+<li><a class="" target="" href="#_workflow_improvements">Workflow Improvements</a></li>
+<li><a class="" target="" href="#_benefits">Benefits</a></li>
+<li><a class="" target="" href="#_example_posts">Example Posts</a></li>
+<li><a class="" target="" href="#_summary">Summary</a></li>
+</ul>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_excerpt">Excerpt</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>The KB4IT blog theme now features a smarter approach to generating index pages that leverages post excerpts instead of full HTML body content. This refactoring simplifies the index generation workflow by extracting semantically meaningful sections directly from AsciiDoc source files, resulting in more consistent, cleaner, and faster index page generation. The new method eliminates the need to parse complex HTML structures and provides authors with explicit control over how their posts appear in the index.</p>
+</div>
+<div class="paragraph">
+<p>Building a blog engine requires careful decisions about what readers see when browsing post listings. Extracting full HTML bodies and searching for markers is fragile; small changes to the HTML structure break the system. By shifting to an excerpt-based model backed by AsciiDoc section extraction, we gain reliability, performance, and author control in a single refactoring.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_disclaimer">Disclaimer</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="admonitionblock caution uk-padding-small uk-border-rounded uk-background-muted uk-margin-small
+">
+<table>
+<tr>
+<td class="icon">
+<i uk-icon="bolt" class="uk-margin-right uk-icon-button"
+ title="Caution"></i>
+</td>
+<td class="content">
+This post was generated by an IA&#8230;&#8203; but the code is mine, mostly :)
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_the_problem_with_the_old_approach">The Problem with the Old Approach</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>Previously, KB4IT generated index pages by extracting the body content from already-compiled HTML files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The workflow had to read from generated HTML after compilation</p>
+</li>
+<li>
+<p>Index generation was tightly coupled to the HTML structure with fragile marker-based extraction (<code>&lt;!-- BODY :: START -&#8594;</code> and <code>&lt;!-- BODY :: END -&#8594;</code>)</p>
+</li>
+<li>
+<p>Any changes to the HTML generation template could break index generation</p>
+</li>
+<li>
+<p>The process was inefficient: compile to HTML, then parse HTML back to extract content</p>
+</li>
+<li>
+<p>Authors had no explicit way to control what appears in the index</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This approach worked but was brittle and inefficient. The tight coupling between HTML generation and index generation meant that small template changes could unexpectedly break the index.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_the_new_excerpt_based_solution">The New Excerpt-Based Solution</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>The refactored approach introduces a cleaner separation of concerns:</p>
+</div>
+<div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
+
+<h3 class="uk-card-title" id="_new_extract_sections_from_adoc_function">New <code>extract_sections_from_adoc()</code> Function</h3>
+<div class="paragraph">
+<p>A utility function now parses AsciiDoc files directly to extract section information:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">def extract_sections_from_adoc(file_path):
+    """
+    Extract sections from an AsciiDoc file.
+
+    Returns a dictionary mapping section names to their start and end line numbers.
+    """
+    sections = {}
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    current_section = None
+    start = None
+
+    for i, line in enumerate(lines, 1):
+        line = line.rstrip('\n')
+
+        # Check for section headers (== prefix, but not ===)
+        if line.startswith('== ') and not line.startswith('==='):
+            if current_section:
+                sections[current_section] = {
+                    'start': start,
+                    'end': i - 1
+                }
+            current_section = line[3:].strip()
+            start = i
+
+    if current_section:
+        sections[current_section] = {
+            'start': start,
+            'end': len(lines)
+        }
+
+    return sections</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This lightweight parser operates directly on source files, avoiding HTML entirely.</p>
+</div>
+</div>
+<div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
+
+<h3 class="uk-card-title" id="_updated_index_generation_workflow">Updated Index Generation Workflow</h3>
+<div class="paragraph">
+<p>The <code>build_page_index()</code> method in the theme now:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Extracts section metadata from each post&#8217;s AsciiDoc file</p>
+</li>
+<li>
+<p>Checks for an <code>== Excerpt</code> section</p>
+</li>
+<li>
+<p>If found, extracts lines between the excerpt section markers</p>
+</li>
+<li>
+<p>Wraps lines in <code>&lt;p&gt;</code> tags for clean HTML rendering</p>
+</li>
+<li>
+<p>Falls back to a "Excerpt missing" placeholder if not found</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sections = extract_sections_from_adoc(adoc_filepath)
+excerpt = 'Excerpt' in sections.keys()
+if excerpt:
+    s = sections['Excerpt']['start']
+    e = sections['Excerpt']['end']
+    lines = open(adoc_filepath).readlines()
+    text = '\n'.join(lines[s+1:e])
+    var['post']['Excerpt'] = "\n".join([f"&lt;p&gt;{line}&lt;/p&gt;" if line.strip() else line
+                                         for line in text.strip().splitlines()])
+else:
+    var['post']['Excerpt'] = "&lt;p&gt;Excerpt missing&lt;/p&gt;"</code></pre>
+</div>
+</div>
+</div>
+<div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
+
+<h3 class="uk-card-title" id="_example_post_with_explicit_excerpt">Example: Post with Explicit Excerpt</h3>
+<div class="paragraph">
+<p>Posts are updated to include an <code>== Excerpt</code> section as the first meaningful section:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= Algorithm Complexity Fundamentals
+
+:Author:        Tomás Vírseda
+:Category:      Post
+// ... other metadata
+
+== Excerpt
+
+Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.
+
+Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"
+
+== Big-O Notation
+
+// ... rest of the post</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The index page automatically extracts and displays this excerpt without any manual configuration per post.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_workflow_improvements">Workflow Improvements</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>The refactoring also reorders the build pipeline:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Previous Order:
+  1. Compilation
+  2. Deploy
+  3. Theme post activities (including index generation)
+
+New Order:
+  1. Compilation
+  2. Theme post activities (including index generation)
+  3. Deploy</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This ensures that the index page is generated <strong>before</strong> deployment, making the workflow more logical and predictable.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_benefits">Benefits</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Simplicity</strong></dt>
+<dd>
+<p>No more HTML parsing or marker searching. The system works directly with AsciiDoc source.</p>
+</dd>
+<dt class="hdlist1"><strong>Author Control</strong></dt>
+<dd>
+<p>Writers explicitly define what appears in the index by creating an <code>== Excerpt</code> section.</p>
+</dd>
+<dt class="hdlist1"><strong>Performance</strong></dt>
+<dd>
+<p>Direct source parsing is faster than compiling HTML and then parsing it back.</p>
+</dd>
+<dt class="hdlist1"><strong>Maintainability</strong></dt>
+<dd>
+<p>Changes to HTML templates no longer risk breaking index generation.</p>
+</dd>
+<dt class="hdlist1"><strong>Consistency</strong></dt>
+<dd>
+<p>All posts follow the same pattern, making the blog feel cohesive.</p>
+</dd>
+<dt class="hdlist1"><strong>Robustness</strong></dt>
+<dd>
+<p>The system gracefully handles missing excerpts with a clear fallback message.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_example_posts">Example Posts</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>The demo repository was updated with new posts demonstrating the new approach:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Distributed Systems and the CAP Theorem</strong> — Excerpt highlighting consistency-availability tradeoffs</p>
+</li>
+<li>
+<p><strong>Cryptography Fundamentals for Software Engineers</strong> — Excerpt on the core concepts engineers need</p>
+</li>
+<li>
+<p><strong>Introduction to Quantum Computing</strong> — Excerpt introducing qubits and superposition</p>
+</li>
+<li>
+<p><strong>Modern Compiler Design Patterns</strong> — Excerpt on modular compiler architectures</p>
+</li>
+<li>
+<p><strong>Zero-Knowledge Proofs in Cryptography</strong> — Excerpt on privacy-preserving verification</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All posts follow the new excerpt pattern, and the index page automatically renders them beautifully.</p>
+</div>
+</div>
+</div>
+<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+
+<h2 class="uk-card-title"
+id="_summary">Summary</h2>
+<div id="kb-section-body" class="uk-container">
+<div class="paragraph">
+<p>The KB4IT theme&#8217;s new index generation approach demonstrates a principle that applies far beyond blog engines: work with data as close to its source as possible. By shifting from HTML-based extraction to AsciiDoc section parsing, the system becomes simpler, faster, and more maintainable.</p>
+</div>
+<div class="paragraph">
+<p>For users building blogs with KB4IT, the change is transparent — just add an <code>== Excerpt</code> section to your posts, and the index page will automatically display them. For maintainers, the shift simplifies the codebase and makes future changes safer.</p>
+</div>
+<div class="paragraph">
+<p>This refactoring is part of KB4IT 0.7.27, currently building toward the next release.</p>
+</div>
+</div>
+</div>
+            <!-- BODY :: END -->
+        </article>
+
+        <!-- Footer -->
+        <footer class="uk-margin-small-top uk-text-muted">
+            <hr>
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+            </div>
+        </footer>
+    </div>
+</div>
+<p></p>
+<!-- Template POST_HTML_SINGLE.tpl :: END -->
+                </div>
+                <!-- Sidebar Column :: START-->
+                <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
+                  <div class="uk-sticky" uk-sticky="offset: 40">
+                    <h2 class="uk-heading-line uk-text-center uk-margin-remove">
+                        <a class="uk-link-toggle" href="index.html">
+                        <span class="uk-link-heading">t00mterías</span>
+                        </a>
+                    </h2>
+                    <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
+            <blockquote>
+            <p class="uk-text-center">My public notes</p>
+            </blockquote>
+            </div>
+
+        <div class="uk-card uk-card-body uk-card-small uk-flex uk-flex-top uk-flex-left">
+        <ul class="uk-list uk-text-left uk-margin-left">
+                <li>
+                    <span uk-icon="icon: plus" uk-tooltip="Create new post"></span>
+                    <a class="uk-link-heading" href="https://github.com/t00m/blog/new/main/source" target="_blank">
+                        <span class="uk-link-toogle uk-margin-left">Create new post</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: list" uk-tooltip="All posts"></span>
+                    <a class="uk-link-heading" href="all.html">
+                        <span class="uk-link-toogle uk-margin-left">All documents</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: star" uk-tooltip="Bookmarks"></span>
+                    <a class="uk-link-heading" href="bookmarks.html">
+                        <span class="uk-link-toogle uk-margin-left">Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: world" uk-tooltip="Browse by metadata"></span>
+                    <a class="uk-link-heading" href="properties.html">
+                        <span class="uk-link-toogle uk-margin-left">Metadata</span>
+                    </a>
+                </li>
+                <li>
+                    <span uk-icon="icon: calendar" uk-tooltip="Posts by year"></span>
+                    <a class="uk-link-heading" href="events.html">
+                        <span class="uk-link-toogle uk-margin-left">Archive</span>
+                    </a>
+                </li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                    <span uk-icon="icon: info" uk-tooltip="About"></span>
+                    <a class="uk-link-heading" href="about_app.html">
+                        <span class="uk-link-toogle uk-margin-left">About</span>
+                    </a>
+                </li>
+        </ul>
+    </div>
+                      <div class="uk-text-center uk-card uk-card-body uk-card-big">
+                        <hr class="uk-divider-icon">
+                        <p>
+                            <span class="uk-link">
+                                <a href="about_kb4it.html">
+                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                </a>
+                            </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sidebar Column :: END-->
+            </div>
+            <!-- Main Content Column :: END-->
+        </div>
+        <!-- GRID :: END -->
+    </div>
+    <!-- Blog container :: END -->
+<script>hljs.highlightAll();</script>
+<script>
+<!-- Necessary javascript for filtering results -->
+<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
+var input = document.getElementById('text_filter');
+var filter = document.getElementById('filter');
+
+input.addEventListener( 'keyup', function(event)
+{
+    if ( input.value == "" )
+    {
+        filter.setAttribute( 'uk-filter-control', '' );
+    }
+
+    else
+    {
+        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
+    }
+
+    filter.click();
+});
+</script>
+</body>
+</html>
