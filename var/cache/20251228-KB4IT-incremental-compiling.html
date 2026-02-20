@@ -220,7 +220,7 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Introduction
+== Excerpt
 
 These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
 
@@ -228,13 +228,13 @@ To my initial surprise, it didn't work in Github.
 
 == Github actions
 
-In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed. 
+In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed.
 
 GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
 
 == Solution
 
-Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository. 
+Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository.
 Then, once kb4it finishes the compilation, all changes are pushed automatically.
 
 [source, yaml]
@@ -255,7 +255,7 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
           else
             git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
             git push
-          fi  
+          fi
 ----
 </textarea></div>
                                             </div>
@@ -284,7 +284,7 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
             <div hidden>
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a class="" target="" href="#_introduction">Introduction</a></li>
+<li><a class="" target="" href="#_excerpt">Excerpt</a></li>
 <li><a class="" target="" href="#_github_actions">Github actions</a></li>
 <li><a class="" target="" href="#_solution">Solution</a></li>
 </ul>
@@ -292,7 +292,7 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
 <div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 
 <h2 class="uk-card-title"
-id="_introduction">Introduction</h2>
+id="_excerpt">Excerpt</h2>
 <div id="kb-section-body" class="uk-container">
 <div class="paragraph">
 <p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>

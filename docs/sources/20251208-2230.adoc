@@ -9,7 +9,7 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Introduction
+== Excerpt
 
 Finally, the index page for the blog theme, is working.
 Posts' headers look nice.
@@ -19,5 +19,5 @@ However, at this point, the whole code is... spaguetti code.
 
 == Notes
 
-Builder module works fine when the source files (.adoc files) are analyzed first. 
+Builder module works fine when the source files (.adoc files) are analyzed first.
 But other pages, like the index page, which are build at the end, do not follow the standard process.

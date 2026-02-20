@@ -9,7 +9,7 @@
 
 // END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
 
-== Introduction
+== Excerpt
 
 https://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.
 
