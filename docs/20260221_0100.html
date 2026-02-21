@@ -313,31 +313,6 @@ else:
     var['post']['Excerpt'] = "<p>Excerpt missing</p>"
 ----
 
-=== Example: Post with Explicit Excerpt
-
-Posts are updated to include an `== Excerpt` section as the first meaningful section:
-
-[source,asciidoc]
-----
-= Algorithm Complexity Fundamentals
-
-:Author:        Tomás Vírseda
-:Category:      Post
-// ... other metadata
-
-== Excerpt
-
-Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.
-
-Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"
-
-== Big-O Notation
-
-// ... rest of the post
-----
-
-The index page automatically extracts and displays this excerpt without any manual configuration per post.
-
 == Workflow Improvements
 
 The refactoring also reorders the build pipeline:
@@ -424,7 +399,6 @@ This refactoring is part of KB4IT 0.7.27, currently building toward the next rel
 <ul class="sectlevel2">
 <li><a class="" target="" href="#_new_extract_sections_from_adoc_function">New <code>extract_sections_from_adoc()</code> Function</a></li>
 <li><a class="" target="" href="#_updated_index_generation_workflow">Updated Index Generation Workflow</a></li>
-<li><a class="" target="" href="#_example_post_with_explicit_excerpt">Example: Post with Explicit Excerpt</a></li>
 </ul>
 </li>
 <li><a class="" target="" href="#_workflow_improvements">Workflow Improvements</a></li>
@@ -593,35 +567,6 @@ if excerpt:
 else:
     var['post']['Excerpt'] = "&lt;p&gt;Excerpt missing&lt;/p&gt;"</code></pre>
 </div>
-</div>
-</div>
-<div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
-
-<h3 class="uk-card-title" id="_example_post_with_explicit_excerpt">Example: Post with Explicit Excerpt</h3>
-<div class="paragraph">
-<p>Posts are updated to include an <code>== Excerpt</code> section as the first meaningful section:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= Algorithm Complexity Fundamentals
-
-:Author:        Tomás Vírseda
-:Category:      Post
-// ... other metadata
-
-== Excerpt
-
-Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.
-
-Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"
-
-== Big-O Notation
-
-// ... rest of the post</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The index page automatically extracts and displays this excerpt without any manual configuration per post.</p>
 </div>
 </div>
 </div>

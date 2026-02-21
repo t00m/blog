@@ -317,31 +317,6 @@ else:
     var['post']['Excerpt'] = "<p>Excerpt missing</p>"
 ----
 
-=== Example: Post with Explicit Excerpt
-
-Posts are updated to include an `== Excerpt` section as the first meaningful section:
-
-[source,asciidoc]
-----
-= Algorithm Complexity Fundamentals
-
-:Author:        Tomás Vírseda
-:Category:      Post
-// ... other metadata
-
-== Excerpt
-
-Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.
-
-Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"
-
-== Big-O Notation
-
-// ... rest of the post
-----
-
-The index page automatically extracts and displays this excerpt without any manual configuration per post.
-
 == Workflow Improvements
 
 The refactoring also reorders the build pipeline:
@@ -411,11 +386,11 @@ This refactoring is part of KB4IT 0.7.27, currently building toward the next rel
 
         <!-- Body -->
         <article class="uk-article">
-            <p>Not all code that works is code worth keeping. Two programs can produce identical output while differing wildly in how they scale — one handling a million records gracefully, the other grinding to a halt. Algorithm complexity, expressed through Big O notation, gives us a shared language for describing this behavior independent of hardware, language, or implementation quirks.</p>
+            <p>The KB4IT blog theme now features a smarter approach to generating index pages that leverages post excerpts instead of full HTML body content. This refactoring simplifies the index generation workflow by extracting semantically meaningful sections directly from AsciiDoc source files, resulting in more consistent, cleaner, and faster index page generation. The new method eliminates the need to parse complex HTML structures and provides authors with explicit control over how their posts appear in the index.</p>
 
 
 
-<p>Big O describes the worst-case growth rate of an algorithm as input size increases. An O(n) algorithm grows linearly; an O(n²) algorithm, common in naive sorting or nested loops, can become catastrophically slow at scale. Developing an instinct for complexity doesn't require deep mathematical training — it mostly requires the habit of asking, "what happens to this code when the input gets ten times larger?"</p>
+<p>Building a blog engine requires careful decisions about what readers see when browsing post listings. Extracting full HTML bodies and searching for markers is fragile; small changes to the HTML structure break the system. By shifting to an excerpt-based model backed by AsciiDoc section extraction, we gain reliability, performance, and author control in a single refactoring.</p>
         </article>
 
         <!-- Footer -->
