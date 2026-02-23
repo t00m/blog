@@ -57,7 +57,7 @@ jobs:
 
       # Update blog
       - name: Update blog
-        run: kb4it build config/blog_force_mode.json
+        run: kb4it -L DEBUG build config/blog_force_mode.json
 
       # Commit changes
       - name: Commit and push changes (if any)
