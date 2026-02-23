@@ -10,7 +10,7 @@
         "Note",
         "Bookmark"
     ],
-    "force": true,
+    "force": false,
     "git": true,
     "git_branch": "main",
     "git_path": "source",
@@ -39,6 +39,7 @@
     "title": "t00mterías",
     "webserver": true
 }
+
 
 
 
