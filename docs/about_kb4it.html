@@ -20,17 +20,18 @@
   <script type="text/javascript" class="init">
         $(document).ready(function() {
             $('#kb4it-datatable').DataTable( {
-                dom: '<"kbfilter"flrtip>',
+                dom: '<"kbfilter"Bifrt>',
                 serverSide: false,
+                pageLength: 1000,
                 ordering: true,
                 searching: true,
                 //~ data:           data,
                 deferRender:    true,
-                scrollY:        400,
-                scrollCollapse: false,
-                scroller:       false,
+                scrollY: 600,
+                scrollCollapse: true,
+                scroller:       true,
                 stateSave: false,
-                paging:   false,
+                paging:   true,
                 info:     true,
                 order: [[ 0, "desc" ]]
             } );
@@ -70,7 +71,7 @@ id="_description">Description</h2>
 <p>It is based on <a class="" target="" href="https://docs.asciidoctor.org/asciidoc/latest/">AsciiDoc</a> sources and it uses <a class="" target="" href="https://asciidoctor.org">Asciidoctor</a> for processing them.</p>
 </div>
 <div class="paragraph">
-<p>This website was built using KB4IT 0.7.27+build.96</p>
+<p>This website was built using KB4IT 0.7.27+build.97</p>
 </div>
 <div class="paragraph">
 <p>For more information, visit my Git <a class="" target="" href="https://github.com/t00m/KB4IT">repository</a>.</p>
