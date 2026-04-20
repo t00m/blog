@@ -25,8 +25,8 @@
             "Updated": [
                 "2025-12-08 23:00:00"
             ],
+            "body_hash": "6bdc2f32d0fa935e5f0f5b3adde36767d941e1f4930d74f0e748815d9e90b79a782bb2fc5eae70f2bed8b26a8afff91d9c57327dbc0ec263cf92466af856d22d",
             "content": "/home/runner/work/blog/blog/source/20251208-2230.adoc",
-            "content_hash": "3d957145bc8f739935e222f791cb2f64",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -83,8 +83,8 @@
             "Updated": [
                 "2025-12-14 00:30:00"
             ],
+            "body_hash": "6ecccba319398f4bf9b7a09d66a152cf240a7a4cde1048238f746ac21d7251632e8f75a8522bd046ac9acac7442b70bfe59ca74bbb85b7ed8ee6473bbbbd1eaa",
             "content": "/home/runner/work/blog/blog/source/20251214-0030.adoc",
-            "content_hash": "92ee8674e5f23e41c391ef48efc19d80",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -150,8 +150,8 @@
             "Updated": [
                 "2025-12-28 18:40:00"
             ],
+            "body_hash": "4fd3b9113e0762dda54a4ec774c0ec15375a372f811a020e4a9865680bc038f6db45f8ea5a7f5196d04bdb60d1daf0265f3f5472d8f6b2954caa1f345c2c605d",
             "content": "/home/runner/work/blog/blog/source/20251226-PyGTK4.adoc",
-            "content_hash": "4a63a97a6ac332be1df315fa97bc6c5c",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -217,8 +217,8 @@
             "Updated": [
                 "2026-01-11 13:30:00"
             ],
+            "body_hash": "ee3d91dd10ee3364d1379885a7ba23e4ec1bd0f2438782c847b407d33462c2d50c25e660cc6c512f7d4d0c0ab871ff9a8f6e8060054ab758222a258ae30eaa06",
             "content": "/home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc",
-            "content_hash": "94e84f8e2c2bb3e558deed9fb33567f7",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -279,8 +279,8 @@
             "Updated": [
                 "2026-01-11 13:35:00"
             ],
+            "body_hash": "58cb48ae187c22facfc3befb37836ac7587721b2e9cc2a9e85c202625365c4c9b8752e34c45088065510f92ee445e2dc434260eacb5c46e1ad0d6cb6c5552a41",
             "content": "/home/runner/work/blog/blog/source/20251231-1400-log_module.adoc",
-            "content_hash": "0beb920b24add41720a6a8f412e1ad55",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -338,8 +338,8 @@
             "Updated": [
                 "2026-02-16 17:30:00"
             ],
+            "body_hash": "be2cd8c74e6de369c1a09540c0394d1eb79e231afb94f5896458946480032ea45bc1fc2b4e0f0c3582a2eb5425376944d386acc44adea63b2c297e8065e43a14",
             "content": "/home/runner/work/blog/blog/source/20260216-EAT.adoc",
-            "content_hash": "dd17ff8942fa773dedb245c06290f197",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -376,8 +376,8 @@
             "Title": [
                 "About"
             ],
+            "body_hash": "f4a4fe68107c563a3df0c4c011ce370425321940365d63cfa4f8ce5faf6d4ecce769e165aae5ca87b41b67d38cf83bc514069c5e5fc3a018ea64c4f08636217e",
             "content": "/home/runner/work/blog/blog/source/about_app.adoc",
-            "content_hash": "db2c9cbd892b3a4a729dab8792e5e193",
             "keys": {
                 "SystemPage": [
                     "Yes"
@@ -395,8 +395,8 @@
             "Title": [
                 "About KB4IT"
             ],
+            "body_hash": "6116f204db7d330d40ab688c4b68f7eeab2679e2bdc907e2ff9d21750ed4d5b4bcdea09bcf4c7e84ee53a16aeebb09b35fcbea6ea3493608f760808411ddc0e4",
             "content": "/home/runner/work/blog/blog/source/about_kb4it.adoc",
-            "content_hash": "60f6211ecb9ebce06d88f1c4c2586b07",
             "keys": {
                 "SystemPage": [
                     "Yes"
@@ -440,8 +440,8 @@
             "Updated": [
                 "2026-01-11 20:50:00"
             ],
+            "body_hash": "d1353961074c786361e5f7df92366163165986a2628baf5bc3fe1ac5090d2fb57f2573c15612e726d4032d36b7db950c74b96ea7619e76613470ae4f7032ccc6",
             "content": "/home/runner/work/blog/blog/source/python3-dev.adoc",
-            "content_hash": "a4df0e00c6801163fcc1d4baad60166f",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -482,30 +482,30 @@
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
+                "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "20260216-EAT.adoc",
+                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "python3-dev.adoc",
-                "20251208-2230.adoc",
-                "20251226-PyGTK4.adoc"
+                "20260216-EAT.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Bookmark": {
             "Yes": [
-                "python3-dev.adoc",
-                "20251226-PyGTK4.adoc"
+                "20251226-PyGTK4.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Category": {
             "Post": [
+                "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "20260216-EAT.adoc",
+                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "python3-dev.adoc",
-                "20251208-2230.adoc",
-                "20251226-PyGTK4.adoc"
+                "20260216-EAT.adoc",
+                "python3-dev.adoc"
             ]
         },
         "Product": {
@@ -519,11 +519,11 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "KB4IT": [
+                "20251208-2230.adoc",
                 "20251214-0030.adoc",
-                "20260216-EAT.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "20251208-2230.adoc"
+                "20260216-EAT.adoc"
             ],
             "Libadwaita": [
                 "20251226-PyGTK4.adoc"
@@ -550,9 +550,9 @@
         },
         "Programming Language": {
             "Python": [
+                "20251226-PyGTK4.adoc",
                 "20251231-1400-log_module.adoc",
-                "python3-dev.adoc",
-                "20251226-PyGTK4.adoc"
+                "python3-dev.adoc"
             ]
         },
         "SystemPage": {
@@ -635,8 +635,8 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "workflow": [
-                "20260216-EAT.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "20251228-KB4IT-incremental-compiling.adoc",
+                "20260216-EAT.adoc"
             ]
         },
         "Title": {
@@ -673,16 +673,16 @@
                 "20251228-KB4IT-incremental-compiling.adoc"
             ],
             "Development": [
-                "20260216-EAT.adoc",
+                "20251208-2230.adoc",
+                "20251226-PyGTK4.adoc",
                 "20251228-KB4IT-incremental-compiling.adoc",
                 "20251231-1400-log_module.adoc",
-                "python3-dev.adoc",
-                "20251208-2230.adoc",
-                "20251226-PyGTK4.adoc"
+                "20260216-EAT.adoc",
+                "python3-dev.adoc"
             ],
             "Documentation": [
-                "python3-dev.adoc",
-                "20251226-PyGTK4.adoc"
+                "20251226-PyGTK4.adoc",
+                "python3-dev.adoc"
             ],
             "Package management": [
                 "20251214-0030.adoc"
