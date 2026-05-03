@@ -28,28 +28,19 @@ jobs:
       - name: Install Asciidoctor
         run: gem install asciidoctor
         
-      # Install Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      # Install uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.14"
 
-      # Install pipx
-      - name: Install pipx
-        run: pip install pipx --user
-
       - name: Clone KB4IT repository
-        run: git clone -b 0.7.32 https://github.com/t00m/KB4IT.git
-  
-      # Install KB4IT requirements
-      - name: Install KB4IT requirements
-        working-directory: ./KB4IT
-        run: pip install -r requirements.txt
+        run: git clone -b main https://github.com/t00m/KB4IT.git
 
       # Install KB4IT
       - name: Install KB4IT
         working-directory: ./KB4IT
-        run: pipx install . --force
+        run: uv tool install . --force
 
       # Test KB4IT (display version)
       - name: Display current KB4IT version
