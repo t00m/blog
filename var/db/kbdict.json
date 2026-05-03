@@ -7,6 +7,9 @@
             "Category": [
                 "Post"
             ],
+            "Date": [
+                "2025-12-08 23:00:00"
+            ],
             "Product": [
                 "KB4IT",
                 "Mako"
@@ -22,17 +25,17 @@
             "Topic": [
                 "Development"
             ],
-            "Updated": [
-                "2025-12-08 23:00:00"
-            ],
             "body_hash": "6bdc2f32d0fa935e5f0f5b3adde36767d941e1f4930d74f0e748815d9e90b79a782bb2fc5eae70f2bed8b26a8afff91d9c57327dbc0ec263cf92466af856d22d",
-            "content": "/home/runner/work/blog/blog/source/20251208-2230.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20251208-2230.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2025-12-08 23:00:00"
                 ],
                 "Product": [
                     "KB4IT",
@@ -48,12 +51,9 @@
                 ],
                 "Topic": [
                     "Development"
-                ],
-                "Updated": [
-                    "2025-12-08 23:00:00"
                 ]
             },
-            "metadata_hash": "e544bba6c454a40ee5291f80156e2d7f"
+            "metadata_hash": "30214ac5e4dc29e1ed215cc360f780d4"
         },
         "20251214-0030.adoc": {
             "Author": [
@@ -61,6 +61,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2025-12-14 00:30:00"
             ],
             "Product": [
                 "KB4IT",
@@ -80,17 +83,17 @@
             "Topic": [
                 "Package management"
             ],
-            "Updated": [
-                "2025-12-14 00:30:00"
-            ],
             "body_hash": "6ecccba319398f4bf9b7a09d66a152cf240a7a4cde1048238f746ac21d7251632e8f75a8522bd046ac9acac7442b70bfe59ca74bbb85b7ed8ee6473bbbbd1eaa",
-            "content": "/home/runner/work/blog/blog/source/20251214-0030.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20251214-0030.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2025-12-14 00:30:00"
                 ],
                 "Product": [
                     "KB4IT",
@@ -109,12 +112,9 @@
                 ],
                 "Topic": [
                     "Package management"
-                ],
-                "Updated": [
-                    "2025-12-14 00:30:00"
                 ]
             },
-            "metadata_hash": "3eccf77fbb1cb5cb7dea626d9a09dfff"
+            "metadata_hash": "506ad58fc5ea38d2345bf62433437ece"
         },
         "20251226-PyGTK4.adoc": {
             "Author": [
@@ -125,6 +125,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2025-12-28 18:40:00"
             ],
             "Product": [
                 "GNOME",
@@ -147,11 +150,8 @@
                 "Development",
                 "Documentation"
             ],
-            "Updated": [
-                "2025-12-28 18:40:00"
-            ],
             "body_hash": "4fd3b9113e0762dda54a4ec774c0ec15375a372f811a020e4a9865680bc038f6db45f8ea5a7f5196d04bdb60d1daf0265f3f5472d8f6b2954caa1f345c2c605d",
-            "content": "/home/runner/work/blog/blog/source/20251226-PyGTK4.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20251226-PyGTK4.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -161,6 +161,9 @@
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2025-12-28 18:40:00"
                 ],
                 "Product": [
                     "GTK",
@@ -182,12 +185,9 @@
                 "Topic": [
                     "Development",
                     "Documentation"
-                ],
-                "Updated": [
-                    "2025-12-28 18:40:00"
                 ]
             },
-            "metadata_hash": "69c59149e352128a049ae388d7d76f0f"
+            "metadata_hash": "416663431dfd490ae6d4a925a4ab5c62"
         },
         "20251228-KB4IT-incremental-compiling.adoc": {
             "Author": [
@@ -195,6 +195,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2026-01-11 13:30:00"
             ],
             "Product": [
                 "Github Actions",
@@ -214,17 +217,17 @@
                 "Automation",
                 "Development"
             ],
-            "Updated": [
-                "2026-01-11 13:30:00"
-            ],
             "body_hash": "ee3d91dd10ee3364d1379885a7ba23e4ec1bd0f2438782c847b407d33462c2d50c25e660cc6c512f7d4d0c0ab871ff9a8f6e8060054ab758222a258ae30eaa06",
-            "content": "/home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20251228-KB4IT-incremental-compiling.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2026-01-11 13:30:00"
                 ],
                 "Product": [
                     "KB4IT",
@@ -244,12 +247,9 @@
                 "Topic": [
                     "Development",
                     "Automation"
-                ],
-                "Updated": [
-                    "2026-01-11 13:30:00"
                 ]
             },
-            "metadata_hash": "d024c0a2f289055f1bd7c07f362d31d5"
+            "metadata_hash": "7a3e938114c82ea5b0ac7d2811d35a25"
         },
         "20251231-1400-log_module.adoc": {
             "Author": [
@@ -257,6 +257,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2026-01-11 13:35:00"
             ],
             "Product": [
                 "KB4IT"
@@ -276,17 +279,17 @@
                 "Development",
                 "Troubleshooting"
             ],
-            "Updated": [
-                "2026-01-11 13:35:00"
-            ],
             "body_hash": "58cb48ae187c22facfc3befb37836ac7587721b2e9cc2a9e85c202625365c4c9b8752e34c45088065510f92ee445e2dc434260eacb5c46e1ad0d6cb6c5552a41",
-            "content": "/home/runner/work/blog/blog/source/20251231-1400-log_module.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20251231-1400-log_module.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2026-01-11 13:35:00"
                 ],
                 "Product": [
                     "KB4IT"
@@ -305,12 +308,9 @@
                 "Topic": [
                     "Development",
                     "Troubleshooting"
-                ],
-                "Updated": [
-                    "2026-01-11 13:35:00"
                 ]
             },
-            "metadata_hash": "e256be37b8a34175c78ad95d50fa55b9"
+            "metadata_hash": "9ab60aadfab5c3908470aa546392cfb7"
         },
         "20260216-EAT.adoc": {
             "Author": [
@@ -318,6 +318,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2026-02-16 17:30:00"
             ],
             "Product": [
                 "KB4IT"
@@ -335,17 +338,17 @@
                 "Development",
                 "Refactoring"
             ],
-            "Updated": [
-                "2026-02-16 17:30:00"
-            ],
             "body_hash": "be2cd8c74e6de369c1a09540c0394d1eb79e231afb94f5896458946480032ea45bc1fc2b4e0f0c3582a2eb5425376944d386acc44adea63b2c297e8065e43a14",
-            "content": "/home/runner/work/blog/blog/source/20260216-EAT.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/20260216-EAT.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2026-02-16 17:30:00"
                 ],
                 "Product": [
                     "KB4IT"
@@ -362,12 +365,9 @@
                 "Topic": [
                     "Development",
                     "Refactoring"
-                ],
-                "Updated": [
-                    "2026-02-16 17:30:00"
                 ]
             },
-            "metadata_hash": "690ffc11834edd38e9a611fc6b55905e"
+            "metadata_hash": "44a13dd4743afa71e12529ab06168490"
         },
         "about_app.adoc": {
             "SystemPage": [
@@ -377,7 +377,7 @@
                 "About"
             ],
             "body_hash": "f4a4fe68107c563a3df0c4c011ce370425321940365d63cfa4f8ce5faf6d4ecce769e165aae5ca87b41b67d38cf83bc514069c5e5fc3a018ea64c4f08636217e",
-            "content": "/home/runner/work/blog/blog/source/about_app.adoc",
+            "content": "/home/t00m/Documents/devel/github/blog/source/about_app.adoc",
             "keys": {
                 "SystemPage": [
                     "Yes"
@@ -395,8 +395,8 @@
             "Title": [
                 "About KB4IT"
             ],
-            "body_hash": "36423e01e2f14d22dd5521c11da6b80558718b3ddf536cfffa6908f0ce1c40dd6b3aadcbb0d972d3ba3cdd7631fae74c18809dcc49cc287b659a802d527f41af",
-            "content": "/home/runner/work/blog/blog/source/about_kb4it.adoc",
+            "body_hash": "d9ec06a20189a865f5b839064fde66d25d8d926575354f7f52b2363a89fe0118be661b2918559f213e0e5d3281eae6320f6136e85c86f69e0e1d26031590dbe6",
+            "content": "/home/t00m/Documents/devel/github/blog/source/about_kb4it.adoc",
             "keys": {
                 "SystemPage": [
                     "Yes"
@@ -416,6 +416,9 @@
             ],
             "Category": [
                 "Post"
+            ],
+            "Date": [
+                "2026-01-11 20:50:00"
             ],
             "Product": [
                 "Python"
@@ -437,11 +440,8 @@
                 "Development",
                 "Documentation"
             ],
-            "Updated": [
-                "2026-01-11 20:50:00"
-            ],
-            "body_hash": "d1353961074c786361e5f7df92366163165986a2628baf5bc3fe1ac5090d2fb57f2573c15612e726d4032d36b7db950c74b96ea7619e76613470ae4f7032ccc6",
-            "content": "/home/runner/work/blog/blog/source/python3-dev.adoc",
+            "body_hash": "35c70ac1147f583f6d12bb923884f610d99622e06b0ae2c5ecb88a61b6400ac4cd57feeb668038d198412c4522dd2f428a1cc016bce69420b55488efd8408fdd",
+            "content": "/home/t00m/Documents/devel/github/blog/source/python3-dev.adoc",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -451,6 +451,9 @@
                 ],
                 "Category": [
                     "Post"
+                ],
+                "Date": [
+                    "2026-01-11 20:50:00"
                 ],
                 "Product": [
                     "Python"
@@ -471,12 +474,9 @@
                 "Topic": [
                     "Development",
                     "Documentation"
-                ],
-                "Updated": [
-                    "2026-01-11 20:50:00"
                 ]
             },
-            "metadata_hash": "fb435db5ed9ec04b3ce8ae41169c8c8d"
+            "metadata_hash": "cf5cfc7e7d054cec542961a80c682e10"
         }
     },
     "metadata": {
@@ -506,6 +506,29 @@
                 "20251231-1400-log_module.adoc",
                 "20260216-EAT.adoc",
                 "python3-dev.adoc"
+            ]
+        },
+        "Date": {
+            "2025-12-08 23:00:00": [
+                "20251208-2230.adoc"
+            ],
+            "2025-12-14 00:30:00": [
+                "20251214-0030.adoc"
+            ],
+            "2025-12-28 18:40:00": [
+                "20251226-PyGTK4.adoc"
+            ],
+            "2026-01-11 13:30:00": [
+                "20251228-KB4IT-incremental-compiling.adoc"
+            ],
+            "2026-01-11 13:35:00": [
+                "20251231-1400-log_module.adoc"
+            ],
+            "2026-01-11 20:50:00": [
+                "python3-dev.adoc"
+            ],
+            "2026-02-16 17:30:00": [
+                "20260216-EAT.adoc"
             ]
         },
         "Product": {
@@ -692,29 +715,6 @@
             ],
             "Troubleshooting": [
                 "20251231-1400-log_module.adoc"
-            ]
-        },
-        "Updated": {
-            "2025-12-08 23:00:00": [
-                "20251208-2230.adoc"
-            ],
-            "2025-12-14 00:30:00": [
-                "20251214-0030.adoc"
-            ],
-            "2025-12-28 18:40:00": [
-                "20251226-PyGTK4.adoc"
-            ],
-            "2026-01-11 13:30:00": [
-                "20251228-KB4IT-incremental-compiling.adoc"
-            ],
-            "2026-01-11 13:35:00": [
-                "20251231-1400-log_module.adoc"
-            ],
-            "2026-01-11 20:50:00": [
-                "python3-dev.adoc"
-            ],
-            "2026-02-16 17:30:00": [
-                "20260216-EAT.adoc"
             ]
         }
     }

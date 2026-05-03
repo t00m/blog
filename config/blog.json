@@ -1,6 +1,6 @@
 {
     "datatable": [
-        "Updated",
+        "Date",
         "Category",
         "Title",
         "Topic"
@@ -18,7 +18,7 @@
     "git_server": "https://github.com",
     "git_user": "t00m",
     "ignored_keys": [
-        "Updated"
+        "Date"
     ],
     "index_posts": 5,
     "logo": "resources/themes/blog/images/logo.svg",
@@ -27,7 +27,7 @@
         "Author",
         "Category"
     ],
-    "sort": "Updated",
+    "sort": "Date",
     "source": "source",
     "target": "docs",
     "theme": "blog",
