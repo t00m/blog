@@ -1,437 +1,417 @@
-     DEBUG |   52 | KB4IT           | [CONTROLLER] KB4IT version=0.7.31+build.1
-     DEBUG |   53 | KB4IT           | [CONTROLLER] SYS python=3.14.4 (main, Apr  8 2026, 02:27:22) [GCC 13.3.0]
-     DEBUG |   54 | KB4IT           | [CONTROLLER] SYS mako=1.3.11
-     DEBUG |   55 | KB4IT           | [CONTROLLER] SYS platform=Ubuntu 24.04.4 LTS
-     DEBUG |   56 | KB4IT           | [CONTROLLER] GPATH_ROOT path=/opt/pipx/venvs/kb4it/lib/python3.14/site-packages/kb4it
-     DEBUG |   57 | KB4IT           | [CONTROLLER] LPATH_ROOT path=/home/runner/.kb4it
-     DEBUG |   75 | KB4IT           | [CONTROLLER] PARAM name=action value=build
-     DEBUG |   75 | KB4IT           | [CONTROLLER] PARAM name=config value=config/blog_force_mode.json
-     DEBUG |   75 | KB4IT           | [CONTROLLER] PARAM name=log_level value=DEBUG
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=DB
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Backend
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Frontend
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Builder
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Workflow
+     DEBUG |   79 | KB4IT           | [CONTROLLER] KB4IT version=0.7.39+build.23
+     DEBUG |   80 | KB4IT           | [CONTROLLER] SYS python=3.14.4 (main, Apr 14 2026, 14:26:14) [Clang 22.1.3 ]
+     DEBUG |   81 | KB4IT           | [CONTROLLER] SYS mako=1.3.11
+     DEBUG |   82 | KB4IT           | [CONTROLLER] SYS platform=Ubuntu 24.04.4 LTS
+     DEBUG |   83 | KB4IT           | [CONTROLLER] GPATH_ROOT path=/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it
+     DEBUG |   84 | KB4IT           | [CONTROLLER] LPATH_ROOT path=/home/runner/.kb4it
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=action value=build
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=config value=config/blog_force_mode.json
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=force value=False
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=log_level value=DEBUG
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=DB
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Backend
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Frontend
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Builder
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Workflow
      DEBUG |   59 | Workflow        | [SERVICE] STARTED name=Workflow
-     DEBUG |  138 | KB4IT           | [CONTROLLER] START version=0.7.31+build.1
-     DEBUG |  139 | KB4IT           | [CONTROLLER] ACTION name=build
-     DEBUG |   43 | Backend         | [BACKEND] CONFIG_FILE path=/home/runner/work/blog/blog/config/blog_force_mode.json
-     DEBUG |   45 | Backend         | [BACKEND] CONFIG_LOADED
-     DEBUG |   92 | Backend         | [BACKEND] LOG_FILE path=/home/runner/work/blog/blog/var/log/kb4it.log
+     DEBUG |  165 | KB4IT           | [CONTROLLER] START version=0.7.39+build.23
+     DEBUG |  166 | KB4IT           | [CONTROLLER] ACTION name=build
+     DEBUG |   41 | Backend         | [BACKEND] CONFIG_FILE path=/home/runner/work/blog/blog/config/blog_force_mode.json
+     DEBUG |   43 | Backend         | [BACKEND] CONFIG_LOADED
+     DEBUG |   80 | Backend         | [BACKEND] VAR_CLEARED path=/home/runner/work/blog/blog/var reason=force
+     DEBUG |   95 | Backend         | [BACKEND] LOG_FILE path=/home/runner/work/blog/blog/var/log/kb4it.log
      DEBUG |   59 | Database        | [SERVICE] STARTED name=Database
      DEBUG |   59 | Builder         | [SERVICE] STARTED name=Builder
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Processor
-     DEBUG |  164 | Backend         | [BACKEND] KBDICT_LOAD path=/home/runner/work/blog/blog/var/db/kbdict.json
-     DEBUG |  173 | Backend         | [BACKEND] KBDICT_ENTRIES n=2
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Processor
+     DEBUG |  176 | Backend         | [BACKEND] KBDICT_ENTRIES n=2
      DEBUG |   59 | Processor       | [SERVICE] STARTED name=Processor
      DEBUG |   59 | Backend         | [SERVICE] STARTED name=Backend
       INFO |  118 | Workflow        | [WORKFLOW] BUILD theme=blog repo=t00mterías
       INFO |  120 | Workflow        | [WORKFLOW] STAGE n=1 name=check_environment
      DEBUG |   59 | Frontend        | [SERVICE] STARTED name=Frontend
-     DEBUG |  208 | Backend         | [BACKEND] CHECKS_START
-     DEBUG |  209 | Backend         | [BACKEND] DIR name=cache path=/home/runner/work/blog/blog/var/cache
-     DEBUG |  210 | Backend         | [BACKEND] DIR name=tmp path=/home/runner/work/blog/blog/var/tmp
-     DEBUG |  211 | Backend         | [BACKEND] DIR name=www path=/home/runner/work/blog/blog/var/www
-     DEBUG |  217 | Backend         | [BACKEND] DIR name=source path=/home/runner/work/blog/blog/source
-     DEBUG |  222 | Backend         | [BACKEND] DIR name=target path=/home/runner/work/blog/blog/docs
-     DEBUG |  164 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=source path=/home/runner/work/blog/blog/source/resources/themes/blog
-     DEBUG |  165 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=optional path=/home/runner/.kb4it/opt/resources/themes/blog
-     DEBUG |  166 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=global path=/opt/pipx/venvs/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog
-     DEBUG |  164 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=source path=/home/runner/work/blog/blog/source/resources/themes/blog
-     DEBUG |  165 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=optional path=/home/runner/.kb4it/opt/resources/themes/blog
-     DEBUG |  166 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=global path=/opt/pipx/venvs/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog
+     DEBUG |  211 | Backend         | [BACKEND] CHECKS_START
+     DEBUG |  212 | Backend         | [BACKEND] DIR name=cache path=/home/runner/work/blog/blog/var/cache
+     DEBUG |  213 | Backend         | [BACKEND] DIR name=tmp path=/home/runner/work/blog/blog/var/tmp
+     DEBUG |  214 | Backend         | [BACKEND] DIR name=www path=/home/runner/work/blog/blog/var/www
+     DEBUG |  220 | Backend         | [BACKEND] DIR name=source path=/home/runner/work/blog/blog/source
+     DEBUG |  225 | Backend         | [BACKEND] DIR name=target path=/home/runner/work/blog/blog/docs
+     DEBUG |  162 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=source path=/home/runner/work/blog/blog/source/resources/themes/blog
+     DEBUG |  163 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=optional path=/home/runner/.kb4it/opt/resources/themes/blog
+     DEBUG |  164 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=global path=/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog
+     DEBUG |  162 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=source path=/home/runner/work/blog/blog/source/resources/themes/blog
+     DEBUG |  163 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=optional path=/home/runner/.kb4it/opt/resources/themes/blog
+     DEBUG |  164 | Frontend        | [FRONTEND] THEME_CANDIDATE scope=global path=/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog
      DEBUG |  100 | Frontend        | [FRONTEND] THEME_CONF name=Blog version=0.1.0
-     DEBUG |  121 | Frontend        | [FRONTEND] THEME_REGISTER path=/opt/pipx/venvs/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog/logic
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Theme
+     DEBUG |  121 | Frontend        | [FRONTEND] THEME_REGISTER path=/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it/resources/themes/blog/logic
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Theme
      DEBUG |   59 | Theme           | [SERVICE] STARTED name=Theme
      DEBUG |  128 | Frontend        | [FRONTEND] THEME_LOADED id=blog
-     DEBUG |  239 | Backend         | [BACKEND] CHECKS_END
+     DEBUG |  242 | Backend         | [BACKEND] CHECKS_END
       INFO |  124 | Workflow        | [WORKFLOW] STAGE n=2 name=get_sources
      DEBUG |  894 | Theme           | [THEME] NO_SOURCES_GENERATED
-     DEBUG |  243 | Backend         | [BACKEND] SOURCES_START
-     DEBUG |  269 | Backend         | [BACKEND] ABOUT_KB4IT_UPDATED
-     DEBUG |  289 | Backend         | [BACKEND] DOCS_FOUND n=9
-     DEBUG |  290 | Backend         | [BACKEND] SOURCES_END
+     DEBUG |  246 | Backend         | [BACKEND] SOURCES_START
+     DEBUG |  272 | Backend         | [BACKEND] ABOUT_KB4IT_UPDATED
+     DEBUG |  292 | Backend         | [BACKEND] DOCS_FOUND n=9
+     DEBUG |  293 | Backend         | [BACKEND] SOURCES_END
       INFO |  128 | Workflow        | [WORKFLOW] STAGE n=3 name=process_sources
-     DEBUG |  294 | Backend         | [BACKEND] EXTRACTION_START
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20251208-2230.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20251208-2230.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Title value=Blog theme features a new index page
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Product value=KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Product value=Mako
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=index
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=page
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=template
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Updated value=2025-12-08 23:00:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20251208-2230.adoc body=6bdc2f32d0fa935e5f0f5b3adde36767d941e1f4930d74f0e748815d9e90b79a782bb2fc5eae70f2bed8b26a8afff91d9c57327dbc0ec263cf92466af856d22d meta=e544bba6c454a40ee5291f80156e2d7f
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20251208-2230.adoc resource=20251208-2230.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20251228-KB4IT-incremental-compiling.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20251228-KB4IT-incremental-compiling.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Title value=KB4IT incremental compiling in Github (experimental)
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Topic value=Automation
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Product value=KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Product value=Github Actions
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=incremental
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=compiling
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=vm
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=workflow
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=cache
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Updated value=2026-01-11 13:30:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20251228-KB4IT-incremental-compiling.adoc body=ee3d91dd10ee3364d1379885a7ba23e4ec1bd0f2438782c847b407d33462c2d50c25e660cc6c512f7d4d0c0ab871ff9a8f6e8060054ab758222a258ae30eaa06 meta=d024c0a2f289055f1bd7c07f362d31d5
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20251228-KB4IT-incremental-compiling.adoc resource=20251228-KB4IT-incremental-compiling.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20251214-0030.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20251214-0030.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Title value=Pixi: Managing Python Environments
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Topic value=Package management
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Python
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Pixi
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Pypi
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=project
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=build
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=dependency
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=environment
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Updated value=2025-12-14 00:30:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20251214-0030.adoc body=6ecccba319398f4bf9b7a09d66a152cf240a7a4cde1048238f746ac21d7251632e8f75a8522bd046ac9acac7442b70bfe59ca74bbb85b7ed8ee6473bbbbd1eaa meta=3eccf77fbb1cb5cb7dea626d9a09dfff
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20251214-0030.adoc resource=20251214-0030.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20251226-PyGTK4.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20251226-PyGTK4.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Title value=App development with GTK, Python and Libadwaita
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Topic value=Documentation
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=GTK
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=Libadwaita
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=PyGObject
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=GNOME
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=MiAZ
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Tag value=api
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Tag value=documentation
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Programming Language value=Python
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Bookmark value=Yes
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Updated value=2025-12-28 18:40:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20251226-PyGTK4.adoc body=4fd3b9113e0762dda54a4ec774c0ec15375a372f811a020e4a9865680bc038f6db45f8ea5a7f5196d04bdb60d1daf0265f3f5472d8f6b2954caa1f345c2c605d meta=69c59149e352128a049ae388d7d76f0f
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20251226-PyGTK4.adoc resource=20251226-PyGTK4.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20260216-EAT.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20260216-EAT.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Title value=KB4IT: Worflow amended: Now it EATs
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Topic value=Refactoring
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Product value=KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=workflow
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=extraction
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=analysis
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=transformation
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Updated value=2026-02-16 17:30:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20260216-EAT.adoc body=be2cd8c74e6de369c1a09540c0394d1eb79e231afb94f5896458946480032ea45bc1fc2b4e0f0c3582a2eb5425376944d386acc44adea63b2c297e8065e43a14 meta=690ffc11834edd38e9a611fc6b55905e
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20260216-EAT.adoc resource=20260216-EAT.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=about_kb4it.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=about_kb4it.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=about_kb4it.adoc key=Title value=About KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=about_kb4it.adoc key=SystemPage value=Yes
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=about_kb4it.adoc body=6116f204db7d330d40ab688c4b68f7eeab2679e2bdc907e2ff9d21750ed4d5b4bcdea09bcf4c7e84ee53a16aeebb09b35fcbea6ea3493608f760808411ddc0e4 meta=d0f6f3e5297dba0614dd462a53336c1d
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=about_kb4it.adoc resource=about_kb4it.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=python3-dev.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=python3-dev.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Title value=Useful links for Python developers
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Topic value=Documentation
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Product value=Python
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=awesome
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=framework
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=library
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=resource
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=algorithm
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Programming Language value=Python
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Bookmark value=Yes
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Updated value=2026-01-11 20:50:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=python3-dev.adoc body=d1353961074c786361e5f7df92366163165986a2628baf5bc3fe1ac5090d2fb57f2573c15612e726d4032d36b7db950c74b96ea7619e76613470ae4f7032ccc6 meta=fb435db5ed9ec04b3ce8ae41169c8c8d
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=python3-dev.adoc resource=python3-dev.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=20251231-1400-log_module.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=20251231-1400-log_module.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Title value=A log module for KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Author value=Tomás Vírseda
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Category value=Post
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Topic value=Development
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Topic value=Troubleshooting
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Product value=KB4IT
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=logging
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=redirect
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=filehandler
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Programming Language value=Python
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Updated value=2026-01-11 13:35:00
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=20251231-1400-log_module.adoc body=58cb48ae187c22facfc3befb37836ac7587721b2e9cc2a9e85c202625365c4c9b8752e34c45088065510f92ee445e2dc434260eacb5c46e1ad0d6cb6c5552a41 meta=e256be37b8a34175c78ad95d50fa55b9
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=20251231-1400-log_module.adoc resource=20251231-1400-log_module.html
-     DEBUG |   44 | Processor       | [PROCESSOR] DOC_VALID doc=about_app.adoc valid=True reason=Success
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=about_app.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=about_app.adoc key=Title value=About
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=about_app.adoc key=SystemPage value=Yes
-     DEBUG |   98 | Processor       | [PROCESSOR] HASH doc=about_app.adoc body=f4a4fe68107c563a3df0c4c011ce370425321940365d63cfa4f8ce5faf6d4ecce769e165aae5ca87b41b67d38cf83bc514069c5e5fc3a018ea64c4f08636217e meta=8905f10dc192afeb122dc8980cc14d2c
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=about_app.adoc resource=about_app.html
-     DEBUG |  180 | Backend         | [BACKEND] KBDICT_SAVED path=/home/runner/work/blog/blog/var/db/kbdict.json
-     DEBUG |  296 | Backend         | [BACKEND] EXTRACTION_END
-     DEBUG |  297 | Backend         | [BACKEND] ANALYSIS_START
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251208-2230.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251228-KB4IT-incremental-compiling.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251214-0030.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251226-PyGTK4.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20260216-EAT.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_kb4it.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=python3-dev.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251231-1400-log_module.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_app.adoc body=True meta=False title=False not_cached=False compile=True
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
+     DEBUG |  297 | Backend         | [BACKEND] EXTRACTION_START
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20251208-2230.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20251208-2230.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Title value=Blog theme features a new index page
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Product value=KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Product value=Mako
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=index
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=page
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Tag value=template
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251208-2230.adoc key=Updated value=2025-12-08 23:00:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20251208-2230.adoc body=6bdc2f32d0fa935e5f0f5b3adde36767d941e1f4930d74f0e748815d9e90b79a782bb2fc5eae70f2bed8b26a8afff91d9c57327dbc0ec263cf92466af856d22d meta=e544bba6c454a40ee5291f80156e2d7f
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20251208-2230.adoc resource=20251208-2230.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20251228-KB4IT-incremental-compiling.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20251228-KB4IT-incremental-compiling.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Title value=KB4IT incremental compiling in Github (experimental)
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Topic value=Automation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Product value=KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Product value=Github Actions
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=incremental
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=compiling
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=vm
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=workflow
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Tag value=cache
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251228-KB4IT-incremental-compiling.adoc key=Updated value=2026-01-11 13:30:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20251228-KB4IT-incremental-compiling.adoc body=ee3d91dd10ee3364d1379885a7ba23e4ec1bd0f2438782c847b407d33462c2d50c25e660cc6c512f7d4d0c0ab871ff9a8f6e8060054ab758222a258ae30eaa06 meta=d024c0a2f289055f1bd7c07f362d31d5
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20251228-KB4IT-incremental-compiling.adoc resource=20251228-KB4IT-incremental-compiling.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20251214-0030.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20251214-0030.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Title value=Pixi: Managing Python Environments
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Topic value=Package management
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Pixi
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Product value=Pypi
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=project
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=build
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=dependency
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Tag value=environment
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251214-0030.adoc key=Updated value=2025-12-14 00:30:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20251214-0030.adoc body=6ecccba319398f4bf9b7a09d66a152cf240a7a4cde1048238f746ac21d7251632e8f75a8522bd046ac9acac7442b70bfe59ca74bbb85b7ed8ee6473bbbbd1eaa meta=3eccf77fbb1cb5cb7dea626d9a09dfff
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20251214-0030.adoc resource=20251214-0030.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20251226-PyGTK4.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20251226-PyGTK4.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Title value=App development with GTK, Python and Libadwaita
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Topic value=Documentation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=GTK
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=Libadwaita
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=PyGObject
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=GNOME
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Product value=MiAZ
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Tag value=api
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Tag value=documentation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Programming Language value=Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Bookmark value=Yes
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251226-PyGTK4.adoc key=Updated value=2025-12-28 18:40:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20251226-PyGTK4.adoc body=4fd3b9113e0762dda54a4ec774c0ec15375a372f811a020e4a9865680bc038f6db45f8ea5a7f5196d04bdb60d1daf0265f3f5472d8f6b2954caa1f345c2c605d meta=69c59149e352128a049ae388d7d76f0f
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20251226-PyGTK4.adoc resource=20251226-PyGTK4.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20260216-EAT.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20260216-EAT.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Title value=KB4IT: Worflow amended: Now it EATs
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Topic value=Refactoring
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Product value=KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=workflow
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=extraction
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=analysis
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Tag value=transformation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20260216-EAT.adoc key=Updated value=2026-02-16 17:30:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20260216-EAT.adoc body=be2cd8c74e6de369c1a09540c0394d1eb79e231afb94f5896458946480032ea45bc1fc2b4e0f0c3582a2eb5425376944d386acc44adea63b2c297e8065e43a14 meta=690ffc11834edd38e9a611fc6b55905e
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20260216-EAT.adoc resource=20260216-EAT.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=about_kb4it.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=about_kb4it.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=about_kb4it.adoc key=Title value=About KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=about_kb4it.adoc key=SystemPage value=Yes
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=about_kb4it.adoc body=36423e01e2f14d22dd5521c11da6b80558718b3ddf536cfffa6908f0ce1c40dd6b3aadcbb0d972d3ba3cdd7631fae74c18809dcc49cc287b659a802d527f41af meta=d0f6f3e5297dba0614dd462a53336c1d
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=about_kb4it.adoc resource=about_kb4it.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=python3-dev.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=python3-dev.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Title value=Useful links for Python developers
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Topic value=Documentation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Product value=Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=awesome
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=framework
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=library
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=resource
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Tag value=algorithm
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Programming Language value=Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Bookmark value=Yes
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=python3-dev.adoc key=Updated value=2026-01-11 20:50:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=python3-dev.adoc body=d1353961074c786361e5f7df92366163165986a2628baf5bc3fe1ac5090d2fb57f2573c15612e726d4032d36b7db950c74b96ea7619e76613470ae4f7032ccc6 meta=fb435db5ed9ec04b3ce8ae41169c8c8d
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=python3-dev.adoc resource=python3-dev.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=20251231-1400-log_module.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=20251231-1400-log_module.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Title value=A log module for KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Author value=Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Category value=Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Topic value=Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Topic value=Troubleshooting
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Product value=KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=logging
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=redirect
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Tag value=filehandler
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Programming Language value=Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=20251231-1400-log_module.adoc key=Updated value=2026-01-11 13:35:00
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=20251231-1400-log_module.adoc body=58cb48ae187c22facfc3befb37836ac7587721b2e9cc2a9e85c202625365c4c9b8752e34c45088065510f92ee445e2dc434260eacb5c46e1ad0d6cb6c5552a41 meta=e256be37b8a34175c78ad95d50fa55b9
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=20251231-1400-log_module.adoc resource=20251231-1400-log_module.html
+     DEBUG |   45 | Processor       | [PROCESSOR] DOC_VALID doc=about_app.adoc valid=True reason=Success
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=about_app.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=about_app.adoc key=Title value=About
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=about_app.adoc key=SystemPage value=Yes
+     DEBUG |   99 | Processor       | [PROCESSOR] HASH doc=about_app.adoc body=f4a4fe68107c563a3df0c4c011ce370425321940365d63cfa4f8ce5faf6d4ecce769e165aae5ca87b41b67d38cf83bc514069c5e5fc3a018ea64c4f08636217e meta=8905f10dc192afeb122dc8980cc14d2c
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=about_app.adoc resource=about_app.html
+     DEBUG |  183 | Backend         | [BACKEND] KBDICT_SAVED path=/home/runner/work/blog/blog/var/db/kbdict.json
+     DEBUG |  299 | Backend         | [BACKEND] EXTRACTION_END
+     DEBUG |  300 | Backend         | [BACKEND] ANALYSIS_START
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251208-2230.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251228-KB4IT-incremental-compiling.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251214-0030.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251226-PyGTK4.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20260216-EAT.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_kb4it.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=python3-dev.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251231-1400-log_module.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_app.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
      DEBUG |  152 | Processor       | [PROCESSOR] KEYS_ALL count=0
      DEBUG |  153 | Processor       | [PROCESSOR] KEYS_IGNORED count=2
      DEBUG |  154 | Processor       | [PROCESSOR] KEYS_AVAILABLE count=0
-     DEBUG |  155 | Processor       | [PROCESSOR] FORCE_KV_PAIRS count=0
-     DEBUG |  299 | Backend         | [BACKEND] ANALYSIS_END
-     DEBUG |  300 | Backend         | [BACKEND] TRANSFORMATION_START
+     DEBUG |  155 | Processor       | [PROCESSOR] FORCE_KV_PAIRS count=46
+     DEBUG |  302 | Backend         | [BACKEND] ANALYSIS_END
+     DEBUG |  303 | Backend         | [BACKEND] TRANSFORMATION_START
      DEBUG |  318 | Processor       | [PROCESSOR] TRANSFORM_START
-     DEBUG |  348 | Processor       | [PROCESSOR] KEYS_TO_COMPILE n=0
-     DEBUG |  349 | Processor       | [PROCESSOR] KV_PAIRS_TO_COMPILE n=0
-     DEBUG |  350 | Processor       | [PROCESSOR] TARGET_DOCS n=9
-     DEBUG |  351 | Processor       | [PROCESSOR] TRANSFORM_END
-     DEBUG |  302 | Backend         | [BACKEND] TRANSFORMATION_END
+     DEBUG |  347 | Processor       | [PROCESSOR] KEYS_TO_COMPILE n=0
+     DEBUG |  348 | Processor       | [PROCESSOR] KV_PAIRS_TO_COMPILE n=0
+     DEBUG |  349 | Processor       | [PROCESSOR] TARGET_DOCS n=9
+     DEBUG |  350 | Processor       | [PROCESSOR] TRANSFORM_END
+     DEBUG |  305 | Backend         | [BACKEND] TRANSFORMATION_END
       INFO |  131 | Workflow        | [WORKFLOW] STAGE n=4 name=process_theme
-     DEBUG |  306 | Backend         | [BACKEND] THEME_START
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=index.adoc resource=index.html
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=index.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=index.adoc key=Title value=Index
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=index.adoc key=SystemPage value=Yes
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=events.adoc resource=events.html
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=events.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=events.adoc key=Title value=Archive
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=events.adoc key=SystemPage value=Yes
+     DEBUG |  309 | Backend         | [BACKEND] THEME_START
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=index.adoc resource=index.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=index.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=index.adoc key=Title value=Index
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=index.adoc key=SystemPage value=Yes
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=events.adoc resource=events.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=events.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events.adoc key=Title value=Archive
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events.adoc key=SystemPage value=Yes
      DEBUG |  403 | Theme           | [THEME] SKIP reason=no_key_changes func=build_page_properties
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=properties.adoc resource=properties.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=properties.adoc resource=properties.html
      DEBUG |  500 | Theme           | [THEME] SKIP reason=no_key_changes func=build_page_stats
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=stats.adoc resource=stats.html
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=stats.adoc resource=stats.html
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
      DEBUG |  791 | Theme           | [THEME] BOOKMARKS_FOUND n=0
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=bookmarks.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=Title value=Bookmarks
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=SystemPage value=Yes
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=bookmarks.adoc resource=bookmarks.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=bookmarks.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=Title value=Bookmarks
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=bookmarks.adoc resource=bookmarks.html
      DEBUG |  804 | Theme           | [THEME] BOOKMARKS_PAGE_CREATED
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
-     DEBUG |  185 | Backend         | [BACKEND] ADD_TARGET doc=all.adoc resource=all.html
-     DEBUG |   62 | Database        | [DATABASE] DOC_ADD doc=all.adoc
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=all.adoc key=Title value=All documents
-     DEBUG |   73 | Database        | [DATABASE] KV_ADD doc=all.adoc key=SystemPage value=Yes
-     DEBUG |  308 | Backend         | [BACKEND] THEME_END
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=all.adoc resource=all.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=all.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=all.adoc key=Title value=All documents
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=all.adoc key=SystemPage value=Yes
+     DEBUG |  311 | Backend         | [BACKEND] THEME_END
       INFO |  134 | Workflow        | [WORKFLOW] STAGE n=5 name=compilation
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Compiler
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Compiler
      DEBUG |   59 | Compiler        | [SERVICE] STARTED name=Compiler
-     DEBUG |   32 | Compiler        | [COMPILER] START
-     DEBUG |   42 | Compiler        | [COMPILER] RESOURCES_COPIED
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=experimental value=None
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=icons value=font
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=linkcss value=None
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=source-highlighter value=highlight.js
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=toc value=left
-     DEBUG |   46 | Compiler        | [COMPILER] ADOCPROP name=toclevels value=2
-     DEBUG |   58 | Compiler        | [COMPILER] TARGETS count=15
-     DEBUG |   62 | Compiler        | [COMPILER] WORKERS n=2
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20251208-2230.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20251214-0030.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20251226-PyGTK4.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20251228-KB4IT-incremental-compiling.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20251231-1400-log_module.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=20260216-EAT.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=about_app.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=about_kb4it.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=all.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=bookmarks.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=events.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=index.adoc
-     DEBUG |   81 | Compiler        | [COMPILER] QUEUE doc=python3-dev.adoc
-     DEBUG |   90 | Compiler        | [COMPILER] COMPILATION_START
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251208-2230.adoc rc=True
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
-     DEBUG |  131 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
-   WARNING |  108 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251214-0030.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251228-KB4IT-incremental-compiling.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251226-PyGTK4.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20260216-EAT.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251231-1400-log_module.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_app.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_kb4it.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=bookmarks.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=all.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=index.adoc rc=True
-      INFO |  111 | Compiler        | [COMPILER] ASCIIDOCTOR doc=python3-dev.adoc rc=True
-     DEBUG |   93 | Compiler        | [COMPILER] COMPILED n=13
-     DEBUG |   96 | Compiler        | [COMPILER] END
+     DEBUG |   62 | Compiler        | [COMPILER] START
+     DEBUG |   72 | Compiler        | [COMPILER] RESOURCES_COPIED
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=experimental value=None
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=icons value=font
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=linkcss value=None
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=source-highlighter value=highlight.js
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=toc value=left
+     DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=toclevels value=2
+     DEBUG |   88 | Compiler        | [COMPILER] TARGETS count=15
+     DEBUG |   92 | Compiler        | [COMPILER] WORKERS n=2
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251208-2230.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251214-0030.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251226-PyGTK4.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251228-KB4IT-incremental-compiling.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251231-1400-log_module.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20260216-EAT.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=about_app.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=about_kb4it.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=all.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=bookmarks.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=index.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=python3-dev.adoc
+     DEBUG |  115 | Compiler        | [COMPILER] COMPILATION_START
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251208-2230.adoc rc=True
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251208-2230.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251208-2230.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251228-KB4IT-incremental-compiling.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251228-KB4IT-incremental-compiling.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251214-0030.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251214-0030.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251226-PyGTK4.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251226-PyGTK4.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20260216-EAT.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20260216-EAT.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=python3-dev.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=python3-dev.adoc value=None
+     DEBUG |  129 | Database        | [DATABASE] DATE_MISSING doc=20251231-1400-log_module.adoc
+   WARNING |  107 | Database        | [DATABASE] DATE_INVALID doc=20251231-1400-log_module.adoc value=None
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251214-0030.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251228-KB4IT-incremental-compiling.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251226-PyGTK4.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251231-1400-log_module.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20260216-EAT.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_kb4it.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_app.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=all.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=bookmarks.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=index.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=python3-dev.adoc rc=True
+     DEBUG |  118 | Compiler        | [COMPILER] COMPILED n=13
+     DEBUG |  121 | Compiler        | [COMPILER] END
       INFO |  137 | Workflow        | [WORKFLOW] STAGE n=6 name=theme_post
      DEBUG |  376 | Theme           | [THEME] POST_START
      DEBUG |  379 | Theme           | [THEME] POST_END
       INFO |  140 | Workflow        | [WORKFLOW] STAGE n=7 name=deploy
-     DEBUG |  118 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Deployer
+     DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Deployer
      DEBUG |   59 | Deployer        | [SERVICE] STARTED name=Deployer
      DEBUG |   28 | Deployer        | [DEPLOYER] START
      DEBUG |   29 | Deployer        | [DEPLOYER] DEPLOY_BEGIN
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251208-2230.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251214-0030.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20260216-EAT.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/about_kb4it.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/python3-dev.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/about_app.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |  101 | Util            | 9 documents copied to '/home/runner/work/blog/blog/var/cache'
-     DEBUG |   69 | Deployer        | [DEPLOYER] TARGET_CLEARED path=/home/runner/work/blog/blog/docs
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251208-2230.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251214-0030.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20260216-EAT.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/about_kb4it.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/python3-dev.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/source/about_app.adoc to /home/runner/work/blog/blog/docs/sources
-     DEBUG |  101 | Util            | 9 documents copied to '/home/runner/work/blog/blog/docs/sources'
-     DEBUG |   77 | Deployer        | [DEPLOYER] COPIED_SOURCES_TO_TARGET n=9
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.adoc to /home/runner/work/blog/blog/var/cache
-     DEBUG |  101 | Util            | 26 documents copied to '/home/runner/work/blog/blog/var/cache'
-     DEBUG |   82 | Deployer        | [DEPLOYER] COPIED_ALL_TO_CACHE n=26
-     DEBUG |  100 | Deployer        | [DEPLOYER] COPIED_CACHED_TO_TARGET n=15
-     DEBUG |  119 | Deployer        | [DEPLOYER] COPIED_GLOBAL_RESOURCES
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/python3-dev.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/index.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/properties.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/about_kb4it.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/bookmarks.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/stats.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20251208-2230.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20251214-0030.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20251228-KB4IT-incremental-compiling.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20251231-1400-log_module.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/all.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/events.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20251226-PyGTK4.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/20260216-EAT.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   98 | Util            | Copied /home/runner/work/blog/blog/docs/about_app.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |  101 | Util            | 15 documents copied to '/home/runner/work/blog/blog/var/cache'
-     DEBUG |  139 | Deployer        | [DEPLOYER] COPIED_HTML_BACK_TO_CACHE
-     DEBUG |  152 | Deployer        | [DEPLOYER] CLEANUP
-     DEBUG |   45 | Deployer        | [DEPLOYER] END
-      INFO |  147 | Workflow        | [WORKFLOW] BUILD_COMPLETE
-      INFO |  148 | Workflow        | [WORKFLOW] URL /home/runner/work/blog/blog/docs/index.html
-      INFO |  149 | Workflow        | [WORKFLOW] LOG path=/home/runner/work/blog/blog/var/log/kb4it.log
-      INFO |  150 | Workflow        | [WORKFLOW] END
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=DB
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Backend
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Frontend
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Builder
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Workflow
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Processor
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Theme
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Compiler
-     DEBUG |  131 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Deployer
-     DEBUG |  162 | KB4IT           | [CONTROLLER] END version=0.7.31+build.1
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20251208-2230.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20251214-0030.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20260216-EAT.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/about_kb4it.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/python3-dev.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/about_app.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   97 | Util            | 9 documents copied to '/home/runner/work/blog/blog/var/cache'
+     DEBUG |   70 | Deployer        | [DEPLOYER] SOURCES_TO_TARGET copied=9 deleted=0
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   97 | Util            | 26 documents copied to '/home/runner/work/blog/blog/var/cache'
+     DEBUG |   75 | Deployer        | [DEPLOYER] COPIED_ALL_TO_CACHE n=26
+     ERROR |   92 | Deployer        | [DEPLOYER] ERROR [Errno 2] No such file or directory: '/home/runner/work/blog/blog/var/cache/properties.html'
+     ERROR |   93 | Deployer        | [DEPLOYER] HINT rerun with -force
+     DEBUG |   51 | Deployer        | [SERVICE] TRACEBACK
+Traceback (most recent call last):
+  File "/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it/services/deployer.py", line 89, in step_07_copy_compiled_documents_to_target
+    shutil.copy(source, target)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/shutil.py", line 489, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/share/uv/python/cpython-3.14.4-linux-x86_64-gnu/lib/python3.14/shutil.py", line 313, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/blog/blog/var/cache/properties.html'
+
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=DB
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Backend
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Frontend
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Builder
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Workflow
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Processor
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Theme
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Compiler
+     DEBUG |  158 | KB4IT           | [CONTROLLER] SERVICE_UNREGISTER name=Deployer
+     DEBUG |  189 | KB4IT           | [CONTROLLER] END version=0.7.39+build.23

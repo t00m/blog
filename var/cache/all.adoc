@@ -1,0 +1,12 @@
+= All documents
+
+// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+
+++++
+<div class ="uk-container uk-overflow-auto">
+<div class="uk-flex uk-flex-top uk-flex-center uk-height-viewport uk-background-muted uk-padding-large">
+        <span class="uk-text-lead uk-text-danger">No matching records found.</span>
+</div>
+
+</div>
+++++
