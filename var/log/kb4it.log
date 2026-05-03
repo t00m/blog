@@ -5,9 +5,9 @@
      DEBUG |   83 | KB4IT           | [CONTROLLER] GPATH_ROOT path=/home/runner/.local/share/uv/tools/kb4it/lib/python3.14/site-packages/kb4it
      DEBUG |   84 | KB4IT           | [CONTROLLER] LPATH_ROOT path=/home/runner/.kb4it
      DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=action value=build
-     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=config value=config/blog.json
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=config value=config/blog_force_mode.json
      DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=force value=False
-     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=log_level value=INFO
+     DEBUG |  102 | KB4IT           | [CONTROLLER] PARAM name=log_level value=DEBUG
      DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=DB
      DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Backend
      DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Frontend
@@ -16,13 +16,13 @@
      DEBUG |   59 | Workflow        | [SERVICE] STARTED name=Workflow
      DEBUG |  165 | KB4IT           | [CONTROLLER] START version=0.7.39+build.24
      DEBUG |  166 | KB4IT           | [CONTROLLER] ACTION name=build
-     DEBUG |   41 | Backend         | [BACKEND] CONFIG_FILE path=/home/runner/work/blog/blog/config/blog.json
+     DEBUG |   41 | Backend         | [BACKEND] CONFIG_FILE path=/home/runner/work/blog/blog/config/blog_force_mode.json
      DEBUG |   43 | Backend         | [BACKEND] CONFIG_LOADED
+     DEBUG |   80 | Backend         | [BACKEND] VAR_CLEARED path=/home/runner/work/blog/blog/var reason=force
      DEBUG |   95 | Backend         | [BACKEND] LOG_FILE path=/home/runner/work/blog/blog/var/log/kb4it.log
      DEBUG |   59 | Database        | [SERVICE] STARTED name=Database
      DEBUG |   59 | Builder         | [SERVICE] STARTED name=Builder
      DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Processor
-     DEBUG |  167 | Backend         | [BACKEND] KBDICT_LOAD path=/home/runner/work/blog/blog/var/db/kbdict.json
      DEBUG |  176 | Backend         | [BACKEND] KBDICT_ENTRIES n=2
      DEBUG |   59 | Processor       | [SERVICE] STARTED name=Processor
      DEBUG |   59 | Backend         | [SERVICE] STARTED name=Backend
@@ -184,137 +184,402 @@
      DEBUG |  183 | Backend         | [BACKEND] KBDICT_SAVED path=/home/runner/work/blog/blog/var/db/kbdict.json
      DEBUG |  299 | Backend         | [BACKEND] EXTRACTION_END
      DEBUG |  300 | Backend         | [BACKEND] ANALYSIS_START
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251208-2230.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251228-KB4IT-incremental-compiling.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251214-0030.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251226-PyGTK4.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20260216-EAT.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_kb4it.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=python3-dev.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251231-1400-log_module.adoc body=False meta=False title=False not_cached=False compile=False
-     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_app.adoc body=False meta=False title=False not_cached=False compile=False
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251208-2230.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251228-KB4IT-incremental-compiling.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251214-0030.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251226-PyGTK4.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20260216-EAT.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_kb4it.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=python3-dev.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=20251231-1400-log_module.adoc body=True meta=True title=True not_cached=True compile=True
+     DEBUG |  256 | Processor       | [PROCESSOR] ANALYZE doc=about_app.adoc body=True meta=True title=True not_cached=True compile=True
      DEBUG |  152 | Processor       | [PROCESSOR] KEYS_ALL count=7
      DEBUG |  153 | Processor       | [PROCESSOR] KEYS_IGNORED count=2
      DEBUG |  154 | Processor       | [PROCESSOR] KEYS_AVAILABLE count=7
-     DEBUG |  155 | Processor       | [PROCESSOR] FORCE_KV_PAIRS count=0
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Author value=Tomás Vírseda compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Author compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Bookmark value=Yes compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Bookmark compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Category value=Post compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Category compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Github Actions compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=GNOME compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=GTK compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=KB4IT compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Libadwaita compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Mako compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=MiAZ compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Pixi compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=PyGObject compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Pypi compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Product value=Python compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Product compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Programming Language value=Python compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Programming Language compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=algorithm compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=analysis compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=api compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=awesome compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=build compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=cache compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=compiling compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=dependency compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=documentation compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=environment compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=extraction compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=filehandler compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=framework compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=incremental compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=index compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=library compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=logging compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=page compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=project compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=redirect compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=resource compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=template compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=transformation compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=vm compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Tag value=workflow compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Tag compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Automation compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Development compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Documentation compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Package management compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Refactoring compile=False
-     DEBUG |  301 | Processor       | [PROCESSOR] KV key=Topic value=Troubleshooting compile=False
-     DEBUG |  304 | Processor       | [PROCESSOR] KEY key=Topic compile=False
+     DEBUG |  155 | Processor       | [PROCESSOR] FORCE_KV_PAIRS count=46
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Author compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Bookmark compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Category compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Product compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Programming Language compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Tag compile=True forced=True
+     DEBUG |  284 | Processor       | [PROCESSOR] KEY key=Topic compile=True forced=True
      DEBUG |  302 | Backend         | [BACKEND] ANALYSIS_END
      DEBUG |  303 | Backend         | [BACKEND] TRANSFORMATION_START
      DEBUG |  318 | Processor       | [PROCESSOR] TRANSFORM_START
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Author value=Tomás Vírseda count=7
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Author.adoc resource=Author.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Author.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Author.adoc key=Title value=Author
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Author.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Author.adoc resource=Author.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Bookmark value=Yes count=2
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Bookmark.adoc resource=Bookmark.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Bookmark.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Bookmark.adoc key=Title value=Bookmark
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Bookmark.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Bookmark.adoc resource=Bookmark.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Category value=Post count=7
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Category.adoc resource=Category.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Category.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Category.adoc key=Title value=Category
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Category.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Category.adoc resource=Category.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Github Actions count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=GNOME count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=GTK count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=KB4IT count=5
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Libadwaita count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Mako count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=MiAZ count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Pixi count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=PyGObject count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Pypi count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Product value=Python count=2
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product.adoc resource=Product.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product.adoc key=Title value=Product
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product.adoc resource=Product.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Programming Language value=Python count=3
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Programming_Language.adoc resource=Programming_Language.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Programming_Language.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Programming_Language.adoc key=Title value=Programming Language
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Programming_Language.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Programming_Language.adoc resource=Programming_Language.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=algorithm count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=analysis count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=api count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=awesome count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=build count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=cache count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=compiling count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=dependency count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=documentation count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=environment count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=extraction count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=filehandler count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=framework count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=incremental count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=index count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=library count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=logging count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=page count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=project count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=redirect count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=resource count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=template count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=transformation count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=vm count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Tag value=workflow count=2
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag.adoc resource=Tag.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag.adoc key=Title value=Tag
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag.adoc key=SystemPage value=Yes
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag.adoc resource=Tag.html
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Automation count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Development count=6
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Documentation count=2
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Package management count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Refactoring count=1
+     DEBUG |  262 | Database        | [DATABASE] KV_SEARCH key=Topic value=Troubleshooting count=1
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic.adoc resource=Topic.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic.adoc key=Title value=Topic
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic.adoc resource=Topic.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Author_Tomás_Vírseda.adoc resource=Author_Tomás_Vírseda.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Author_Tomás_Vírseda.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Author_Tomás_Vírseda.adoc key=Title value=Author: Tomás Vírseda
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Author_Tomás_Vírseda.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Author value=Tomás Vírseda resource=Author_Tomás_Vírseda
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Author_Tomás_Vírseda.adoc resource=Author_Tomás_Vírseda.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Bookmark_Yes.adoc resource=Bookmark_Yes.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Bookmark_Yes.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Bookmark_Yes.adoc key=Title value=Bookmark: Yes
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Bookmark_Yes.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Bookmark value=Yes resource=Bookmark_Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Bookmark_Yes.adoc resource=Bookmark_Yes.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Category_Post.adoc resource=Category_Post.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Category_Post.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Category_Post.adoc key=Title value=Category: Post
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Category_Post.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Category value=Post resource=Category_Post
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Category_Post.adoc resource=Category_Post.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Github_Actions.adoc resource=Product_Github_Actions.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Github_Actions.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Github_Actions.adoc key=Title value=Product: Github Actions
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Github_Actions.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Github Actions resource=Product_Github_Actions
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Github_Actions.adoc resource=Product_Github_Actions.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_GNOME.adoc resource=Product_GNOME.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_GNOME.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_GNOME.adoc key=Title value=Product: GNOME
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_GNOME.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=GNOME resource=Product_GNOME
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_GNOME.adoc resource=Product_GNOME.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_GTK.adoc resource=Product_GTK.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_GTK.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_GTK.adoc key=Title value=Product: GTK
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_GTK.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=GTK resource=Product_GTK
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_GTK.adoc resource=Product_GTK.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_KB4IT.adoc resource=Product_KB4IT.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_KB4IT.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_KB4IT.adoc key=Title value=Product: KB4IT
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_KB4IT.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=KB4IT resource=Product_KB4IT
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_KB4IT.adoc resource=Product_KB4IT.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Libadwaita.adoc resource=Product_Libadwaita.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Libadwaita.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Libadwaita.adoc key=Title value=Product: Libadwaita
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Libadwaita.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Libadwaita resource=Product_Libadwaita
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Libadwaita.adoc resource=Product_Libadwaita.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Mako.adoc resource=Product_Mako.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Mako.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Mako.adoc key=Title value=Product: Mako
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Mako.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Mako resource=Product_Mako
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Mako.adoc resource=Product_Mako.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_MiAZ.adoc resource=Product_MiAZ.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_MiAZ.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_MiAZ.adoc key=Title value=Product: MiAZ
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_MiAZ.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=MiAZ resource=Product_MiAZ
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_MiAZ.adoc resource=Product_MiAZ.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Pixi.adoc resource=Product_Pixi.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Pixi.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Pixi.adoc key=Title value=Product: Pixi
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Pixi.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Pixi resource=Product_Pixi
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Pixi.adoc resource=Product_Pixi.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_PyGObject.adoc resource=Product_PyGObject.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_PyGObject.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_PyGObject.adoc key=Title value=Product: PyGObject
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_PyGObject.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=PyGObject resource=Product_PyGObject
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_PyGObject.adoc resource=Product_PyGObject.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Pypi.adoc resource=Product_Pypi.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Pypi.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Pypi.adoc key=Title value=Product: Pypi
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Pypi.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Pypi resource=Product_Pypi
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Pypi.adoc resource=Product_Pypi.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Python.adoc resource=Product_Python.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Product_Python.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Python.adoc key=Title value=Product: Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Product_Python.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Product value=Python resource=Product_Python
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Product_Python.adoc resource=Product_Python.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Programming_Language_Python.adoc resource=Programming_Language_Python.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Programming_Language_Python.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Programming_Language_Python.adoc key=Title value=Programming Language: Python
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Programming_Language_Python.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Programming Language value=Python resource=Programming_Language_Python
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Programming_Language_Python.adoc resource=Programming_Language_Python.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_algorithm.adoc resource=Tag_algorithm.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_algorithm.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_algorithm.adoc key=Title value=Tag: algorithm
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_algorithm.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=algorithm resource=Tag_algorithm
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_algorithm.adoc resource=Tag_algorithm.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_analysis.adoc resource=Tag_analysis.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_analysis.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_analysis.adoc key=Title value=Tag: analysis
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_analysis.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=analysis resource=Tag_analysis
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_analysis.adoc resource=Tag_analysis.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_api.adoc resource=Tag_api.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_api.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_api.adoc key=Title value=Tag: api
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_api.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=api resource=Tag_api
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_api.adoc resource=Tag_api.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_awesome.adoc resource=Tag_awesome.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_awesome.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_awesome.adoc key=Title value=Tag: awesome
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_awesome.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=awesome resource=Tag_awesome
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_awesome.adoc resource=Tag_awesome.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_build.adoc resource=Tag_build.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_build.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_build.adoc key=Title value=Tag: build
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_build.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=build resource=Tag_build
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_build.adoc resource=Tag_build.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_cache.adoc resource=Tag_cache.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_cache.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_cache.adoc key=Title value=Tag: cache
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_cache.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=cache resource=Tag_cache
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_cache.adoc resource=Tag_cache.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_compiling.adoc resource=Tag_compiling.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_compiling.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_compiling.adoc key=Title value=Tag: compiling
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_compiling.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=compiling resource=Tag_compiling
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_compiling.adoc resource=Tag_compiling.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_dependency.adoc resource=Tag_dependency.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_dependency.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_dependency.adoc key=Title value=Tag: dependency
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_dependency.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=dependency resource=Tag_dependency
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_dependency.adoc resource=Tag_dependency.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_documentation.adoc resource=Tag_documentation.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_documentation.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_documentation.adoc key=Title value=Tag: documentation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_documentation.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=documentation resource=Tag_documentation
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_documentation.adoc resource=Tag_documentation.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_environment.adoc resource=Tag_environment.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_environment.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_environment.adoc key=Title value=Tag: environment
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_environment.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=environment resource=Tag_environment
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_environment.adoc resource=Tag_environment.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_extraction.adoc resource=Tag_extraction.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_extraction.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_extraction.adoc key=Title value=Tag: extraction
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_extraction.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=extraction resource=Tag_extraction
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_extraction.adoc resource=Tag_extraction.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_filehandler.adoc resource=Tag_filehandler.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_filehandler.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_filehandler.adoc key=Title value=Tag: filehandler
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_filehandler.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=filehandler resource=Tag_filehandler
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_filehandler.adoc resource=Tag_filehandler.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_framework.adoc resource=Tag_framework.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_framework.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_framework.adoc key=Title value=Tag: framework
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_framework.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=framework resource=Tag_framework
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_framework.adoc resource=Tag_framework.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_incremental.adoc resource=Tag_incremental.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_incremental.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_incremental.adoc key=Title value=Tag: incremental
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_incremental.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=incremental resource=Tag_incremental
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_incremental.adoc resource=Tag_incremental.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_index.adoc resource=Tag_index.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_index.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_index.adoc key=Title value=Tag: index
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_index.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=index resource=Tag_index
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_index.adoc resource=Tag_index.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_library.adoc resource=Tag_library.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_library.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_library.adoc key=Title value=Tag: library
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_library.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=library resource=Tag_library
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_library.adoc resource=Tag_library.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_logging.adoc resource=Tag_logging.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_logging.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_logging.adoc key=Title value=Tag: logging
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_logging.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=logging resource=Tag_logging
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_logging.adoc resource=Tag_logging.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_page.adoc resource=Tag_page.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_page.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_page.adoc key=Title value=Tag: page
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_page.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=page resource=Tag_page
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_page.adoc resource=Tag_page.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_project.adoc resource=Tag_project.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_project.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_project.adoc key=Title value=Tag: project
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_project.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=project resource=Tag_project
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_project.adoc resource=Tag_project.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_redirect.adoc resource=Tag_redirect.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_redirect.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_redirect.adoc key=Title value=Tag: redirect
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_redirect.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=redirect resource=Tag_redirect
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_redirect.adoc resource=Tag_redirect.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_resource.adoc resource=Tag_resource.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_resource.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_resource.adoc key=Title value=Tag: resource
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_resource.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=resource resource=Tag_resource
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_resource.adoc resource=Tag_resource.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_template.adoc resource=Tag_template.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_template.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_template.adoc key=Title value=Tag: template
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_template.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=template resource=Tag_template
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_template.adoc resource=Tag_template.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_transformation.adoc resource=Tag_transformation.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_transformation.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_transformation.adoc key=Title value=Tag: transformation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_transformation.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=transformation resource=Tag_transformation
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_transformation.adoc resource=Tag_transformation.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_vm.adoc resource=Tag_vm.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_vm.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_vm.adoc key=Title value=Tag: vm
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_vm.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=vm resource=Tag_vm
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_vm.adoc resource=Tag_vm.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_workflow.adoc resource=Tag_workflow.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Tag_workflow.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_workflow.adoc key=Title value=Tag: workflow
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Tag_workflow.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Tag value=workflow resource=Tag_workflow
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Tag_workflow.adoc resource=Tag_workflow.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Automation.adoc resource=Topic_Automation.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Automation.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Automation.adoc key=Title value=Topic: Automation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Automation.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Automation resource=Topic_Automation
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Automation.adoc resource=Topic_Automation.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Development.adoc resource=Topic_Development.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Development.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Development.adoc key=Title value=Topic: Development
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Development.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Development resource=Topic_Development
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Development.adoc resource=Topic_Development.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Documentation.adoc resource=Topic_Documentation.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Documentation.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Documentation.adoc key=Title value=Topic: Documentation
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Documentation.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Documentation resource=Topic_Documentation
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Documentation.adoc resource=Topic_Documentation.html
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Package_management.adoc resource=Topic_Package_management.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Package_management.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Package_management.adoc key=Title value=Topic: Package management
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Package_management.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Package management resource=Topic_Package_management
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Package_management.adoc resource=Topic_Package_management.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Refactoring.adoc resource=Topic_Refactoring.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Refactoring.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Refactoring.adoc key=Title value=Topic: Refactoring
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Refactoring.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Refactoring resource=Topic_Refactoring
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Refactoring.adoc resource=Topic_Refactoring.html
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Troubleshooting.adoc resource=Topic_Troubleshooting.html
-     DEBUG |  347 | Processor       | [PROCESSOR] KEYS_TO_COMPILE n=0
-     DEBUG |  348 | Processor       | [PROCESSOR] KV_PAIRS_TO_COMPILE n=0
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=Topic_Troubleshooting.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Troubleshooting.adoc key=Title value=Topic: Troubleshooting
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=Topic_Troubleshooting.adoc key=SystemPage value=Yes
+     DEBUG |  781 | Theme           | [THEME] KV_TARGET key=Topic value=Troubleshooting resource=Topic_Troubleshooting
+     DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=Topic_Troubleshooting.adoc resource=Topic_Troubleshooting.html
+     DEBUG |  347 | Processor       | [PROCESSOR] KEYS_TO_COMPILE n=7
+     DEBUG |  348 | Processor       | [PROCESSOR] KV_PAIRS_TO_COMPILE n=46
      DEBUG |  349 | Processor       | [PROCESSOR] TARGET_DOCS n=62
      DEBUG |  350 | Processor       | [PROCESSOR] TRANSFORM_END
      DEBUG |  305 | Backend         | [BACKEND] TRANSFORMATION_END
       INFO |  131 | Workflow        | [WORKFLOW] STAGE n=4 name=process_theme
      DEBUG |  309 | Backend         | [BACKEND] THEME_START
-     DEBUG |  133 | Theme           | [THEME] SKIP reason=no_doc_changes func=build_page_index
+     DEBUG |  177 | Theme           | [THEME] INDEX_ADD doc=20260216-EAT.adoc
+     DEBUG |  177 | Theme           | [THEME] INDEX_ADD doc=python3-dev.adoc
+     DEBUG |  177 | Theme           | [THEME] INDEX_ADD doc=20251231-1400-log_module.adoc
+     DEBUG |  177 | Theme           | [THEME] INDEX_ADD doc=20251228-KB4IT-incremental-compiling.adoc
+     DEBUG |  177 | Theme           | [THEME] INDEX_ADD doc=20251226-PyGTK4.adoc
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=index.adoc resource=index.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=index.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=index.adoc key=Title value=Index
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=index.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=events_20260216.adoc resource=events_20260216.html
      DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=events_20260216.adoc
      DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events_20260216.adoc key=Title value=Events on Monday, February 16, 2026
@@ -365,16 +630,35 @@
      DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events_2025.adoc key=Title value=Archive / 2025
      DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events_2025.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=events_2025.adoc resource=events_2025.html
-     DEBUG |  366 | Theme           | [THEME] SKIP reason=no_doc_changes func=build_page_events
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=events.adoc resource=events.html
-     DEBUG |  409 | Theme           | [THEME] SKIP reason=no_key_changes func=build_page_properties
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=events.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events.adoc key=Title value=Archive
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=events.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=properties.adoc resource=properties.html
-     DEBUG |  508 | Theme           | [THEME] SKIP reason=no_key_changes func=build_page_stats
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=properties.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=properties.adoc key=Title value=Metadata
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=properties.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=stats.adoc resource=stats.html
-     DEBUG |  789 | Theme           | [THEME] SKIP reason=no_doc_changes func=build_page_bookmarks
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=stats.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=stats.adoc key=Title value=Stats
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=stats.adoc key=SystemPage value=Yes
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20260216-EAT.adoc bookmark= is_bookmarked=False
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=python3-dev.adoc bookmark=Yes is_bookmarked=True
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20251231-1400-log_module.adoc bookmark= is_bookmarked=False
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20251228-KB4IT-incremental-compiling.adoc bookmark= is_bookmarked=False
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20251226-PyGTK4.adoc bookmark=Yes is_bookmarked=True
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20251214-0030.adoc bookmark= is_bookmarked=False
+     DEBUG |  799 | Theme           | [THEME] BOOKMARK_CHECK doc=20251208-2230.adoc bookmark= is_bookmarked=False
+     DEBUG |  803 | Theme           | [THEME] BOOKMARKS_FOUND n=2
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=bookmarks.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=Title value=Bookmarks
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=bookmarks.adoc key=SystemPage value=Yes
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=bookmarks.adoc resource=bookmarks.html
-     DEBUG |  538 | Theme           | [THEME] SKIP reason=no_doc_changes func=build_page_index_all
+     DEBUG |  816 | Theme           | [THEME] BOOKMARKS_PAGE_CREATED
      DEBUG |  188 | Backend         | [BACKEND] ADD_TARGET doc=all.adoc resource=all.html
+     DEBUG |   63 | Database        | [DATABASE] DOC_ADD doc=all.adoc
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=all.adoc key=Title value=All documents
+     DEBUG |   74 | Database        | [DATABASE] KV_ADD doc=all.adoc key=SystemPage value=Yes
      DEBUG |  311 | Backend         | [BACKEND] THEME_END
       INFO |  134 | Workflow        | [WORKFLOW] STAGE n=5 name=compilation
      DEBUG |  145 | KB4IT           | [CONTROLLER] SERVICE_REGISTER name=Compiler
@@ -389,6 +673,70 @@
      DEBUG |   76 | Compiler        | [COMPILER] ADOCPROP name=toclevels value=2
      DEBUG |   88 | Compiler        | [COMPILER] TARGETS count=78
      DEBUG |   92 | Compiler        | [COMPILER] WORKERS n=2
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251208-2230.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251214-0030.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251226-PyGTK4.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251228-KB4IT-incremental-compiling.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20251231-1400-log_module.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=20260216-EAT.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Author.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Author_Tomás_Vírseda.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Bookmark.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Bookmark_Yes.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Category.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Category_Post.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_GNOME.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_GTK.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Github_Actions.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_KB4IT.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Libadwaita.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Mako.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_MiAZ.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Pixi.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_PyGObject.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Pypi.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Product_Python.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Programming_Language.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Programming_Language_Python.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_algorithm.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_analysis.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_api.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_awesome.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_build.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_cache.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_compiling.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_dependency.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_documentation.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_environment.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_extraction.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_filehandler.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_framework.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_incremental.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_index.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_library.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_logging.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_page.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_project.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_redirect.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_resource.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_template.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_transformation.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_vm.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Tag_workflow.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Automation.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Development.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Documentation.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Package_management.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Refactoring.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=Topic_Troubleshooting.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=about_app.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=about_kb4it.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=all.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=bookmarks.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events.adoc
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_2025.adoc
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_202512.adoc
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_20251208.adoc
@@ -399,9 +747,77 @@
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_20260111.adoc
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_202602.adoc
      DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=events_20260216.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=index.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=properties.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=python3-dev.adoc
+     DEBUG |  108 | Compiler        | [COMPILER] QUEUE doc=stats.adoc
      DEBUG |  115 | Compiler        | [COMPILER] COMPILATION_START
-      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_202512.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251208-2230.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251214-0030.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251226-PyGTK4.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251228-KB4IT-incremental-compiling.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20251231-1400-log_module.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=20260216-EAT.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Author.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Author_Tomás_Vírseda.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Bookmark.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Bookmark_Yes.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Category.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Category_Post.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_GNOME.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Github_Actions.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_GTK.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_KB4IT.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Libadwaita.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Mako.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_MiAZ.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Pixi.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_PyGObject.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Pypi.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Product_Python.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Programming_Language.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Programming_Language_Python.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_algorithm.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_analysis.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_api.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_awesome.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_build.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_cache.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_compiling.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_dependency.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_documentation.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_environment.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_extraction.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_filehandler.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_framework.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_incremental.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_index.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_library.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_logging.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_page.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_project.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_redirect.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_resource.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_template.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_transformation.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_vm.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Tag_workflow.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Automation.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Development.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Documentation.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Package_management.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Refactoring.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=Topic_Troubleshooting.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_app.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=about_kb4it.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=all.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=bookmarks.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_2025.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_202512.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_20251208.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_20251214.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_20251228.adoc rc=True
@@ -410,7 +826,11 @@
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_20260111.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_202602.adoc rc=True
       INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=events_20260216.adoc rc=True
-     DEBUG |  118 | Compiler        | [COMPILER] COMPILED n=10
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=index.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=properties.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=python3-dev.adoc rc=True
+      INFO |  135 | Compiler        | [COMPILER] ASCIIDOCTOR doc=stats.adoc rc=True
+     DEBUG |  118 | Compiler        | [COMPILER] COMPILED n=78
      DEBUG |  121 | Compiler        | [COMPILER] END
       INFO |  137 | Workflow        | [WORKFLOW] STAGE n=6 name=theme_post
      DEBUG |  380 | Theme           | [THEME] POST_START
@@ -431,28 +851,164 @@
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/source/about_app.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   97 | Util            | 9 documents copied to '/home/runner/work/blog/blog/var/cache'
      DEBUG |   70 | Deployer        | [DEPLOYER] SOURCES_TO_TARGET copied=9 deleted=0
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Programming_Language.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251208.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_redirect.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_cache.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_compiling.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_api.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Mako.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_logging.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_vm.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251228.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Programming_Language.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Documentation.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251208.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_extraction.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Bookmark.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Development.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_environment.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202601.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_analysis.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_incremental.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Bookmark_Yes.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Category.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_documentation.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_build.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251228.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_cache.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_page.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Bookmark.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_awesome.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_library.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20260111.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_dependency.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_transformation.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_KB4IT.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_api.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_page.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Author.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Pixi.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_environment.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Pixi.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_GTK.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Automation.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/properties.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Github_Actions.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_GTK.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_transformation.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Category_Post.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Automation.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202602.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_2026.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/index.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/bookmarks.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Libadwaita.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_project.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/stats.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Github_Actions.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_workflow.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251208-2230.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_framework.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Pypi.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_workflow.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_GNOME.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Refactoring.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Documentation.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_analysis.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/properties.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251214.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202601.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_vm.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_algorithm.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_dependency.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251214-0030.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_template.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202512.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Development.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_logging.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_resource.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Mako.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20251214.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_kb4it.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_index.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Category_Post.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251228-KB4IT-incremental-compiling.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Package_management.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_resource.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202602.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_index.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_extraction.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Python.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Author_Tomás_Vírseda.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/all.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_MiAZ.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_2025.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Package_management.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_compiling.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_2026.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Pypi.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_build.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/python3-dev.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_KB4IT.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Bookmark_Yes.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_algorithm.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Troubleshooting.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251226-PyGTK4.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_MiAZ.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_GNOME.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Python.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Category.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_PyGObject.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_incremental.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20260216-EAT.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Author_Tomás_Vírseda.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_redirect.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_2025.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_PyGObject.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_filehandler.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_framework.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Author.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20260111.adoc to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20260216.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Troubleshooting.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_template.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic_Refactoring.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_filehandler.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_library.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_documentation.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Programming_Language_Python.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Programming_Language_Python.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_202512.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/20251231-1400-log_module.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Product_Libadwaita.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Topic.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/about_app.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/stats.adoc to /home/runner/work/blog/blog/var/cache
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_awesome.html to /home/runner/work/blog/blog/var/cache
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/events_20260216.html to /home/runner/work/blog/blog/var/cache
-     DEBUG |   97 | Util            | 20 documents copied to '/home/runner/work/blog/blog/var/cache'
-     DEBUG |   75 | Deployer        | [DEPLOYER] COPIED_ALL_TO_CACHE n=20
+     DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/var/tmp/Tag_project.html to /home/runner/work/blog/blog/var/cache
+     DEBUG |   97 | Util            | 156 documents copied to '/home/runner/work/blog/blog/var/cache'
+     DEBUG |   75 | Deployer        | [DEPLOYER] COPIED_ALL_TO_CACHE n=156
      DEBUG |  105 | Deployer        | [DEPLOYER] HTML_TO_TARGET copied=78 deleted=0
      DEBUG |  124 | Deployer        | [DEPLOYER] COPIED_GLOBAL_RESOURCES
      DEBUG |   94 | Util            | Copied /home/runner/work/blog/blog/docs/events_20251208.html to /home/runner/work/blog/blog/var/cache
