@@ -1,24 +1,27 @@
-= Pixi: Managing Python Environments
+---
+Author: Tomás Vírseda
+Category: Post
+Command: pixi
+Date: 2025-12-14 00:30:00
+DocType: How-to guide
+Filename: repo.json
+Filesystem: /home/t00m/tmp/myblog/config
+Product: KB4IT, Python, Pixi, Pypi
+Tag: build, dependency, environment, project
+Topic: Package management
+---
 
-:Author:        Tomás Vírseda
-:Category:      Post
-:Topic:         Package management
-:Product:       KB4IT, Python, Pixi, Pypi
-:Tag:           project, build, dependency, environment
-:Date:       2025-12-14 00:30:00
+# Pixi: Managing Python Environments
 
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+## Excerpt
 
-== Excerpt
+[Pixi](https://pixi.sh/latest/) is a fast, modern, and reproducible package management tool for developers of all backgrounds.
 
-https://pixi.sh/latest/[Pixi] is a fast, modern, and reproducible package management tool for developers of all backgrounds.
-
-== Notes
+## Notes
 
 `pyproject.toml` adapted and it is on testing phase:
 
-[source]
-----
+```toml
 [project]
 authors = [{name = "Tomás Vírseda", email = "tomasvirseda@gmail.com"}]
 dependencies = []
@@ -62,7 +65,7 @@ lxml = ">=6.0.2,<7"
 version = "kb4it --version"
 myblog_force = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f"
 myblog = "kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json"
-----
+```
 
 Useful commands:
 

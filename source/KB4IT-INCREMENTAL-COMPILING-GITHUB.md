@@ -1,33 +1,34 @@
-= KB4IT incremental compiling in Github (experimental)
+---
+Author: Tomás Vírseda
+Category: Post
+Command: date, git
+Date: 2026-01-11 13:30:00
+DocType: How-to guide
+Product: Github Actions, KB4IT
+Tag: cache, compiling, incremental, vm, workflow
+Topic: Automation, Development
+---
 
-:Author:        Tomás Vírseda
-:Category:      Post
-:Topic:         Development, Automation
-:Product:       KB4IT, Github Actions
-:Tag:           incremental, compiling, vm, workflow, cache,
-:Date:       2026-01-11 13:30:00
+# KB4IT incremental compiling in Github (experimental)
 
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
-
-== Excerpt
+## Excerpt
 
 These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).
 
 To my initial surprise, it didn't work in Github.
 
-== Github actions
+## Github actions
 
-In Github, when a new update is detected in the source directory, the Github action in charge (https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml[update-blog.yml]) of updating the website is executed.
+In Github, when a new update is detected in the source directory, the Github action in charge ([update-blog.yml](https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml)) of updating the website is executed.
 
 GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.
 
-== Solution
+## Solution
 
 Now, instead using `.kb4it` directory under `$USER` directory, it uses the own Github repository.
 Then, once kb4it finishes the compilation, all changes are pushed automatically.
 
-[source, yaml]
-----
+```yaml
       # Commit changes
       - name: Commit and push changes (if any)
         run: |
@@ -45,4 +46,4 @@ Then, once kb4it finishes the compilation, all changes are pushed automatically.
             git commit -m "Auto-update target/ after KB4IT build [$(date -u)]"
             git push
           fi
-----
+```

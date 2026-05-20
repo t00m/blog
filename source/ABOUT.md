@@ -1,16 +1,20 @@
-= About
+---
+Author: Tomás Vírseda
+Category: Note
+Date: 2026-05-20
+DocType: Explanation
+SystemPage: Yes
+Tag: about, blog
+---
 
-:SystemPage: Yes
+# About
 
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
-
-++++
 <ul class="uk-accordion-default" uk-accordion>
     <li class="uk-open">
         <a class="uk-accordion-title" href>About this blog</a>
         <div class="uk-accordion-content">
             <p>This is my public knowledge base where I document technical solutions, code snippets, and resources I find useful.</p>
-            <p>Think of it as my digital notebook rather than polished articles—a collection of practical notes about Python development, automation workflows, and software tooling.</p>
+            <p>Think of it as my digital notebook rather than polished articles&mdash;a collection of practical notes about Python development, automation workflows, and software tooling.</p>
             <p>Most posts revolve around KB4IT, a static site generator I am developing and use to build this very site. And MiAZ, my other pet project for organizing documents.</p>
             <p>
                 <div class="uk-alert-primary" uk-alert>
@@ -28,4 +32,3 @@
         </div>
     </li>
 </ul>
-++++

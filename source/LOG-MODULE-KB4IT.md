@@ -1,28 +1,31 @@
-= A log module for KB4IT
+---
+Author: Tomás Vírseda
+Category: Post
+Command: kb4it
+Date: 2026-01-11 13:35:00
+DocType: Reference
+Filename: homerunnerworkblogblogsource.log, index.html
+Filesystem: /home/runner/work/blog/blog/docs, /home/runner/work/blog/blog/var/log
+Product: KB4IT
+ProgrammingLanguage: Python
+Tag: filehandler, logging, redirect
+Topic: Development, Troubleshooting
+---
 
-:Author:                Tomás Vírseda
-:Category:              Post
-:Topic:                 Development, Troubleshooting
-:Product:               KB4IT
-:Tag:                   logging, redirect, filehandler
-:Programming Language:  Python
-:Date:               2026-01-11 13:35:00
+# A log module for KB4IT
 
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
-
-== Excerpt
+## Excerpt
 
 A very useful log module to allow redirecting logs to another file in runtime.
 
 KB4IT needs this feature to redirect logs to the right file when a new instance is executed.
 
-== Features
+## Features
 
-* *Log redirection*: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
-* *Distinct levels for console and file handlers*: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
-+
-[source]
-----
+* **Log redirection**: when KB4IT is executed, it doesn't know which application is going to be executed, so the first logs are sent to a temporary log directory. Once the backend is aware about which app (or project) is started, temporary logs are copied to the right destination and the log module redirects the logging there. In this way, the user have the complete trace.
+* **Distinct levels for console and file handlers**: Console handler (the output displayed in the workflow) is set by default to level INFO (minimum). For troubleshooting purposes, the whole trace with level DEBUG is sent to the log file.
+
+```
 Run kb4it -L INFO build config/blog.json -w 8
 
       INFO |   99 | Workflow             | 11/01/2026 12:38:45.751 | Building a website for repository 't00mterías'
@@ -42,12 +45,11 @@ Run kb4it -L INFO build config/blog.json -w 8
       INFO |  124 | Workflow             | 11/01/2026 12:38:52.467 | URL: /home/runner/work/blog/blog/docs/index.html
       INFO |  125 | Workflow             | 11/01/2026 12:38:52.467 | Full log: /home/runner/work/blog/blog/var/log/homerunnerworkblogblogsource.log
       INFO |  126 | Workflow             | 11/01/2026 12:38:52.467 | The End
-----
+```
 
-== Code
+## Code
 
-[source, python]
-----
+```python
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -135,5 +137,4 @@ def redirect_logs(logfile: str):
     file_handler.setFormatter(formatter)
     file_handler.setLevel(logging.DEBUG)
     root.addHandler(file_handler)
-----
-
+```
