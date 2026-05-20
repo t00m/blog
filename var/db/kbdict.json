@@ -1,6 +1,193 @@
 {
     "document": {
-        "20251208-2230.adoc": {
+        "ABOUT-KB4IT.md": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Note"
+            ],
+            "Date": [
+                "2026-05-20 00:00:00"
+            ],
+            "DocType": [
+                "Explanation"
+            ],
+            "Product": [
+                "Asciidoctor",
+                "KB4IT"
+            ],
+            "SystemPage": [
+                "True"
+            ],
+            "Tag": [
+                "about",
+                "license"
+            ],
+            "Title": [
+                "About KB4IT"
+            ],
+            "body_hash": "8470bf272038a2cdde229cac3893b8fa3a599d6eba51165aa8b8653cf8d30037d499a317ea313a469a83a7e648aefd7f8405a1a072614ba2088c912bf3e95662",
+            "content": "/home/runner/work/blog/blog/source/ABOUT-KB4IT.md",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Note"
+                ],
+                "Date": [
+                    "2026-05-20"
+                ],
+                "DocType": [
+                    "Explanation"
+                ],
+                "Product": [
+                    "Asciidoctor",
+                    "KB4IT"
+                ],
+                "SystemPage": [
+                    "True"
+                ],
+                "Tag": [
+                    "about",
+                    "license"
+                ],
+                "Title": [
+                    "About KB4IT"
+                ]
+            },
+            "metadata_hash": "4fd55b671860b2a1af7aec8413434a499de226e1b5a1f5785ce3c5378b522243d0c01be78341b41413495ed53f6ab00ad0958881ee2118d8d9d7ad5928a80e8c"
+        },
+        "ABOUT.md": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Note"
+            ],
+            "Date": [
+                "2026-05-20 00:00:00"
+            ],
+            "DocType": [
+                "Explanation"
+            ],
+            "SystemPage": [
+                "True"
+            ],
+            "Tag": [
+                "about",
+                "blog"
+            ],
+            "Title": [
+                "About"
+            ],
+            "body_hash": "42d4a76e2b19a91dcb268202ed76f7dbbf2ed3c7905948fdd5febe280e7d628ee4933bb933472433fb88890946c50b5009ca9f7c86253d4ff2eb45e1d42e04f2",
+            "content": "/home/runner/work/blog/blog/source/ABOUT.md",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Note"
+                ],
+                "Date": [
+                    "2026-05-20"
+                ],
+                "DocType": [
+                    "Explanation"
+                ],
+                "SystemPage": [
+                    "True"
+                ],
+                "Tag": [
+                    "about",
+                    "blog"
+                ],
+                "Title": [
+                    "About"
+                ]
+            },
+            "metadata_hash": "71d8ae83621aa604fc53f6494d0f56a9e85646c6f593da6bda950af18fec85bd13023320e2e1269d98559ff2aee2b1b9bb63f9ff7b7590b0b5d7d5da59885d9b"
+        },
+        "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Bookmark": [
+                "True"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Date": [
+                "2025-12-28 18:40:00"
+            ],
+            "DocType": [
+                "Reference"
+            ],
+            "Product": [
+                "GNOME",
+                "GTK",
+                "Libadwaita",
+                "MiAZ",
+                "PyGObject"
+            ],
+            "ProgrammingLanguage": [
+                "Python"
+            ],
+            "Tag": [
+                "api"
+            ],
+            "Title": [
+                "App development with GTK, Python and Libadwaita"
+            ],
+            "Topic": [
+                "Development",
+                "Documentation"
+            ],
+            "body_hash": "b16c30ee6caf3e4f5809a71a5b7071526732e325233378ca35aa008e2525e2702df0e280d34a0d4790595db1382b87fb9f24e6c4e5586a438069a8fbb65cf1af",
+            "content": "/home/runner/work/blog/blog/source/APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+            "keys": {
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Bookmark": [
+                    "True"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Date": [
+                    "2025-12-28 18:40:00"
+                ],
+                "DocType": [
+                    "Reference"
+                ],
+                "Product": [
+                    "GTK",
+                    "GNOME",
+                    "Libadwaita",
+                    "MiAZ",
+                    "PyGObject"
+                ],
+                "ProgrammingLanguage": [
+                    "Python"
+                ],
+                "Tag": [
+                    "api"
+                ],
+                "Title": [
+                    "App development with GTK, Python and Libadwaita"
+                ],
+                "Topic": [
+                    "Development",
+                    "Documentation"
+                ]
+            },
+            "metadata_hash": "58875f4598a25021328e260c33927db885d2be79d83f40c0142f926da6566754abb9161369deb45fe89bb94e679cfbe69642fa0d683be813867592636c9b64aa"
+        },
+        "BLOG-THEME-NEW-INDEX-PAGE.md": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
             ],
@@ -9,6 +196,9 @@
             ],
             "Date": [
                 "2025-12-08 23:00:00"
+            ],
+            "DocType": [
+                "Explanation"
             ],
             "Product": [
                 "KB4IT",
@@ -25,8 +215,8 @@
             "Topic": [
                 "Development"
             ],
-            "body_hash": "6bdc2f32d0fa935e5f0f5b3adde36767d941e1f4930d74f0e748815d9e90b79a782bb2fc5eae70f2bed8b26a8afff91d9c57327dbc0ec263cf92466af856d22d",
-            "content": "/home/runner/work/blog/blog/source/20251208-2230.adoc",
+            "body_hash": "19e78f77b97390b13b1d8cd2c961d93642354c6724ea575059acea60bcbf5d2d25a951e5f399a255017c42a0b072bb1c67bb0eef36037adc8430032097583fab",
+            "content": "/home/runner/work/blog/blog/source/BLOG-THEME-NEW-INDEX-PAGE.md",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -36,6 +226,9 @@
                 ],
                 "Date": [
                     "2025-12-08 23:00:00"
+                ],
+                "DocType": [
+                    "Explanation"
                 ],
                 "Product": [
                     "KB4IT",
@@ -53,151 +246,24 @@
                     "Development"
                 ]
             },
-            "metadata_hash": "30214ac5e4dc29e1ed215cc360f780d4"
+            "metadata_hash": "b1aeff2d47e1bbbe392ca52b2e5fb8615ba9049d5c535e47fb4a6b29ab3644fca1cf6ba4414e01df12a57f2d60564ad3c060ea80fc97ad3613b97b2777cc4179"
         },
-        "20251214-0030.adoc": {
+        "KB4IT-INCREMENTAL-COMPILING-GITHUB.md": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
             ],
             "Category": [
                 "Post"
             ],
-            "Date": [
-                "2025-12-14 00:30:00"
-            ],
-            "Product": [
-                "KB4IT",
-                "Pixi",
-                "Pypi",
-                "Python"
-            ],
-            "Tag": [
-                "build",
-                "dependency",
-                "environment",
-                "project"
-            ],
-            "Title": [
-                "Pixi: Managing Python Environments"
-            ],
-            "Topic": [
-                "Package management"
-            ],
-            "body_hash": "6ecccba319398f4bf9b7a09d66a152cf240a7a4cde1048238f746ac21d7251632e8f75a8522bd046ac9acac7442b70bfe59ca74bbb85b7ed8ee6473bbbbd1eaa",
-            "content": "/home/runner/work/blog/blog/source/20251214-0030.adoc",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Date": [
-                    "2025-12-14 00:30:00"
-                ],
-                "Product": [
-                    "KB4IT",
-                    "Python",
-                    "Pixi",
-                    "Pypi"
-                ],
-                "Tag": [
-                    "project",
-                    "build",
-                    "dependency",
-                    "environment"
-                ],
-                "Title": [
-                    "Pixi: Managing Python Environments"
-                ],
-                "Topic": [
-                    "Package management"
-                ]
-            },
-            "metadata_hash": "506ad58fc5ea38d2345bf62433437ece"
-        },
-        "20251226-PyGTK4.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Bookmark": [
-                "Yes"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Date": [
-                "2025-12-28 18:40:00"
-            ],
-            "Product": [
-                "GNOME",
-                "GTK",
-                "Libadwaita",
-                "MiAZ",
-                "PyGObject"
-            ],
-            "Programming Language": [
-                "Python"
-            ],
-            "Tag": [
-                "api",
-                "documentation"
-            ],
-            "Title": [
-                "App development with GTK, Python and Libadwaita"
-            ],
-            "Topic": [
-                "Development",
-                "Documentation"
-            ],
-            "body_hash": "4fd3b9113e0762dda54a4ec774c0ec15375a372f811a020e4a9865680bc038f6db45f8ea5a7f5196d04bdb60d1daf0265f3f5472d8f6b2954caa1f345c2c605d",
-            "content": "/home/runner/work/blog/blog/source/20251226-PyGTK4.adoc",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Bookmark": [
-                    "Yes"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Date": [
-                    "2025-12-28 18:40:00"
-                ],
-                "Product": [
-                    "GTK",
-                    "Libadwaita",
-                    "PyGObject",
-                    "GNOME",
-                    "MiAZ"
-                ],
-                "Programming Language": [
-                    "Python"
-                ],
-                "Tag": [
-                    "api",
-                    "documentation"
-                ],
-                "Title": [
-                    "App development with GTK, Python and Libadwaita"
-                ],
-                "Topic": [
-                    "Development",
-                    "Documentation"
-                ]
-            },
-            "metadata_hash": "416663431dfd490ae6d4a925a4ab5c62"
-        },
-        "20251228-KB4IT-incremental-compiling.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
+            "Command": [
+                "date",
+                "git"
             ],
             "Date": [
                 "2026-01-11 13:30:00"
+            ],
+            "DocType": [
+                "How-to guide"
             ],
             "Product": [
                 "Github Actions",
@@ -217,8 +283,8 @@
                 "Automation",
                 "Development"
             ],
-            "body_hash": "ee3d91dd10ee3364d1379885a7ba23e4ec1bd0f2438782c847b407d33462c2d50c25e660cc6c512f7d4d0c0ab871ff9a8f6e8060054ab758222a258ae30eaa06",
-            "content": "/home/runner/work/blog/blog/source/20251228-KB4IT-incremental-compiling.adoc",
+            "body_hash": "94b8142030a993a2a3874ac9006b10daf6489786e0ac7fcb5fdc96f084df0a4768358b62bc5d41c87b1de1aeedb81221f2ae073c61833a63f279f2b7ea6705ad",
+            "content": "/home/runner/work/blog/blog/source/KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -226,93 +292,38 @@
                 "Category": [
                     "Post"
                 ],
+                "Command": [
+                    "date",
+                    "git"
+                ],
                 "Date": [
                     "2026-01-11 13:30:00"
                 ],
+                "DocType": [
+                    "How-to guide"
+                ],
                 "Product": [
-                    "KB4IT",
-                    "Github Actions"
+                    "Github Actions",
+                    "KB4IT"
                 ],
                 "Tag": [
-                    "incremental",
-                    "compiling",
-                    "vm",
-                    "workflow",
                     "cache",
-                    ""
+                    "compiling",
+                    "incremental",
+                    "vm",
+                    "workflow"
                 ],
                 "Title": [
                     "KB4IT incremental compiling in Github (experimental)"
                 ],
                 "Topic": [
-                    "Development",
-                    "Automation"
+                    "Automation",
+                    "Development"
                 ]
             },
-            "metadata_hash": "7a3e938114c82ea5b0ac7d2811d35a25"
+            "metadata_hash": "a44848887d01b892630de7d4cfd2e406cb80f41340770bc6867146951aff809e1ecd2cd7fb98b4f0c022be19397cb8d27f3c6375e4cab6f89184ad7c90b57607"
         },
-        "20251231-1400-log_module.adoc": {
-            "Author": [
-                "Tom\u00e1s V\u00edrseda"
-            ],
-            "Category": [
-                "Post"
-            ],
-            "Date": [
-                "2026-01-11 13:35:00"
-            ],
-            "Product": [
-                "KB4IT"
-            ],
-            "Programming Language": [
-                "Python"
-            ],
-            "Tag": [
-                "filehandler",
-                "logging",
-                "redirect"
-            ],
-            "Title": [
-                "A log module for KB4IT"
-            ],
-            "Topic": [
-                "Development",
-                "Troubleshooting"
-            ],
-            "body_hash": "58cb48ae187c22facfc3befb37836ac7587721b2e9cc2a9e85c202625365c4c9b8752e34c45088065510f92ee445e2dc434260eacb5c46e1ad0d6cb6c5552a41",
-            "content": "/home/runner/work/blog/blog/source/20251231-1400-log_module.adoc",
-            "keys": {
-                "Author": [
-                    "Tom\u00e1s V\u00edrseda"
-                ],
-                "Category": [
-                    "Post"
-                ],
-                "Date": [
-                    "2026-01-11 13:35:00"
-                ],
-                "Product": [
-                    "KB4IT"
-                ],
-                "Programming Language": [
-                    "Python"
-                ],
-                "Tag": [
-                    "logging",
-                    "redirect",
-                    "filehandler"
-                ],
-                "Title": [
-                    "A log module for KB4IT"
-                ],
-                "Topic": [
-                    "Development",
-                    "Troubleshooting"
-                ]
-            },
-            "metadata_hash": "9ab60aadfab5c3908470aa546392cfb7"
-        },
-        "20260216-EAT.adoc": {
+        "KB4IT-WORKFLOW-EAT.md": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
             ],
@@ -321,6 +332,9 @@
             ],
             "Date": [
                 "2026-02-16 17:30:00"
+            ],
+            "DocType": [
+                "Explanation"
             ],
             "Product": [
                 "KB4IT"
@@ -338,8 +352,8 @@
                 "Development",
                 "Refactoring"
             ],
-            "body_hash": "be2cd8c74e6de369c1a09540c0394d1eb79e231afb94f5896458946480032ea45bc1fc2b4e0f0c3582a2eb5425376944d386acc44adea63b2c297e8065e43a14",
-            "content": "/home/runner/work/blog/blog/source/20260216-EAT.adoc",
+            "body_hash": "04be432ed0e317d93e6f6f6ca0a51f2d2dcadf04049512453d6498c967e566b213a81924cd8245b71269f83527f7cd1161532412d9b50d9774282c463b373675",
+            "content": "/home/runner/work/blog/blog/source/KB4IT-WORKFLOW-EAT.md",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
@@ -350,14 +364,17 @@
                 "Date": [
                     "2026-02-16 17:30:00"
                 ],
+                "DocType": [
+                    "Explanation"
+                ],
                 "Product": [
                     "KB4IT"
                 ],
                 "Tag": [
-                    "workflow",
-                    "extraction",
                     "analysis",
-                    "transformation"
+                    "extraction",
+                    "transformation",
+                    "workflow"
                 ],
                 "Title": [
                     "KB4IT: Worflow amended: Now it EATs"
@@ -367,52 +384,188 @@
                     "Refactoring"
                 ]
             },
-            "metadata_hash": "44a13dd4743afa71e12529ab06168490"
+            "metadata_hash": "2ec116bb46571354dda4bc0a214d225721ab623a67e3906ea976e24cea1dd834d0f0a88f2b14f341587f3dd2e28ec6f5f42b3faeac556b7d380adf3cc9953000"
         },
-        "about_app.adoc": {
-            "SystemPage": [
-                "Yes"
+        "LOG-MODULE-KB4IT.md": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Command": [
+                "kb4it"
+            ],
+            "Date": [
+                "2026-01-11 13:35:00"
+            ],
+            "DocType": [
+                "Reference"
+            ],
+            "Filename": [
+                "homerunnerworkblogblogsource.log",
+                "index.html"
+            ],
+            "Filesystem": [
+                "/home/runner/work/blog/blog/docs",
+                "/home/runner/work/blog/blog/var/log"
+            ],
+            "Product": [
+                "KB4IT"
+            ],
+            "ProgrammingLanguage": [
+                "Python"
+            ],
+            "Tag": [
+                "filehandler",
+                "logging",
+                "redirect"
             ],
             "Title": [
-                "About"
+                "A log module for KB4IT"
             ],
-            "body_hash": "f4a4fe68107c563a3df0c4c011ce370425321940365d63cfa4f8ce5faf6d4ecce769e165aae5ca87b41b67d38cf83bc514069c5e5fc3a018ea64c4f08636217e",
-            "content": "/home/runner/work/blog/blog/source/about_app.adoc",
+            "Topic": [
+                "Development",
+                "Troubleshooting"
+            ],
+            "body_hash": "0d604097640e889a6c0265635993769686088bbb713ebd5cae73e692153abb343d5ef8c06ca3b52f599e9c32903eacadbdbd5f0315a74905cfdc53c35344699d",
+            "content": "/home/runner/work/blog/blog/source/LOG-MODULE-KB4IT.md",
             "keys": {
-                "SystemPage": [
-                    "Yes"
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Command": [
+                    "kb4it"
+                ],
+                "Date": [
+                    "2026-01-11 13:35:00"
+                ],
+                "DocType": [
+                    "Reference"
+                ],
+                "Filename": [
+                    "homerunnerworkblogblogsource.log",
+                    "index.html"
+                ],
+                "Filesystem": [
+                    "/home/runner/work/blog/blog/docs",
+                    "/home/runner/work/blog/blog/var/log"
+                ],
+                "Product": [
+                    "KB4IT"
+                ],
+                "ProgrammingLanguage": [
+                    "Python"
+                ],
+                "Tag": [
+                    "filehandler",
+                    "logging",
+                    "redirect"
                 ],
                 "Title": [
-                    "About"
+                    "A log module for KB4IT"
+                ],
+                "Topic": [
+                    "Development",
+                    "Troubleshooting"
                 ]
             },
-            "metadata_hash": "8905f10dc192afeb122dc8980cc14d2c"
+            "metadata_hash": "34dde571ab4f8c0560d96e62f4d0bb635cebd08f4fe5774bdf4a6c0c9ca2e100fe49b87df94be1996ad752ac7f191844a49b8374d79314d73f2a8a4f28b7319c"
         },
-        "about_kb4it.adoc": {
-            "SystemPage": [
-                "Yes"
+        "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md": {
+            "Author": [
+                "Tom\u00e1s V\u00edrseda"
+            ],
+            "Category": [
+                "Post"
+            ],
+            "Command": [
+                "pixi"
+            ],
+            "Date": [
+                "2025-12-14 00:30:00"
+            ],
+            "DocType": [
+                "How-to guide"
+            ],
+            "Filename": [
+                "repo.json"
+            ],
+            "Filesystem": [
+                "/home/t00m/tmp/myblog/config"
+            ],
+            "Product": [
+                "KB4IT",
+                "Pixi",
+                "Pypi",
+                "Python"
+            ],
+            "Tag": [
+                "build",
+                "dependency",
+                "environment",
+                "project"
             ],
             "Title": [
-                "About KB4IT"
+                "Pixi: Managing Python Environments"
             ],
-            "body_hash": "d9ec06a20189a865f5b839064fde66d25d8d926575354f7f52b2363a89fe0118be661b2918559f213e0e5d3281eae6320f6136e85c86f69e0e1d26031590dbe6",
-            "content": "/home/runner/work/blog/blog/source/about_kb4it.adoc",
+            "Topic": [
+                "Package management"
+            ],
+            "body_hash": "a322a88724958df768f4ee0a2c5898cf0366f88814ab9600e6be334ab56fda9e946f8b0f634b82b054313847feab0482d690e8f265a3245ccfe2170def36a2bb",
+            "content": "/home/runner/work/blog/blog/source/PIXI-MANAGING-PYTHON-ENVIRONMENTS.md",
             "keys": {
-                "SystemPage": [
-                    "Yes"
+                "Author": [
+                    "Tom\u00e1s V\u00edrseda"
+                ],
+                "Category": [
+                    "Post"
+                ],
+                "Command": [
+                    "pixi"
+                ],
+                "Date": [
+                    "2025-12-14 00:30:00"
+                ],
+                "DocType": [
+                    "How-to guide"
+                ],
+                "Filename": [
+                    "repo.json"
+                ],
+                "Filesystem": [
+                    "/home/t00m/tmp/myblog/config"
+                ],
+                "Product": [
+                    "KB4IT",
+                    "Python",
+                    "Pixi",
+                    "Pypi"
+                ],
+                "Tag": [
+                    "build",
+                    "dependency",
+                    "environment",
+                    "project"
                 ],
                 "Title": [
-                    "About KB4IT"
+                    "Pixi: Managing Python Environments"
+                ],
+                "Topic": [
+                    "Package management"
                 ]
             },
-            "metadata_hash": "d0f6f3e5297dba0614dd462a53336c1d"
+            "metadata_hash": "d5271bde8edae75370d8327cae2d9be8becfa06f08d13fc033f81d57005e51ce2530e10fcff634e588444d372e0d02c18f78315c218fefbdc6215a610085dc2b"
         },
-        "python3-dev.adoc": {
+        "USEFUL-LINKS-PYTHON-DEVELOPERS.md": {
             "Author": [
                 "Tom\u00e1s V\u00edrseda"
             ],
             "Bookmark": [
-                "Yes"
+                "True"
             ],
             "Category": [
                 "Post"
@@ -420,10 +573,10 @@
             "Date": [
                 "2026-01-11 20:50:00"
             ],
-            "Product": [
-                "Python"
+            "DocType": [
+                "Reference"
             ],
-            "Programming Language": [
+            "ProgrammingLanguage": [
                 "Python"
             ],
             "Tag": [
@@ -440,14 +593,14 @@
                 "Development",
                 "Documentation"
             ],
-            "body_hash": "35c70ac1147f583f6d12bb923884f610d99622e06b0ae2c5ecb88a61b6400ac4cd57feeb668038d198412c4522dd2f428a1cc016bce69420b55488efd8408fdd",
-            "content": "/home/runner/work/blog/blog/source/python3-dev.adoc",
+            "body_hash": "bf5bfd46c6155061213752001ceab63a11a915187aa08734ae696c51b8981f6c3bab6003cbf64e3c6d67ff3a6c2a5c14fefe8770160685cf0fb38f9dc99ace65",
+            "content": "/home/runner/work/blog/blog/source/USEFUL-LINKS-PYTHON-DEVELOPERS.md",
             "keys": {
                 "Author": [
                     "Tom\u00e1s V\u00edrseda"
                 ],
                 "Bookmark": [
-                    "Yes"
+                    "True"
                 ],
                 "Category": [
                     "Post"
@@ -455,18 +608,18 @@
                 "Date": [
                     "2026-01-11 20:50:00"
                 ],
-                "Product": [
-                    "Python"
+                "DocType": [
+                    "Reference"
                 ],
-                "Programming Language": [
+                "ProgrammingLanguage": [
                     "Python"
                 ],
                 "Tag": [
+                    "algorithm",
                     "awesome",
                     "framework",
                     "library",
-                    "resource",
-                    "algorithm"
+                    "resource"
                 ],
                 "Title": [
                     "Useful links for Python developers"
@@ -476,245 +629,363 @@
                     "Documentation"
                 ]
             },
-            "metadata_hash": "cf5cfc7e7d054cec542961a80c682e10"
+            "metadata_hash": "530e3874c1490e4664d25468e2dc69e000ebf4211e287e5ca2b56e62295e7124972ad27140a4c0166505008ea3220d1bda8f9f137cf7a6673f2d619be2a94341"
+        },
+        "about_app.md": {
+            "SystemPage": [
+                "True"
+            ],
+            "Title": [
+                "About this app"
+            ],
+            "body_hash": "c8fc649fec6d1284b8dcaa7ebcbcfc0d04207d67571a93f201d333bc3615d4efddecf09414e22b0e89a7a7dcdf584153e07b6af56acd5f6f0befab0afc5e8f32",
+            "content": "/home/runner/work/blog/blog/source/about_app.md",
+            "keys": {
+                "SystemPage": [
+                    "True"
+                ],
+                "Title": [
+                    "About this app"
+                ]
+            },
+            "metadata_hash": "856ce8ddde31adb8cb51239511c88910b79e307bfdadc34e802ddd688c8f2d11d41b9a1635f22618384af5305fcda1ec8c6b961cf658ea12c32629654012a343"
+        },
+        "about_kb4it.md": {
+            "SystemPage": [
+                "True"
+            ],
+            "Title": [
+                "About KB4IT"
+            ],
+            "body_hash": "c799ae583cd77209df036d0a6583b232b572fc75ad63a06f90035bdfbd7c5009df5ce3bb8e10b5525d8b6d1b790d09ab4637e651553c42b6c9cc2f7170451318",
+            "content": "/home/runner/work/blog/blog/source/about_kb4it.md",
+            "keys": {
+                "SystemPage": [
+                    "True"
+                ],
+                "Title": [
+                    "About KB4IT"
+                ]
+            },
+            "metadata_hash": "0c6b45f7155497596425ef89c86e38abe27369dc735f408915f5d79ae0dc8ffc8fd83a83e9b8c0a3343a293e4b541a6fa179ef3c7ed57eb0303b8cfaf476869f"
         }
     },
+    "kb4it_version": "0.7.6+build.17",
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
-                "20251208-2230.adoc",
-                "20251214-0030.adoc",
-                "20251226-PyGTK4.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "20260216-EAT.adoc",
-                "python3-dev.adoc"
+                "ABOUT-KB4IT.md",
+                "ABOUT.md",
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "BLOG-THEME-NEW-INDEX-PAGE.md",
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "KB4IT-WORKFLOW-EAT.md",
+                "LOG-MODULE-KB4IT.md",
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ]
         },
         "Bookmark": {
-            "Yes": [
-                "20251226-PyGTK4.adoc",
-                "python3-dev.adoc"
+            "True": [
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ]
         },
         "Category": {
+            "Note": [
+                "ABOUT-KB4IT.md",
+                "ABOUT.md"
+            ],
             "Post": [
-                "20251208-2230.adoc",
-                "20251214-0030.adoc",
-                "20251226-PyGTK4.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "20260216-EAT.adoc",
-                "python3-dev.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "BLOG-THEME-NEW-INDEX-PAGE.md",
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "KB4IT-WORKFLOW-EAT.md",
+                "LOG-MODULE-KB4IT.md",
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+            ]
+        },
+        "Command": {
+            "date": [
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
+            ],
+            "git": [
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
+            ],
+            "kb4it": [
+                "LOG-MODULE-KB4IT.md"
+            ],
+            "pixi": [
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ]
         },
         "Date": {
             "2025-12-08 23:00:00": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "2025-12-14 00:30:00": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "2025-12-28 18:40:00": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "2026-01-11 13:30:00": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "2026-01-11 13:35:00": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ],
             "2026-01-11 20:50:00": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "2026-02-16 17:30:00": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
+            ],
+            "2026-05-20 00:00:00": [
+                "ABOUT-KB4IT.md",
+                "ABOUT.md"
+            ]
+        },
+        "DocType": {
+            "Explanation": [
+                "ABOUT-KB4IT.md",
+                "ABOUT.md",
+                "BLOG-THEME-NEW-INDEX-PAGE.md",
+                "KB4IT-WORKFLOW-EAT.md"
+            ],
+            "How-to guide": [
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
+            ],
+            "Reference": [
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "LOG-MODULE-KB4IT.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+            ]
+        },
+        "Filename": {
+            "homerunnerworkblogblogsource.log": [
+                "LOG-MODULE-KB4IT.md"
+            ],
+            "index.html": [
+                "LOG-MODULE-KB4IT.md"
+            ],
+            "repo.json": [
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
+            ]
+        },
+        "Filesystem": {
+            "/home/runner/work/blog/blog/docs": [
+                "LOG-MODULE-KB4IT.md"
+            ],
+            "/home/runner/work/blog/blog/var/log": [
+                "LOG-MODULE-KB4IT.md"
+            ],
+            "/home/t00m/tmp/myblog/config": [
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ]
         },
         "Product": {
+            "Asciidoctor": [
+                "ABOUT-KB4IT.md"
+            ],
             "GNOME": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "GTK": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "Github Actions": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "KB4IT": [
-                "20251208-2230.adoc",
-                "20251214-0030.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "20260216-EAT.adoc"
+                "ABOUT-KB4IT.md",
+                "BLOG-THEME-NEW-INDEX-PAGE.md",
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "KB4IT-WORKFLOW-EAT.md",
+                "LOG-MODULE-KB4IT.md",
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "Libadwaita": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "Mako": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "MiAZ": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "Pixi": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "PyGObject": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "Pypi": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "Python": [
-                "20251214-0030.adoc",
-                "python3-dev.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ]
         },
-        "Programming Language": {
+        "ProgrammingLanguage": {
             "Python": [
-                "20251226-PyGTK4.adoc",
-                "20251231-1400-log_module.adoc",
-                "python3-dev.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "LOG-MODULE-KB4IT.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ]
         },
         "SystemPage": {
-            "Yes": [
-                "about_app.adoc",
-                "about_kb4it.adoc"
+            "True": [
+                "ABOUT-KB4IT.md",
+                "ABOUT.md",
+                "about_app.md",
+                "about_kb4it.md"
             ]
         },
         "Tag": {
+            "about": [
+                "ABOUT-KB4IT.md",
+                "ABOUT.md"
+            ],
             "algorithm": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "analysis": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
             ],
             "api": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "awesome": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+            ],
+            "blog": [
+                "ABOUT.md"
             ],
             "build": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "cache": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "compiling": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "dependency": [
-                "20251214-0030.adoc"
-            ],
-            "documentation": [
-                "20251226-PyGTK4.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "environment": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "extraction": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
             ],
             "filehandler": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ],
             "framework": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "incremental": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "index": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "library": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+            ],
+            "license": [
+                "ABOUT-KB4IT.md"
             ],
             "logging": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ],
             "page": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "project": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "redirect": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ],
             "resource": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "template": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "transformation": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
             ],
             "vm": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "workflow": [
-                "20251228-KB4IT-incremental-compiling.adoc",
-                "20260216-EAT.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "KB4IT-WORKFLOW-EAT.md"
             ]
         },
         "Title": {
             "A log module for KB4IT": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ],
             "About": [
-                "about_app.adoc"
+                "ABOUT.md"
             ],
             "About KB4IT": [
-                "about_kb4it.adoc"
+                "ABOUT-KB4IT.md",
+                "about_kb4it.md"
+            ],
+            "About this app": [
+                "about_app.md"
             ],
             "App development with GTK, Python and Libadwaita": [
-                "20251226-PyGTK4.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
             ],
             "Blog theme features a new index page": [
-                "20251208-2230.adoc"
+                "BLOG-THEME-NEW-INDEX-PAGE.md"
             ],
             "KB4IT incremental compiling in Github (experimental)": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "KB4IT: Worflow amended: Now it EATs": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
             ],
             "Pixi: Managing Python Environments": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "Useful links for Python developers": [
-                "python3-dev.adoc"
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ]
         },
         "Topic": {
             "Automation": [
-                "20251228-KB4IT-incremental-compiling.adoc"
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md"
             ],
             "Development": [
-                "20251208-2230.adoc",
-                "20251226-PyGTK4.adoc",
-                "20251228-KB4IT-incremental-compiling.adoc",
-                "20251231-1400-log_module.adoc",
-                "20260216-EAT.adoc",
-                "python3-dev.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "BLOG-THEME-NEW-INDEX-PAGE.md",
+                "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+                "KB4IT-WORKFLOW-EAT.md",
+                "LOG-MODULE-KB4IT.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "Documentation": [
-                "20251226-PyGTK4.adoc",
-                "python3-dev.adoc"
+                "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+                "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
             ],
             "Package management": [
-                "20251214-0030.adoc"
+                "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
             ],
             "Refactoring": [
-                "20260216-EAT.adoc"
+                "KB4IT-WORKFLOW-EAT.md"
             ],
             "Troubleshooting": [
-                "20251231-1400-log_module.adoc"
+                "LOG-MODULE-KB4IT.md"
             ]
         }
     }

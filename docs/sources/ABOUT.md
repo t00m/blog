@@ -1,0 +1,34 @@
+---
+Author: Tomás Vírseda
+Category: Note
+Date: 2026-05-20
+DocType: Explanation
+SystemPage: Yes
+Tag: about, blog
+---
+
+# About
+
+<ul class="uk-accordion-default" uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href>About this blog</a>
+        <div class="uk-accordion-content">
+            <p>This is my public knowledge base where I document technical solutions, code snippets, and resources I find useful.</p>
+            <p>Think of it as my digital notebook rather than polished articles&mdash;a collection of practical notes about Python development, automation workflows, and software tooling.</p>
+            <p>Most posts revolve around KB4IT, a static site generator I am developing and use to build this very site. And MiAZ, my other pet project for organizing documents.</p>
+            <p>
+                <div class="uk-alert-primary" uk-alert>
+                    <p>This blog is part of the KB4IT project. It is in active development.</p>
+                </div>
+            </p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>About me</a>
+        <div class="uk-accordion-content">
+            <p>Hi, my name is <a class="uk-link-toggle" href="mailto:tomas.virseda@gmail.com"><span class="uk-link-heading">Tomás Vírseda</span></a>.</p>
+            <p>I love to develop for fun with a focus on free software and the GNOME ecosystem.</p>
+            <p>I enjoy developing with GTK4, Libadwaita, and PyGObject for desktop application development.</p>
+        </div>
+    </li>
+</ul>
