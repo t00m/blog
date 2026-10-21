@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>t00mterías - About this app</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="KB4IT 0.7.6+build.17">
-  <meta name="description" content="KB4IT document">
-  <meta name="author" content="KB4IT by t00m">
+  <meta name="generator" content="KB4IT 0.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/themes/blog/framework/Highlight/styles/github-dark.css">
   <link rel="stylesheet" href="resources/themes/blog/css/blog.css">
@@ -37,6 +36,14 @@
             } );
         } );
   </script>
+<!-- kb4it:meta -->
+<meta name="description" content="My public notes">
+<meta property="og:title" content="t00mterías">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="t00mterías">
+<meta property="og:description" content="My public notes">
+<meta name="twitter:card" content="summary">
+<!-- /kb4it:meta -->
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -46,29 +53,34 @@
             <!-- Main Content Column :: START-->
             <div class="uk-width-3-4@m">
 <!-- BODY :: START -->
+<main class="kb-main">
+<h1 class="uk-hidden-visually">About this app</h1>
 <div hidden>
 <div id="toctitle">Contents</div>
 <ul class="sectlevel1">
-<li><a class="" target="" href="#page-not-found">Page not found</a><ul>
-<li><a class="" target="" href="#problem">Problem</a></li>
-<li><a class="" target="" href="#solution">Solution</a></li>
-</ul>
-</li>
+<li><a href="#page-not-found">Page not found</a></li>
+<li><a href="#how-to-replace-it">How to replace it</a></li>
 </ul>
 </div>
 
-<div id="kb-sect1" class="uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+<div class="kb-sect1 uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
 <h2 class="uk-card-title"
-id="page-not-found">Page not found</h2><div id="kb-section-body" class="uk-container">
-<div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
-<h3 class="uk-card-title" id="problem">Problem</h3><div id="kb-section-body" class="uk-container">
-<p>KB4IT didn't find any document named <code>about_app.md</code> in your sources directory.</p>
-<p>As a result, it created one. This one. The one you are reading now.</p>
-</div></div><div id="kb-sect2" class="sect2 uk-card-hover uk-border-rounded uk-padding-small">
-<h3 class="uk-card-title" id="solution">Solution</h3><div id="kb-section-body" class="uk-container">
-<p>Modify the contents of the file <em>about_app.md</em> in your sources directory with the desired content.</p></div></div></div></div>
+id="page-not-found">Page not found</h2><div class="kb-section-body uk-container">
+<p>KB4IT did not find a document named <code>about_app.md</code> in the sources directory, so it shows this placeholder.</p>
+</div></div><div class="kb-sect1 uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+<h2 class="uk-card-title"
+id="how-to-replace-it">How to replace it</h2><div class="kb-section-body uk-container">
+<p>Create <code>about_app.md</code> in the sources directory and start it with this frontmatter:</p>
+<pre><code>---
+SystemPage: Yes
+---
+# About your application
+</code></pre>
+<p>Then describe the application. KB4IT uses your file from the next build on.</p></div></div>
+</main>
 <!-- BODY :: END -->
                 </div>
+                <!-- Main Content Column :: END-->
                 <!-- Sidebar Column :: START-->
                 <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
                   <div class="uk-sticky" uk-sticky="offset: 40">
@@ -77,6 +89,15 @@ id="page-not-found">Page not found</h2><div id="kb-section-body" class="uk-conta
                         <span class="uk-link-heading">t00mterías</span>
                         </a>
                     </h2>
+                    <div class="uk-flex uk-flex-center uk-margin-small"><form class="kb4it-search" action="search.html" method="get" role="search">
+    <input id="kb4it-search-input" class="kb4it-search-input" type="search" name="q" placeholder="Search" autocomplete="off" aria-label="Search the site">
+    <div id="kb4it-search-dropdown" class="kb4it-search-dropdown" hidden></div>
+</form>
+<link rel="stylesheet" href="resources/common/css/kb4it-search.css">
+<script defer src="search-index.js"></script>
+<script defer src="resources/common/js/kb4it-search.js"></script>
+<script defer src="resources/common/js/kb4it-search-ui.js"></script>
+</div>
                     <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
             <blockquote>
             <p class="uk-text-center">My public notes</p>
@@ -129,17 +150,14 @@ id="page-not-found">Page not found</h2><div id="kb-section-body" class="uk-conta
                         <p>
                             <span class="uk-link">
                                 <a href="about_kb4it.html">
-                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                    <img src="resources/common/images/kb4it-badge-built-with.svg" alt="Built with KB4IT">
                                 </a>
                             </span>
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
                 <!-- Sidebar Column :: END-->
-            </div>
-            <!-- Main Content Column :: END-->
         </div>
         <!-- GRID :: END -->
     </div>

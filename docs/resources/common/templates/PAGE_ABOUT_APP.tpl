@@ -1,17 +1,19 @@
-= About this app
+---
+SystemPage: Yes
+---
+# About this app
 
-:SystemPage: Yes
+${'##'} Page not found
 
-// END-OF-HEADER. DO NOT MODIFY OR DELETE THIS LINE
+KB4IT did not find a document named `about_app.md` in the sources directory, so it shows this placeholder.
 
-== Page not found
+${'##'} How to replace it
 
-=== Problem
+Create `about_app.md` in the sources directory and start it with this frontmatter:
 
-KB4IT didn't find any document named 'about_app.adoc' in your sources directory.
+    ---
+    SystemPage: Yes
+    ---
+    # About your application
 
-As a result, it created one. This one. The one you are reading now.
-
-=== Solution
-
-Modify the contents of the filename _about_app.adoc_ in your sources directory with the desired content.
+Then describe the application. KB4IT uses your file from the next build on.

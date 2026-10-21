@@ -1,0 +1,27 @@
+<h2 id="excerpt">Excerpt</h2>
+<p>These days, after several fixes, I was able to produce a reliable incremental compiling of my knowledge base repositories (or force a whole compilation of the whole KB, if the app meets some conditions).</p>
+<p>To my initial surprise, it didn't work in Github.</p>
+<h2 id="github-actions">Github actions</h2>
+<p>In Github, when a new update is detected in the source directory, the Github action in charge (<a href="https://github.com/t00m/blog/blob/main/.github/workflows/update-blog.yml">update-blog.yml</a>) of updating the website is executed.</p>
+<p>GitHub Actions runners are ephemeral. Every workflow run starts on a fresh VM, so anything written to disk is lost unless you explicitly persist it somewhere.</p>
+<h2 id="solution">Solution</h2>
+<p>Now, instead using <code>.kb4it</code> directory under <code>$USER</code> directory, it uses the own Github repository.
+Then, once kb4it finishes the compilation, all changes are pushed automatically.</p>
+<pre><code class="language-yaml">      # Commit changes
+      - name: Commit and push changes (if any)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Stage all changes in docs/
+          git add docs/
+          git add var/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo &quot;No changes to commit.&quot;
+          else
+            git commit -m &quot;Auto-update target/ after KB4IT build [$(date -u)]&quot;
+            git push
+          fi
+</code></pre>

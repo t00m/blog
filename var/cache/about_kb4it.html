@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>t00mterías - About KB4IT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="KB4IT 0.7.6+build.17">
-  <meta name="description" content="KB4IT document">
-  <meta name="author" content="KB4IT by t00m">
+  <meta name="generator" content="KB4IT 0.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/themes/blog/framework/Highlight/styles/github-dark.css">
   <link rel="stylesheet" href="resources/themes/blog/css/blog.css">
@@ -37,6 +36,14 @@
             } );
         } );
   </script>
+<!-- kb4it:meta -->
+<meta name="description" content="My public notes">
+<meta property="og:title" content="t00mterías">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="t00mterías">
+<meta property="og:description" content="My public notes">
+<meta name="twitter:card" content="summary">
+<!-- /kb4it:meta -->
 </head>
 <body>
     <!-- Blog container :: START -->
@@ -46,17 +53,39 @@
             <!-- Main Content Column :: START-->
             <div class="uk-width-3-4@m">
 <!-- BODY :: START -->
+<main class="kb-main">
+<h1 class="uk-hidden-visually">About KB4IT</h1>
+<div hidden>
+<div id="toctitle">Contents</div>
+<ul class="sectlevel1">
+<li><a href="#description">Description</a></li>
+<li><a href="#copyright">Copyright</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</div>
+
+<div class="kb-sect1 uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+<h2 class="uk-card-title"
+id="description">Description</h2><div class="kb-section-body uk-container">
 <p><strong>KB4IT</strong> is a static website generator mainly for technical documentation purposes.</p>
-<p>It is based on <a class="" target="" href="https://commonmark.org/">Markdown</a> sources and uses the <a class="" target="" href="https://python-markdown.github.io/">python-markdown</a> library to convert them to HTML.</p>
-<p>This website was built using KB4IT 0.7.6+build.17</p>
-<p>For more information, visit the Git <a class="" target="" href="https://github.com/t00m/KB4IT">repository</a>.</p>
+<p>It is based on <a href="https://commonmark.org/">Markdown</a> sources and uses the <a href="https://python-markdown.github.io/">python-markdown</a> library to convert them to HTML.</p>
+<p>This website was built using KB4IT 0.9.0</p>
+<p>For more information, visit the Git <a href="https://github.com/t00m/KB4IT">repository</a>.</p>
+</div></div><div class="kb-sect1 uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+<h2 class="uk-card-title"
+id="copyright">Copyright</h2><div class="kb-section-body uk-container">
 <p>Copyright (C) 2019-2026 Tomás Vírseda</p>
-<p>The code is licensed under the terms of the <a class="" target="" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL v3</a>.</p>
+</div></div><div class="kb-sect1 uk-margin-small-bottom uk-card uk-card-small uk-card-body uk-card-hover uk-border-rounded">
+<h2 class="uk-card-title"
+id="license">License</h2><div class="kb-section-body uk-container">
+<p>The code is licensed under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL v3</a>.</p>
 <blockquote>
 <p>You're free to <strong>grab</strong>, <strong>extend</strong>, <strong>improve</strong> and <strong>fork</strong> the code as you want as long as it stays as GPLv3.</p>
-</blockquote>
+</blockquote></div></div>
+</main>
 <!-- BODY :: END -->
                 </div>
+                <!-- Main Content Column :: END-->
                 <!-- Sidebar Column :: START-->
                 <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
                   <div class="uk-sticky" uk-sticky="offset: 40">
@@ -65,6 +94,15 @@
                         <span class="uk-link-heading">t00mterías</span>
                         </a>
                     </h2>
+                    <div class="uk-flex uk-flex-center uk-margin-small"><form class="kb4it-search" action="search.html" method="get" role="search">
+    <input id="kb4it-search-input" class="kb4it-search-input" type="search" name="q" placeholder="Search" autocomplete="off" aria-label="Search the site">
+    <div id="kb4it-search-dropdown" class="kb4it-search-dropdown" hidden></div>
+</form>
+<link rel="stylesheet" href="resources/common/css/kb4it-search.css">
+<script defer src="search-index.js"></script>
+<script defer src="resources/common/js/kb4it-search.js"></script>
+<script defer src="resources/common/js/kb4it-search-ui.js"></script>
+</div>
                     <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
             <blockquote>
             <p class="uk-text-center">My public notes</p>
@@ -117,17 +155,14 @@
                         <p>
                             <span class="uk-link">
                                 <a href="about_kb4it.html">
-                                    <img src="resources/common/images/kb4it-badge-built-with.svg">
+                                    <img src="resources/common/images/kb4it-badge-built-with.svg" alt="Built with KB4IT">
                                 </a>
                             </span>
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
                 <!-- Sidebar Column :: END-->
-            </div>
-            <!-- Main Content Column :: END-->
         </div>
         <!-- GRID :: END -->
     </div>

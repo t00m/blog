@@ -1,4 +1,109 @@
 {
+    "core_signature": "38eea39e1629c6d40bf88969b69ce9c93776f50554a7d7185138142715b9bd889d90a3e6db252d6ff1d918c4855bb7c305a93d10af78520b3bc8fddbf6107c77",
+    "deployed": [
+        "ABOUT-KB4IT.html",
+        "ABOUT.html",
+        "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.html",
+        "Author.html",
+        "Author_Tom\u00e1s_V\u00edrseda.html",
+        "BLOG-THEME-NEW-INDEX-PAGE.html",
+        "Bookmark.html",
+        "Bookmark_True.html",
+        "Category.html",
+        "Category_Note.html",
+        "Category_Post.html",
+        "Command.html",
+        "Command_date.html",
+        "Command_git.html",
+        "Command_kb4it.html",
+        "Command_pixi.html",
+        "DocType.html",
+        "DocType_Explanation.html",
+        "DocType_How-to_guide.html",
+        "DocType_Reference.html",
+        "Filename.html",
+        "Filename_homerunnerworkblogblogsource.log.html",
+        "Filename_index.html.html",
+        "Filename_repo.json.html",
+        "Filesystem.html",
+        "Filesystem_homerunnerworkblogblogdocs.html",
+        "Filesystem_homerunnerworkblogblogvarlog.html",
+        "Filesystem_homet00mtmpmyblogconfig.html",
+        "KB4IT-INCREMENTAL-COMPILING-GITHUB.html",
+        "KB4IT-WORKFLOW-EAT.html",
+        "LOG-MODULE-KB4IT.html",
+        "PIXI-MANAGING-PYTHON-ENVIRONMENTS.html",
+        "Product.html",
+        "Product_Asciidoctor.html",
+        "Product_GNOME.html",
+        "Product_GTK.html",
+        "Product_Github_Actions.html",
+        "Product_KB4IT.html",
+        "Product_Libadwaita.html",
+        "Product_Mako.html",
+        "Product_MiAZ.html",
+        "Product_Pixi.html",
+        "Product_PyGObject.html",
+        "Product_Pypi.html",
+        "Product_Python.html",
+        "ProgrammingLanguage.html",
+        "ProgrammingLanguage_Python.html",
+        "Tag.html",
+        "Tag_about.html",
+        "Tag_algorithm.html",
+        "Tag_analysis.html",
+        "Tag_api.html",
+        "Tag_awesome.html",
+        "Tag_blog.html",
+        "Tag_build.html",
+        "Tag_cache.html",
+        "Tag_compiling.html",
+        "Tag_dependency.html",
+        "Tag_environment.html",
+        "Tag_extraction.html",
+        "Tag_filehandler.html",
+        "Tag_framework.html",
+        "Tag_incremental.html",
+        "Tag_index.html",
+        "Tag_library.html",
+        "Tag_license.html",
+        "Tag_logging.html",
+        "Tag_page.html",
+        "Tag_project.html",
+        "Tag_redirect.html",
+        "Tag_resource.html",
+        "Tag_template.html",
+        "Tag_transformation.html",
+        "Tag_vm.html",
+        "Tag_workflow.html",
+        "Topic.html",
+        "Topic_Automation.html",
+        "Topic_Development.html",
+        "Topic_Documentation.html",
+        "Topic_Package_management.html",
+        "Topic_Refactoring.html",
+        "Topic_Troubleshooting.html",
+        "USEFUL-LINKS-PYTHON-DEVELOPERS.html",
+        "about_app.html",
+        "about_kb4it.html",
+        "all.html",
+        "bookmarks.html",
+        "events.html",
+        "events_2025.html",
+        "events_202512.html",
+        "events_20251208.html",
+        "events_20251214.html",
+        "events_20251228.html",
+        "events_2026.html",
+        "events_202601.html",
+        "events_20260111.html",
+        "events_202602.html",
+        "events_20260216.html",
+        "index.html",
+        "properties.html",
+        "search.html",
+        "stats.html"
+    ],
     "document": {
         "ABOUT-KB4IT.md": {
             "Author": [
@@ -28,6 +133,7 @@
                 "About KB4IT"
             ],
             "body_hash": "8470bf272038a2cdde229cac3893b8fa3a599d6eba51165aa8b8653cf8d30037d499a317ea313a469a83a7e648aefd7f8405a1a072614ba2088c912bf3e95662",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/ABOUT-KB4IT.md",
             "keys": {
                 "Author": [
@@ -83,6 +189,7 @@
                 "About"
             ],
             "body_hash": "42d4a76e2b19a91dcb268202ed76f7dbbf2ed3c7905948fdd5febe280e7d628ee4933bb933472433fb88890946c50b5009ca9f7c86253d4ff2eb45e1d42e04f2",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/ABOUT.md",
             "keys": {
                 "Author": [
@@ -147,6 +254,7 @@
                 "Documentation"
             ],
             "body_hash": "b16c30ee6caf3e4f5809a71a5b7071526732e325233378ca35aa008e2525e2702df0e280d34a0d4790595db1382b87fb9f24e6c4e5586a438069a8fbb65cf1af",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
             "keys": {
                 "Author": [
@@ -216,6 +324,7 @@
                 "Development"
             ],
             "body_hash": "19e78f77b97390b13b1d8cd2c961d93642354c6724ea575059acea60bcbf5d2d25a951e5f399a255017c42a0b072bb1c67bb0eef36037adc8430032097583fab",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/BLOG-THEME-NEW-INDEX-PAGE.md",
             "keys": {
                 "Author": [
@@ -284,6 +393,7 @@
                 "Development"
             ],
             "body_hash": "94b8142030a993a2a3874ac9006b10daf6489786e0ac7fcb5fdc96f084df0a4768358b62bc5d41c87b1de1aeedb81221f2ae073c61833a63f279f2b7ea6705ad",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
             "keys": {
                 "Author": [
@@ -353,6 +463,7 @@
                 "Refactoring"
             ],
             "body_hash": "04be432ed0e317d93e6f6f6ca0a51f2d2dcadf04049512453d6498c967e566b213a81924cd8245b71269f83527f7cd1161532412d9b50d9774282c463b373675",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/KB4IT-WORKFLOW-EAT.md",
             "keys": {
                 "Author": [
@@ -429,6 +540,7 @@
                 "Troubleshooting"
             ],
             "body_hash": "0d604097640e889a6c0265635993769686088bbb713ebd5cae73e692153abb343d5ef8c06ca3b52f599e9c32903eacadbdbd5f0315a74905cfdc53c35344699d",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/LOG-MODULE-KB4IT.md",
             "keys": {
                 "Author": [
@@ -516,6 +628,7 @@
                 "Package management"
             ],
             "body_hash": "a322a88724958df768f4ee0a2c5898cf0366f88814ab9600e6be334ab56fda9e946f8b0f634b82b054313847feab0482d690e8f265a3245ccfe2170def36a2bb",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/PIXI-MANAGING-PYTHON-ENVIRONMENTS.md",
             "keys": {
                 "Author": [
@@ -594,6 +707,7 @@
                 "Documentation"
             ],
             "body_hash": "bf5bfd46c6155061213752001ceab63a11a915187aa08734ae696c51b8981f6c3bab6003cbf64e3c6d67ff3a6c2a5c14fefe8770160685cf0fb38f9dc99ace65",
+            "compile": true,
             "content": "/home/runner/work/blog/blog/source/USEFUL-LINKS-PYTHON-DEVELOPERS.md",
             "keys": {
                 "Author": [
@@ -630,47 +744,63 @@
                 ]
             },
             "metadata_hash": "530e3874c1490e4664d25468e2dc69e000ebf4211e287e5ca2b56e62295e7124972ad27140a4c0166505008ea3220d1bda8f9f137cf7a6673f2d619be2a94341"
-        },
-        "about_app.md": {
-            "SystemPage": [
-                "True"
-            ],
-            "Title": [
-                "About this app"
-            ],
-            "body_hash": "c8fc649fec6d1284b8dcaa7ebcbcfc0d04207d67571a93f201d333bc3615d4efddecf09414e22b0e89a7a7dcdf584153e07b6af56acd5f6f0befab0afc5e8f32",
-            "content": "/home/runner/work/blog/blog/source/about_app.md",
-            "keys": {
-                "SystemPage": [
-                    "True"
-                ],
-                "Title": [
-                    "About this app"
-                ]
-            },
-            "metadata_hash": "856ce8ddde31adb8cb51239511c88910b79e307bfdadc34e802ddd688c8f2d11d41b9a1635f22618384af5305fcda1ec8c6b961cf658ea12c32629654012a343"
-        },
-        "about_kb4it.md": {
-            "SystemPage": [
-                "True"
-            ],
-            "Title": [
-                "About KB4IT"
-            ],
-            "body_hash": "c799ae583cd77209df036d0a6583b232b572fc75ad63a06f90035bdfbd7c5009df5ce3bb8e10b5525d8b6d1b790d09ab4637e651553c42b6c9cc2f7170451318",
-            "content": "/home/runner/work/blog/blog/source/about_kb4it.md",
-            "keys": {
-                "SystemPage": [
-                    "True"
-                ],
-                "Title": [
-                    "About KB4IT"
-                ]
-            },
-            "metadata_hash": "0c6b45f7155497596425ef89c86e38abe27369dc735f408915f5d79ae0dc8ffc8fd83a83e9b8c0a3343a293e4b541a6fa179ef3c7ed57eb0303b8cfaf476869f"
         }
     },
-    "kb4it_version": "0.7.6+build.17",
+    "events": {
+        "events_2025": [
+            "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+            "BLOG-THEME-NEW-INDEX-PAGE.md",
+            "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
+        ],
+        "events_202512": [
+            "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md",
+            "BLOG-THEME-NEW-INDEX-PAGE.md",
+            "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
+        ],
+        "events_20251208": [
+            "BLOG-THEME-NEW-INDEX-PAGE.md"
+        ],
+        "events_20251214": [
+            "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md"
+        ],
+        "events_20251228": [
+            "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
+        ],
+        "events_2026": [
+            "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+            "KB4IT-WORKFLOW-EAT.md",
+            "LOG-MODULE-KB4IT.md",
+            "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+        ],
+        "events_202601": [
+            "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+            "LOG-MODULE-KB4IT.md",
+            "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+        ],
+        "events_20260111": [
+            "KB4IT-INCREMENTAL-COMPILING-GITHUB.md",
+            "LOG-MODULE-KB4IT.md",
+            "USEFUL-LINKS-PYTHON-DEVELOPERS.md"
+        ],
+        "events_202602": [
+            "KB4IT-WORKFLOW-EAT.md"
+        ],
+        "events_20260216": [
+            "KB4IT-WORKFLOW-EAT.md"
+        ]
+    },
+    "kb4it_version": "0.9.0",
+    "links": {
+        "ABOUT-KB4IT.md": [],
+        "ABOUT.md": [],
+        "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md": [],
+        "BLOG-THEME-NEW-INDEX-PAGE.md": [],
+        "KB4IT-INCREMENTAL-COMPILING-GITHUB.md": [],
+        "KB4IT-WORKFLOW-EAT.md": [],
+        "LOG-MODULE-KB4IT.md": [],
+        "PIXI-MANAGING-PYTHON-ENVIRONMENTS.md": [],
+        "USEFUL-LINKS-PYTHON-DEVELOPERS.md": []
+    },
     "metadata": {
         "Author": {
             "Tom\u00e1s V\u00edrseda": [
@@ -839,9 +969,7 @@
         "SystemPage": {
             "True": [
                 "ABOUT-KB4IT.md",
-                "ABOUT.md",
-                "about_app.md",
-                "about_kb4it.md"
+                "ABOUT.md"
             ]
         },
         "Tag": {
@@ -937,11 +1065,7 @@
                 "ABOUT.md"
             ],
             "About KB4IT": [
-                "ABOUT-KB4IT.md",
-                "about_kb4it.md"
-            ],
-            "About this app": [
-                "about_app.md"
+                "ABOUT-KB4IT.md"
             ],
             "App development with GTK, Python and Libadwaita": [
                 "APP-DEVELOPMENT-GTK-PYTHON-LIBADWAITA.md"
@@ -988,5 +1112,6 @@
                 "LOG-MODULE-KB4IT.md"
             ]
         }
-    }
+    },
+    "site_signature": ""
 }

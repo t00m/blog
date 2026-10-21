@@ -1,0 +1,15 @@
+<h2 id="excerpt">Excerpt</h2>
+<p>Over the past few weeks, I refactored a spaghetti backend module into four services: Backend, Processor (using EAT approach), Compiler, and Deployer.</p>
+<h2 id="refatoring-extraction-analysis-and-transformation">Refatoring: Extraction, Analysis and Transformation</h2>
+<p>During the last weeks, I've spent quite sometime refactoring backend module's spaguetti code.
+This leaded to split this service in four new modules: backend, processor, compiler and deployer.</p>
+<ol>
+<li><strong>Backend</strong>: keep on charge of checking the environment and coordinate some service intializations</li>
+<li><strong>Processor</strong>: this service follow an EAT approach:
+   - <strong>Extraction</strong>: consumes sources and get all documents properties
+   - <strong>Analysis</strong>: decides which documents, keys (and values for these keys) need to be compilated again
+   - <strong>Transformation</strong>: sends key/values to theme to produce the final asciidoc sources</li>
+<li><strong>Compiler</strong>: once the transformation is finished, KB4IT starts compiling all documents produced</li>
+<li><strong>Deployer</strong>: finally, after compilation, the new site is deployed: target directory is refreshed and temporary dirs are cleaned. Cache is kept so the next execution, KB4IT can decide what must be compiled (if not forced)</li>
+</ol>
+<p>Themes updated accordingly to use new capabilities.</p>

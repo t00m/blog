@@ -1,0 +1,54 @@
+<h2 id="excerpt">Excerpt</h2>
+<p><a href="https://pixi.sh/latest/">Pixi</a> is a fast, modern, and reproducible package management tool for developers of all backgrounds.</p>
+<h2 id="notes">Notes</h2>
+<p><code>pyproject.toml</code> adapted and it is on testing phase:</p>
+<pre><code class="language-toml">[project]
+authors = [{name = &quot;Tomás Vírseda&quot;, email = &quot;tomasvirseda@gmail.com&quot;}]
+dependencies = []
+name = &quot;KB4IT&quot;
+requires-python = &quot;&gt;= 3.12&quot;
+version = &quot;0.7.20+build.18&quot;
+license = &quot;GPL-3.0-or-later&quot;
+keywords = [&quot;static-site-generator&quot;, &quot;asciidoctor&quot;, &quot;documentation&quot;]
+classifiers = [
+ &quot;Development Status :: 4 - Beta&quot;,
+ &quot;Environment :: Console&quot;,
+ &quot;Environment :: Web Environment&quot;,
+ &quot;Intended Audience :: Developers&quot;,
+ &quot;Intended Audience :: Information Technology&quot;,
+ &quot;Intended Audience :: System Administrators&quot;,
+ &quot;License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)&quot;,
+ &quot;Natural Language :: English&quot;,
+ &quot;Operating System :: POSIX :: Linux&quot;,
+ &quot;Programming Language :: Python :: 3&quot;,
+ &quot;Topic :: Documentation&quot;,
+ &quot;Topic :: Software Development :: Documentation&quot;,
+ &quot;Topic :: Utilities&quot;,
+]
+
+[build-system]
+build-backend = &quot;hatchling.build&quot;
+requires = [&quot;hatchling&quot;]
+
+[tool.pixi.workspace]
+channels = [&quot;conda-forge&quot;]
+platforms = [&quot;linux-64&quot;]
+
+[tool.pixi.pypi-dependencies]
+kb4it = { path = &quot;.&quot;, editable = true }
+
+[tool.pixi.dependencies]
+mako = &quot;&gt;=1.3.10,&lt;2&quot;
+lxml = &quot;&gt;=6.0.2,&lt;7&quot;
+
+[tool.pixi.tasks]
+version = &quot;kb4it --version&quot;
+myblog_force = &quot;kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json -f&quot;
+myblog = &quot;kb4it -L DEBUG build /home/t00m/tmp/myblog/config/repo.json&quot;
+</code></pre>
+<p>Useful commands:</p>
+<ul>
+<li><code>pixi install</code>: Install an environment, both updating the <code>pixi.lock</code> file and installing the environment</li>
+<li><code>pixi list</code>: List the packages of the current workspace</li>
+<li><code>pixi run {task name}</code>: Runs task name in the pixi environment</li>
+</ul>
