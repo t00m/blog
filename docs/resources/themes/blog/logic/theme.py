@@ -23,6 +23,8 @@ from kb4it.services.themekit import DocumentTheme
 
 class Theme(DocumentTheme):
     properties_title = 'Metadata'
+    reserved_pages = ('404.md',)  # build() writes 404.html
+    add_page = True   # create_page_add() runs in build()
     reuse_unchanged_pages = True
     datatable_link_template = 'LINK'
 
@@ -179,10 +181,12 @@ class Theme(DocumentTheme):
         self.build_page_properties()
         self.build_page_stats()
         self.build_page_bookmarks()
+        self.build_page_404()
         self.build_page_index_all()
         self.create_page_about_kb4it()
         self.create_page_about_app()
         self.create_page_search()
+        self.create_page_add()
 
     def page_hook_pre(self, var):
         var['related'] = ''
@@ -375,6 +379,12 @@ class Theme(DocumentTheme):
         """This theme doesn't generate sources, yet."""
         # ~ self.build_page_index()
         self.log.debug("[THEME] NO_SOURCES_GENERATED")
+
+    def get_theme_var(self):
+        var = super().get_theme_var()
+        # The footer prints the tagline; an empty line when repo.json has none.
+        var['repo'].setdefault('tagline', '')
+        return var
 
     def check_config(self):
         go = True

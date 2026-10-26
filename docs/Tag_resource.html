@@ -2,21 +2,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>t00mterías - Tag: resource</title>
+  <!-- PAGE METADATA :: START -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="KB4IT 0.9.0">
+  <title>t00mterías - Tag: resource</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="KB4IT 0.10.0+unknown; blog 1.0.0+582539a1a103">
+  <!-- PAGE METADATA :: END -->
+  <!-- STYLESHEETS :: START -->
   <link rel="stylesheet" href="resources/themes/blog/framework/Highlight/styles/github-dark.css">
   <link rel="stylesheet" href="resources/themes/blog/css/blog.css">
   <link rel="stylesheet" href="resources/themes/blog/framework/uikit/css/uikit.min.css">
+  <!-- STYLESHEETS :: END -->
+  <!-- LIBRARIES :: START -->
   <script src="resources/themes/blog/framework/Highlight/highlight.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit.min.js"></script>
   <script src="resources/themes/blog/framework/uikit/js/uikit-icons.min.js"></script>
   <script src="resources/themes/blog/framework/datatables/js/jquery-3.5.1.js"></script>
   <script src="resources/themes/blog/framework/datatables/js/jquery.dataTables.min.js"></script>
   <script src="resources/themes/blog/framework/datatables/js/dataTables.uikit.min.js"></script>
-  <script type="text/javascript" class="init">
+  <!-- LIBRARIES :: END -->
+  <!-- DATATABLES SETUP :: START -->
+  <script class="init">
         $(document).ready(function() {
             $('#kb4it-datatable').DataTable( {
                 dom: '<"kbfilter"Bifrt>',
@@ -36,6 +42,7 @@
             } );
         } );
   </script>
+  <!-- DATATABLES SETUP :: END -->
 <!-- kb4it:meta -->
 <meta name="description" content="My public notes">
 <meta property="og:title" content="t00mterías">
@@ -43,21 +50,20 @@
 <meta property="og:site_name" content="t00mterías">
 <meta property="og:description" content="My public notes">
 <meta name="twitter:card" content="summary">
+<link rel="icon" href="resources/themes/blog/images/logo.svg">
 <!-- /kb4it:meta -->
 </head>
 <body>
-    <!-- Blog container :: START -->
-    <div class="blog-container uk-container" uk-height-viewport="expand: true">
-        <!-- GRID :: START -->
-        <div class="uk-grid">
-            <!-- Main Content Column :: START-->
-            <div class="uk-width-3-4@m">
-<!-- BODY :: START -->
+<!-- PAGE :: START -->
+<div class="blog-container uk-container" data-uk-height-viewport="expand: true">
+    <div class="uk-grid">
+        <!-- CONTENT COLUMN :: START -->
+        <div class="uk-width-3-4@m">
+<!-- MAIN CONTENT :: START -->
 <main class="kb-main">
 <h1 class="uk-hidden-visually">Tag: resource</h1>
-<!-- PAGE_KEY_VALUE.tpl :: START -->
-<!-- <h2>Posts by Tag: resource</h2> -->
-<div class ="uk-container uk-overflow-auto">
+<!-- DOCUMENTS TABLE :: START -->
+<div class="uk-container uk-overflow-auto">
 <table id="kb4it-datatable" class="uk-table uk-table-small uk-table-responsive uk-table-divider uk-table-hover uk-table-striped uk-text-small" style="width: 100%">
     <thead class="">
         <tr class="">
@@ -78,7 +84,7 @@
     </thead>
     <tbody class="">
             <tr><td class=""></td><td class=""><a class="uk-link-heading" href="Category_Post.html">Post</a></td><td class="uk-text-small">
-    <a class="uk-link-heading" href="USEFUL-LINKS-PYTHON-DEVELOPERS.html"><span class="uk-text-left uk-text-small uk-text-primary uk-text-nowrap"><span uk-tooltip="Useful links for Python developers">Useful links for Python developers</span></span></a>
+    <a class="uk-link-heading" href="USEFUL-LINKS-PYTHON-DEVELOPERS.html"><span class="uk-text-left uk-text-small uk-text-primary uk-text-nowrap"><span data-uk-tooltip="Useful links for Python developers">Useful links for Python developers</span></span></a>
 </td>
 <td class=""><a class="uk-link-heading" href="Topic_Development.html">Development</a>, <a class="uk-link-heading" href="Topic_Documentation.html">Documentation</a></td></tr>
     </tbody>
@@ -87,22 +93,24 @@
 </table>
 
 </div>
-        <!-- PAGE_KEY_VALUE.tpl :: END -->
-
+<!-- DOCUMENTS TABLE :: END -->
 
 </main>
-<!-- BODY :: END -->
-                </div>
-                <!-- Main Content Column :: END-->
-                <!-- Sidebar Column :: START-->
-                <div class="uk-width-1-4@m" uk-height-viewport="expand: true">
-                  <div class="uk-sticky" uk-sticky="offset: 40">
-                    <h2 class="uk-heading-line uk-text-center uk-margin-remove">
-                        <a class="uk-link-toggle" href="index.html">
+<!-- MAIN CONTENT :: END -->
+        </div>
+        <!-- CONTENT COLUMN :: END -->
+        <!-- SIDEBAR :: START -->
+        <aside class="uk-width-1-4@m" data-uk-height-viewport="expand: true">
+            <div class="uk-sticky" data-uk-sticky="offset: 40">
+                <!-- SITE TITLE :: START -->
+                <h2 class="uk-heading-line uk-text-center uk-margin-remove">
+                    <a class="uk-link-toggle" href="index.html">
                         <span class="uk-link-heading">t00mterías</span>
-                        </a>
-                    </h2>
-                    <div class="uk-flex uk-flex-center uk-margin-small"><form class="kb4it-search" action="search.html" method="get" role="search">
+                    </a>
+                </h2>
+                <!-- SITE TITLE :: END -->
+                <!-- SEARCH BOX :: START -->
+                <div class="uk-flex uk-flex-center uk-margin-small"><form class="kb4it-search" action="search.html" method="get" role="search">
     <input id="kb4it-search-input" class="kb4it-search-input" type="search" name="q" placeholder="Search" autocomplete="off" aria-label="Search the site">
     <div id="kb4it-search-dropdown" class="kb4it-search-dropdown" hidden></div>
 </form>
@@ -111,91 +119,76 @@
 <script defer src="resources/common/js/kb4it-search.js"></script>
 <script defer src="resources/common/js/kb4it-search-ui.js"></script>
 </div>
-                    <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
-            <blockquote>
-            <p class="uk-text-center">My public notes</p>
-            </blockquote>
+                <!-- SEARCH BOX :: END -->
+                <!-- TAGLINE :: START -->
+                <div class="uk-flex uk-flex-top uk-flex-center uk-margin">
+                    <blockquote>
+                        <p class="uk-text-center">My public notes</p>
+                    </blockquote>
+                </div>
+                <!-- TAGLINE :: END -->
+                <!-- SITE MENU :: START -->
+                <nav class="uk-card uk-card-body uk-card-small uk-flex uk-flex-top uk-flex-left" aria-label="Site">
+                    <ul class="uk-list uk-text-left uk-margin-left">
+                        <li>
+                            <span data-uk-icon="icon: plus" data-uk-tooltip="Create new post"></span>
+                            <a class="uk-link-heading" href="https://github.com/t00m/blog/new/main/source" target="_blank">
+                                <span class="uk-link-toogle uk-margin-left">Create new post</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span data-uk-icon="icon: list" data-uk-tooltip="All posts"></span>
+                            <a class="uk-link-heading" href="all.html">
+                                <span class="uk-link-toogle uk-margin-left">All documents</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span data-uk-icon="icon: star" data-uk-tooltip="Bookmarks"></span>
+                            <a class="uk-link-heading" href="bookmarks.html">
+                                <span class="uk-link-toogle uk-margin-left">Bookmarks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span data-uk-icon="icon: world" data-uk-tooltip="Browse by metadata"></span>
+                            <a class="uk-link-heading" href="properties.html">
+                                <span class="uk-link-toogle uk-margin-left">Metadata</span>
+                            </a>
+                        </li>
+                        <li>
+                            <span data-uk-icon="icon: calendar" data-uk-tooltip="Posts by year"></span>
+                            <a class="uk-link-heading" href="events.html">
+                                <span class="uk-link-toogle uk-margin-left">Archive</span>
+                            </a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li>
+                            <span data-uk-icon="icon: info" data-uk-tooltip="About"></span>
+                            <a class="uk-link-heading" href="about_app.html">
+                                <span class="uk-link-toogle uk-margin-left">About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- SITE MENU :: END -->
+                <!-- FOOTER :: START -->
+                <footer class="uk-text-center uk-card uk-card-body uk-card-big">
+                    <hr class="uk-divider-icon">
+                    <p>
+                        <a href="about_kb4it.html">
+                            <img src="resources/common/images/kb4it-badge-built-with.svg" alt="Built with KB4IT">
+                        </a>
+                    </p>
+                </footer>
+                <!-- FOOTER :: END -->
             </div>
-
-        <div class="uk-card uk-card-body uk-card-small uk-flex uk-flex-top uk-flex-left">
-        <ul class="uk-list uk-text-left uk-margin-left">
-                <li>
-                    <span uk-icon="icon: plus" uk-tooltip="Create new post"></span>
-                    <a class="uk-link-heading" href="https://github.com/t00m/blog/new/main/source" target="_blank">
-                        <span class="uk-link-toogle uk-margin-left">Create new post</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: list" uk-tooltip="All posts"></span>
-                    <a class="uk-link-heading" href="all.html">
-                        <span class="uk-link-toogle uk-margin-left">All documents</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: star" uk-tooltip="Bookmarks"></span>
-                    <a class="uk-link-heading" href="bookmarks.html">
-                        <span class="uk-link-toogle uk-margin-left">Bookmarks</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: world" uk-tooltip="Browse by metadata"></span>
-                    <a class="uk-link-heading" href="properties.html">
-                        <span class="uk-link-toogle uk-margin-left">Metadata</span>
-                    </a>
-                </li>
-                <li>
-                    <span uk-icon="icon: calendar" uk-tooltip="Posts by year"></span>
-                    <a class="uk-link-heading" href="events.html">
-                        <span class="uk-link-toogle uk-margin-left">Archive</span>
-                    </a>
-                </li>
-                <li class="uk-nav-divider"></li>
-                <li>
-                    <span uk-icon="icon: info" uk-tooltip="About"></span>
-                    <a class="uk-link-heading" href="about_app.html">
-                        <span class="uk-link-toogle uk-margin-left">About</span>
-                    </a>
-                </li>
-        </ul>
+        </aside>
+        <!-- SIDEBAR :: END -->
     </div>
-                      <div class="uk-text-center uk-card uk-card-body uk-card-big">
-                        <hr class="uk-divider-icon">
-                        <p>
-                            <span class="uk-link">
-                                <a href="about_kb4it.html">
-                                    <img src="resources/common/images/kb4it-badge-built-with.svg" alt="Built with KB4IT">
-                                </a>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                <!-- Sidebar Column :: END-->
-        </div>
-        <!-- GRID :: END -->
-    </div>
-    <!-- Blog container :: END -->
+</div>
+<!-- PAGE :: END -->
+<!-- PAGE SCRIPTS :: START -->
+<!-- Code highlighting -->
 <script>hljs.highlightAll();</script>
-<script>
-<!-- Necessary javascript for filtering results -->
-<!-- Hack found in: https://codepen.io/acidrums4/pen/GBpYbO -->
-var input = document.getElementById('text_filter');
-var filter = document.getElementById('filter');
-
-input.addEventListener( 'keyup', function(event)
-{
-    if ( input.value == "" )
-    {
-        filter.setAttribute( 'uk-filter-control', '' );
-    }
-
-    else
-    {
-        filter.setAttribute( 'uk-filter-control', 'filter:[data-title*=\'' + input.value + '\'i]' );
-    }
-
-    filter.click();
-});
-</script>
+<!-- PAGE SCRIPTS :: END -->
 </body>
 </html>
