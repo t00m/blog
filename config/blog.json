@@ -27,6 +27,7 @@
         "Author",
         "Category"
     ],
+    "site_url": "https://t00m.github.io/blog/",
     "sort": "Date",
     "source": "source",
     "target": "docs",
